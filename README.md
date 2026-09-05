@@ -43,6 +43,8 @@ These results do not imply search ranking, third-party adoption, LLM training, e
 - ledger.json — canonical machine-readable state.
 - ledger.schema.json — structural contract with the exact 36-task invariant.
 - STATUS.md — task register with acceptance state and next action.
+- COMMERCIAL-INTENT-MAP.md — eight commercial clusters and the 24-query RU/EN non-brand panel.
+- AI-SEARCH-MEASUREMENT-PROTOCOL.md — controlled coverage and evidence rules for five AI systems and three search engines.
 - LICENSE — MIT license for this documentation and schema.
 
 Authored taxonomy and synthetic dataset materials use CC-BY-4.0 at their published source. This ledger does not relicense third-party material.
