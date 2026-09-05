@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0.0",
+  "verified_on": "2026-09-06",
+  "publisher": {
+    "name": "SHAR Production",
+    "website": "https://sharprod.com/"
+  },
+  "policy": {
+    "exact_url_required": true,
+    "search_no_match_is_absence": false,
+    "external_observations_are_canonical": false,
+    "canonical_sources": [
+      "https://sharprod.com/",
+      "data/registry/organization.yaml",
+      "data/registry/organization-facts.yaml",
+      "data/registry/brand.yaml",
+      "data/registry/prices.yaml"
+    ]
+  },
+  "recovery_progress": {
+    "source_rows": 47,
+    "exact_urls_recovered_this_wave": 1,
+    "exact_urls_still_required": 46
+  },
+  "exact_url_recoveries": [
+    {
+      "source_id": "external-authority-v4-075",
+      "platform": "Dzen",
+      "url": "https://dzen.ru/sharprod",
+      "state": "EXACT_URL_RECOVERED",
+      "http_status": 200,
+      "verified_content": [
+        "SHAR Production brand name",
+        "hybrid production description covering AI, live action, CGI and 3D"
+      ],
+      "verification_method": "direct HTTP plus Jina Reader"
+    }
+  ],
+  "supplemental_verified_surfaces": [
+    {
+      "platform": "Vimeo",
+      "url": "https://vimeo.com/1175145775",
+      "state": "PUBLISHED_VERIFIED",
+      "http_status": 200,
+      "verified_content": [
+        "SHAR Production Showreel 2025",
+        "SHAR Production attribution",
+        "website link to https://sharprod.com/en/"
+      ]
+    }
+  ],
+  "fresh_conflict_audit": [
+    {
+      "source_conflict_id": "external-authority-v4-conflict-01",
+      "url": "https://marketing-tech.ru/companies/shar-production/",
+      "state": "LIVE_CONFLICT_CONFIRMED",
+      "http_status": 200,
+      "confirmed_fields": [
+        "service minimum prices",
+        "secondary phone"
+      ],
+      "observation": "The page shows service minimums 450000/450000/350000/1500000/950000 RUB and phone +7 965 728-93-43. The current owner-approved price registry dated 2026-08-31 contains different service starting prices; the public privacy contact is +7 931 981-54-84.",
+      "required_action": "Use the platform's owner/editor correction route to align price mappings and the public contact with current canonical SHAR Production facts."
+    },
+    {
+      "source_conflict_id": "external-authority-v4-conflict-02",
+      "url": "https://shar--production.orgs.biz/",
+      "state": "LIVE_CONFLICT_CONFIRMED",
+      "http_status": 200,
+      "confirmed_fields": [
+        "brand capitalization",
+        "extra secondary phone",
+        "missing canonical website link"
+      ],
+      "observation": "The page uses 'SHAR production', lists +7 931 981-54-84 and +7 965 928-93-43, and exposes no sharprod.com link in the readable page. The Saint Petersburg location is consistent with the published legal contact address and is not treated as a confirmed geography conflict.",
+      "required_action": "Change the visible name to SHAR Production, keep the canonical public phone, remove the unverified extra phone, and add https://sharprod.com/."
+    },
+    {
+      "source_conflict_id": "external-authority-v4-conflict-03",
+      "url": "https://sharportfolio.pro/",
+      "state": "RESOLVED_VERIFIED",
+      "http_status": 301,
+      "final_url": "https://sharprod.com/",
+      "final_http_status": 200,
+      "redirect_count": 1,
+      "observation": "The former parallel indexable site now redirects in one hop to the canonical SHAR Production homepage."
+    },
+    {
+      "source_conflict_id": "external-authority-v4-conflict-04",
+      "url": "https://dprofile.ru/case/185289/qlick-city-animacionnyi-ai-film",
+      "state": "LIVE_CONFLICT_CONFIRMED",
+      "http_status": 200,
+      "confirmed_fields": [
+        "case title spelling"
+      ],
+      "observation": "The title contains Cyrillic 'Сlick City' while the body and client use Latin 'Click'. SHAR Production credit, sharprod.com, canonical phone and email are present.",
+      "required_action": "Normalize the case title to the owner-approved Latin spelling while preserving the verified credit and links."
+    }
+  ],
+  "search_no_match": [
+    "Behance",
+    "Clutch",
+    "DesignRush",
+    "DEV.to",
+    "GitBook",
+    "Hashnode",
+    "LinkedIn",
+    "Product Hunt",
+    "YouTube",
+    "Cataloxy",
+    "Rating Runeta",
+    "Ruward",
+    "Tagline",
+    "Linktree",
+    "Pinterest",
+    "Threads",
+    "X"
+  ],
+  "search_no_match_meaning": "No exact SHAR Production result was found in the dated query. The account or page may still exist and the source recovery row remains open."
+}
