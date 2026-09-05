@@ -1,7 +1,7 @@
 # Commercial intent map
 
-**Brand:** SHAR Production  
-**Website:** https://sharprod.com/  
+**Brand:** SHAR Production
+**Website:** https://sharprod.com/
 **Measurement state:** `NOT_MEASURED` for query visibility
 
 This map contains 24 authored non-brand questions: 12 RU and 12 EN. They are test inputs, not keyword-volume or ranking claims. Existing first-party SHAR pages are linked as intent owners; a page link does not prove ranking for its query.
@@ -53,3 +53,4 @@ This map contains 24 authored non-brand questions: 12 RU and 12 EN. They are tes
 For every row: intent → existing landing → applicable first-party illustration or explicit evidence gap → useful SHAR asset → [contact](https://sharprod.com/contact.html) → dated measurement.
 
 No search volume, rank, AI citation, lead attribution, or causal uplift has been inferred. Missing English counterparts remain assigned to an existing verified owner rather than an invented URL.
+

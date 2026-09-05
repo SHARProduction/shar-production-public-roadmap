@@ -1,7 +1,7 @@
 # AI and search measurement protocol
 
-**Brand:** SHAR Production  
-**Website:** https://sharprod.com/  
+**Brand:** SHAR Production
+**Website:** https://sharprod.com/
 **Panel:** 24 non-brand queries, 12 RU + 12 EN
 
 ## State contract
@@ -65,3 +65,4 @@ Google Search Console aggregate performance is a separate `MEASURED` baseline. I
 ## Current coverage
 
 All eight required target systems remain `NOT_MEASURED` for the controlled 24-query panel. This protocol intentionally makes no ranking or visibility claim.
+
