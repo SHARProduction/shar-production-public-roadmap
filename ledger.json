@@ -1,0 +1,867 @@
+{
+  "schema_version": "1.0.0",
+  "updated_on": "2026-09-05",
+  "program": "SHAR GEO DOMINANCE",
+  "brand": {
+    "name": "SHAR Production",
+    "website": "https://sharprod.com/"
+  },
+  "status_vocabulary": [
+    "PLANNED",
+    "LOCAL_READY",
+    "AWAITING_OWNER",
+    "SUBMITTED",
+    "PUBLISHED_VERIFIED",
+    "MEASURED",
+    "BLOCKED",
+    "REJECTED_WITH_REASON"
+  ],
+  "status_policy": {
+    "PUBLISHED_VERIFIED": "Only after a public URL and required content or behavior were checked.",
+    "LOCAL_READY": "Prepared locally; not external publication.",
+    "SUBMITTED": "Delivery receipt only; not acceptance or publication.",
+    "MEASURED": "Documented observation; not a ranking guarantee."
+  },
+  "program_complete": false,
+  "constraints": {
+    "legacy_repositories_changed": false,
+    "main_domain_changed": false,
+    "dns_changed": false,
+    "timeweb_changed": false,
+    "paid_resources_used": false
+  },
+  "approved_chain": [
+    "sharprod.com + MCP/TimeWeb",
+    "GitHub",
+    "Hugging Face/datasets",
+    "cloud stacking",
+    "Tier-1 publications",
+    "Tier-2/3 external surfaces",
+    "directories/profiles",
+    "tools/calculators",
+    "entity/knowledge graph",
+    "backlinks/citations",
+    "Google/Yandex/Bing",
+    "ChatGPT/Claude/Gemini/Perplexity/Alice",
+    "commercial-query visibility and qualified inquiries"
+  ],
+  "layers": [
+    "base",
+    "github",
+    "datasets",
+    "cloud_stacking",
+    "tier1",
+    "tier23",
+    "profiles",
+    "tools",
+    "entity",
+    "backlinks_citations",
+    "search",
+    "ai_visibility",
+    "commercial_outcome",
+    "qa"
+  ],
+  "verified_public_wave": {
+    "github": {
+      "status": "PUBLISHED_VERIFIED",
+      "url": "https://github.com/Ares3333333/production-brief-schema",
+      "commit": "053c137026259e9e06b1babb5df7c6024e8dba8e",
+      "ci": "success"
+    },
+    "hugging_face": {
+      "status": "PUBLISHED_VERIFIED",
+      "url": "https://huggingface.co/datasets/SHARProduction/production-brief-taxonomy",
+      "commit": "368d5524ff24c5cbea6d2872b23dfd4c6f9051c8",
+      "license": "CC-BY-4.0"
+    },
+    "cloudflare": {
+      "status": "PUBLISHED_VERIFIED",
+      "url": "https://production-brief-browser.bullolaya.workers.dev/",
+      "http_status": 200,
+      "desktop": "PASS",
+      "mobile": "PASS"
+    }
+  },
+  "tasks": [
+    {
+      "id": "BASE-01",
+      "layer": "base",
+      "title_ru": "Подтвердить рабочие источники без нового тотального аудита",
+      "priority": "P0",
+      "status": "LOCAL_READY",
+      "depends_on": [],
+      "acceptance_ru": [
+        "Выбранная база обоснована; Git ref не назван runtime без доказательства",
+        "Цены, позиционирование и стабильные контракты не изменены"
+      ],
+      "evidence": [
+        {
+          "kind": "internal_record",
+          "value": "verified-base.md"
+        }
+      ],
+      "next_step": "Source verified; preserve separate runtime/knowledge lineage."
+    },
+    {
+      "id": "BASE-02",
+      "layer": "base",
+      "title_ru": "Продолжить существующий authority v4",
+      "priority": "P1",
+      "status": "LOCAL_READY",
+      "depends_on": [
+        "BASE-01"
+      ],
+      "acceptance_ru": [
+        "Исходные ID и evidence classes сохранены",
+        "217 и 96 обозначены как значения источника, а не свежие live-результаты",
+        "Отсутствие URL не принято за отсутствие профиля"
+      ],
+      "evidence": [
+        {
+          "kind": "internal_record",
+          "value": "surface-operations.json"
+        }
+      ],
+      "next_step": "Continue dated verification of217 preserved source IDs."
+    },
+    {
+      "id": "BASE-03",
+      "layer": "base",
+      "title_ru": "Разделить доступные действия и точные блокеры",
+      "priority": "P1",
+      "status": "LOCAL_READY",
+      "depends_on": [
+        "BASE-01"
+      ],
+      "acceptance_ru": [
+        "Наличие admin-доступа не заменяет согласование публикации private данных",
+        "Один недоступный аккаунт не блокирует остальные локальные задачи"
+      ],
+      "evidence": [
+        {
+          "kind": "internal_record",
+          "value": "access-actions.md"
+        }
+      ],
+      "next_step": "Owner batch decision on exact external destinations, licenses and rights."
+    },
+    {
+      "id": "GH-01",
+      "layer": "github",
+      "title_ru": "Сопоставить существующие и будущие GitHub-активы",
+      "priority": "P1",
+      "status": "LOCAL_READY",
+      "depends_on": [
+        "BASE-01"
+      ],
+      "acceptance_ru": [
+        "Нет повторного public monitor или MCP сервера",
+        "Нет глобальной квоты репозиториев",
+        "Каждый модуль имеет задачу и результат"
+      ],
+      "evidence": [
+        {
+          "kind": "internal_record",
+          "value": "github-release-map.md"
+        }
+      ],
+      "next_step": "Choose public namespace without duplicating existing brand applications."
+    },
+    {
+      "id": "GH-02",
+      "layer": "github",
+      "title_ru": "Собрать работающий production brief release kit",
+      "priority": "P1",
+      "status": "LOCAL_READY",
+      "depends_on": [
+        "GH-01"
+      ],
+      "acceptance_ru": [
+        "Положительный/отрицательный сценарии реально протестированы",
+        "Содержание public-safe",
+        "Лицензия не выдумана"
+      ],
+      "evidence": [
+        {
+          "kind": "internal_record",
+          "value": "README.md"
+        }
+      ],
+      "next_step": "License decision then standalone public release."
+    },
+    {
+      "id": "GH-03",
+      "layer": "github",
+      "title_ru": "Продолжить standard, deliverables и public MCP examples",
+      "priority": "P1",
+      "status": "LOCAL_READY",
+      "depends_on": [
+        "GH-01"
+      ],
+      "acceptance_ru": [
+        "Примеры исполняются по действующему контракту",
+        "Стандарт SHAR не назван международным признанным стандартом",
+        "Нет пустых repo ради количества"
+      ],
+      "evidence": [
+        {
+          "kind": "internal_record",
+          "value": "HANDOFF-GUIDE.md"
+        }
+      ],
+      "next_step": "Live public client and SHAR-proposed handoff guide ready; manifest validator remains future module."
+    },
+    {
+      "id": "GH-04",
+      "layer": "github",
+      "title_ru": "Опубликовать разрешённую GitHub-волну",
+      "priority": "P1",
+      "status": "PUBLISHED_VERIFIED",
+      "depends_on": [
+        "GH-02",
+        "BASE-03"
+      ],
+      "acceptance_ru": [
+        "Публикуется только allowlisted public-safe набор",
+        "README и сценарий проверены после публикации",
+        "Создание repo не считается использованием другими"
+      ],
+      "evidence": [
+        {
+          "kind": "public_url",
+          "url": "https://github.com/Ares3333333/production-brief-schema"
+        },
+        {
+          "kind": "commit",
+          "value": "053c137026259e9e06b1babb5df7c6024e8dba8e"
+        },
+        {
+          "kind": "ci",
+          "value": "success"
+        }
+      ],
+      "next_step": "Maintain versioned releases and measure independent use."
+    },
+    {
+      "id": "DATA-01",
+      "layer": "datasets",
+      "title_ru": "Определить полезный первый dataset без ожидания эмпирического benchmark",
+      "priority": "P1",
+      "status": "LOCAL_READY",
+      "depends_on": [
+        "GH-01"
+      ],
+      "acceptance_ru": [
+        "Есть самостоятельная задача использования",
+        "Классификация не выдана за статистику рынка"
+      ],
+      "evidence": [
+        {
+          "kind": "internal_record",
+          "value": "README.md"
+        }
+      ],
+      "next_step": "Owner reviews authored taxonomy; synthetic records are not client measurements."
+    },
+    {
+      "id": "DATA-02",
+      "layer": "datasets",
+      "title_ru": "Подготовить и проверить Hugging Face dataset kit",
+      "priority": "P1",
+      "status": "LOCAL_READY",
+      "depends_on": [
+        "DATA-01"
+      ],
+      "acceptance_ru": [
+        "Данные загружаются",
+        "Происхождение и ограничения указаны",
+        "Нет вымышленных клиентских измерений"
+      ],
+      "evidence": [
+        {
+          "kind": "internal_record",
+          "value": "hf-load-test.txt"
+        }
+      ],
+      "next_step": "Data loads; choose license/account before Hub upload."
+    },
+    {
+      "id": "DATA-03",
+      "layer": "datasets",
+      "title_ru": "Публикация и просмотр dataset на Hugging Face",
+      "priority": "P1",
+      "status": "PUBLISHED_VERIFIED",
+      "depends_on": [
+        "DATA-02",
+        "BASE-03"
+      ],
+      "acceptance_ru": [
+        "Данные и card доступны после публикации",
+        "Факт размещения не назван обучением всех LLM"
+      ],
+      "evidence": [
+        {
+          "kind": "public_url",
+          "url": "https://huggingface.co/datasets/SHARProduction/production-brief-taxonomy"
+        },
+        {
+          "kind": "commit",
+          "value": "368d5524ff24c5cbea6d2872b23dfd4c6f9051c8"
+        },
+        {
+          "kind": "license",
+          "value": "CC-BY-4.0"
+        }
+      ],
+      "next_step": "Publish only rights-cleared versions and preserve provenance."
+    },
+    {
+      "id": "DATA-04",
+      "layer": "datasets",
+      "title_ru": "Добавлять измеряемые наборы и исследовательские выпуски",
+      "priority": "P2",
+      "status": "PLANNED",
+      "depends_on": [
+        "DATA-01"
+      ],
+      "acceptance_ru": [
+        "Измерения не синтезированы как реальные",
+        "Набор/пилот не блокирует PR, профили и инструменты"
+      ],
+      "evidence": [],
+      "next_step": "Collect rights-cleared measured observations under a documented protocol, separately from synthetic examples."
+    },
+    {
+      "id": "CLOUD-01",
+      "layer": "cloud_stacking",
+      "title_ru": "Назначить облачным поверхностям разные полезные функции",
+      "priority": "P1",
+      "status": "LOCAL_READY",
+      "depends_on": [
+        "GH-01",
+        "BASE-03"
+      ],
+      "acceptance_ru": [
+        "Назначение каждой поверхности понятно",
+        "Нет миграции TimeWeb",
+        "Тариф/правила не предполагаются автоматически"
+      ],
+      "evidence": [
+        {
+          "kind": "internal_record",
+          "value": "github-release-map.md"
+        }
+      ],
+      "next_step": "Account-specific plan/terms check before deployment."
+    },
+    {
+      "id": "CLOUD-02",
+      "layer": "cloud_stacking",
+      "title_ru": "Подготовить browser-only explorer или validator для облака",
+      "priority": "P1",
+      "status": "LOCAL_READY",
+      "depends_on": [
+        "CLOUD-01",
+        "GH-02"
+      ],
+      "acceptance_ru": [
+        "Проверено desktop/mobile",
+        "Нет новой базы, логина или скрытых платных вызовов",
+        "Нет утечки введённого брифа"
+      ],
+      "evidence": [
+        {
+          "kind": "internal_record",
+          "value": "test-results.json"
+        }
+      ],
+      "next_step": "Choose primary host and URL; publish explicit dist only."
+    },
+    {
+      "id": "CLOUD-03",
+      "layer": "cloud_stacking",
+      "title_ru": "Развернуть и проверить первую разрешённую cloud-поверхность",
+      "priority": "P1",
+      "status": "PUBLISHED_VERIFIED",
+      "depends_on": [
+        "CLOUD-02",
+        "BASE-03"
+      ],
+      "acceptance_ru": [
+        "URL ведёт на результат, не заглушку",
+        "Не объявлена передача авторитета провайдера",
+        "Локальная сборка не принята за deployment"
+      ],
+      "evidence": [
+        {
+          "kind": "public_url",
+          "url": "https://production-brief-browser.bullolaya.workers.dev/"
+        },
+        {
+          "kind": "http",
+          "value": "200"
+        },
+        {
+          "kind": "desktop_mobile",
+          "value": "PASS"
+        }
+      ],
+      "next_step": "Monitor availability and revalidate every release."
+    },
+    {
+      "id": "CLOUD-04",
+      "layer": "cloud_stacking",
+      "title_ru": "Расширять multi-cloud слой по готовности самостоятельных активов",
+      "priority": "P2",
+      "status": "PLANNED",
+      "depends_on": [
+        "CLOUD-01"
+      ],
+      "acceptance_ru": [
+        "Нет общей численной квоты",
+        "Нет бессодержательных клонов",
+        "Затраты и синхронизация фактов контролируются"
+      ],
+      "evidence": [],
+      "next_step": "Implement next independently useful planner and verify provider-specific terms; no count cap."
+    },
+    {
+      "id": "T1-01",
+      "layer": "tier1",
+      "title_ru": "Выбрать редакционные и партнёрские возможности из master",
+      "priority": "P1",
+      "status": "PLANNED",
+      "depends_on": [
+        "BASE-02"
+      ],
+      "acceptance_ru": [
+        "Площадки и контакты проверены перед отправкой",
+        "Есть тема и доказательный материал",
+        "Tier не выдан за метрику Google"
+      ],
+      "evidence": [],
+      "next_step": "Selected outlets/pitches exist in external/placement-packages.md; current editorial terms/recipient must be verified before submission."
+    },
+    {
+      "id": "T1-02",
+      "layer": "tier1",
+      "title_ru": "Подготовить материалы для редакций и агентских/клиентских credits",
+      "priority": "P1",
+      "status": "AWAITING_OWNER",
+      "depends_on": [
+        "T1-01"
+      ],
+      "acceptance_ru": [
+        "Материалы не ждут большого benchmark",
+        "Чужая роль не присвоена SHAR",
+        "Платное размещение явно отделено от редакционного"
+      ],
+      "evidence": [
+        {
+          "kind": "internal_record",
+          "value": "placement-packages.md"
+        }
+      ],
+      "next_step": "Text drafts ready; author and specific third-party media rights unresolved."
+    },
+    {
+      "id": "T1-03",
+      "layer": "tier1",
+      "title_ru": "Выполнить разрешённые отправки и проверить публикации",
+      "priority": "P1",
+      "status": "AWAITING_OWNER",
+      "depends_on": [
+        "T1-02",
+        "BASE-03"
+      ],
+      "acceptance_ru": [
+        "Pitch не назван отправкой",
+        "Отправка не названа принятием/публикацией",
+        "Публикация проверена по реальной странице"
+      ],
+      "evidence": [
+        {
+          "kind": "internal_record",
+          "value": "placement-packages.md"
+        }
+      ],
+      "next_step": "Authorize exact recipients/material after current editorial terms/route check; no messages sent."
+    },
+    {
+      "id": "T23-01",
+      "layer": "tier23",
+      "title_ru": "Подготовить платформенные версии портфолио и экспертных материалов",
+      "priority": "P1",
+      "status": "AWAITING_OWNER",
+      "depends_on": [
+        "BASE-02"
+      ],
+      "acceptance_ru": [
+        "Формат адаптирован под платформу",
+        "Кредиты и ссылки соответствуют конкретной работе",
+        "Нет подложных участников или отзывов"
+      ],
+      "evidence": [
+        {
+          "kind": "internal_record",
+          "value": "placement-packages.md"
+        }
+      ],
+      "next_step": "Platform text packages ready; source media reuse rights and account verification still required."
+    },
+    {
+      "id": "T23-02",
+      "layer": "tier23",
+      "title_ru": "Распространять материалы на подходящих Tier-2/3 поверхностях",
+      "priority": "P1",
+      "status": "AWAITING_OWNER",
+      "depends_on": [
+        "T23-01",
+        "BASE-03"
+      ],
+      "acceptance_ru": [
+        "Нет универсального потолка площадок",
+        "Каждая отклонённая площадка имеет причину",
+        "Синдикация не посчитана независимой рекомендацией"
+      ],
+      "evidence": [
+        {
+          "kind": "internal_record",
+          "value": "placement-packages.md"
+        }
+      ],
+      "next_step": "Approve platform-specific publication and any required asset rights."
+    },
+    {
+      "id": "PROFILE-01",
+      "layer": "profiles",
+      "title_ru": "Повторно проверить известные конфликты профилей",
+      "priority": "P1",
+      "status": "PLANNED",
+      "depends_on": [
+        "BASE-02"
+      ],
+      "acceptance_ru": [
+        "Старый конфликт не выдан за текущий без проверки",
+        "Неизвестные поля не заполнены догадками",
+        "Нет новой канонической базы цен"
+      ],
+      "evidence": [],
+      "next_step": "Six current conflict drafts exist; review exact corrections and remaining unknown fields in external/correction-drafts.json."
+    },
+    {
+      "id": "PROFILE-02",
+      "layer": "profiles",
+      "title_ru": "Восстановить точные URL и контролируемость аккаунтов",
+      "priority": "P1",
+      "status": "PLANNED",
+      "depends_on": [
+        "BASE-02"
+      ],
+      "acceptance_ru": [
+        "URL получен из источника, не сконструирован как доказательство",
+        "Не найдено не равно не существует"
+      ],
+      "evidence": [],
+      "next_step": "47 URLs remain unknown; work same-domain related IDs before any registration; do not infer absence."
+    },
+    {
+      "id": "PROFILE-03",
+      "layer": "profiles",
+      "title_ru": "Исправить существующие и добавить действительно отсутствующие профили",
+      "priority": "P1",
+      "status": "AWAITING_OWNER",
+      "depends_on": [
+        "PROFILE-01",
+        "PROFILE-02",
+        "BASE-03"
+      ],
+      "acceptance_ru": [
+        "Существующий read-only monitor не редактирует аккаунты",
+        "Нет дублей профилей/фиктивных офисов",
+        "Отдельно указано что выполнено владельцем"
+      ],
+      "evidence": [
+        {
+          "kind": "internal_record",
+          "value": "correction-drafts.json"
+        }
+      ],
+      "next_step": "Owner-controlled correction workflow and exact fields need action approval; monitor remains HEAD-only."
+    },
+    {
+      "id": "PROFILE-04",
+      "layer": "profiles",
+      "title_ru": "Вести reviews и awards по точным платформам и статусам",
+      "priority": "P1",
+      "status": "PLANNED",
+      "depends_on": [
+        "BASE-02"
+      ],
+      "acceptance_ru": [
+        "Шорт-лист не назван победой",
+        "Нет глобального вывода из одной площадки",
+        "Запрос отзывов только реальным клиентам"
+      ],
+      "evidence": [],
+      "next_step": "Preserve11 historical platform review records; make fresh per-platform reads before any review request."
+    },
+    {
+      "id": "TOOLS-01",
+      "layer": "tools",
+      "title_ru": "Проверить и переиспользовать существующий video-cost-calculator",
+      "priority": "P1",
+      "status": "MEASURED",
+      "depends_on": [
+        "BASE-01"
+      ],
+      "acceptance_ru": [
+        "Нет дублирующего калькулятора",
+        "Нет самовольной замены цен",
+        "Исправление только по воспроизводимому дефекту"
+      ],
+      "evidence": [
+        {
+          "kind": "internal_record",
+          "value": "calculator-reuse.md"
+        }
+      ],
+      "next_step": "Reuse existing calculator; resolve observed RU/EN multiplier discrepancy before extracting model."
+    },
+    {
+      "id": "TOOLS-02",
+      "layer": "tools",
+      "title_ru": "Разрабатывать новые самостоятельные planners/checkers",
+      "priority": "P1",
+      "status": "LOCAL_READY",
+      "depends_on": [
+        "GH-01"
+      ],
+      "acceptance_ru": [
+        "Полезный результат без обязательного контакта",
+        "Форма не изображает отправку в несуществующий backend",
+        "RU/EN и клавиатурный сценарий проверены"
+      ],
+      "evidence": [
+        {
+          "kind": "internal_record",
+          "value": "README.md"
+        }
+      ],
+      "next_step": "First completeness checker ready; next planners remain unbounded future tasks."
+    },
+    {
+      "id": "ENTITY-01",
+      "layer": "entity",
+      "title_ru": "Сверить идентичность SHAR и публичные связи",
+      "priority": "P1",
+      "status": "LOCAL_READY",
+      "depends_on": [
+        "BASE-02"
+      ],
+      "acceptance_ru": [
+        "sameAs не присвоен любому упоминанию",
+        "Нет нового бренда вместо SHAR",
+        "Роли людей и компании различаются"
+      ],
+      "evidence": [
+        {
+          "kind": "internal_record",
+          "value": "correction-drafts.json"
+        }
+      ],
+      "next_step": "Canonical identity and roles referenced; no sameAs changes or new entity registration."
+    },
+    {
+      "id": "ENTITY-02",
+      "layer": "entity",
+      "title_ru": "Подготовить подходящие knowledge/cinema submissions",
+      "priority": "P2",
+      "status": "PLANNED",
+      "depends_on": [
+        "ENTITY-01"
+      ],
+      "acceptance_ru": [
+        "Нет гарантии Wikidata/knowledge panel",
+        "IMDb credits только подтверждённые",
+        "Платформенные критерии проверены"
+      ],
+      "evidence": [],
+      "next_step": "Build eligibility dossier from independent sources and actual credits; no Wikidata/IMDb acceptance claim."
+    },
+    {
+      "id": "LINK-01",
+      "layer": "backlinks_citations",
+      "title_ru": "Связать активы по смыслу и происхождению",
+      "priority": "P1",
+      "status": "LOCAL_READY",
+      "depends_on": [
+        "GH-01",
+        "BASE-02"
+      ],
+      "acceptance_ru": [
+        "Нет автоматической сети все-на-все",
+        "Копии одного происхождения не считаются независимыми",
+        "Landing соответствует задаче пользователя"
+      ],
+      "evidence": [
+        {
+          "kind": "internal_record",
+          "value": "intent-map.json"
+        }
+      ],
+      "next_step": "Use specific case/landing links; preserve source dependence."
+    },
+    {
+      "id": "LINK-02",
+      "layer": "backlinks_citations",
+      "title_ru": "Восстанавливать подтверждённые credits и измерять ссылки",
+      "priority": "P1",
+      "status": "PLANNED",
+      "depends_on": [
+        "LINK-01"
+      ],
+      "acceptance_ru": [
+        "Нет сконструированных backlinks",
+        "Запрос и полученная ссылка разделены",
+        "Неизвестный backlink count не равен нулю"
+      ],
+      "evidence": [],
+      "next_step": "Credit requests prepared but not sent; confirm real client/agency identity, permission and exact target page."
+    },
+    {
+      "id": "SEARCH-01",
+      "layer": "search",
+      "title_ru": "Продолжить коммерческую keyword/landing карту",
+      "priority": "P1",
+      "status": "LOCAL_READY",
+      "depends_on": [
+        "BASE-01"
+      ],
+      "acceptance_ru": [
+        "Частотность не выдумана",
+        "Нет страниц на каждый синоним/фиктивный город",
+        "Существующие URL сохраняются"
+      ],
+      "evidence": [
+        {
+          "kind": "internal_record",
+          "value": "intent-map.json"
+        }
+      ],
+      "next_step": "Use24 commercial questions; do not infer frequency or create synonyms pages."
+    },
+    {
+      "id": "SEARCH-02",
+      "layer": "search",
+      "title_ru": "Снять сопоставимую поисковую базу из доступных источников",
+      "priority": "P1",
+      "status": "MEASURED",
+      "depends_on": [
+        "SEARCH-01",
+        "BASE-03"
+      ],
+      "acceptance_ru": [
+        "Нет смешения разных окон GSC",
+        "Indexable не приравнен к indexed",
+        "Недоступный источник не заменён нулём"
+      ],
+      "evidence": [
+        {
+          "kind": "internal_record",
+          "value": "gsc-readonly-evidence.json"
+        }
+      ],
+      "next_step": "GSC measured; Yandex/Bing unavailable remain visible, no zero substitution."
+    },
+    {
+      "id": "AI-01",
+      "layer": "ai_visibility",
+      "title_ru": "Подготовить контрольную панель всех пяти AI-систем",
+      "priority": "P1",
+      "status": "LOCAL_READY",
+      "depends_on": [
+        "SEARCH-01"
+      ],
+      "acceptance_ru": [
+        "ChatGPT/Claude/Gemini/Perplexity/Alice сохранены в охвате",
+        "Версия и режим продукта указаны",
+        "Бренд не подставлен в небрендовый вопрос"
+      ],
+      "evidence": [
+        {
+          "kind": "internal_record",
+          "value": "coverage.json"
+        }
+      ],
+      "next_step": "Run clean independent product sessions when accessible and cost approved."
+    },
+    {
+      "id": "AI-02",
+      "layer": "ai_visibility",
+      "title_ru": "Запустить доступные оценки и проверить реальные ссылки",
+      "priority": "P1",
+      "status": "AWAITING_OWNER",
+      "depends_on": [
+        "AI-01",
+        "BASE-03"
+      ],
+      "acceptance_ru": [
+        "Текущий разговор не принят за независимую цитату",
+        "API не выдан за пользовательский продукт",
+        "MCP-вызов не принят за поисковую рекомендацию"
+      ],
+      "evidence": [
+        {
+          "kind": "internal_record",
+          "value": "coverage.json"
+        }
+      ],
+      "next_step": "No five-system product evaluation completed; supply independent sessions/access and explicit paid-run limit if needed."
+    },
+    {
+      "id": "COMM-01",
+      "layer": "commercial_outcome",
+      "title_ru": "Связать готовые активы с действующим путём обращения",
+      "priority": "P1",
+      "status": "LOCAL_READY",
+      "depends_on": [
+        "SEARCH-01"
+      ],
+      "acceptance_ru": [
+        "Нет публикации персональных данных",
+        "Клики, брифы и сделки различаются",
+        "Причинность не заявлена по совпадению дат"
+      ],
+      "evidence": [
+        {
+          "kind": "internal_record",
+          "value": "intent-map.json"
+        }
+      ],
+      "next_step": "Current contact path verified; GA4/CRM qualification evidence still needed."
+    },
+    {
+      "id": "QA-01",
+      "layer": "qa",
+      "title_ru": "Проверять каждую волну перед публикацией и после неё",
+      "priority": "P1",
+      "status": "LOCAL_READY",
+      "depends_on": [
+        "BASE-01"
+      ],
+      "acceptance_ru": [
+        "Нет утечки private исходников/секретов",
+        "Каждый статус подтверждён соответствующим доказательством",
+        "Все направления утверждённой цепочки остаются в очереди"
+      ],
+      "evidence": [
+        {
+          "kind": "internal_record",
+          "value": "verification.json"
+        }
+      ],
+      "next_step": "Local kit gates complete; inherited website route gate remains separately disclosed."
+    }
+  ]
+}
