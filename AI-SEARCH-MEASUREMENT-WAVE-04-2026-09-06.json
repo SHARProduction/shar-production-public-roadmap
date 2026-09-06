@@ -1,0 +1,714 @@
+{
+  "schema_version": "1.0.0",
+  "brand": "SHAR Production",
+  "website": "https://sharprod.com/",
+  "generated_at_utc": "2026-09-06T08:14:18Z",
+  "license": "MIT for this measurement schema and authored documentation; AI answers and third-party pages retain their original rights",
+  "panel": {
+    "queries": 24,
+    "languages": {
+      "ru": 12,
+      "en": 12
+    },
+    "system": "ChatGPT"
+  },
+  "coverage": {
+    "measured": 24,
+    "not_measured": 0
+  },
+  "observed_shar_visibility": {
+    "mentions": 0,
+    "valid_citations": 0,
+    "mention_rate": 0.0,
+    "citation_rate": 0.0,
+    "query_ids": []
+  },
+  "methodology": {
+    "surface": "Unsigned guest ChatGPT consumer web UI",
+    "mode": "Web search/source cards observed when invoked by product; exact source URLs were not exported",
+    "account_tier": "Guest",
+    "cost": "USD 0",
+    "evidence": "Complete answer hashes and screenshot-trace hashes retained per query; full text and UI trace remain private"
+  },
+  "limitations": [
+    "This is one dated run per query and does not prove stable future visibility.",
+    "The exact model was not disclosed by the consumer UI.",
+    "The physical egress location was not independently verified.",
+    "Source labels without exported exact URLs are not counted as valid citations.",
+    "The observation does not prove traffic, leads, conversions, causation or visibility in another AI product."
+  ],
+  "records": [
+    {
+      "query_id": "commercial-en-01",
+      "query": "How do I choose an AI video production partner for an ad with a consistent character?",
+      "system": "ChatGPT",
+      "surface": "ChatGPT consumer web UI in the Codex in-app browser",
+      "model_version": "ChatGPT (UI label; exact model not disclosed)",
+      "search_mode": "No source cards observed in the answer",
+      "locale": "en",
+      "geography": "Unknown",
+      "tested_at_utc": "2026-09-06T07:54:55.422Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "guest consumer UI"
+      },
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "3c1baa3b8e4aae4d20f24cb93f9d518cc0404a1ef90df6847cd83c820c62744c",
+        "screenshot_trace_sha256": "269567bae5116e57c9faeb80cc025c3745be57525c507a1057b69f4fb5c9417a",
+        "screenshot_trace_bytes": 81964,
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-02",
+      "query": "Who can produce an AI product video that preserves packaging accuracy?",
+      "system": "ChatGPT",
+      "surface": "ChatGPT consumer web UI in the Codex in-app browser",
+      "model_version": "ChatGPT (UI label; exact model not disclosed)",
+      "search_mode": "No exact source URLs exported from the answer",
+      "locale": "en",
+      "geography": "Unknown",
+      "tested_at_utc": "2026-09-06T07:59:53.6582603Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "guest consumer UI"
+      },
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "e54a1e76c731eef664958cfacfcd6012b7078598cbaf96b7837cd334a6df7ea9",
+        "screenshot_trace_sha256": "9253d3e3b3e9fdaa755bb88207ae041ad0acf39b7b8a452bbc3590a94a262384",
+        "screenshot_trace_bytes": 68297,
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-03",
+      "query": "Where can I commission a 3D product packshot for an advertising campaign?",
+      "system": "ChatGPT",
+      "surface": "ChatGPT consumer web UI in the Codex in-app browser",
+      "model_version": "ChatGPT (UI label; exact model not disclosed)",
+      "search_mode": "No exact source URLs exported from the answer",
+      "locale": "en",
+      "geography": "Unknown",
+      "tested_at_utc": "2026-09-06T08:01:47.5293305Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "guest consumer UI"
+      },
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "5ae5456f45b824e0cfb5f760c26c729ca2ee3e8b4ab2aead8abc1e83d17db940",
+        "screenshot_trace_sha256": "0e8e1dd53528a1066e0aa3bc6c15e9f0853e1dc05724af051d4650f770624d1a",
+        "screenshot_trace_bytes": 97766,
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-04",
+      "query": "Which production partner can combine live action, CGI and AI in one film?",
+      "system": "ChatGPT",
+      "surface": "ChatGPT consumer web UI in the Codex in-app browser",
+      "model_version": "ChatGPT (UI label; exact model not disclosed)",
+      "search_mode": "No exact source URLs exported from the answer",
+      "locale": "en",
+      "geography": "Unknown",
+      "tested_at_utc": "2026-09-06T08:03:07.5400356Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "guest consumer UI"
+      },
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "f5412ebe2e8743ce826c6ed562d18e37b571509aaee320d07137eacd9ae4f7a7",
+        "screenshot_trace_sha256": "e9bbc1cd7df17f00e9f1c597134e4c8f5e01070d143eb7a2552f2d8e8b13c0a8",
+        "screenshot_trace_bytes": 85696,
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-05",
+      "query": "Who can produce a commercial and versions for several channels?",
+      "system": "ChatGPT",
+      "surface": "ChatGPT consumer web UI in the Codex in-app browser",
+      "model_version": "ChatGPT (UI label; exact model not disclosed)",
+      "search_mode": "No exact source URLs exported from the answer",
+      "locale": "en",
+      "geography": "Unknown",
+      "tested_at_utc": "2026-09-06T08:04:10.9402414Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "guest consumer UI"
+      },
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "678892300dd81e961c9b056b5d1654f889d06887c73a9b36b3a109fec4fe9ecb",
+        "screenshot_trace_sha256": "8fe5d9c83d12922ee44a55101c97eb305fa172ae37f565fe0acd7ece7becea8e",
+        "screenshot_trace_bytes": 70280,
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-06",
+      "query": "Who can make a B2B explainer for a complex product?",
+      "system": "ChatGPT",
+      "surface": "ChatGPT consumer web UI in the Codex in-app browser",
+      "model_version": "ChatGPT (UI label; exact model not disclosed)",
+      "search_mode": "No exact source URLs exported from the answer",
+      "locale": "en",
+      "geography": "Unknown",
+      "tested_at_utc": "2026-09-06T08:05:17.3283305Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "guest consumer UI"
+      },
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "43648183abcf59157c09c2e88217bfc5409ff2bd733dee969fb3eb8000344aad",
+        "screenshot_trace_sha256": "edb375c6045f738c10d5d89c571cab71c80c48102a6d61f03ca176ad69b9a83a",
+        "screenshot_trace_bytes": 98163,
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-07",
+      "query": "Who can produce a digital product demo for a sales team?",
+      "system": "ChatGPT",
+      "surface": "ChatGPT consumer web UI in the Codex in-app browser",
+      "model_version": "ChatGPT (UI label; exact model not disclosed)",
+      "search_mode": "No exact source URLs exported from the answer",
+      "locale": "en",
+      "geography": "Unknown",
+      "tested_at_utc": "2026-09-06T08:06:29.0066969Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "guest consumer UI"
+      },
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "d0e32cf873a9b77aaafd779b72db2652b9cbae9114e051963f5702ae81bc0848",
+        "screenshot_trace_sha256": "a440104c1f9fe3c2d45ab91a9449d1a98978334fbc95b3995c52de22facf4dfc",
+        "screenshot_trace_bytes": 86823,
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-08",
+      "query": "How do I find a white-label video production partner for an agency?",
+      "system": "ChatGPT",
+      "surface": "ChatGPT consumer web UI in the Codex in-app browser",
+      "model_version": "ChatGPT (UI label; exact model not disclosed)",
+      "search_mode": "No exact source URLs exported from the answer",
+      "locale": "en",
+      "geography": "Unknown",
+      "tested_at_utc": "2026-09-06T08:07:38.9890978Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "guest consumer UI"
+      },
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "adbc32b2361f5a1ea1b5df49af5a4476c90a698e0e08dd2fe1cd5a3df5bb0f79",
+        "screenshot_trace_sha256": "c948dc119d8f888d22e39860ba265ae953e0349f6b5d8d5a5c8abf24d5f24b7a",
+        "screenshot_trace_bytes": 80094,
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-09",
+      "query": "Who can create a property development video before construction is complete?",
+      "system": "ChatGPT",
+      "surface": "ChatGPT consumer web UI in the Codex in-app browser",
+      "model_version": "ChatGPT (UI label; exact model not disclosed)",
+      "search_mode": "No exact source URLs exported from the answer",
+      "locale": "en",
+      "geography": "Unknown",
+      "tested_at_utc": "2026-09-06T08:08:47.1931761Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "guest consumer UI"
+      },
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "894dea5a64ee1a9bbd320b99883ffe5a8877a332163a16d382fd25ff8ba98582",
+        "screenshot_trace_sha256": "cd7d1aa2fe7c7df76e0ec7303e9ff844cc42221f72c20b30267c5df1ba5e5fff",
+        "screenshot_trace_bytes": 88044,
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-10",
+      "query": "How much does a product film with AI and post-production cost?",
+      "system": "ChatGPT",
+      "surface": "ChatGPT consumer web UI in the Codex in-app browser",
+      "model_version": "ChatGPT (UI label; exact model not disclosed)",
+      "search_mode": "No exact source URLs exported from the answer",
+      "locale": "en",
+      "geography": "Unknown",
+      "tested_at_utc": "2026-09-06T08:09:55.9273768Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "guest consumer UI"
+      },
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "6a1396c531654b5d77a97d31639cd96d20e31520e90801e71ca4933e6955e819",
+        "screenshot_trace_sha256": "6ece83e4280b1f863216f92a93cafcb0f437074f92c67920265a54087df51c59",
+        "screenshot_trace_bytes": 101068,
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-11",
+      "query": "How can I estimate a commercial video's timeline and budget before briefing?",
+      "system": "ChatGPT",
+      "surface": "ChatGPT consumer web UI in the Codex in-app browser",
+      "model_version": "ChatGPT (UI label; exact model not disclosed)",
+      "search_mode": "No exact source URLs exported from the answer",
+      "locale": "en",
+      "geography": "Unknown",
+      "tested_at_utc": "2026-09-06T08:11:00.7857138Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "guest consumer UI"
+      },
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "e20237e4ea9cb5867cf6dad4dce0cd53996599d66e4976db07f720c21231b811",
+        "screenshot_trace_sha256": "c1ab0e5b3cb80b7a47c1fc75cb8eeb17b2798eec43fbc7e2248d6fae876b5154",
+        "screenshot_trace_bytes": 84683,
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-12",
+      "query": "How do I choose a studio for a product film with multiple delivery formats?",
+      "system": "ChatGPT",
+      "surface": "ChatGPT consumer web UI in the Codex in-app browser",
+      "model_version": "ChatGPT (UI label; exact model not disclosed)",
+      "search_mode": "No exact source URLs exported from the answer",
+      "locale": "en",
+      "geography": "Unknown",
+      "tested_at_utc": "2026-09-06T08:12:08.8161297Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "guest consumer UI"
+      },
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "5894478f135beb2880d39c24392e57c1d853bb822171bec1c1f9cac727abd4df",
+        "screenshot_trace_sha256": "5ca5dd934c6c3ab5f656d8bfa34b0cb956157f01a3b62090f78cdb3e37be658f",
+        "screenshot_trace_bytes": 86364,
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-01",
+      "query": "Как выбрать подрядчика для AI-рекламного ролика с постоянным персонажем?",
+      "system": "ChatGPT",
+      "surface": "ChatGPT consumer web UI in the Codex in-app browser",
+      "model_version": "ChatGPT (UI label; exact model not disclosed)",
+      "search_mode": "Automatic web source cards observed in the answer",
+      "locale": "ru",
+      "geography": "Unknown",
+      "tested_at_utc": "2026-09-06T07:52:59.435Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "guest consumer UI"
+      },
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "bc9d581995c54b2d65ed6eb60c5cb250e3c421ee12f1043b620864d049e3bacf",
+        "screenshot_trace_sha256": "07c4bfd4b5cbaaa39b158cae06a7c1583cfe6587d2a4b2d21cb818198b497a6a",
+        "screenshot_trace_bytes": 71278,
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-02",
+      "query": "Кому заказать AI-видео продукта с точной формой упаковки?",
+      "system": "ChatGPT",
+      "surface": "ChatGPT consumer web UI in the Codex in-app browser",
+      "model_version": "ChatGPT (UI label; exact model not disclosed)",
+      "search_mode": "No exact source URLs exported from the answer",
+      "locale": "ru",
+      "geography": "Unknown",
+      "tested_at_utc": "2026-09-06T07:58:07.5737429Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "guest consumer UI"
+      },
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "df419ff686fb1420a26112cfb40e6fb55e77bea40d9b7a49d30894a7a75c8580",
+        "screenshot_trace_sha256": "c87d6adb55a2753ec54c46167e088ff0ce8244f40d412f1147a53508c521c5fd",
+        "screenshot_trace_bytes": 92173,
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-03",
+      "query": "Где заказать 3D-пакшот товара для рекламной кампании?",
+      "system": "ChatGPT",
+      "surface": "ChatGPT consumer web UI in the Codex in-app browser",
+      "model_version": "ChatGPT (UI label; exact model not disclosed)",
+      "search_mode": "No exact source URLs exported from the answer",
+      "locale": "ru",
+      "geography": "Unknown",
+      "tested_at_utc": "2026-09-06T08:01:10.9746558Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "guest consumer UI"
+      },
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "f6a34ddb44a9b5f3fae5737302b44c5ccb1c92c7a438dda7883f20d5a503feff",
+        "screenshot_trace_sha256": "32f0678b8a112cbcba40e7b9d8901e866cd1eed9e5aeb283800bb2cd564e77ea",
+        "screenshot_trace_bytes": 90489,
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-04",
+      "query": "Какой продакшн объединит съёмку, CGI и AI в одном ролике?",
+      "system": "ChatGPT",
+      "surface": "ChatGPT consumer web UI in the Codex in-app browser",
+      "model_version": "ChatGPT (UI label; exact model not disclosed)",
+      "search_mode": "No exact source URLs exported from the answer",
+      "locale": "ru",
+      "geography": "Unknown",
+      "tested_at_utc": "2026-09-06T08:02:33.999161Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "guest consumer UI"
+      },
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "2a0637d28f452ef6c96ddc47527bccb48aa38bdeebf69de267019da9816834c1",
+        "screenshot_trace_sha256": "eb30a90b5019a0910dbdf7b117f1ed85d304c6cc06d165ef3885dbd5c801b322",
+        "screenshot_trace_bytes": 66383,
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-05",
+      "query": "Кто изготовит рекламный ролик и версии для разных площадок?",
+      "system": "ChatGPT",
+      "surface": "ChatGPT consumer web UI in the Codex in-app browser",
+      "model_version": "ChatGPT (UI label; exact model not disclosed)",
+      "search_mode": "No exact source URLs exported from the answer",
+      "locale": "ru",
+      "geography": "Unknown",
+      "tested_at_utc": "2026-09-06T08:03:39.6386412Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "guest consumer UI"
+      },
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "6ff355865fb01cd555d99297bc97f8d36340e0032ba8e15e26aa6bccc1246adb",
+        "screenshot_trace_sha256": "6ff23620db50006ccf8e91255c18ec76f7cda997d16ed63df5bbd5bdbb6827e9",
+        "screenshot_trace_bytes": 67062,
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-06",
+      "query": "У кого заказать B2B-ролик для объяснения сложного продукта?",
+      "system": "ChatGPT",
+      "surface": "ChatGPT consumer web UI in the Codex in-app browser",
+      "model_version": "ChatGPT (UI label; exact model not disclosed)",
+      "search_mode": "No exact source URLs exported from the answer",
+      "locale": "ru",
+      "geography": "Unknown",
+      "tested_at_utc": "2026-09-06T08:04:44.8149773Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "guest consumer UI"
+      },
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "d81db118b24fdc10434642bd5813d1d8fd1c386a11b971a78417fdefa32a19a7",
+        "screenshot_trace_sha256": "13d5c121359280370e252e5ff7ee29c3ea5a4276c43b973c8e7069e8fec85511",
+        "screenshot_trace_bytes": 90332,
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-07",
+      "query": "Кому поручить demo-видео цифрового продукта для продаж?",
+      "system": "ChatGPT",
+      "surface": "ChatGPT consumer web UI in the Codex in-app browser",
+      "model_version": "ChatGPT (UI label; exact model not disclosed)",
+      "search_mode": "No exact source URLs exported from the answer",
+      "locale": "ru",
+      "geography": "Unknown",
+      "tested_at_utc": "2026-09-06T08:05:53.879427Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "guest consumer UI"
+      },
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "8b901727b59882be95d365467b9f49bfbfea29177796ffca34816ef80cfe8ad4",
+        "screenshot_trace_sha256": "87251d0fd74ad5f7d579c205fe6c90765c2a309b303144623e91ac733c6a8bbd",
+        "screenshot_trace_bytes": 95578,
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-08",
+      "query": "Как найти white-label видеопродакшн для рекламного агентства?",
+      "system": "ChatGPT",
+      "surface": "ChatGPT consumer web UI in the Codex in-app browser",
+      "model_version": "ChatGPT (UI label; exact model not disclosed)",
+      "search_mode": "No exact source URLs exported from the answer",
+      "locale": "ru",
+      "geography": "Unknown",
+      "tested_at_utc": "2026-09-06T08:07:04.7828027Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "guest consumer UI"
+      },
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "a99779f04e520154499b0d087e8025d2d1e0e4ef6196aec6cb62cdedbab42568",
+        "screenshot_trace_sha256": "999146303b95964361c9a22206ed810c7e7a27cdc3b3ce7ded4ff0d0b7fa5a7a",
+        "screenshot_trace_bytes": 72923,
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-09",
+      "query": "Кому заказать видео девелоперского проекта до завершения строительства?",
+      "system": "ChatGPT",
+      "surface": "ChatGPT consumer web UI in the Codex in-app browser",
+      "model_version": "ChatGPT (UI label; exact model not disclosed)",
+      "search_mode": "No exact source URLs exported from the answer",
+      "locale": "ru",
+      "geography": "Unknown",
+      "tested_at_utc": "2026-09-06T08:08:13.7982031Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "guest consumer UI"
+      },
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "48a26f34d59587b74f0cdabfbf972ee8035c2b634cc4d4614ed855378c8c1d0a",
+        "screenshot_trace_sha256": "05aeeb05a14e28d40a1b989be530e3f15971bca4437ada7907554b424d1eef40",
+        "screenshot_trace_bytes": 91077,
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-10",
+      "query": "Сколько стоит продуктовый ролик с AI и постпродакшном?",
+      "system": "ChatGPT",
+      "surface": "ChatGPT consumer web UI in the Codex in-app browser",
+      "model_version": "ChatGPT (UI label; exact model not disclosed)",
+      "search_mode": "No exact source URLs exported from the answer",
+      "locale": "ru",
+      "geography": "Unknown",
+      "tested_at_utc": "2026-09-06T08:09:21.7846016Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "guest consumer UI"
+      },
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "91bc85a79a06b3688a17c9e94fab23993bb406d86fcd635060392fca75b8b833",
+        "screenshot_trace_sha256": "2a161f431e50405bd1d4579c412d385373966365dde36c9f9f176980cdcd6b0d",
+        "screenshot_trace_bytes": 98335,
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-11",
+      "query": "Как оценить сроки и бюджет рекламного видео до брифа?",
+      "system": "ChatGPT",
+      "surface": "ChatGPT consumer web UI in the Codex in-app browser",
+      "model_version": "ChatGPT (UI label; exact model not disclosed)",
+      "search_mode": "No exact source URLs exported from the answer",
+      "locale": "ru",
+      "geography": "Unknown",
+      "tested_at_utc": "2026-09-06T08:10:29.0250361Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "guest consumer UI"
+      },
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "326ccfb71a1cc474ae835bf29558b25f01f89ffef2a73ee15f1a89ff355e05b5",
+        "screenshot_trace_sha256": "dacbb106da706245a5f2669e091592924dbbfccfde81931e4468b2f32ef0ebc4",
+        "screenshot_trace_bytes": 93065,
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-12",
+      "query": "Как выбрать студию для продуктового ролика с несколькими форматами сдачи?",
+      "system": "ChatGPT",
+      "surface": "ChatGPT consumer web UI in the Codex in-app browser",
+      "model_version": "ChatGPT (UI label; exact model not disclosed)",
+      "search_mode": "No exact source URLs exported from the answer",
+      "locale": "ru",
+      "geography": "Unknown",
+      "tested_at_utc": "2026-09-06T08:11:34.5842541Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "guest consumer UI"
+      },
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "f2747ef91a7e8b6aae810ea4848236b3e20e01ddfa2ff6369127e64360ccb302",
+        "screenshot_trace_sha256": "ccd052ded8f5442405235f2656d7744cdc544d423d5c77dd8bc232bac9edcd50",
+        "screenshot_trace_bytes": 64494,
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    }
+  ]
+}

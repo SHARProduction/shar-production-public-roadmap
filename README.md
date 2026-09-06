@@ -21,7 +21,7 @@ These results do not imply search ranking, third-party adoption, LLM training, e
 - Tasks: **36**
 - Status distribution: LOCAL_READY 9, MEASURED 6, PLANNED 5, PUBLISHED_VERIFIED 15, SUBMITTED 1.
 - Exact external-profile recovery now uses the correct 40-row owner-reported denominator: 12 owner-account URLs are recovered, one row is closed by the provider refusal, and 27 remain unresolved. Two additional exact URLs (Orgpage and Product Hunt) are tracked as supplemental recoveries. The recovered X account is public but lacks SHAR Production and sharprod.com, so it is a correction candidate and not a placement. Ko-fi remains the one recovered provider-noindex page.
-- Controlled AI/search coverage: 81 of 192 product/query slots are measured (Google 24/24, Bing 9/24, Alice 24/24, Gemini 24/24); 111 remain unmeasured. The dated Alice run produced seven SHAR mentions and five independently HTTP-verified linked citations; the Gemini Flash run produced one mention and zero direct valid citations.
+- Controlled AI/search coverage: 105 of 192 product/query slots are measured (Google 24/24, Bing 9/24, Alice 24/24, Gemini 24/24, ChatGPT 24/24); 87 remain unmeasured. The dated Alice run produced seven SHAR mentions and five independently HTTP-verified linked citations; Gemini Flash produced one mention and zero direct valid citations; unsigned guest ChatGPT produced zero mentions and zero direct valid citations.
 - No legacy repository, main-domain, DNS, Timeweb, paid-plan, domain-purchase, or GPU change is represented.
 
 ## Layers
@@ -53,7 +53,8 @@ These results do not imply search ranking, third-party adoption, LLM training, e
 - SEARCH-MEASUREMENT-WAVE-01-2026-09-06.json — 72-slot Google/Bing/Yandex record with 33 measured slots and five inspected Google citations to SHAR Production.
 - AI-SEARCH-MEASUREMENT-WAVE-02-2026-09-06.json — 24/24 Alice consumer-answer observations with seven SHAR mentions and five valid linked citations.
 - AI-SEARCH-MEASUREMENT-WAVE-03-2026-09-06.json — 24/24 Gemini Flash consumer-answer observations with one SHAR mention, zero direct valid citations and 59 unique extracted source URLs.
-- build-ai-wave.py, validate-ai-wave.py and validate-gemini-wave.py — public-safe assembly and invariant validation for the Alice and Gemini waves; complete answers and screenshots remain in the private checkpoint.
+- AI-SEARCH-MEASUREMENT-WAVE-04-2026-09-06.json — 24/24 unsigned guest ChatGPT consumer-answer observations with zero SHAR mentions and zero direct valid citations.
+- build-ai-wave.py, validate-ai-wave.py, validate-gemini-wave.py and validate-chatgpt-wave.py — public-safe assembly and invariant validation for the Alice, Gemini and ChatGPT waves; complete answers and screenshots remain in the private checkpoint.
 - run-serp-panel.py, build-search-wave.py and validate-search-wave.py — reproducible capture, public-safe assembly and invariant validation for the search panel (`requirements-search.txt`).
 - EXTERNAL-VERIFICATION-2026-09-06.json — dated exact-URL recovery, live conflict observations, resolved redirects, and search misses.
 - EXTERNAL-REGISTRY-RECHECK-2026-09-06.json — repeat HTTP/content observations for 66 earlier-known exact public rows.
