@@ -18,6 +18,7 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--evidence-dir", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--system", required=True)
     args = parser.parse_args()
 
     records = []
@@ -43,15 +44,15 @@ def main() -> None:
             {
                 "query_id": row["query_id"],
                 "query": row["query"],
-                "system": "Alice",
+                "system": row.get("system", args.system),
                 "surface": row["surface"],
-                "model_version": "NOT_DISCLOSED",
-                "search_mode": row["product_mode"],
+                "model_version": row.get("model_version", "NOT_DISCLOSED"),
+                "search_mode": row.get("product_mode", row.get("search_mode", "NOT_DISCLOSED")),
                 "locale": row["locale"],
                 "geography": "Account/UI locale observed; physical egress location not independently verified",
                 "tested_at_utc": row["tested_at_utc"],
-                "repetition": 1,
-                "cost": {"amount": 0, "currency": "USD", "basis": "observed free account tier"},
+                "repetition": row.get("repetition", 1),
+                "cost": row.get("cost", {"amount": 0, "currency": "USD", "basis": "observed free account tier"}),
                 "conversation_url": row["conversation_url"],
                 "status": row["status"],
                 "raw_evidence": {
@@ -77,19 +78,23 @@ def main() -> None:
         "website": "https://sharprod.com/",
         "generated_at_utc": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
         "license": "MIT for this measurement schema and authored documentation; AI answers and third-party pages retain their original rights",
-        "panel": {"queries": 24, "languages": {"ru": 12, "en": 12}, "system": "Alice"},
+        "panel": {"queries": 24, "languages": {"ru": 12, "en": 12}, "system": args.system},
         "coverage": {"measured": len(records), "not_measured": 24 - len(records)},
         "observed_shar_visibility": {
             "mentions": len(mentioned),
             "valid_citations": len(cited),
             "mention_rate": len(mentioned) / len(records) if records else 0,
             "citation_rate": len(cited) / len(records) if records else 0,
-            "citation_target_http_verification": "All four unique sharprod.com targets returned HTTP 200, exposed exact self-canonical URLs and contained the brand in a separate dated check.",
+            "citation_target_http_verification": (
+                "All direct SHAR citation targets were checked separately when present; no direct SHAR target existed in this wave."
+                if not cited
+                else "Direct SHAR citation targets were checked separately for HTTP and page identity."
+            ),
             "query_ids": [r["query_id"] for r in mentioned],
         },
         "methodology": {
-            "surface": "Signed-in Alice AI consumer web UI",
-            "mode": "Intelligence: Auto",
+            "surface": records[0]["surface"] if records else "NOT_MEASURED",
+            "mode": records[0]["search_mode"] if records else "NOT_MEASURED",
             "account_tier": "Free",
             "cost": "USD 0",
             "evidence": "Complete answer hash, accessibility-tree hash, screenshot hash, conversation URL and all extracted source URLs retained per query.",

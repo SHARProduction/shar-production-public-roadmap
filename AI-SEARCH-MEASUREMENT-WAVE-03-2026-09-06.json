@@ -1,0 +1,862 @@
+{
+  "schema_version": "1.0.0",
+  "brand": "SHAR Production",
+  "website": "https://sharprod.com/",
+  "generated_at_utc": "2026-09-06T06:25:59Z",
+  "license": "MIT for this measurement schema and authored documentation; AI answers and third-party pages retain their original rights",
+  "panel": {
+    "queries": 24,
+    "languages": {
+      "ru": 12,
+      "en": 12
+    },
+    "system": "Gemini"
+  },
+  "coverage": {
+    "measured": 24,
+    "not_measured": 0
+  },
+  "observed_shar_visibility": {
+    "mentions": 1,
+    "valid_citations": 0,
+    "mention_rate": 0.041666666666666664,
+    "citation_rate": 0.0,
+    "citation_target_http_verification": "All direct SHAR citation targets were checked separately when present; no direct SHAR target existed in this wave.",
+    "query_ids": [
+      "commercial-ru-04"
+    ]
+  },
+  "methodology": {
+    "surface": "Signed-in Gemini consumer web UI",
+    "mode": "Automatic web search observed when invoked by product",
+    "account_tier": "Free",
+    "cost": "USD 0",
+    "evidence": "Complete answer hash, accessibility-tree hash, screenshot hash, conversation URL and all extracted source URLs retained per query."
+  },
+  "limitations": [
+    "This is one dated run per query and does not prove stable future visibility.",
+    "Alice did not disclose a model version in the observed UI.",
+    "The physical egress location was not independently verified.",
+    "A brand mention without a direct source URL is classified separately from a valid citation.",
+    "The observation does not prove traffic, leads, conversions, causation or visibility in another AI product."
+  ],
+  "records": [
+    {
+      "query_id": "commercial-en-01",
+      "query": "How do I choose an AI video production partner for an ad with a consistent character?",
+      "system": "Gemini",
+      "surface": "Signed-in Gemini consumer web UI",
+      "model_version": "Flash (UI label)",
+      "search_mode": "Automatic web search observed when invoked by product",
+      "locale": "en",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T06:15:48.734Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free consumer account"
+      },
+      "conversation_url": "https://gemini.google.com/app",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "09cd2831e9f9803be8eb2bb7c8df89da4d75cd4b5b98d3612f3888b68990a786",
+        "ax_file": "commercial-en-01.ax.txt",
+        "ax_sha256": "e646fd101a657824354b746d909cd5dcdd6d5486db2ded9835344bc84156fbb6",
+        "desktop_screenshot": "commercial-en-01.desktop.png",
+        "desktop_screenshot_sha256": "dc2f42f802ea30dc88d56d6ff38904b76b772efafc6bd716b432cebcb88e4184",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://pixverse.ai/en/blog/ai-video-generator-with-character-consistency#:~:text=Share%20reference%20images%3A%20Store%20approved%20stills%20in,across%20episodes%20or%20ads.%20Refresh%20character%20sheets%3B",
+        "https://elements.envato.com/learn/ai-video-consistent-character#:~:text=This%20same%20foundation%20is%20crucial%20when%20building,in.%20They%20act%20as%20a%20visual%20anchor.",
+        "https://invideo.io/faq/what-is-the-best-ai-tool-for-keeping-brand-consistency/#:~:text=market%20localizations%20%E2%80%94%20new%20character%20sheets%2C%20translated,threshold%20that%20auto%2Dregenerates%20if%20vocal%20consistency%20slips.",
+        "https://pixverse.ai/en/blog/ai-video-generator-with-character-consistency#:~:text=Master%20character%20sheet%3A%20Confirm%20the%20latest%20sheet,attached%20for%20every%20shot%20in%20a%20sequence."
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-02",
+      "query": "Who can produce an AI product video that preserves packaging accuracy?",
+      "system": "Gemini",
+      "surface": "Signed-in Gemini consumer web UI",
+      "model_version": "Flash (UI label)",
+      "search_mode": "Automatic web search observed when invoked by product",
+      "locale": "en",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T06:16:50.061Z",
+      "repetition": 2,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free consumer account"
+      },
+      "conversation_url": "https://gemini.google.com/app",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "7acb827d187fe14e4d8068822fc0cfe6b9c3c9dd78749a84764613b2437e89fd",
+        "ax_file": "commercial-en-02.ax.txt",
+        "ax_sha256": "0714664f215b8004bee08ec5711425e68d019135647562e153d81f5070b56210",
+        "desktop_screenshot": "commercial-en-02.desktop.png",
+        "desktop_screenshot_sha256": "5bdb31d437472464599705bb052edc1e0505b25aacb23aabe4f0fe8fa49c9e0e",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.pacdora.com/tools/ai-packaging-video-generator#:~:text=No.%20Pacdora%20uses%20your%20existing%203D%20packaging,handle%20everything%20from%20animation%20to%20final%20export.",
+        "https://www.pacdora.com/tools/ai-packaging-video-generator#:~:text=Pacdora%20turns%20your%203D%20packaging%20model%20into,moves.%20Turn%20design%20into%20video%20in%20minutes.",
+        "https://www.lambdafilms.co.uk/ai-tools-product-consistency/#:~:text=General%20ecommerce%20video%20tools%20optimize%20for%20speed,hero%20commercials%20than%20for%20high%2Dvolume%20ad%20testing.",
+        "https://www.lambdafilms.co.uk/ai-tools-product-consistency/#:~:text=Product%20info%20%2B%20avatar.%20Consistent%20across%20120%2B,image%20or%20website%20photo%20tends%20to%20lose.",
+        "https://higgsfield.ai/ai-product-video-generator#:~:text=Keep%20Every%20Product%20Consistent%20and%20On%2DBrand.%20AI,shape%2C%20label%2C%20and%20color%20frame%20to%20frame."
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-03",
+      "query": "Where can I commission a 3D product packshot for an advertising campaign?",
+      "system": "Gemini",
+      "surface": "Signed-in Gemini consumer web UI",
+      "model_version": "Flash (UI label)",
+      "search_mode": "Automatic web search observed when invoked by product",
+      "locale": "en",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T06:17:05.488Z",
+      "repetition": 2,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free consumer account"
+      },
+      "conversation_url": "https://gemini.google.com/app",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "35d84e94123349635b53bd171c00f1885eed53491ca1ba4cb6184d955a22d1f0",
+        "ax_file": "commercial-en-03.ax.txt",
+        "ax_sha256": "b826c86fa5a219939657e881c974c5e8cdbeb29026c5e2108665c933c8c6ba40",
+        "desktop_screenshot": "commercial-en-03.desktop.png",
+        "desktop_screenshot_sha256": "d5b91c71340da0b3c4069bb3dc99e09f476dd9007fc3094903bab49f8bca54a9",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-04",
+      "query": "Which production partner can combine live action, CGI and AI in one film?",
+      "system": "Gemini",
+      "surface": "Signed-in Gemini consumer web UI",
+      "model_version": "Flash (UI label)",
+      "search_mode": "Automatic web search observed when invoked by product",
+      "locale": "en",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T06:17:24.277Z",
+      "repetition": 2,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free consumer account"
+      },
+      "conversation_url": "https://gemini.google.com/app",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "e7fbbff1a52cccd582a10fc4eaa2462b7892209df506b5cd621b113aee252f07",
+        "ax_file": "commercial-en-04.ax.txt",
+        "ax_sha256": "cb6094e3bea4ec9f1a25ac3af939226be03ba71b6b4e99eba3ccb3170ffe4abd",
+        "desktop_screenshot": "commercial-en-04.desktop.png",
+        "desktop_screenshot_sha256": "bcc1e0f3eaceba65dc36f2186de770f365e1f4771005ba3148060b8c7a4763c1",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://ai25.studio/#:~:text=Their%20inclusion%20does%20not%20imply%20endorsement%2C%20sponsorship%2C,integrated%20pipeline%20built%20for%20high%2Dend%20commercial.%20AI25.",
+        "https://www.madnss.com/ai-film-production#:~:text=We%20create%20visual%20directions%2C%20style%20frames%20and,sound%20design%20and%20delivery.%20*%20Campaign%20Deployment.",
+        "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/ancestra-behind-the-scenes/#:~:text=Google%20DeepMind%20partnered%20with%20Primordial%20Soup%20to,matching%2C%20and%20blending%20live%2Daction%20with%20generated%20footage.",
+        "https://adamandgary.com/services/#:~:text=We%20also%20handle%20set%20extensions%2C%20green%20screen,AI%20Concepting%20%E2%80%A2%20Style%20Frames.%20TV%20Adverts.",
+        "https://www.sweetspotcreatives.com/hybrid-ai-live-action#:~:text=SweetSpot%20represents%20VFX%20and%20AI%20studios%20that,realistic%20scoping%2C%20clear%20expectations%20and%20reliable%20delivery.",
+        "https://www.sweetspotcreatives.com/hybrid-ai-live-action#:~:text=This%20type%20of%20work%20is%20often%20used,approach%20to%20AI%20VFX%20for%20advertising%20here.",
+        "https://adamandgary.com/services/#:~:text=Our%20VFX%20work%20brings%20the%20impossible%20to,human%20touch%20front%20and%20centre.%20More%20Details."
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-05",
+      "query": "Who can produce a commercial and versions for several channels?",
+      "system": "Gemini",
+      "surface": "Signed-in Gemini consumer web UI",
+      "model_version": "Flash (UI label)",
+      "search_mode": "Automatic web search observed when invoked by product",
+      "locale": "en",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T06:17:44.858Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free consumer account"
+      },
+      "conversation_url": "https://gemini.google.com/app",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "49df4a0962d322796efb32aee047ed68e2e781e24320966aa9794ff2150945df",
+        "ax_file": "commercial-en-05.ax.txt",
+        "ax_sha256": "35c124caedfec47c8a7bb477b291c529e69f83abaf8550eb782131430c847901",
+        "desktop_screenshot": "commercial-en-05.desktop.png",
+        "desktop_screenshot_sha256": "3176e8adaba64d01aac28193ab5024a2d5e4d66bb56741fd12ae551376cd9e05",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-06",
+      "query": "Who can make a B2B explainer for a complex product?",
+      "system": "Gemini",
+      "surface": "Signed-in Gemini consumer web UI",
+      "model_version": "Flash (UI label)",
+      "search_mode": "Automatic web search observed when invoked by product",
+      "locale": "en",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T06:18:01.274Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free consumer account"
+      },
+      "conversation_url": "https://gemini.google.com/app",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "8f3f57aa66df5e79abf625cfaa23b9fc6e3a857a5841c1bef81bf39b0fd93d51",
+        "ax_file": "commercial-en-06.ax.txt",
+        "ax_sha256": "710213d6fde05af674b51981c42cebe6fbcf746f023d33aade3a411deeec4a94",
+        "desktop_screenshot": "commercial-en-06.desktop.png",
+        "desktop_screenshot_sha256": "334c79ba4c9145dcd2ee1ff9716876b643817830800fc889e75eb01ea862e15c",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://ultimatevideo.co/blog/best-explainer-video-agency-for-b2b-saas-2026/#:~:text=That's%20the%20standard%20we%20hold%20ourselves%20to.,Services%20for%20Tech%20Brands.%20*%20Teaser%20Vs.",
+        "https://ultimatevideo.co/blog/best-explainer-video-agency-for-b2b-saas-2026/#:~:text=Look%20for%20an%20agency%20with%20a%20proven,demo%20bookings%2C%20trial%20signups%2C%20and%20product%20activation.",
+        "https://contentbuck.com/explainer-videos#:~:text=ContentBuck%20is%20right%20for%20you%20if%3A%20*,professional%20animated%20video%2C%20not%20a%20screen%20recording."
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-07",
+      "query": "Who can produce a digital product demo for a sales team?",
+      "system": "Gemini",
+      "surface": "Signed-in Gemini consumer web UI",
+      "model_version": "Flash (UI label)",
+      "search_mode": "Automatic web search observed when invoked by product",
+      "locale": "en",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T06:18:18.531Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free consumer account"
+      },
+      "conversation_url": "https://gemini.google.com/app",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "7ff835f8ca7729c1d0bbb9d503b9e4c08782874c92adfb08ba147b9b60e9442e",
+        "ax_file": "commercial-en-07.ax.txt",
+        "ax_sha256": "e4222e496ac7869c47f4b7f1a76583e1ce7b2469e4cfdd9943d4262d3c1eb5b5",
+        "desktop_screenshot": "commercial-en-07.desktop.png",
+        "desktop_screenshot_sha256": "ad7f9851dd3d38858803ad1c2b310c26dd32a6f01b1d952251310eb28d5eb406",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://goconsensus.com/blog/best-sales-demo-software-for-automation#:~:text=Demo%20Library%3A%20Maintain%20a%20searchable%20hub%20for,requires%20onboarding%20to%20unlock%20its%20full%20potential.",
+        "https://www.hihobbes.com/blogs/product-demo-software#:~:text=Implementation%20typically%20involves%20solutions%20engineering%20resources.%20Best,environments%20between%20calls%2C%20ensuring%20consistent%20starting%20states.",
+        "https://www.hihobbes.com/blogs/product-demo-software#:~:text=Best%20for%3A%20Teams%20that%20need%20to%20create,specific%20prospects%20without%20breaking%20the%20underlying%20structure."
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-08",
+      "query": "How do I find a white-label video production partner for an agency?",
+      "system": "Gemini",
+      "surface": "Signed-in Gemini consumer web UI",
+      "model_version": "Flash (UI label)",
+      "search_mode": "Automatic web search observed when invoked by product",
+      "locale": "en",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T06:18:40.524Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free consumer account"
+      },
+      "conversation_url": "https://gemini.google.com/app",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "8ac5a3f76e62fa1b527cf52b90ec791901145f959714cbba29fcf519823026ca",
+        "ax_file": "commercial-en-08.ax.txt",
+        "ax_sha256": "caf1b97477b2bacfbc04f6a7f3e9a1d79f0c12bf01bde88ccba7bed972640778",
+        "desktop_screenshot": "commercial-en-08.desktop.png",
+        "desktop_screenshot_sha256": "175323bff1c6fc08d7ac06416692f8ed828d44ec5f27d93f3e57e7894f27ab6c",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.myvideoproduction.com/service/white-label-video-production#:~:text=Core%20White%2Dlabel%20Video%20Services.%20Agencies%20shouldn't%20have,present%20polished%20work%20under%20their%20own%20brand.",
+        "https://www.myvideoproduction.com/service/white-label-video-production#:~:text=From%20production%20to%20editing%20and%20fulfilment%2C%20our,offering%20while%20staying%20invisible%20to%20the%20client.",
+        "https://maken.media/blog-white-label-video-editing#:~:text=How%20the%20White%20Label%20Process%20Works%20(Step,footage%20via%20Frame.io%2C%20Google%20Drive%2C%20or%20Dropbox.",
+        "https://maken.media/blog-white-label-video-editing#:~:text=*%203.%20Present%20the%20package.%20%22We're%20adding,see%20the%20quality%2C%20the%20close%20is%20easy.",
+        "https://maken.media/blog-white-label-video-editing#:~:text=The%20client%20thinks%20you%20have%20an%20in%2Dhouse,research.%20*%203.%20Partner%20edits%20and%20delivers."
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-09",
+      "query": "Who can create a property development video before construction is complete?",
+      "system": "Gemini",
+      "surface": "Signed-in Gemini consumer web UI",
+      "model_version": "Flash (UI label)",
+      "search_mode": "Automatic web search observed when invoked by product",
+      "locale": "en",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T06:18:57.563Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free consumer account"
+      },
+      "conversation_url": "https://gemini.google.com/app",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "e578cfd51b990794e4abd60f1e9ffb5a417243cfaac32d51427d88352274438d",
+        "ax_file": "commercial-en-09.ax.txt",
+        "ax_sha256": "a3098aeb6335f2ec6caf5c145b91d722f0767a96cc05ec94c3f52e9f9fdb4491",
+        "desktop_screenshot": "commercial-en-09.desktop.png",
+        "desktop_screenshot_sha256": "a6884e90f95040f722156390bfb27992c10d15b62a0a0d829af6a97dfe48ec35",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://maverickframe.com/solutions/3d-rendering-for-real-estate/#:~:text=Real%20estate%20rendering%20for%20every%20stage%20of,*%20Interior%20rendering%20Show%20flats.%20Interior%20Rendering.",
+        "https://maverickframe.com/solutions/3d-rendering-for-real-estate/#:~:text=3D%20rendering%20for%20real%20estate%20that%20sells,win%20approvals%20and%20bring%20investors%20on%20board.",
+        "https://maverickframe.com/solutions/3d-rendering-for-real-estate/#:~:text=Virtual%20Tours%20%26%20360%C2%B0%20Interactive%20360%C2%B0%20tours,*%20Interior%20rendering%20Show%20flats.%20Interior%20Rendering.",
+        "https://maverickframe.com/solutions/3d-rendering-for-real-estate/#:~:text=Masterplan%20visuals%20showing%20context%2C%20landscaping%20and%20phasing,%26%203D%20plans%20Furnished.%203D%20Floor%20Plans."
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-10",
+      "query": "How much does a product film with AI and post-production cost?",
+      "system": "Gemini",
+      "surface": "Signed-in Gemini consumer web UI",
+      "model_version": "Flash (UI label)",
+      "search_mode": "Automatic web search observed when invoked by product",
+      "locale": "en",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T06:19:15.959Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free consumer account"
+      },
+      "conversation_url": "https://gemini.google.com/app",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "2106dca19235f6212199b83ae8086c5eb200334620bca2e5a434e0750b45b02d",
+        "ax_file": "commercial-en-10.ax.txt",
+        "ax_sha256": "b66c99c8d4f6b0b2b400c2c55d57dbc34ad29835d8b5edd2e6b979154d7747d2",
+        "desktop_screenshot": "commercial-en-10.desktop.png",
+        "desktop_screenshot_sha256": "72895ceffeb11f52f6ff136fd9d9ce7fa8c1ff96e7a9e773c7069088c3619fdb",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://blog.pixlnexs.com/ai-video-generation-cost/#:~:text=Quick%20answer%3A%20In%202026%2C%20AI%20video%20generation,Raw%20experimentation%20favors%20a%20cheap%20monthly%20subscription.",
+        "https://ltx.io/blog/ai-video-generation-cost#:~:text=AI%20video%20generation%20is%20priced%20in%20one,a%20subscription%20allowance.%20*%20Metered%20API%20access.",
+        "https://ltx.io/blog/ai-video-generation-cost#:~:text=This%20means%20the%20effective%20cost%20of%20a,but%20lands%20the%20shot%20in%20three%20attempts."
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-11",
+      "query": "How can I estimate a commercial video's timeline and budget before briefing?",
+      "system": "Gemini",
+      "surface": "Signed-in Gemini consumer web UI",
+      "model_version": "Flash (UI label)",
+      "search_mode": "Automatic web search observed when invoked by product",
+      "locale": "en",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T06:19:45.696Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free consumer account"
+      },
+      "conversation_url": "https://gemini.google.com/app",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "c351b5a02073b14eb24d84e4ab7ffffd1ec4dbda9badbf069a22b425221418bf",
+        "ax_file": "commercial-en-11.ax.txt",
+        "ax_sha256": "6c1b7acd75971ce22c96638312b977d58c6420855d10a15b660b1c133fbb6b4e",
+        "desktop_screenshot": "commercial-en-11.desktop.png",
+        "desktop_screenshot_sha256": "ff201d9296ca74f8ffefda6af3f3b7717284596db5e4efeb8b37978318090577",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://vusto.com.tr/en/how-to-plan-a-video-production-budget#:~:text=Video%20production%20prices%20are%20shaped%20by%20many,%2D%20Large%2Dscale%20advertising%20projects%20(20%E2%80%9340%2B%20person%20crew)",
+        "https://vidico.com/news/video-production-cost-calculator/#:~:text=Skimping%20here%20often%20leads%20to%20budget%20overruns,%24500%2D%245%2C000.%20Number%20of%20on%2Dcamera%20talent%2C%20specialized%20skills.",
+        "https://vidico.com/news/video-production-cost-calculator/#:~:text=Production%20costs%20vary%20dramatically%20based%20on%20your,per%20day.%20Permits%2C%20location%20costs%2C%20complexity.%20Talent%2FActors.",
+        "https://bonomotion.com/estimating-video-production-costs-a-comprehensive-guide/#:~:text=Talent%20fees%3A%20Professional%20actors%3A%20%24500%20to%20%242%2C000,track%20to%20thousands%20for%20a%20popular%20song.",
+        "https://vusto.com.tr/en/how-to-plan-a-video-production-budget#:~:text=The%20Key%20Factors%20That%20Determine%20the%20Budget.,budget%20is%20to%20evaluate%20projects%20by%20scale.",
+        "https://vidico.com/news/video-production-cost-calculator/#:~:text=Project%20complexity%20%E2%80%93%20Simple%20talking%20head%20vs.,cuts%20vs.%20complex%20post%2Dproduction%20with%20special%20effects.",
+        "https://bonomotion.com/estimating-video-production-costs-a-comprehensive-guide/#:~:text=Major%20components%20include%3A%20*%20Editing%3A%20%2475%20to,could%20save%20thousands%20in%20the%20long%20run)",
+        "https://vidico.com/news/video-production-cost-calculator/#:~:text=Production%20quality%2C%20large%20teams.%20Equipment.%20%24500%2D%245%2C000%20per,person.%20Experience%2C%20union%20status%2C%20how%20many%20days."
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-12",
+      "query": "How do I choose a studio for a product film with multiple delivery formats?",
+      "system": "Gemini",
+      "surface": "Signed-in Gemini consumer web UI",
+      "model_version": "Flash (UI label)",
+      "search_mode": "Automatic web search observed when invoked by product",
+      "locale": "en",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T06:19:58.906Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free consumer account"
+      },
+      "conversation_url": "https://gemini.google.com/app",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "6284dad01b82d1e459f052f03a399f5e3aeb3e897ba7bbc0bbc1ca616f268b4d",
+        "ax_file": "commercial-en-12.ax.txt",
+        "ax_sha256": "7a560a9443e81944baa03fc87b6c92a31a160a982c299baf9ccf87800f7845e4",
+        "desktop_screenshot": "commercial-en-12.desktop.png",
+        "desktop_screenshot_sha256": "a9b4c47cdfad0ab47d392b4bf58d9b3a9142dad1fb77b8ed0431542f64cfcb98",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-01",
+      "query": "Как выбрать подрядчика для AI-рекламного ролика с постоянным персонажем?",
+      "system": "Gemini",
+      "surface": "Signed-in Gemini consumer web UI",
+      "model_version": "Flash (UI label)",
+      "search_mode": "Automatic web search observed when invoked by product",
+      "locale": "ru",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T06:20:11.223Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free consumer account"
+      },
+      "conversation_url": "https://gemini.google.com/app",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "eabb157bec507ee8d04f34533dd5cca8f32419dd2b35d64fc2553045ee1283d4",
+        "ax_file": "commercial-ru-01.ax.txt",
+        "ax_sha256": "8d5c3b42196c071a5c2a7bab10bde145b77c2d31e2bb8b90575de48562b18a5d",
+        "desktop_screenshot": "commercial-ru-01.desktop.png",
+        "desktop_screenshot_sha256": "9c63cc848c6ac4d306802307ccb59cfe90b062f6c13315772a82c63baa3a179f",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-02",
+      "query": "Кому заказать AI-видео продукта с точной формой упаковки?",
+      "system": "Gemini",
+      "surface": "Signed-in Gemini consumer web UI",
+      "model_version": "Flash (UI label)",
+      "search_mode": "Automatic web search observed when invoked by product",
+      "locale": "ru",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T06:20:29.782Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free consumer account"
+      },
+      "conversation_url": "https://gemini.google.com/app",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "7d5f5a04d11d922e0796dca89dadde6bdd05f0152002e44c5d24b6cd9627189c",
+        "ax_file": "commercial-ru-02.ax.txt",
+        "ax_sha256": "e0aee4631755e66f795546c9b64c6daa23e3fd2ceae4cc78af94d99d568bd766",
+        "desktop_screenshot": "commercial-ru-02.desktop.png",
+        "desktop_screenshot_sha256": "187ad47709fca1acc8a3178e5e675af957294285c35b416ae4f6990ad74abf63",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-03",
+      "query": "Где заказать 3D-пакшот товара для рекламной кампании?",
+      "system": "Gemini",
+      "surface": "Signed-in Gemini consumer web UI",
+      "model_version": "Flash (UI label)",
+      "search_mode": "Automatic web search observed when invoked by product",
+      "locale": "ru",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T06:20:40.624Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free consumer account"
+      },
+      "conversation_url": "https://gemini.google.com/app",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "37055a5477badf7260d2f3e7c036fb2d33e60245f94567657cabda048f2ead19",
+        "ax_file": "commercial-ru-03.ax.txt",
+        "ax_sha256": "70293bb7e02c469675848c2f1f7a9fe2adac20360dbe915e1857803e10570a06",
+        "desktop_screenshot": "commercial-ru-03.desktop.png",
+        "desktop_screenshot_sha256": "14623059a069554ea4eb54ca85a2ae2003c445b5026028191a9772b7b12128d4",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-04",
+      "query": "Какой продакшн объединит съёмку, CGI и AI в одном ролике?",
+      "system": "Gemini",
+      "surface": "Signed-in Gemini consumer web UI",
+      "model_version": "Flash (UI label)",
+      "search_mode": "Automatic web search observed when invoked by product",
+      "locale": "ru",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T06:21:00.761Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free consumer account"
+      },
+      "conversation_url": "https://gemini.google.com/app",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "efbedf47bdff0041dac8a35f1a5eb150cba0d45f21d9587636c820b3b121d105",
+        "ax_file": "commercial-ru-04.ax.txt",
+        "ax_sha256": "6a872eb9495213a2db68d3511bacb04eef764f661a209c54d3651656a1d31f1d",
+        "desktop_screenshot": "commercial-ru-04.desktop.png",
+        "desktop_screenshot_sha256": "4eed4cb395d4103e398f72f8d32aa47b76a384655a2de722ab2e28d2c52e4707",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://fofvideo.ru/ai-video",
+        "https://dprofile.ru/case/182953/shar-production-ai-hybrid-video-showreel",
+        "https://objekts.ai/services/advertising-brands/",
+        "https://shchiprod.ru/ai",
+        "https://shchiprod.ru/en/ai"
+      ],
+      "shar_classification": "MENTION_ONLY",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-05",
+      "query": "Кто изготовит рекламный ролик и версии для разных площадок?",
+      "system": "Gemini",
+      "surface": "Signed-in Gemini consumer web UI",
+      "model_version": "Flash (UI label)",
+      "search_mode": "Automatic web search observed when invoked by product",
+      "locale": "ru",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T06:21:17.096Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free consumer account"
+      },
+      "conversation_url": "https://gemini.google.com/app",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "2e33420766f61ee276c29d0c0802ff1bb4effeaa33c32d7ba27f3bc607550270",
+        "ax_file": "commercial-ru-05.ax.txt",
+        "ax_sha256": "a2b5f8bf8120c1678b7f2388db9cd3f71bb8f6c9b1a71fa83ce94cbc4956d961",
+        "desktop_screenshot": "commercial-ru-05.desktop.png",
+        "desktop_screenshot_sha256": "f45656b8328ce85bbde75207bb45073db9a1f4840bd672ed03324036f7e2d576",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-06",
+      "query": "У кого заказать B2B-ролик для объяснения сложного продукта?",
+      "system": "Gemini",
+      "surface": "Signed-in Gemini consumer web UI",
+      "model_version": "Flash (UI label)",
+      "search_mode": "Automatic web search observed when invoked by product",
+      "locale": "ru",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T06:21:33.092Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free consumer account"
+      },
+      "conversation_url": "https://gemini.google.com/app",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "ed271d3e821109b61b7b43d59ff98257c17cb9b0d85f744a975b9296f170d640",
+        "ax_file": "commercial-ru-06.ax.txt",
+        "ax_sha256": "aa81f761cdd4ba2a11a64c9433c1157aa30a2f90ccdd3ec9a3fe7bd39556a72d",
+        "desktop_screenshot": "commercial-ru-06.desktop.png",
+        "desktop_screenshot_sha256": "2c95e0e0d7083cbb679fd0ba60dcccd5cc6d2ffbeb80419f5ecfd9babd529a96",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.motiontheagency.com/for-whom/b2b"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-07",
+      "query": "Кому поручить demo-видео цифрового продукта для продаж?",
+      "system": "Gemini",
+      "surface": "Signed-in Gemini consumer web UI",
+      "model_version": "Flash (UI label)",
+      "search_mode": "Automatic web search observed when invoked by product",
+      "locale": "ru",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T06:21:45.689Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free consumer account"
+      },
+      "conversation_url": "https://gemini.google.com/app",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "0fc6105c5cc837b37dc28f70e0a0c8a531a17585360a910f5ed7157077db319a",
+        "ax_file": "commercial-ru-07.ax.txt",
+        "ax_sha256": "2c6a9e978b382e86c127d38b318e30ced0b9a6439c50e11258dcc629e9a37e0d",
+        "desktop_screenshot": "commercial-ru-07.desktop.png",
+        "desktop_screenshot_sha256": "b7b1e627ab7fdf97e58057afa5137bf2fa1d86998ed3feac587f86403239d698",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-08",
+      "query": "Как найти white-label видеопродакшн для рекламного агентства?",
+      "system": "Gemini",
+      "surface": "Signed-in Gemini consumer web UI",
+      "model_version": "Flash (UI label)",
+      "search_mode": "Automatic web search observed when invoked by product",
+      "locale": "ru",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T06:22:04.379Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free consumer account"
+      },
+      "conversation_url": "https://gemini.google.com/app",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "39b4dc9c587f77cc91fbaa05538fbe9f971b3aa395edede4fc97e3e8f98de69e",
+        "ax_file": "commercial-ru-08.ax.txt",
+        "ax_sha256": "18179117ed82973074ecb5a943e9c1d4a2d5255704d3822f8b8ba6c798f752cf",
+        "desktop_screenshot": "commercial-ru-08.desktop.png",
+        "desktop_screenshot_sha256": "6b59a92a8224dd3052e929266b6b4589c64443b2de0af8793f92448e361843a1",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-09",
+      "query": "Кому заказать видео девелоперского проекта до завершения строительства?",
+      "system": "Gemini",
+      "surface": "Signed-in Gemini consumer web UI",
+      "model_version": "Flash (UI label)",
+      "search_mode": "Automatic web search observed when invoked by product",
+      "locale": "ru",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T06:22:23.472Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free consumer account"
+      },
+      "conversation_url": "https://gemini.google.com/app",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "6caba265b09cbbaa80ac6f342eeb19b0bf4555770eecef8b4898e536a8d1f50b",
+        "ax_file": "commercial-ru-09.ax.txt",
+        "ax_sha256": "e2af375fea91bdca591e52ebd8bb2d704a472c998106cfc46dfe88f07733e3dd",
+        "desktop_screenshot": "commercial-ru-09.desktop.png",
+        "desktop_screenshot_sha256": "57991dd18bf6f3ac9f1ba8cdfcc9578ca1af7f975e1139a116a569b93851e4dc",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://visengine.com/#:~:text=Who%20are%20the%20Clients%20of%203D%20Architectural,*%20Product%20designers.%20*%20Homebuyers%20and%20investors.",
+        "https://visengine.com/#:~:text=Without%20spending%20too%20much%2C%20you%20will%20be,work%20and%20advertising.%20Thirdly%2C%20super%20realistic%20visuals.",
+        "https://zoa3d.com/#:~:text=To%20begin%20a%20visualization%20or%20animation%20project%2C,the%20critical%20input%20right%20from%20the%20start."
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-10",
+      "query": "Сколько стоит продуктовый ролик с AI и постпродакшном?",
+      "system": "Gemini",
+      "surface": "Signed-in Gemini consumer web UI",
+      "model_version": "Flash (UI label)",
+      "search_mode": "Automatic web search observed when invoked by product",
+      "locale": "ru",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T06:22:42.805Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free consumer account"
+      },
+      "conversation_url": "https://gemini.google.com/app",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "4ba736f1611a26b5b0ac2a475524251ffac411cf40c008f8fb94b64d3367c074",
+        "ax_file": "commercial-ru-10.ax.txt",
+        "ax_sha256": "177b3ddaa6aa1fcb657611124ebad75c244409b7cf11e58b7ce28eaff07a9b1b",
+        "desktop_screenshot": "commercial-ru-10.desktop.png",
+        "desktop_screenshot_sha256": "a21a5e3747ca00a6039ec07652f14dedc1948172e06b91046fbd7de80c6ccfd8",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://mediabanda.ru/price/#:~:text=%D0%A1%D1%82%D0%BE%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C%20%D1%84%D0%B8%D0%BA%D1%81%D0%B8%D1%80%D1%83%D0%B5%D0%BC%20%D0%B2%20%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B5%20%D0%B4%D0%BE%20%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%20%E2%80%94,%D0%BE%D1%82%2060%20%D1%82%D1%8B%D1%81.%20%E2%82%BD%20%D0%B7%D0%B0%20%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%BA%D1%88%D0%BD%3B",
+        "https://mediabanda.ru/price/",
+        "https://kwork.ru/categories/videogeneration#:~:text=%D0%BE%D1%82%205%20000%20%E2%82%BD%205%2C000%E2%82%BD%20%D0%B7%D0%B0%201,AI%2D%D0%92%D0%B8%D0%B4%D0%B5%D0%BE%20%D0%B7%D0%B0%2024%20%D1%87%D0%B0%D1%81%D0%B0%205.0%20(36)%20Twixvik.",
+        "https://mediabanda.ru/price/#:~:text=Table_title%3A%20%D0%94%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%BE%D0%BF%D1%86%D0%B8%D0%B8%20Table_content%3A%20%7C%20%D0%9E%D0%BF%D1%86%D0%B8%D1%8F%20%7C,%7C%20%D0%92%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D1%80%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20%D0%B3%D0%BE%D0%B4%20%7C",
+        "https://svyazi-agency.ru/landing/motion/ai#:~:text=%D0%9E%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5%20%D0%BA%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE%20%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B9%2C%20%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%D0%BE%D0%B2%20%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%D0%B0,%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D0%B5%D0%BC%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80%D0%BE%D0%BC%D0%BF%D1%82.%20%D0%9A%D0%B0%D0%B6%D0%B4%D0%B0%D1%8F%20%D0%B8%D0%B4%D0%B5%D1%8F%20%D0%BF%D0%BE%D0%B4%D0%BA%D1%80%D0%B5%D0%BF%D0%BB%D1%8F%D0%B5%D1%82%D1%81%D1%8F%20%D0%B2%D0%B8%D0%B7%D1%83%D0%B0%D0%BB%D0%BE%D0%BC."
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-11",
+      "query": "Как оценить сроки и бюджет рекламного видео до брифа?",
+      "system": "Gemini",
+      "surface": "Signed-in Gemini consumer web UI",
+      "model_version": "Flash (UI label)",
+      "search_mode": "Automatic web search observed when invoked by product",
+      "locale": "ru",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T06:23:10.524Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free consumer account"
+      },
+      "conversation_url": "https://gemini.google.com/app",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "338d41c81b15e701311d7b9da15faaac85d7fe16af2dfc49deeb7cc6248a4098",
+        "ax_file": "commercial-ru-11.ax.txt",
+        "ax_sha256": "2571f2dca761b17e9b96f281cd5b796913ec9831cd9ebce3adfcb5ea6bd6bb68",
+        "desktop_screenshot": "commercial-ru-11.desktop.png",
+        "desktop_screenshot_sha256": "41cf4a726f5aa5a777c34b70ca578f8eedcc9db4bba0671f18f36b767f76b27f",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-12",
+      "query": "Как выбрать студию для продуктового ролика с несколькими форматами сдачи?",
+      "system": "Gemini",
+      "surface": "Signed-in Gemini consumer web UI",
+      "model_version": "Flash (UI label)",
+      "search_mode": "Automatic web search observed when invoked by product",
+      "locale": "ru",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T06:23:31.446Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free consumer account"
+      },
+      "conversation_url": "https://gemini.google.com/app",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "e9ac321f7bc7763ef42f8ba94aa9e739db807e4240ca559b53759f31cf461391",
+        "ax_file": "commercial-ru-12.ax.txt",
+        "ax_sha256": "05aab7205e1d68e46f1380d93c47bd0ff5e731858492811878c94701556f01ea",
+        "desktop_screenshot": "commercial-ru-12.desktop.png",
+        "desktop_screenshot_sha256": "106078f9d7bddb775ebb7ff29c84d3077d3f968da6661d4da55ecd385844dfd6",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://obscura.pro/blog/chek-list-tekhnicheskogo-zadaniya-na-sozdanie-videorolika#:~:text=%D0%A7%D0%B5%D1%82%D0%BA%D0%B0%D1%8F%20%D1%86%D0%B5%D0%BB%D1%8C%20%D1%81%D1%80%D0%B0%D0%B7%D1%83%20%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F%D0%B5%D1%82%20%D0%B5%D0%B3%D0%BE%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%3A%20%D1%8D%D1%82%D0%BE,%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B9%20%D0%B1%D1%83%D0%B4%D0%B5%D1%82%20%D0%B4%D0%BE%D0%BD%D0%BE%D1%81%D0%B8%D1%82%D1%8C%20%D0%B4%D0%BE%20%D0%B7%D1%80%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%BE%D0%B9%20%D0%BF%D0%BE%D1%81%D1%8B%D0%BB.",
+        "https://obscura.pro/blog/chek-list-tekhnicheskogo-zadaniya-na-sozdanie-videorolika#:~:text=%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5%20%D0%BA%D1%80%D0%B8%D1%82%D0%B5%D1%80%D0%B8%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D0%A2%D0%97%20%D0%BB%D1%8E%D0%B1%D0%BE%D0%B3%D0%BE%20%D0%B2%D0%B8%D0%B4%D0%B0%20*,%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%2C%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%BE%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B5%D1%82%D0%B5%D0%B9%20%D0%B8%D0%BB%D0%B8%20%D0%BE%D1%82%D1%87%D0%B5%D1%82.",
+        "https://obscura.pro/blog/chek-list-tekhnicheskogo-zadaniya-na-sozdanie-videorolika#:~:text=*%20%D0%A6%D0%B5%D0%BB%D0%B5%D0%B2%D0%B0%D1%8F%20%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D0%9E%D0%BF%D0%B8%D1%88%D0%B8%D1%82%D0%B5%20%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82%20%D0%B2%D0%B0%D1%88%D0%B5%D0%B3%D0%BE%20%D0%B7%D1%80%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%3A,%D1%81%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E%20%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D1%85%20%D0%BB%D0%B5%D0%B3%D1%87%D0%B5%20%D0%BF%D0%BE%D0%BF%D0%B0%D1%81%D1%82%D1%8C%20%D0%B2%20%D1%86%D0%B5%D0%BB%D1%8C."
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    }
+  ]
+}
