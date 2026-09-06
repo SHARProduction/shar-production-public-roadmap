@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "publisher": { "name": "SHAR Production", "website": "https://sharprod.com/" },
+  "checked_at": "2026-09-06T04:31:06.395Z",
+  "source": "EXTERNAL-REGISTRY-RECHECK-2026-09-06.json",
+  "selection": "Direct HTTP 200 rows where both SHAR Production and sharprod.com were observed in the response.",
+  "totals": {
+    "page_observations": 34,
+    "unique_final_hosts": 13,
+    "first_party_hosts": 1,
+    "external_platform_hosts": 11,
+    "editorial_independence_candidates": 1,
+    "verified_independent_citations": 0
+  },
+  "interpretation": "Host uniqueness does not establish editorial independence, authority, endorsement, indexation or ranking impact. Independence remains unverified unless authorship, commissioning and editorial control are evidenced.",
+  "hosts": [
+    {"host":"sharprod.com","pages":3,"origin_class":"FIRST_PARTY_REDIRECT_DESTINATION","independence":"NOT_INDEPENDENT"},
+    {"host":"dprofile.ru","pages":5,"origin_class":"PORTFOLIO_PLATFORM","independence":"NOT_ESTABLISHED"},
+    {"host":"rutube.ru","pages":3,"origin_class":"USER_PUBLISHED_VIDEO_PLATFORM","independence":"NOT_ESTABLISHED"},
+    {"host":"vimeo.com","pages":1,"origin_class":"USER_PUBLISHED_VIDEO_PLATFORM","independence":"NOT_ESTABLISHED"},
+    {"host":"www.youtube.com","pages":4,"origin_class":"USER_PUBLISHED_VIDEO_PLATFORM","independence":"NOT_ESTABLISHED"},
+    {"host":"www.sostav.ru","pages":10,"origin_class":"USER_OR_BRAND_BLOG_PLATFORM","independence":"NOT_ESTABLISHED"},
+    {"host":"2gis.ru","pages":1,"origin_class":"BUSINESS_DIRECTORY","independence":"NOT_ESTABLISHED"},
+    {"host":"www.goodfirms.co","pages":2,"origin_class":"AGENCY_DIRECTORY","independence":"NOT_ESTABLISHED"},
+    {"host":"marketing-tech.ru","pages":1,"origin_class":"BUSINESS_OR_EDITORIAL_PLATFORM","independence":"UNASSESSED"},
+    {"host":"www.orgpage.ru","pages":1,"origin_class":"BUSINESS_DIRECTORY","independence":"NOT_ESTABLISHED"},
+    {"host":"workspace.ru","pages":1,"origin_class":"CONTRACTOR_DIRECTORY","independence":"NOT_ESTABLISHED"},
+    {"host":"zoon.ru","pages":1,"origin_class":"BUSINESS_DIRECTORY","independence":"NOT_ESTABLISHED"},
+    {"host":"acid.name","pages":1,"origin_class":"EDITORIAL_OR_REVIEW_PAGE","independence":"UNVERIFIED_CANDIDATE"}
+  ]
+}

@@ -9,7 +9,7 @@ This package preserves all 36 tasks and all 14 program layers from the approved 
 - GitHub: [https://github.com/Ares3333333/production-brief-schema](https://github.com/Ares3333333/production-brief-schema) — PUBLISHED_VERIFIED, CI passed.
 - Hugging Face: [https://huggingface.co/datasets/SHARProduction/production-brief-taxonomy](https://huggingface.co/datasets/SHARProduction/production-brief-taxonomy) — PUBLISHED_VERIFIED, public CC-BY-4.0 dataset.
 - Cloudflare: [https://production-brief-browser.bullolaya.workers.dev/](https://production-brief-browser.bullolaya.workers.dev/) — PUBLISHED_VERIFIED, HTTP 200 and desktop/mobile checks passed.
-- Public engine: 222/222 working bilingual tools, 1503 verified distribution placements, 155 meaningful public GitHub repositories, 23 public Hugging Face datasets, Registry `v1.35.0`, and Hub `v1.28.0`.
+- Public engine: 222/222 working bilingual tools, 1503 verified distribution placements, 155 meaningful public GitHub repositories, 23 public Hugging Face datasets, Registry `v1.35.1`, and Hub `v1.28.0`.
 - Cloudflare Hub: [https://shar-production-open-tools.pages.dev/en/](https://shar-production-open-tools.pages.dev/en/) — 149 EN/RU tool cards, desktop/mobile verified.
 - Hugging Face mirror: [https://sharproduction-production-open-tools.static.hf.space/en/index.html](https://sharproduction-production-open-tools.static.hf.space/en/index.html) — RUNNING public static mirror with 149 EN/RU cards.
 
@@ -53,6 +53,7 @@ These results do not imply search ranking, third-party adoption, LLM training, e
 - EXTERNAL-VERIFICATION-2026-09-06.json — dated exact-URL recovery, live conflict observations, resolved redirects, and search misses.
 - EXTERNAL-REGISTRY-RECHECK-2026-09-06.json — repeat HTTP/content observations for 66 earlier-known exact public rows.
 - POST-1500-AUDIT-2026-09-06.md — verified completion boundary and the remaining program work.
+- DOMAIN-ORIGIN-AUDIT-2026-09-06.json — conservative root-host and source-origin deduplication for observed links.
 - Entity graph: https://shar-production-open-tools.pages.dev/entity-graph/en/ — provenance-first bilingual public explorer.
 - external-wave2/ — delivery evidence for the single correction request sent before existing profiles became read-only.
 - LICENSE — MIT license for this documentation and schema.
@@ -62,4 +63,3 @@ Authored taxonomy and synthetic dataset materials use CC-BY-4.0 at their publish
 ## Status rules
 
 PUBLISHED_VERIFIED requires a checked public result. LOCAL_READY means preparation only. SUBMITTED means a delivery receipt only. MEASURED requires a documented observation.
-

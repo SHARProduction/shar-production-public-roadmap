@@ -9,7 +9,7 @@
 - 222/222 working bilingual tools are publicly released.
 - SHAR PUBLIC DISTRIBUTION records **1503 verified placements**, above the 1500 minimum.
 - 155 meaningful public GitHub repositories and 23 public Hugging Face datasets are recorded.
-- Public Asset Registry v1.35.0 contains 152 immutable assets; Open Tools Hub v1.28.0 passes 25/25 checks.
+- Public Asset Registry v1.35.1 contains 152 immutable assets; Open Tools Hub v1.28.0 passes 25/25 checks.
 - A bilingual provenance-first entity graph is live on GitHub, Hugging Face and Cloudflare with 14 nodes, 14 evidence-backed relations and zero sameAs assertions.
 - Zero paid resources used; SHARsait, primary DNS, TimeWeb and the current MCP were not changed.
 
@@ -53,7 +53,7 @@
 | ENTITY-01 | entity | **PUBLISHED_VERIFIED** | sameAs не присвоен любому упоминанию<br>Нет нового бренда вместо SHAR<br>Роли людей и компании различаются | Maintain the public provenance graph and recheck dated external observations without asserting unsupported sameAs relationships. |
 | ENTITY-02 | entity | **PLANNED** | Нет гарантии Wikidata/knowledge panel<br>IMDb credits только подтверждённые<br>Платформенные критерии проверены | Build eligibility dossier from independent sources and actual credits; no Wikidata/IMDb acceptance claim. |
 | LINK-01 | backlinks_citations | **PUBLISHED_VERIFIED** | Нет автоматической сети все-на-все<br>Копии одного происхождения не считаются независимыми<br>Landing соответствует задаче пользователя | Maintain provenance-specific graph links; continue domain and source-origin deduplication before reporting independent citations. |
-| LINK-02 | backlinks_citations | **MEASURED** | Нет сконструированных backlinks<br>Запрос и полученная ссылка разделены<br>Неизвестный backlink count не равен нулю | 34 known public page responses contained both SHAR Production and sharprod.com; deduplicate by root domain and source origin before reporting independent citations. |
+| LINK-02 | backlinks_citations | **MEASURED** | Нет сконструированных backlinks<br>Запрос и полученная ссылка разделены<br>Неизвестный backlink count не равен нулю | 34 page observations deduplicate to 13 final hosts: 1 first-party destination, 11 external platform hosts and 1 editorial candidate. Verified independent citations remain 0 until editorial control and commissioning are evidenced. |
 | SEARCH-01 | search | **LOCAL_READY** | Частотность не выдумана<br>Нет страниц на каждый синоним/фиктивный город<br>Существующие URL сохраняются | Use24 commercial questions; do not infer frequency or create synonyms pages. |
 | SEARCH-02 | search | **MEASURED** | Нет смешения разных окон GSC<br>Indexable не приравнен к indexed<br>Недоступный источник не заменён нулём | GSC measured; Yandex/Bing unavailable remain visible, no zero substitution. |
 | AI-01 | ai_visibility | **LOCAL_READY** | ChatGPT/Claude/Gemini/Perplexity/Alice сохранены в охвате<br>Версия и режим продукта указаны<br>Бренд не подставлен в небрендовый вопрос | Run clean independent product sessions when accessible and cost approved. |

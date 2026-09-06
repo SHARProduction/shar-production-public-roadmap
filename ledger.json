@@ -90,11 +90,12 @@
       "github_repositories": 155,
       "hugging_face_datasets": 23,
       "registry_assets": 152,
-      "registry_release": "v1.35.0",
+      "registry_release": "v1.35.1",
       "hub_release": "v1.28.0",
       "cloudflare_url": "https://shar-production-open-tools.pages.dev/en/",
       "hugging_face_space": "https://sharproduction-production-open-tools.static.hf.space/en/index.html",
-      "cost_usd": 0
+      "cost_usd": 0,
+      "indexnow_accepted_url_submissions": 508
     }
   },
   "tasks": [
@@ -833,9 +834,13 @@
         {
           "kind": "internal_record",
           "value": "EXTERNAL-REGISTRY-RECHECK-2026-09-06.json"
+        },
+        {
+          "kind": "internal_record",
+          "value": "DOMAIN-ORIGIN-AUDIT-2026-09-06.json"
         }
       ],
-      "next_step": "34 known public page responses contained both SHAR Production and sharprod.com; deduplicate by root domain and source origin before reporting independent citations."
+      "next_step": "34 page observations deduplicate to 13 final hosts: 1 first-party destination, 11 external platform hosts and 1 editorial candidate. Verified independent citations remain 0 until editorial control and commissioning are evidenced."
     },
     {
       "id": "SEARCH-01",
