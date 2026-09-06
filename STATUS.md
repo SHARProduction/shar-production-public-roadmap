@@ -9,7 +9,7 @@
 - 222/222 working bilingual tools are publicly released.
 - SHAR PUBLIC DISTRIBUTION records **1503 verified placements**, above the 1500 minimum.
 - 155 meaningful public GitHub repositories and 23 public Hugging Face datasets are recorded.
-- Public Asset Registry v1.35.6 contains 152 immutable assets; Open Tools Hub v1.30.3 passes 25/25 checks.
+- Public Asset Registry v1.35.11 contains 152 immutable assets; Open Tools Hub v1.30.8 passes 25/25 checks.
 - A bilingual provenance-first entity graph is live on GitHub, Hugging Face and Cloudflare with 17 nodes, 17 evidence-backed relations and zero sameAs assertions.
 - Zero paid resources used; SHARsait, primary DNS, TimeWeb and the current MCP were not changed.
 
@@ -18,7 +18,7 @@
 - Exact-profile recovery: the source has 40 owner-reported registration rows. Twelve exact owner-account URLs are recovered, one row is closed by a provider refusal, and 27 remain unresolved. Orgpage and Product Hunt are two supplemental exact recoveries outside that denominator. X is recovered as a public personal account without SHAR Production or sharprod.com and is not counted as a placement. Ko-fi is the one live recovered page carrying provider `noindex,nofollow` metadata.
 - Earlier-known exact registry recheck: 66 rows checked, 47 returned direct HTTP 200, 44 exposed the exact brand and 34 exposed both the brand and sharprod.com. GoodFirms and Sortlist were additionally confirmed through a reader because direct requests were blocked.
 - These are page observations, not 34 independent endorsements or ranking gains.
-- Controlled AI/search panel: 105 of 192 product/query slots are measured. Google is 24/24 with five inspected SHAR citations (four observed rank 1, one observed rank 2); Bing is 9/24; Alice is 24/24 with seven SHAR mentions and five valid linked citations; Gemini Flash is 24/24 with one SHAR mention and zero direct valid citations; unsigned guest ChatGPT is 24/24 with zero mentions and zero direct valid citations; 87 slots remain explicitly unmeasured.
+- Controlled AI/search panel: 129 of 192 product/query slots are measured. Google is 24/24 with five inspected SHAR citations (four observed rank 1, one observed rank 2); Bing is 9/24; Alice is 24/24 with seven SHAR mentions and five valid linked citations; Gemini Flash is 24/24 with one SHAR mention and zero direct valid citations; unsigned guest ChatGPT and authenticated free Claude Sonnet 5 Medium are 24/24 each with zero mentions and zero direct valid citations; 63 slots remain explicitly unmeasured.
 
 ## Operational ledger
 
@@ -57,6 +57,6 @@
 | SEARCH-01 | search | **LOCAL_READY** | Частотность не выдумана<br>Нет страниц на каждый синоним/фиктивный город<br>Существующие URL сохраняются | Use24 commercial questions; do not infer frequency or create synonyms pages. |
 | SEARCH-02 | search | **MEASURED** | Нет смешения разных окон GSC<br>Indexable не приравнен к indexed<br>Недоступный источник не заменён нулём | Wave 01 records Google 24/24, Bing 9/24 and Yandex 0/24; inaccessible slots remain NOT_MEASURED rather than zero. |
 | AI-01 | ai_visibility | **LOCAL_READY** | ChatGPT/Claude/Gemini/Perplexity/Alice сохранены в охвате<br>Версия и режим продукта указаны<br>Бренд не подставлен в небрендовый вопрос | Run clean independent product sessions when accessible and cost approved. |
-| AI-02 | ai_visibility | **MEASURED** | Текущий разговор не принят за независимую цитату<br>API не выдан за пользовательский продукт<br>MCP-вызов не принят за поисковую рекомендацию | Alice, Gemini and ChatGPT are complete at 24/24 each. Alice produced seven SHAR mentions and five valid linked citations; Gemini Flash produced one mention and zero direct valid citations; unsigned guest ChatGPT produced zero mentions and zero direct valid citations. Continue Claude and Perplexity only on identifiable accessible consumer surfaces. |
+| AI-02 | ai_visibility | **MEASURED** | Текущий разговор не принят за независимую цитату<br>API не выдан за пользовательский продукт<br>MCP-вызов не принят за поисковую рекомендацию | Alice, Gemini, ChatGPT and Claude are complete at 24/24 each. Alice produced seven SHAR mentions and five valid linked citations; Gemini Flash produced one mention and zero direct valid citations; unsigned guest ChatGPT and authenticated free Claude each produced zero mentions and zero direct valid citations. Continue Perplexity only on an identifiable accessible consumer surface. |
 | COMM-01 | commercial_outcome | **LOCAL_READY** | Нет публикации персональных данных<br>Клики, брифы и сделки различаются<br>Причинность не заявлена по совпадению дат | Current contact path verified; GA4/CRM qualification evidence still needed. |
 | QA-01 | qa | **LOCAL_READY** | Нет утечки private исходников/секретов<br>Каждый статус подтверждён соответствующим доказательством<br>Все направления утверждённой цепочки остаются в очереди | Local kit gates complete; inherited website route gate remains separately disclosed. |

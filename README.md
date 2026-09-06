@@ -9,9 +9,9 @@ This package preserves all 36 tasks and all 14 program layers from the approved 
 - GitHub: [https://github.com/Ares3333333/production-brief-schema](https://github.com/Ares3333333/production-brief-schema) — PUBLISHED_VERIFIED, CI passed.
 - Hugging Face: [https://huggingface.co/datasets/SHARProduction/production-brief-taxonomy](https://huggingface.co/datasets/SHARProduction/production-brief-taxonomy) — PUBLISHED_VERIFIED, public CC-BY-4.0 dataset.
 - Cloudflare: [https://production-brief-browser.bullolaya.workers.dev/](https://production-brief-browser.bullolaya.workers.dev/) — PUBLISHED_VERIFIED, HTTP 200 and desktop/mobile checks passed.
-- Public engine: 222/222 working bilingual tools, 1503 verified distribution placements, 155 meaningful public GitHub repositories, 23 public Hugging Face datasets, Registry `v1.35.6`, and Hub `v1.30.3`.
+- Public engine: 222/222 working bilingual tools, 1503 verified distribution placements, 155 meaningful public GitHub repositories, 23 public Hugging Face datasets, Registry `v1.35.11`, and Hub `v1.30.8`.
 - Cloudflare Hub: [https://shar-production-open-tools.pages.dev/en/](https://shar-production-open-tools.pages.dev/en/) — 152 public asset cards, desktop/mobile verified.
-- Hugging Face mirror: [https://sharproduction-production-open-tools.static.hf.space/en/index.html](https://sharproduction-production-open-tools.static.hf.space/en/index.html) — PUBLISHED_VERIFIED public static mirror at `v1.30.3`.
+- Hugging Face mirror: [https://sharproduction-production-open-tools.static.hf.space/en/index.html](https://sharproduction-production-open-tools.static.hf.space/en/index.html) — PUBLISHED_VERIFIED public static mirror at `v1.30.8`.
 
 These results do not imply search ranking, third-party adoption, LLM training, editorial acceptance, or commercial performance.
 
@@ -21,7 +21,7 @@ These results do not imply search ranking, third-party adoption, LLM training, e
 - Tasks: **36**
 - Status distribution: LOCAL_READY 9, MEASURED 6, PLANNED 5, PUBLISHED_VERIFIED 15, SUBMITTED 1.
 - Exact external-profile recovery now uses the correct 40-row owner-reported denominator: 12 owner-account URLs are recovered, one row is closed by the provider refusal, and 27 remain unresolved. Two additional exact URLs (Orgpage and Product Hunt) are tracked as supplemental recoveries. The recovered X account is public but lacks SHAR Production and sharprod.com, so it is a correction candidate and not a placement. Ko-fi remains the one recovered provider-noindex page.
-- Controlled AI/search coverage: 105 of 192 product/query slots are measured (Google 24/24, Bing 9/24, Alice 24/24, Gemini 24/24, ChatGPT 24/24); 87 remain unmeasured. The dated Alice run produced seven SHAR mentions and five independently HTTP-verified linked citations; Gemini Flash produced one mention and zero direct valid citations; unsigned guest ChatGPT produced zero mentions and zero direct valid citations.
+- Controlled AI/search coverage: 129 of 192 product/query slots are measured (Google 24/24, Bing 9/24, Alice 24/24, Gemini 24/24, ChatGPT 24/24, Claude 24/24); 63 remain unmeasured. The dated Alice run produced seven SHAR mentions and five independently HTTP-verified linked citations; Gemini Flash produced one mention and zero direct valid citations; unsigned guest ChatGPT and authenticated free Claude each produced zero mentions and zero direct valid citations. Claude exposed 13 unique source URLs, 12 reachable in the dated transport check.
 - No legacy repository, main-domain, DNS, Timeweb, paid-plan, domain-purchase, or GPU change is represented.
 
 ## Layers
@@ -54,7 +54,8 @@ These results do not imply search ranking, third-party adoption, LLM training, e
 - AI-SEARCH-MEASUREMENT-WAVE-02-2026-09-06.json — 24/24 Alice consumer-answer observations with seven SHAR mentions and five valid linked citations.
 - AI-SEARCH-MEASUREMENT-WAVE-03-2026-09-06.json — 24/24 Gemini Flash consumer-answer observations with one SHAR mention, zero direct valid citations and 59 unique extracted source URLs.
 - AI-SEARCH-MEASUREMENT-WAVE-04-2026-09-06.json — 24/24 unsigned guest ChatGPT consumer-answer observations with zero SHAR mentions and zero direct valid citations.
-- build-ai-wave.py, validate-ai-wave.py, validate-gemini-wave.py and validate-chatgpt-wave.py — public-safe assembly and invariant validation for the Alice, Gemini and ChatGPT waves; complete answers and screenshots remain in the private checkpoint.
+- AI-SEARCH-MEASUREMENT-WAVE-05-2026-09-06.json — 24/24 authenticated free Claude Sonnet 5 Medium consumer-answer observations with zero SHAR mentions, zero direct valid citations and 12/13 extracted source URLs reachable in the dated transport check.
+- build-ai-wave.py, build-claude-wave.py, validate-ai-wave.py, validate-gemini-wave.py, validate-chatgpt-wave.py and validate-claude-wave.py — public-safe assembly and invariant validation for the Alice, Gemini, ChatGPT and Claude waves; complete answers and screenshots remain in the private checkpoint.
 - run-serp-panel.py, build-search-wave.py and validate-search-wave.py — reproducible capture, public-safe assembly and invariant validation for the search panel (`requirements-search.txt`).
 - EXTERNAL-VERIFICATION-2026-09-06.json — dated exact-URL recovery, live conflict observations, resolved redirects, and search misses.
 - EXTERNAL-REGISTRY-RECHECK-2026-09-06.json — repeat HTTP/content observations for 66 earlier-known exact public rows.

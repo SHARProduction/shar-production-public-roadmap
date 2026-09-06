@@ -90,12 +90,12 @@
       "github_repositories": 155,
       "hugging_face_datasets": 23,
       "registry_assets": 152,
-      "registry_release": "v1.35.6",
-      "hub_release": "v1.30.3",
+      "registry_release": "v1.35.11",
+      "hub_release": "v1.30.8",
       "cloudflare_url": "https://shar-production-open-tools.pages.dev/en/",
       "hugging_face_space": "https://sharproduction-production-open-tools.static.hf.space/en/index.html",
       "cost_usd": 0,
-      "indexnow_accepted_url_submissions": 520
+      "indexnow_accepted_url_submissions": 528
     }
   },
   "tasks": [
@@ -968,9 +968,21 @@
         {
           "kind": "public_url",
           "value": "https://github.com/SHARProduction/shar-production-public-roadmap/blob/main/AI-SEARCH-MEASUREMENT-WAVE-02-2026-09-06.json"
+        },
+        {
+          "kind": "public_record",
+          "value": "AI-SEARCH-MEASUREMENT-WAVE-03-2026-09-06.json"
+        },
+        {
+          "kind": "public_record",
+          "value": "AI-SEARCH-MEASUREMENT-WAVE-04-2026-09-06.json"
+        },
+        {
+          "kind": "public_record",
+          "value": "AI-SEARCH-MEASUREMENT-WAVE-05-2026-09-06.json"
         }
       ],
-      "next_step": "Alice, Gemini and ChatGPT are complete at 24/24 each. Alice produced seven SHAR mentions and five valid linked citations; Gemini Flash produced one mention and zero direct valid citations; unsigned guest ChatGPT produced zero mentions and zero direct valid citations. Continue Claude and Perplexity only on identifiable accessible consumer surfaces."
+      "next_step": "Alice, Gemini, ChatGPT and Claude are complete at 24/24 each. Alice produced seven SHAR mentions and five valid linked citations; Gemini Flash produced one mention and zero direct valid citations; unsigned guest ChatGPT and authenticated free Claude each produced zero mentions and zero direct valid citations. Continue Perplexity only on an identifiable accessible consumer surface."
     },
     {
       "id": "COMM-01",

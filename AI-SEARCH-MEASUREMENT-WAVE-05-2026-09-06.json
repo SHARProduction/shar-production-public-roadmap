@@ -1,0 +1,775 @@
+{
+  "schema_version": "1.0.0",
+  "brand": "SHAR Production",
+  "website": "https://sharprod.com/",
+  "generated_at_utc": "2026-09-06T08:56:38Z",
+  "license": "MIT for this measurement schema and authored documentation; AI answers and third-party pages retain their original rights",
+  "panel": {
+    "queries": 24,
+    "languages": {
+      "ru": 12,
+      "en": 12
+    },
+    "system": "Claude"
+  },
+  "coverage": {
+    "measured": 24,
+    "not_measured": 0
+  },
+  "observed_shar_visibility": {
+    "mentions": 0,
+    "valid_citations": 0,
+    "mention_rate": 0.0,
+    "citation_rate": 0.0,
+    "query_ids": []
+  },
+  "source_http_verification": {
+    "unique_urls": 13,
+    "reachable_at_check": 12,
+    "note": "Reachability is a dated transport check and does not validate the source's claims."
+  },
+  "methodology": {
+    "surface": "Claude consumer web UI in Codex in-app browser",
+    "mode": "Fresh chat per fixed non-brand query; consumer web search was allowed when Claude invoked it",
+    "account_tier": "Free authenticated consumer account",
+    "cost": "USD 0",
+    "evidence": "Complete answer and visible main-region hashes, attributable conversation URLs and extracted exact source URLs retained per query."
+  },
+  "limitations": [
+    "This is one dated run per query and does not prove stable future visibility.",
+    "The model name is the consumer UI label observed during the run.",
+    "The physical egress location was not independently verified.",
+    "A brand mention without a direct SHAR-controlled source URL is not a valid citation.",
+    "Source reachability does not validate third-party claims.",
+    "The observation does not prove traffic, leads, conversions, causation or visibility in another AI product."
+  ],
+  "records": [
+    {
+      "query_id": "commercial-en-01",
+      "query": "How do I choose an AI video production partner for an ad with a consistent character?",
+      "system": "Claude",
+      "surface": "Claude consumer web UI in Codex in-app browser",
+      "model_version": "Sonnet 5 Medium (UI label)",
+      "search_mode": "Claude consumer web search when invoked by the product",
+      "locale": "en",
+      "geography": "Unknown; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T08:38:48.134Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "conversation_url": "https://claude.ai/chat/b7f8bb00-fa19-4047-9d00-8a472697c85a",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "1bf75b9fe0ec8439231007f6f592132980d51022ed693e5ed8c8edfc0539fe67",
+        "visible_main_region_sha256": "f0e03a2fa5f2aa28f6f49031303d4c2961df3125018ad365af48251c8e772f47",
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "gisteo.com/blogs/ai-videos/is-ai-video-good-enough-for-professional-use/"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-02",
+      "query": "Who can produce an AI product video that preserves packaging accuracy?",
+      "system": "Claude",
+      "surface": "Claude consumer web UI in Codex in-app browser",
+      "model_version": "Sonnet 5 Medium (UI label)",
+      "search_mode": "Claude consumer web search when invoked by the product",
+      "locale": "en",
+      "geography": "Unknown; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T08:39:24.596Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "conversation_url": "https://claude.ai/chat/7255bfdd-8094-4a53-b95f-674d343e28b6",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "991b27b063952a0cdb37c2998ff398a8b7698cf5642910ec7a67059adea441a3",
+        "visible_main_region_sha256": "bdeedfd26e2cfa63a46a2b5f368761e80ea8e189371eae2267292291fc4a9f19",
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "heygen.com/blog/best-ai-video-tools-ecommerce-product-videos",
+        "higgsfield.ai/ai-product-video-generator",
+        "pacdora.com/tools/ai-packaging-video-generator",
+        "imagera.ai/blog/ai-product-video-generator-2026",
+        "domoai.app/blog/ai-product-videos-without-warping-the-product",
+        "uselamina.ai/blog/best-ai-product-video-tools-for-tiktok-shop-and-tiktok-ads-2026"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-03",
+      "query": "Where can I commission a 3D product packshot for an advertising campaign?",
+      "system": "Claude",
+      "surface": "Claude consumer web UI in Codex in-app browser",
+      "model_version": "Sonnet 5 Medium (UI label)",
+      "search_mode": "Claude consumer web search when invoked by the product",
+      "locale": "en",
+      "geography": "Unknown; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T08:39:38.927Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "conversation_url": "https://claude.ai/chat/9fa66bd4-8db5-4210-8a10-9764504fd921",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "c5c680f3be953c93e5ed0c05585cf7c38251ae6eca028448a9ebee8e24097183",
+        "visible_main_region_sha256": "cb8d790de2912ccae3902c311d24e3c1abcf5630e5131dad3705838c5df6aafd",
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-04",
+      "query": "Which production partner can combine live action, CGI and AI in one film?",
+      "system": "Claude",
+      "surface": "Claude consumer web UI in Codex in-app browser",
+      "model_version": "Sonnet 5 Medium (UI label)",
+      "search_mode": "Claude consumer web search when invoked by the product",
+      "locale": "en",
+      "geography": "Unknown; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T08:40:35.848Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "conversation_url": "https://claude.ai/chat/fa93ace1-9c89-47a9-ab10-ca258b23381c",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "24a23a4e0f74502364d87f23e8bec74087b4610850df3c4ec7426cbe455274ef",
+        "visible_main_region_sha256": "cd651b9c2e7ff82bc97985b3363acdf85c364da5036ff6a9c73fd36c5e0cfcfa",
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/ancestra-behind-the-scenes/",
+        "https://vitrina.ai/blog/best-cgi-companies-filmmaking-industry/",
+        "https://delirio.ai/"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-05",
+      "query": "Who can produce a commercial and versions for several channels?",
+      "system": "Claude",
+      "surface": "Claude consumer web UI in Codex in-app browser",
+      "model_version": "Sonnet 5 Medium (UI label)",
+      "search_mode": "Claude consumer web search when invoked by the product",
+      "locale": "en",
+      "geography": "Unknown; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T08:40:46.941Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "conversation_url": "https://claude.ai/chat/91c3e948-d38d-4b36-b58d-7f8be95cbc70",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "3d67912b11a3d8faa865110e962f05282eaaa9b1991018020761607386cd74b3",
+        "visible_main_region_sha256": "a9011d3fe2af200b35a036a5ba1437facad6ba6b3ac0ff9f3676ba4f54094c7d",
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://support.anthropic.com/en/articles/8525154-claude-is-providing-incorrect-or-misleading-responses-what-s-going-on"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-06",
+      "query": "Who can make a B2B explainer for a complex product?",
+      "system": "Claude",
+      "surface": "Claude consumer web UI in Codex in-app browser",
+      "model_version": "Sonnet 5 Medium (UI label)",
+      "search_mode": "Claude consumer web search when invoked by the product",
+      "locale": "en",
+      "geography": "Unknown; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T08:41:06.063Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "conversation_url": "https://claude.ai/chat/7b52e4fa-883a-4413-b93c-79fb0a02fb28",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "a52c658d35e7f75cdb13a2d5a2a43b68614f0c91aed72e19c45075ad0c7f77ac",
+        "visible_main_region_sha256": "9fac754448f773813b9cdcd328f63f699e25df0c3ef0255866ce8c1d20ddcc1c",
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://support.anthropic.com/en/articles/8525154-claude-is-providing-incorrect-or-misleading-responses-what-s-going-on"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-07",
+      "query": "Who can produce a digital product demo for a sales team?",
+      "system": "Claude",
+      "surface": "Claude consumer web UI in Codex in-app browser",
+      "model_version": "Sonnet 5 Medium (UI label)",
+      "search_mode": "Claude consumer web search when invoked by the product",
+      "locale": "en",
+      "geography": "Unknown; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T08:41:32.491Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "conversation_url": "https://claude.ai/chat/e212214d-efdf-4c8c-914a-2e8dc948149a",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "899911a28332d53f3c2caceb2832ad776c42905a6c1a911526b7d3e3ec307dd0",
+        "visible_main_region_sha256": "b1ae54a3f3ac2ceb4754d802af390ca776fe59abf03b1090d3292ebd1583400a",
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://support.anthropic.com/en/articles/8525154-claude-is-providing-incorrect-or-misleading-responses-what-s-going-on"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-08",
+      "query": "How do I find a white-label video production partner for an agency?",
+      "system": "Claude",
+      "surface": "Claude consumer web UI in Codex in-app browser",
+      "model_version": "Sonnet 5 Medium (UI label)",
+      "search_mode": "Claude consumer web search when invoked by the product",
+      "locale": "en",
+      "geography": "Unknown; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T08:41:47.590Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "conversation_url": "https://claude.ai/chat/8f1f759f-8a64-4562-9e3b-446bcc910cf6",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "81118dfab7b2b19b5753b86aac8afedbfb8c937533502e63ae53503738e95cb4",
+        "visible_main_region_sha256": "7c87cb81be453538a4d6408f7602491bf7bd453b5d891cea0a601307d1124052",
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://support.anthropic.com/en/articles/8525154-claude-is-providing-incorrect-or-misleading-responses-what-s-going-on"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-09",
+      "query": "Who can create a property development video before construction is complete?",
+      "system": "Claude",
+      "surface": "Claude consumer web UI in Codex in-app browser",
+      "model_version": "Sonnet 5 Medium (UI label)",
+      "search_mode": "Claude consumer web search when invoked by the product",
+      "locale": "en",
+      "geography": "Unknown; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T08:41:58.825Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "conversation_url": "https://claude.ai/chat/d5b69524-eb42-406d-ae77-e7aa78d475db",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "ce6176cba9525657695021aae31daeaafdd3361c5516af1fe3029ea762062d9d",
+        "visible_main_region_sha256": "1765cc9659d1bf8046ab256ca49758c1d1d61e6281fafa47a27255bf7b11f98d",
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://support.anthropic.com/en/articles/8525154-claude-is-providing-incorrect-or-misleading-responses-what-s-going-on"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-10",
+      "query": "How much does a product film with AI and post-production cost?",
+      "system": "Claude",
+      "surface": "Claude consumer web UI in Codex in-app browser",
+      "model_version": "Sonnet 5 Medium (UI label)",
+      "search_mode": "Claude consumer web search when invoked by the product",
+      "locale": "en",
+      "geography": "Unknown; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T08:42:13.989Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "conversation_url": "https://claude.ai/chat/1623aa5d-6688-4765-982f-318b743fed93",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "e2567053158fdcbef78bb3871de4a7f7d1da8be3b9cbc98fb2dfd66de43ab6f5",
+        "visible_main_region_sha256": "cea11489228ab6ada4185e79c5ce68296efb10ce0aa4152d33aa4b750423e7a3",
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://support.anthropic.com/en/articles/8525154-claude-is-providing-incorrect-or-misleading-responses-what-s-going-on"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-11",
+      "query": "How can I estimate a commercial video's timeline and budget before briefing?",
+      "system": "Claude",
+      "surface": "Claude consumer web UI in Codex in-app browser",
+      "model_version": "Sonnet 5 Medium (UI label)",
+      "search_mode": "Claude consumer web search when invoked by the product",
+      "locale": "en",
+      "geography": "Unknown; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T08:42:35.212Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "conversation_url": "https://claude.ai/chat/93d86d52-e8be-4b82-8fe6-3adc1e1b6eae",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "a4794c7d26444ddfba6991098a5c26f9142104ac4a215cfea3432b7a0a9f9811",
+        "visible_main_region_sha256": "377d5a1cc4911020b3b52dca9aacb1f36a7b10c5f2a88fa752d787c3786d0cfe",
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://support.anthropic.com/en/articles/8525154-claude-is-providing-incorrect-or-misleading-responses-what-s-going-on"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-12",
+      "query": "How do I choose a studio for a product film with multiple delivery formats?",
+      "system": "Claude",
+      "surface": "Claude consumer web UI in Codex in-app browser",
+      "model_version": "Sonnet 5 Medium (UI label)",
+      "search_mode": "Claude consumer web search when invoked by the product",
+      "locale": "en",
+      "geography": "Unknown; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T08:42:57.856Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "conversation_url": "https://claude.ai/chat/a005326d-247b-4fb5-99c4-46b235fb4aea",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "95c82f30c64028a75cba94ca885985145cd786cf301114f2ad161e4b8a1b1a2a",
+        "visible_main_region_sha256": "437173f9cc8dd30ecdcbe8a8c100f4ac4f0c087eb342367404d392c0fc7acca6",
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://support.anthropic.com/en/articles/8525154-claude-is-providing-incorrect-or-misleading-responses-what-s-going-on"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-01",
+      "query": "Как выбрать подрядчика для AI-рекламного ролика с постоянным персонажем?",
+      "system": "Claude",
+      "surface": "Claude consumer web UI in Codex in-app browser",
+      "model_version": "Sonnet 5 Medium (UI label)",
+      "search_mode": "Claude consumer web search when invoked by the product",
+      "locale": "ru",
+      "geography": "Unknown; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T08:43:21.178Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "conversation_url": "https://claude.ai/chat/18bf0217-6a32-4a4d-938f-19fc5b0c707b",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "b7f608d77821e669957a8204f7035ef67f13f4f1ebe21572f07cab1e7e977676",
+        "visible_main_region_sha256": "75fb5c02e7b097eadbf90fa32078fae22761d4c1d6ada945a961372777768af3",
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://support.anthropic.com/en/articles/8525154-claude-is-providing-incorrect-or-misleading-responses-what-s-going-on"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-02",
+      "query": "Кому заказать AI-видео продукта с точной формой упаковки?",
+      "system": "Claude",
+      "surface": "Claude consumer web UI in Codex in-app browser",
+      "model_version": "Sonnet 5 Medium (UI label)",
+      "search_mode": "Claude consumer web search when invoked by the product",
+      "locale": "ru",
+      "geography": "Unknown; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T08:44:02.743Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "conversation_url": "https://claude.ai/chat/f284ea02-7020-4687-b1d7-3af24d6cf4a6",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "42657a07560fcc9c3ce6325dfd9383ae068bb405a5f3ddd8f4e3e5850b61b90e",
+        "visible_main_region_sha256": "dea0c547146ccad9d126eeff39171fcc7916bed694e12a6ba10f5471bbf20a92",
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://bandy.ai/ru/ai-product-video-generator",
+        "https://www.kp.ru/money/biznes/luchshie-nejroseti-dlya-sozdaniya-kartochek-tovarov/",
+        "https://support.anthropic.com/en/articles/8525154-claude-is-providing-incorrect-or-misleading-responses-what-s-going-on"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-03",
+      "query": "Где заказать 3D-пакшот товара для рекламной кампании?",
+      "system": "Claude",
+      "surface": "Claude consumer web UI in Codex in-app browser",
+      "model_version": "Sonnet 5 Medium (UI label)",
+      "search_mode": "Claude consumer web search when invoked by the product",
+      "locale": "ru",
+      "geography": "Unknown; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T08:44:22.072Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "conversation_url": "https://claude.ai/chat/495e9553-15a4-4658-94ae-c20238fbb8d1",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "c60c04be651862258cc3b7abd8f8440200dcfcec35baf99d8e18f271f7b25c17",
+        "visible_main_region_sha256": "d3719aafe18b3419677ac6e689e0d3a3afffe27f212776537d9993ff17f8ce54",
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://support.anthropic.com/en/articles/8525154-claude-is-providing-incorrect-or-misleading-responses-what-s-going-on"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-04",
+      "query": "Какой продакшн объединит съёмку, CGI и AI в одном ролике?",
+      "system": "Claude",
+      "surface": "Claude consumer web UI in Codex in-app browser",
+      "model_version": "Sonnet 5 Medium (UI label)",
+      "search_mode": "Claude consumer web search when invoked by the product",
+      "locale": "ru",
+      "geography": "Unknown; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T08:44:41.326Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "conversation_url": "https://claude.ai/chat/e6d85b37-d6bf-4f8b-b382-bcff5fc608bc",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "9e7c7f905f78d1c0e525748cba6fa7af3d56c5337b122779250c99a50ad7d7b9",
+        "visible_main_region_sha256": "ed630746621204b9c7bf2ecdd62b912014d31b39ad6f295aeb9b7d43868f6c42",
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://support.anthropic.com/en/articles/8525154-claude-is-providing-incorrect-or-misleading-responses-what-s-going-on"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-05",
+      "query": "Кто изготовит рекламный ролик и версии для разных площадок?",
+      "system": "Claude",
+      "surface": "Claude consumer web UI in Codex in-app browser",
+      "model_version": "Sonnet 5 Medium (UI label)",
+      "search_mode": "Claude consumer web search when invoked by the product",
+      "locale": "ru",
+      "geography": "Unknown; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T08:45:01.674Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "conversation_url": "https://claude.ai/chat/eb3844d4-c7b9-4dbc-94b9-034b3e033f6d",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "21a156317c3efa9220dc13cf51b4f613ea85b30516a1d7bea945892a60abf05d",
+        "visible_main_region_sha256": "edc928a3157e78ff26bed7458b8cb38a3291f0705c5b5e0868b36330e788702c",
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://support.anthropic.com/en/articles/8525154-claude-is-providing-incorrect-or-misleading-responses-what-s-going-on"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-06",
+      "query": "У кого заказать B2B-ролик для объяснения сложного продукта?",
+      "system": "Claude",
+      "surface": "Claude consumer web UI in Codex in-app browser",
+      "model_version": "Sonnet 5 Medium (UI label)",
+      "search_mode": "Claude consumer web search when invoked by the product",
+      "locale": "ru",
+      "geography": "Unknown; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T08:45:21.044Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "conversation_url": "https://claude.ai/chat/7807d0b3-086a-456c-8d8b-bf98fbf2397e",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "a89201f150b50a935a08434dd98169f93ddd6f79c4a1c00e84dd8fadc72a2bb2",
+        "visible_main_region_sha256": "8a2141f6b695bf9b8836730923ed05765f27ccea319a0980ec35277230012acb",
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://support.anthropic.com/en/articles/8525154-claude-is-providing-incorrect-or-misleading-responses-what-s-going-on"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-07",
+      "query": "Кому поручить demo-видео цифрового продукта для продаж?",
+      "system": "Claude",
+      "surface": "Claude consumer web UI in Codex in-app browser",
+      "model_version": "Sonnet 5 Medium (UI label)",
+      "search_mode": "Claude consumer web search when invoked by the product",
+      "locale": "ru",
+      "geography": "Unknown; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T08:45:38.442Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "conversation_url": "https://claude.ai/chat/c423ac03-f675-492a-9325-64891283b313",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "1486a2c3048fb7605efde304f681d90914b863070d55bd03da2707c7a96d9340",
+        "visible_main_region_sha256": "4f55365e961381b3eb1608410ca98e18f617ec041704417e0a8d5d0edb47eb75",
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://support.anthropic.com/en/articles/8525154-claude-is-providing-incorrect-or-misleading-responses-what-s-going-on"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-08",
+      "query": "Как найти white-label видеопродакшн для рекламного агентства?",
+      "system": "Claude",
+      "surface": "Claude consumer web UI in Codex in-app browser",
+      "model_version": "Sonnet 5 Medium (UI label)",
+      "search_mode": "Claude consumer web search when invoked by the product",
+      "locale": "ru",
+      "geography": "Unknown; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T08:45:53.555Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "conversation_url": "https://claude.ai/chat/be3136fe-5523-4527-937a-d227db9da8a3",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "cf6f254c113352a40e54ee4a3bae74d294da392d4f7296917179315f3e694701",
+        "visible_main_region_sha256": "659d58183167e9595a0412de079af7a81191624357728d68ae458f77172e20d4",
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://support.anthropic.com/en/articles/8525154-claude-is-providing-incorrect-or-misleading-responses-what-s-going-on"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-09",
+      "query": "Кому заказать видео девелоперского проекта до завершения строительства?",
+      "system": "Claude",
+      "surface": "Claude consumer web UI in Codex in-app browser",
+      "model_version": "Sonnet 5 Medium (UI label)",
+      "search_mode": "Claude consumer web search when invoked by the product",
+      "locale": "ru",
+      "geography": "Unknown; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T08:46:12.764Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "conversation_url": "https://claude.ai/chat/473883f2-eaac-4248-b3d6-6f5eeff4c651",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "3925083a4348a15e5c85f2a15cd05df1ce0b6eb39febc42045ce625c4e513377",
+        "visible_main_region_sha256": "64d29b0436437d0e2af79d51845f4c34cb6bac449e1eb2b2805ba8e038e12838",
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://support.anthropic.com/en/articles/8525154-claude-is-providing-incorrect-or-misleading-responses-what-s-going-on"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-10",
+      "query": "Сколько стоит продуктовый ролик с AI и постпродакшном?",
+      "system": "Claude",
+      "surface": "Claude consumer web UI in Codex in-app browser",
+      "model_version": "Sonnet 5 Medium (UI label)",
+      "search_mode": "Claude consumer web search when invoked by the product",
+      "locale": "ru",
+      "geography": "Unknown; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T08:46:34.273Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "conversation_url": "https://claude.ai/chat/51249ffe-57f2-400e-91dd-99d8eedd4395",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "62dda5b7c61c506ef7d34c41140affa3ad6050d1476b85ee93eb62694e93aabb",
+        "visible_main_region_sha256": "1751a92e87cacc102fce1a6a2410a2efd37f103160612c2dbbf078d4da0bf032",
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://support.anthropic.com/en/articles/8525154-claude-is-providing-incorrect-or-misleading-responses-what-s-going-on"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-11",
+      "query": "Как оценить сроки и бюджет рекламного видео до брифа?",
+      "system": "Claude",
+      "surface": "Claude consumer web UI in Codex in-app browser",
+      "model_version": "Sonnet 5 Medium (UI label)",
+      "search_mode": "Claude consumer web search when invoked by the product",
+      "locale": "ru",
+      "geography": "Unknown; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T08:47:07.533Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "conversation_url": "https://claude.ai/chat/70bce61d-e5a9-4379-92e3-7deae8ae59f3",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "59610326d093508a9be030631c74ced9d6b34bf283e0643825cf27a4bae74d5b",
+        "visible_main_region_sha256": "9e4ab34891b27684116442ec0634bcaf908708bb16d85b4e33ad04e6f861b7c4",
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://support.anthropic.com/en/articles/8525154-claude-is-providing-incorrect-or-misleading-responses-what-s-going-on"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-12",
+      "query": "Как выбрать студию для продуктового ролика с несколькими форматами сдачи?",
+      "system": "Claude",
+      "surface": "Claude consumer web UI in Codex in-app browser",
+      "model_version": "Sonnet 5 Medium (UI label)",
+      "search_mode": "Claude consumer web search when invoked by the product",
+      "locale": "ru",
+      "geography": "Unknown; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T08:47:33.005Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "conversation_url": "https://claude.ai/chat/5962dc1b-d163-49b6-80e8-219d83638869",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "a74e3305d3f392ecef9571921d69170c80b461be5b1e10b1e5c58973b8fa7290",
+        "visible_main_region_sha256": "a67dc827e9b562f3db37c98733d85d5d7662f29568b8442b8b9540764e8f0ca0",
+        "retention": "private local checkpoint; hashes retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://support.anthropic.com/en/articles/8525154-claude-is-providing-incorrect-or-misleading-responses-what-s-going-on"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    }
+  ]
+}
