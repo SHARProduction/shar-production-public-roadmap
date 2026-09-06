@@ -21,7 +21,7 @@ These results do not imply search ranking, third-party adoption, LLM training, e
 - Tasks: **36**
 - Status distribution: LOCAL_READY 9, MEASURED 6, PLANNED 5, PUBLISHED_VERIFIED 15, SUBMITTED 1.
 - Exact external-profile recovery now uses the correct 40-row owner-reported denominator: 12 owner-account URLs are recovered, one row is closed by the provider refusal, and 27 remain unresolved. Two additional exact URLs (Orgpage and Product Hunt) are tracked as supplemental recoveries. The recovered X account is public but lacks SHAR Production and sharprod.com, so it is a correction candidate and not a placement. Ko-fi remains the one recovered provider-noindex page.
-- Controlled AI/search coverage: 144 of 192 product/query slots are measured (Google 24/24, Bing 24/24, Alice 24/24, Gemini 24/24, ChatGPT 24/24, Claude 24/24); 48 remain unmeasured. The dated Alice run produced seven SHAR mentions and five independently HTTP-verified linked citations; Gemini Flash produced one mention and zero direct valid citations; unsigned guest ChatGPT and authenticated free Claude each produced zero mentions and zero direct valid citations. Bing produced zero SHAR Production results across its completed fixed panel. Claude exposed 13 unique source URLs, 12 reachable in the dated transport check.
+- Controlled AI/search coverage: 168 of 192 product/query slots are measured. Google, Bing and Yandex are 24/24; Alice, Gemini, ChatGPT and Claude are also 24/24. Only Perplexity remains unmeasured. Google produced five inspected SHAR citations; Yandex produced ten direct SHAR-controlled result links across nine queries, all re-fetched with HTTP 200 and exact canonical metadata; Bing produced zero SHAR Production results. Alice produced seven SHAR mentions and five independently HTTP-verified linked citations; Gemini Flash produced one mention and zero direct valid citations; unsigned guest ChatGPT and authenticated free Claude each produced zero mentions and zero direct valid citations.
 - No legacy repository, main-domain, DNS, Timeweb, paid-plan, domain-purchase, or GPU change is represented.
 
 ## Layers
@@ -50,7 +50,7 @@ These results do not imply search ranking, third-party adoption, LLM training, e
 - STATUS.md — task register with acceptance state and next action.
 - COMMERCIAL-INTENT-MAP.md — eight commercial clusters and the 24-query RU/EN non-brand panel.
 - AI-SEARCH-MEASUREMENT-PROTOCOL.md — controlled coverage and evidence rules for five AI systems and three search engines.
-- SEARCH-MEASUREMENT-WAVE-01-2026-09-06.json — 72-slot Google/Bing/Yandex record with 48 measured slots, completed Google and Bing panels, and five inspected Google citations to SHAR Production.
+- SEARCH-MEASUREMENT-WAVE-01-2026-09-06.json — completed 72/72 Google/Bing/Yandex panel with five inspected Google citations and ten verified Yandex result links to SHAR Production.
 - AI-SEARCH-MEASUREMENT-WAVE-02-2026-09-06.json — 24/24 Alice consumer-answer observations with seven SHAR mentions and five valid linked citations.
 - AI-SEARCH-MEASUREMENT-WAVE-03-2026-09-06.json — 24/24 Gemini Flash consumer-answer observations with one SHAR mention, zero direct valid citations and 59 unique extracted source URLs.
 - AI-SEARCH-MEASUREMENT-WAVE-04-2026-09-06.json — 24/24 unsigned guest ChatGPT consumer-answer observations with zero SHAR mentions and zero direct valid citations.

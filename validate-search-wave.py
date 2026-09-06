@@ -17,7 +17,9 @@ for system in ("Google", "Bing", "Yandex"):
     assert len(system_rows) == 24
     assert len({row["query_id"] for row in system_rows}) == 24
 assert sum(row["status"] == "MEASURED" for row in records) == data["coverage"]["measured_slots"]
-assert sum(row.get("shar_classification") == "VALID_CITATION" for row in records) == 5
-assert sorted(row["shar_rank"] for row in records if row.get("shar_classification") == "VALID_CITATION") == [1, 1, 1, 1, 2]
-assert all(row.get("citation_verification", {}).get("http_status") == 200 for row in records if row.get("shar_classification") == "VALID_CITATION")
+valid_rows = [row for row in records if row.get("shar_classification") == "VALID_CITATION"]
+assert len(valid_rows) == 14
+assert sum(len(row.get("shar_results", [])) or 1 for row in valid_rows) == 15
+assert all(row.get("citation_verification", {}).get("http_status") == 200 for row in valid_rows if row["system"] == "Google")
+assert all(check.get("http_status") == 200 and check.get("canonical") for row in valid_rows if row["system"] == "Yandex" for check in row.get("citation_verifications", []))
 print("search measurement wave: 10/10 invariants passed")

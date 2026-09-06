@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "brand": "SHAR Production",
   "website": "https://sharprod.com/",
-  "generated_at_utc": "2026-09-06T09:15:19Z",
+  "generated_at_utc": "2026-09-06T09:30:55Z",
   "license": "MIT for this measurement schema and authored documentation; search-result facts and third-party pages retain their original rights",
   "panel": {
     "queries": 24,
@@ -14,8 +14,8 @@
     "total_slots": 72
   },
   "coverage": {
-    "measured_slots": 48,
-    "not_measured_slots": 24,
+    "measured_slots": 72,
+    "not_measured_slots": 0,
     "by_system": {
       "Google": {
         "measured": 24,
@@ -26,8 +26,8 @@
         "not_measured": 0
       },
       "Yandex": {
-        "measured": 0,
-        "not_measured": 24
+        "measured": 24,
+        "not_measured": 0
       }
     }
   },
@@ -67,19 +67,20 @@
         "url": "https://sharprod.com/pricing/"
       }
     ],
-    "scope_note": "One dated requested-locale observation per query. This does not prove stable rank, traffic, leads, causation, or visibility in another geography or product surface."
+    "scope_note": "One dated requested-locale observation per query. This does not prove stable rank, traffic, leads, causation, or visibility in another geography or product surface.",
+    "valid_yandex_result_links": 10,
+    "yandex_queries_with_valid_citations": 9
   },
   "methodology": {
     "google": "Current in-app Google Search consumer UI, web-only udm=14, pws=0; complete accessibility tree and desktop screenshot retained for every query.",
     "bing": "Nine accepted clean Chrome headless observations retained from the dated baseline; fifteen remaining fixed non-brand queries measured in the current Codex in-app browser. Result URLs and full visible-text hashes are retained.",
-    "yandex": "Clean Chrome headless consumer search surface; stopped on the first timed-out run after direct HTTP preflight redirected to showcaptcha.",
+    "yandex": "Current Yandex Search consumer UI in the Codex in-app browser; all 24 fixed non-brand queries measured. Direct result URLs and visible-text hashes retained; all ten SHAR-controlled result URLs were re-fetched with HTTP 200 and exact canonical extraction.",
     "cost": "USD 0; free public surfaces only."
   },
   "limitations": [
     "Requested locale/country parameters are recorded; physical egress location was not independently verified.",
     "Google was signed in but used pws=0; a non-personalized notice was preserved in 23 of 24 accessibility captures.",
     "Lower Google URLs compacted to an ellipsis in some accessibility captures; screenshots preserve the rendered page and only parseable URLs are ranked.",
-    "Yandex inaccessible slots are NOT_MEASURED, not zero visibility.",
     "IndexNow acceptance and an indexable page are not evidence of indexing or rank."
   ],
   "records": [
@@ -3929,310 +3930,2141 @@
       "query_id": "commercial-ru-01",
       "query": "Как выбрать подрядчика для AI-рекламного ролика с постоянным персонажем?",
       "system": "Yandex",
-      "surface": "public consumer search results rendered in clean Chrome headless session",
+      "surface": "Yandex Search consumer UI in current Codex in-app browser",
       "model_version": "NOT_DISCLOSED",
       "search_mode": "standard web search",
       "locale": "ru",
-      "geography": "RU requested by gl/cc/lr parameter",
-      "physical_egress_location": "NOT_INDEPENDENTLY_VERIFIED",
-      "tested_at_utc": "2026-09-06T05:11:14Z",
+      "geography": "Moscow or United States requested through lr/lang parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:24:15.488Z",
       "repetition": 1,
       "cost": {
         "amount": 0,
         "currency": "USD",
-        "basis": "free public surface"
+        "basis": "free consumer UI"
       },
       "request_url": "https://yandex.ru/search/?lr=213&lang=ru&text=%D0%9A%D0%B0%D0%BA+%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D1%82%D1%8C+%D0%BF%D0%BE%D0%B4%D1%80%D1%8F%D0%B4%D1%87%D0%B8%D0%BA%D0%B0+%D0%B4%D0%BB%D1%8F+AI-%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE+%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%D0%B0+%D1%81+%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D1%8B%D0%BC+%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%B6%D0%B5%D0%BC%3F",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "CAPTCHA_OR_NO_PARSEABLE_RESULTS",
+      "status": "MEASURED",
       "raw_evidence": {
-        "desktop_dom_gzip": "yandex-commercial-ru-01-desktop.html.gz",
-        "desktop_dom_sha256": "d267fd8aa6e5c0fd93e632e8085603dc075315c77f46be5d80b336da848a3d8e",
-        "desktop_screenshot": null,
-        "desktop_screenshot_sha256": null,
-        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "visible_text_sha256": "c76defce49e995991c10e25d6aa37a692ec13d4cf3d6e56cd9b1c43442d4eb47",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
         "publicly_embedded": false
       },
-      "urls": [],
-      "organic_results": [],
+      "urls": [
+        "https://vc.ru/ai/2729854-kak-vybrat-podryadchika-dlya-ii-rolikov",
+        "https://march-ai.ru/blog/kak-vybrat-podryadchika-ai-video",
+        "https://lineinspace.studio/services/sozdanie_ai_rolikov/",
+        "https://secrets.tbank.ru/blogi-kompanij/nejroseti-v-reklame/",
+        "https://svyazi-agency.ru/landing/motion/ai",
+        "https://companies.rbc.ru/news/x34J8ld0t8/ii-avataryi-dlya-biznesa-kak-snizit-zatratyi-na-videokontent/",
+        "https://www.fl.ru/projects/5519947/sozdat-ai-reklamnyiy-rolik.html",
+        "https://freelancespace.ru/service/sozdam-reklamnyj-ai-videorolik-dlya-effektivnogo-prodvizheniya-biznesa",
+        "https://ruvision.ru/ai",
+        "https://champvideo.pro/ii-videoprodakshn-dlya-biznesa"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://vc.ru/ai/2729854-kak-vybrat-podryadchika-dlya-ii-rolikov"
+        },
+        {
+          "rank": 2,
+          "url": "https://march-ai.ru/blog/kak-vybrat-podryadchika-ai-video"
+        },
+        {
+          "rank": 3,
+          "url": "https://lineinspace.studio/services/sozdanie_ai_rolikov/"
+        },
+        {
+          "rank": 4,
+          "url": "https://secrets.tbank.ru/blogi-kompanij/nejroseti-v-reklame/"
+        },
+        {
+          "rank": 5,
+          "url": "https://svyazi-agency.ru/landing/motion/ai"
+        },
+        {
+          "rank": 6,
+          "url": "https://companies.rbc.ru/news/x34J8ld0t8/ii-avataryi-dlya-biznesa-kak-snizit-zatratyi-na-videokontent/"
+        },
+        {
+          "rank": 7,
+          "url": "https://www.fl.ru/projects/5519947/sozdat-ai-reklamnyiy-rolik.html"
+        },
+        {
+          "rank": 8,
+          "url": "https://freelancespace.ru/service/sozdam-reklamnyj-ai-videorolik-dlya-effektivnogo-prodvizheniya-biznesa"
+        },
+        {
+          "rank": 9,
+          "url": "https://ruvision.ru/ai"
+        },
+        {
+          "rank": 10,
+          "url": "https://champvideo.pro/ii-videoprodakshn-dlya-biznesa"
+        }
+      ],
+      "shar_results": [],
       "shar_classification": "NO_SHAR_RESULT",
-      "shar_rank": null
+      "shar_rank": null,
+      "citation_verifications": []
     },
     {
       "query_id": "commercial-en-01",
       "query": "How do I choose an AI video production partner for an ad with a consistent character?",
       "system": "Yandex",
+      "surface": "Yandex Search consumer UI in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "en",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
-      "shar_rank": null
+      "geography": "Moscow or United States requested through lr/lang parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:24:16.978Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://yandex.ru/search/?lr=84&lang=en&text=How%20do%20I%20choose%20an%20AI%20video%20production%20partner%20for%20an%20ad%20with%20a%20consistent%20character%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "8d387ee7979a6cf74048a1ed60de422de48d9aa947644ff364624690177e567e",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://magichour.ai/blog/ai-character-replace-video-ad-localization",
+        "https://www.vo3ai.com/blog/how-to-build-a-consistent-ai-video-character-across-your-brand-step-by-step-with-2026-04-19",
+        "https://opencreator.io/blog/ai-consistent-character-ads",
+        "https://oakgen.ai/blog/ai-ugc-character-consistency-workflow",
+        "https://aivideomaker.ai/blog/ai-consistent-character",
+        "https://pixverse.ai/en/blog/how-to-create-consistent-characters-with-ai",
+        "https://www.kittl.com/blogs/ai-video-character-consistency-workflow/",
+        "https://www.kapwing.com/resources/best-ai-video-generators-for-character-consistency/",
+        "https://www.superside.com/blog/ai-ad-creative-generators",
+        "https://virbo.wondershare.com/ai-avatar/consistent-talking-characters.html"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://magichour.ai/blog/ai-character-replace-video-ad-localization"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.vo3ai.com/blog/how-to-build-a-consistent-ai-video-character-across-your-brand-step-by-step-with-2026-04-19"
+        },
+        {
+          "rank": 3,
+          "url": "https://opencreator.io/blog/ai-consistent-character-ads"
+        },
+        {
+          "rank": 4,
+          "url": "https://oakgen.ai/blog/ai-ugc-character-consistency-workflow"
+        },
+        {
+          "rank": 5,
+          "url": "https://aivideomaker.ai/blog/ai-consistent-character"
+        },
+        {
+          "rank": 6,
+          "url": "https://pixverse.ai/en/blog/how-to-create-consistent-characters-with-ai"
+        },
+        {
+          "rank": 7,
+          "url": "https://www.kittl.com/blogs/ai-video-character-consistency-workflow/"
+        },
+        {
+          "rank": 8,
+          "url": "https://www.kapwing.com/resources/best-ai-video-generators-for-character-consistency/"
+        },
+        {
+          "rank": 9,
+          "url": "https://www.superside.com/blog/ai-ad-creative-generators"
+        },
+        {
+          "rank": 10,
+          "url": "https://virbo.wondershare.com/ai-avatar/consistent-talking-characters.html"
+        }
+      ],
+      "shar_results": [],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "citation_verifications": []
     },
     {
       "query_id": "commercial-ru-02",
       "query": "Кому заказать AI-видео продукта с точной формой упаковки?",
       "system": "Yandex",
+      "surface": "Yandex Search consumer UI in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "ru",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
-      "shar_rank": null
+      "geography": "Moscow or United States requested through lr/lang parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:24:18.394Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://yandex.ru/search/?lr=213&lang=ru&text=%D0%9A%D0%BE%D0%BC%D1%83%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20AI-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%B0%20%D1%81%20%D1%82%D0%BE%D1%87%D0%BD%D0%BE%D0%B9%20%D1%84%D0%BE%D1%80%D0%BC%D0%BE%D0%B9%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "ec8c5ed3047701e1db8997733f53064b7c22995f2712ad1d742b0ff1da441a52",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.sostav.ru/blogs/272766/65540",
+        "https://video-market.ru/production",
+        "https://studiowe.ru/",
+        "https://minakovai.ru/ai-video-production/",
+        "https://svyazi-agency.ru/landing/motion/ai",
+        "https://www.ailabpro.ru/",
+        "https://kvsvideo.ru/",
+        "https://lineinspace.studio/services/sozdanie_ai_rolikov/",
+        "https://sharprod.com/services/ai-video-production-service.html",
+        "https://ruvision.ru/ai"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://www.sostav.ru/blogs/272766/65540"
+        },
+        {
+          "rank": 2,
+          "url": "https://video-market.ru/production"
+        },
+        {
+          "rank": 3,
+          "url": "https://studiowe.ru/"
+        },
+        {
+          "rank": 4,
+          "url": "https://minakovai.ru/ai-video-production/"
+        },
+        {
+          "rank": 5,
+          "url": "https://svyazi-agency.ru/landing/motion/ai"
+        },
+        {
+          "rank": 6,
+          "url": "https://www.ailabpro.ru/"
+        },
+        {
+          "rank": 7,
+          "url": "https://kvsvideo.ru/"
+        },
+        {
+          "rank": 8,
+          "url": "https://lineinspace.studio/services/sozdanie_ai_rolikov/"
+        },
+        {
+          "rank": 9,
+          "url": "https://sharprod.com/services/ai-video-production-service.html"
+        },
+        {
+          "rank": 10,
+          "url": "https://ruvision.ru/ai"
+        }
+      ],
+      "shar_results": [
+        {
+          "rank": 9,
+          "url": "https://sharprod.com/services/ai-video-production-service.html",
+          "title": "AI-видеопродакшн: рекламные ролики с ИИ"
+        }
+      ],
+      "shar_classification": "VALID_CITATION",
+      "shar_rank": 9,
+      "citation_verifications": [
+        {
+          "url": "https://sharprod.com/services/ai-video-production-service.html",
+          "http_status": 200,
+          "final_url": "https://sharprod.com/services/ai-video-production-service.html",
+          "canonical": "https://sharprod.com/services/ai-video-production-service.html",
+          "shar_production_present": true,
+          "valid": true
+        }
+      ]
     },
     {
       "query_id": "commercial-en-02",
       "query": "Who can produce an AI product video that preserves packaging accuracy?",
       "system": "Yandex",
+      "surface": "Yandex Search consumer UI in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "en",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
-      "shar_rank": null
+      "geography": "Moscow or United States requested through lr/lang parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:24:19.803Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://yandex.ru/search/?lr=84&lang=en&text=Who%20can%20produce%20an%20AI%20product%20video%20that%20preserves%20packaging%20accuracy%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "02470ca4c99fa14225e0465216ef167357e1d71ffc1d6aa4082767e89d13c02c",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.pacdora.com/tools/ai-packaging-video-generator",
+        "https://www.heygen.com/blog/best-ai-video-tools-ecommerce-product-videos",
+        "https://acquireconvert.com/video-animation/best-ai-product-video-generator/",
+        "https://queststudio.io/blog/how-to-make-an-ai-product-video",
+        "https://ecommercefastlane.com/photo-to-video-ai-product-marketing-videos/",
+        "https://ezremove.ai/solutions/how-to-use-an-ai-video-generator-for-e-commerce-product-videos/",
+        "https://www.seeddance.io/blog/ai-product-video-generator",
+        "https://youart.ai/blog/create-product-videos-from-product-photos",
+        "https://apob.ai/ai-product-video-generator/",
+        "https://www.synthesia.io/post/best-ai-video-generators"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://www.pacdora.com/tools/ai-packaging-video-generator"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.heygen.com/blog/best-ai-video-tools-ecommerce-product-videos"
+        },
+        {
+          "rank": 3,
+          "url": "https://acquireconvert.com/video-animation/best-ai-product-video-generator/"
+        },
+        {
+          "rank": 4,
+          "url": "https://queststudio.io/blog/how-to-make-an-ai-product-video"
+        },
+        {
+          "rank": 5,
+          "url": "https://ecommercefastlane.com/photo-to-video-ai-product-marketing-videos/"
+        },
+        {
+          "rank": 6,
+          "url": "https://ezremove.ai/solutions/how-to-use-an-ai-video-generator-for-e-commerce-product-videos/"
+        },
+        {
+          "rank": 7,
+          "url": "https://www.seeddance.io/blog/ai-product-video-generator"
+        },
+        {
+          "rank": 8,
+          "url": "https://youart.ai/blog/create-product-videos-from-product-photos"
+        },
+        {
+          "rank": 9,
+          "url": "https://apob.ai/ai-product-video-generator/"
+        },
+        {
+          "rank": 10,
+          "url": "https://www.synthesia.io/post/best-ai-video-generators"
+        }
+      ],
+      "shar_results": [],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "citation_verifications": []
     },
     {
       "query_id": "commercial-ru-03",
       "query": "Где заказать 3D-пакшот товара для рекламной кампании?",
       "system": "Yandex",
+      "surface": "Yandex Search consumer UI in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "ru",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
-      "shar_rank": null
+      "geography": "Moscow or United States requested through lr/lang parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:24:21.194Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://yandex.ru/search/?lr=213&lang=ru&text=%D0%93%D0%B4%D0%B5%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%203D-%D0%BF%D0%B0%D0%BA%D1%88%D0%BE%D1%82%20%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D0%BE%D0%B9%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "a1a3c56d919d38cc1512630aa8826ee3381b3d13ca0edb0e1f5d97dc59800b20",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://3dtovarov.ru/",
+        "https://mockup.expert/",
+        "https://kwork.ru/vector-tracing/25763052/3d-model-tovara-vizualizatsiya-dlya-marketpleysov",
+        "https://rich-content.ru/3d-vizualizaciya-tovarov/",
+        "https://light-catchers.ru/uslugi/3d-vizualization/",
+        "https://fotofactor.ru/model_ret",
+        "https://zarbo.tech/",
+        "https://www.avito.ru/all/predlozheniya_uslug?q=3d+%D0%B2%D0%B8%D0%B7%D1%83%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F+%D0%B4%D0%BB%D1%8F+%D0%BC%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D0%BF%D0%BB%D0%B5%D0%B9%D1%81%D0%BE%D0%B2",
+        "https://maart.studio/",
+        "https://appsforlife.ru/boxshot/"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://3dtovarov.ru/"
+        },
+        {
+          "rank": 2,
+          "url": "https://mockup.expert/"
+        },
+        {
+          "rank": 3,
+          "url": "https://kwork.ru/vector-tracing/25763052/3d-model-tovara-vizualizatsiya-dlya-marketpleysov"
+        },
+        {
+          "rank": 4,
+          "url": "https://rich-content.ru/3d-vizualizaciya-tovarov/"
+        },
+        {
+          "rank": 5,
+          "url": "https://light-catchers.ru/uslugi/3d-vizualization/"
+        },
+        {
+          "rank": 6,
+          "url": "https://fotofactor.ru/model_ret"
+        },
+        {
+          "rank": 7,
+          "url": "https://zarbo.tech/"
+        },
+        {
+          "rank": 8,
+          "url": "https://www.avito.ru/all/predlozheniya_uslug?q=3d+%D0%B2%D0%B8%D0%B7%D1%83%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F+%D0%B4%D0%BB%D1%8F+%D0%BC%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D0%BF%D0%BB%D0%B5%D0%B9%D1%81%D0%BE%D0%B2"
+        },
+        {
+          "rank": 9,
+          "url": "https://maart.studio/"
+        },
+        {
+          "rank": 10,
+          "url": "https://appsforlife.ru/boxshot/"
+        }
+      ],
+      "shar_results": [],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "citation_verifications": []
     },
     {
       "query_id": "commercial-en-03",
       "query": "Where can I commission a 3D product packshot for an advertising campaign?",
       "system": "Yandex",
+      "surface": "Yandex Search consumer UI in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "en",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
-      "shar_rank": null
+      "geography": "Moscow or United States requested through lr/lang parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:24:22.657Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://yandex.ru/search/?lr=84&lang=en&text=Where%20can%20I%20commission%20a%203D%20product%20packshot%20for%20an%20advertising%20campaign%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "a905b0420f5ab5b45377afb412ecbfe1beedcff527d71487c6af685185d3513d",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.fiverr.com/aman_tewari/do-your-commercial-3d-product-packshot",
+        "https://sellfy.com/blog/sell-3d-models-tips/",
+        "https://cgionly.com/index.php/service/product-packshot/",
+        "https://www.imaginar.co.uk/product-visualization-services/",
+        "https://smbillion.com/3d-model-commissions/",
+        "https://www.freelancer.com/projects/graphic-design/product-packshot-model-high-quality",
+        "https://maverickframe.com/services/3d-product-rendering-services/",
+        "https://multiproduktion.se/en/articles/sell-more-with-3d-packshots/",
+        "https://jpgglobal.net/us/packaging-graphics-services/cgi-packshots-and-3d-product-images/",
+        "https://www.cadesignform.com/services/3d-images/product-images"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://www.fiverr.com/aman_tewari/do-your-commercial-3d-product-packshot"
+        },
+        {
+          "rank": 2,
+          "url": "https://sellfy.com/blog/sell-3d-models-tips/"
+        },
+        {
+          "rank": 3,
+          "url": "https://cgionly.com/index.php/service/product-packshot/"
+        },
+        {
+          "rank": 4,
+          "url": "https://www.imaginar.co.uk/product-visualization-services/"
+        },
+        {
+          "rank": 5,
+          "url": "https://smbillion.com/3d-model-commissions/"
+        },
+        {
+          "rank": 6,
+          "url": "https://www.freelancer.com/projects/graphic-design/product-packshot-model-high-quality"
+        },
+        {
+          "rank": 7,
+          "url": "https://maverickframe.com/services/3d-product-rendering-services/"
+        },
+        {
+          "rank": 8,
+          "url": "https://multiproduktion.se/en/articles/sell-more-with-3d-packshots/"
+        },
+        {
+          "rank": 9,
+          "url": "https://jpgglobal.net/us/packaging-graphics-services/cgi-packshots-and-3d-product-images/"
+        },
+        {
+          "rank": 10,
+          "url": "https://www.cadesignform.com/services/3d-images/product-images"
+        }
+      ],
+      "shar_results": [],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "citation_verifications": []
     },
     {
       "query_id": "commercial-ru-04",
       "query": "Какой продакшн объединит съёмку, CGI и AI в одном ролике?",
       "system": "Yandex",
+      "surface": "Yandex Search consumer UI in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "ru",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
-      "shar_rank": null
+      "geography": "Moscow or United States requested through lr/lang parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:24:24.127Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://yandex.ru/search/?lr=213&lang=ru&text=%D0%9A%D0%B0%D0%BA%D0%BE%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%BA%D1%88%D0%BD%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%B4%D0%B8%D0%BD%D0%B8%D1%82%20%D1%81%D1%8A%D1%91%D0%BC%D0%BA%D1%83%2C%20CGI%20%D0%B8%20AI%20%D0%B2%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%D0%B5%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "5c0ede10a42dd7b870336085e828eeb461d9ca48cc3f66c714ef5e01df992a2f",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://sharprod.com/services/hybrid-video-production.html",
+        "https://sharprod.com/",
+        "https://moreproduction.ru/hybrid/",
+        "https://shchiprod.ru/",
+        "https://www.sostav.ru/blogs/290917/97360",
+        "https://www.sostav.ru/publication/shchi-prodakshen-sozdali-reklamnyj-rolik-dlya-ostrova-mechty-84474.html",
+        "https://22frames.studio/",
+        "https://dprofile.ru/case/182953/shar-production-ai-hybrid-video-showreel",
+        "https://www.ailabpro.ru/",
+        "https://kenguru.agency/"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://sharprod.com/services/hybrid-video-production.html"
+        },
+        {
+          "rank": 2,
+          "url": "https://sharprod.com/"
+        },
+        {
+          "rank": 3,
+          "url": "https://moreproduction.ru/hybrid/"
+        },
+        {
+          "rank": 4,
+          "url": "https://shchiprod.ru/"
+        },
+        {
+          "rank": 5,
+          "url": "https://www.sostav.ru/blogs/290917/97360"
+        },
+        {
+          "rank": 6,
+          "url": "https://www.sostav.ru/publication/shchi-prodakshen-sozdali-reklamnyj-rolik-dlya-ostrova-mechty-84474.html"
+        },
+        {
+          "rank": 7,
+          "url": "https://22frames.studio/"
+        },
+        {
+          "rank": 8,
+          "url": "https://dprofile.ru/case/182953/shar-production-ai-hybrid-video-showreel"
+        },
+        {
+          "rank": 9,
+          "url": "https://www.ailabpro.ru/"
+        },
+        {
+          "rank": 10,
+          "url": "https://kenguru.agency/"
+        }
+      ],
+      "shar_results": [
+        {
+          "rank": 1,
+          "url": "https://sharprod.com/services/hybrid-video-production.html",
+          "title": "Гибридный видеопродакшн: съёмка, AI и CGI"
+        },
+        {
+          "rank": 2,
+          "url": "https://sharprod.com/",
+          "title": "Видеопродакшн для брендов: AI, CGI и съёмка | SHAR"
+        }
+      ],
+      "shar_classification": "VALID_CITATION",
+      "shar_rank": 1,
+      "citation_verifications": [
+        {
+          "url": "https://sharprod.com/services/hybrid-video-production.html",
+          "http_status": 200,
+          "final_url": "https://sharprod.com/services/hybrid-video-production.html",
+          "canonical": "https://sharprod.com/services/hybrid-video-production.html",
+          "shar_production_present": true,
+          "valid": true
+        },
+        {
+          "url": "https://sharprod.com/",
+          "http_status": 200,
+          "final_url": "https://sharprod.com/",
+          "canonical": "https://sharprod.com/",
+          "shar_production_present": true,
+          "valid": true
+        }
+      ]
     },
     {
       "query_id": "commercial-en-04",
       "query": "Which production partner can combine live action, CGI and AI in one film?",
       "system": "Yandex",
+      "surface": "Yandex Search consumer UI in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "en",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
-      "shar_rank": null
+      "geography": "Moscow or United States requested through lr/lang parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:24:25.560Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://yandex.ru/search/?lr=84&lang=en&text=Which%20production%20partner%20can%20combine%20live%20action%2C%20CGI%20and%20AI%20in%20one%20film%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "088b666adbed67de30eb894673213406aed159030c7fc12a2b1a07cb5f2244b0",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://sharprod.com/en/services/hybrid-video-production.html",
+        "https://ai25.studio/",
+        "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/ancestra-behind-the-scenes/",
+        "https://genery.blog/integrating-live-action-footage-with-cgi-in-film/",
+        "https://versaaihub.com/combining-live-action-film-production-with-ai/",
+        "https://higgsfield.ai/creator-hub/case-studies/how-bitt-animation-runs-hybrid-ai-production",
+        "https://www.techaiapp.com/tech/combining-generative-ai-with-live-action-filmmaking/",
+        "https://lbbonline.com/news/the-creative-revolution-behind-neo-home-experience-saatchisaatchi-on-pioneering-ai-filmmaking",
+        "https://toxigon.com/integrating-live-action-and-cgi-in-animation",
+        "https://www.newsy-today.com/combining-generative-ai-with-live-action-filmmaking/"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://sharprod.com/en/services/hybrid-video-production.html"
+        },
+        {
+          "rank": 2,
+          "url": "https://ai25.studio/"
+        },
+        {
+          "rank": 3,
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/ancestra-behind-the-scenes/"
+        },
+        {
+          "rank": 4,
+          "url": "https://genery.blog/integrating-live-action-footage-with-cgi-in-film/"
+        },
+        {
+          "rank": 5,
+          "url": "https://versaaihub.com/combining-live-action-film-production-with-ai/"
+        },
+        {
+          "rank": 6,
+          "url": "https://higgsfield.ai/creator-hub/case-studies/how-bitt-animation-runs-hybrid-ai-production"
+        },
+        {
+          "rank": 7,
+          "url": "https://www.techaiapp.com/tech/combining-generative-ai-with-live-action-filmmaking/"
+        },
+        {
+          "rank": 8,
+          "url": "https://lbbonline.com/news/the-creative-revolution-behind-neo-home-experience-saatchisaatchi-on-pioneering-ai-filmmaking"
+        },
+        {
+          "rank": 9,
+          "url": "https://toxigon.com/integrating-live-action-and-cgi-in-animation"
+        },
+        {
+          "rank": 10,
+          "url": "https://www.newsy-today.com/combining-generative-ai-with-live-action-filmmaking/"
+        }
+      ],
+      "shar_results": [
+        {
+          "rank": 1,
+          "url": "https://sharprod.com/en/services/hybrid-video-production.html",
+          "title": "Hybrid Video Production: AI, CGI and Live Action | SHAR"
+        }
+      ],
+      "shar_classification": "VALID_CITATION",
+      "shar_rank": 1,
+      "citation_verifications": [
+        {
+          "url": "https://sharprod.com/en/services/hybrid-video-production.html",
+          "http_status": 200,
+          "final_url": "https://sharprod.com/en/services/hybrid-video-production.html",
+          "canonical": "https://sharprod.com/en/services/hybrid-video-production.html",
+          "shar_production_present": true,
+          "valid": true
+        }
+      ]
     },
     {
       "query_id": "commercial-ru-05",
       "query": "Кто изготовит рекламный ролик и версии для разных площадок?",
       "system": "Yandex",
+      "surface": "Yandex Search consumer UI in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "ru",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
-      "shar_rank": null
+      "geography": "Moscow or United States requested through lr/lang parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:24:26.988Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://yandex.ru/search/?lr=213&lang=ru&text=%D0%9A%D1%82%D0%BE%20%D0%B8%D0%B7%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%B8%D1%82%20%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D1%8B%D0%B9%20%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%20%D0%B8%20%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B0%D0%B7%D0%BD%D1%8B%D1%85%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BE%D0%BA%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "6bcb6697ef83c09766f73aec67fa7d816500fee408b47e77f57fb9a3d6d5e2fd",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://lineinspace.studio/services/reklamnyy_rolik/",
+        "https://ruvision.ru/advertising",
+        "https://flyfilm.ru/reklama",
+        "https://uncle.agency/",
+        "https://avastudio.ru/uslugi/reklamny-rolik/",
+        "https://lead.media/videoreklama/",
+        "https://profi.ru/krasota/sozdanie-reklamnyh-rolikov/",
+        "https://www.avito.ru/moskva/predlozheniya_uslug?q=%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5+%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D1%8B%D1%85+%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%D0%BE%D0%B2",
+        "https://www.artnonstop.ru/video-production/videoreklama",
+        "https://optimumpro.tv/commercials/"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://lineinspace.studio/services/reklamnyy_rolik/"
+        },
+        {
+          "rank": 2,
+          "url": "https://ruvision.ru/advertising"
+        },
+        {
+          "rank": 3,
+          "url": "https://flyfilm.ru/reklama"
+        },
+        {
+          "rank": 4,
+          "url": "https://uncle.agency/"
+        },
+        {
+          "rank": 5,
+          "url": "https://avastudio.ru/uslugi/reklamny-rolik/"
+        },
+        {
+          "rank": 6,
+          "url": "https://lead.media/videoreklama/"
+        },
+        {
+          "rank": 7,
+          "url": "https://profi.ru/krasota/sozdanie-reklamnyh-rolikov/"
+        },
+        {
+          "rank": 8,
+          "url": "https://www.avito.ru/moskva/predlozheniya_uslug?q=%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5+%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D1%8B%D1%85+%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%D0%BE%D0%B2"
+        },
+        {
+          "rank": 9,
+          "url": "https://www.artnonstop.ru/video-production/videoreklama"
+        },
+        {
+          "rank": 10,
+          "url": "https://optimumpro.tv/commercials/"
+        }
+      ],
+      "shar_results": [],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "citation_verifications": []
     },
     {
       "query_id": "commercial-en-05",
       "query": "Who can produce a commercial and versions for several channels?",
       "system": "Yandex",
+      "surface": "Yandex Search consumer UI in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "en",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
-      "shar_rank": null
+      "geography": "Moscow or United States requested through lr/lang parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:24:28.410Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://yandex.ru/search/?lr=84&lang=en&text=Who%20can%20produce%20a%20commercial%20and%20versions%20for%20several%20channels%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "19873c7537caeb62afffa64fba851e6f1fee4ff2003da996acb10ec4fed94e5c",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://froggyads.com/blog/who-generally-makes-commercials/",
+        "https://www.lemonlight.com/video-types/video-ad/",
+        "https://www.braunfilm.com/service/video-production/television-advertisement/",
+        "https://nustreammarketing.com/services/tv-commercial/",
+        "https://www.regalfiercemedia.com/what-is-commercial-video-production/",
+        "https://brandefy.com/services/tv-commercial-production/",
+        "https://vidico.com/services/commercial-video-production/",
+        "https://www.superside.com/blog/video-production-companies",
+        "https://www.shoots.video/pricing/commercial/",
+        "https://www.jms-group.com/tv-commercial-production-process/"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://froggyads.com/blog/who-generally-makes-commercials/"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.lemonlight.com/video-types/video-ad/"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.braunfilm.com/service/video-production/television-advertisement/"
+        },
+        {
+          "rank": 4,
+          "url": "https://nustreammarketing.com/services/tv-commercial/"
+        },
+        {
+          "rank": 5,
+          "url": "https://www.regalfiercemedia.com/what-is-commercial-video-production/"
+        },
+        {
+          "rank": 6,
+          "url": "https://brandefy.com/services/tv-commercial-production/"
+        },
+        {
+          "rank": 7,
+          "url": "https://vidico.com/services/commercial-video-production/"
+        },
+        {
+          "rank": 8,
+          "url": "https://www.superside.com/blog/video-production-companies"
+        },
+        {
+          "rank": 9,
+          "url": "https://www.shoots.video/pricing/commercial/"
+        },
+        {
+          "rank": 10,
+          "url": "https://www.jms-group.com/tv-commercial-production-process/"
+        }
+      ],
+      "shar_results": [],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "citation_verifications": []
     },
     {
       "query_id": "commercial-ru-06",
       "query": "У кого заказать B2B-ролик для объяснения сложного продукта?",
       "system": "Yandex",
+      "surface": "Yandex Search consumer UI in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "ru",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
-      "shar_rank": null
+      "geography": "Moscow or United States requested through lr/lang parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:24:29.896Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://yandex.ru/search/?lr=213&lang=ru&text=%D0%A3%20%D0%BA%D0%BE%D0%B3%D0%BE%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20B2B-%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%20%D0%B4%D0%BB%D1%8F%20%D0%BE%D0%B1%D1%8A%D1%8F%D1%81%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F%20%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%B0%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "8fe56d68b69d3915fb354dd0dc0d9b3d58a26eb8d7a707c198f2d6a7d3bae0e9",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://sharprod.com/services/b2b-explainer-video.html",
+        "https://xn--80adgaeqsyfakm2i.xn--p1ai/video_dlya_biznesa",
+        "https://companies.rbc.ru/news/aERas2Hgf2/video-dlya-vyistavki-i-stenda-kak-sdelat-prezentuyuschij-kompaniyu-b2b-rolik/",
+        "https://prkompaniya.ru/produktovyj-rolik/",
+        "https://avastudio.ru/uslugi/sozdanie-video-eksplejnera/",
+        "https://fotigy.ru/",
+        "https://content-generator.pro/aivideo",
+        "https://blog.berdoff.studio/ii-video-dlya-b2b-prodazh/",
+        "https://ruvision.ru/blog/chto-vajno-znat-vpervue-zakazuvaua-video-o-kompanii",
+        "https://collby.ru/services/video-explainer"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://sharprod.com/services/b2b-explainer-video.html"
+        },
+        {
+          "rank": 2,
+          "url": "https://xn--80adgaeqsyfakm2i.xn--p1ai/video_dlya_biznesa"
+        },
+        {
+          "rank": 3,
+          "url": "https://companies.rbc.ru/news/aERas2Hgf2/video-dlya-vyistavki-i-stenda-kak-sdelat-prezentuyuschij-kompaniyu-b2b-rolik/"
+        },
+        {
+          "rank": 4,
+          "url": "https://prkompaniya.ru/produktovyj-rolik/"
+        },
+        {
+          "rank": 5,
+          "url": "https://avastudio.ru/uslugi/sozdanie-video-eksplejnera/"
+        },
+        {
+          "rank": 6,
+          "url": "https://fotigy.ru/"
+        },
+        {
+          "rank": 7,
+          "url": "https://content-generator.pro/aivideo"
+        },
+        {
+          "rank": 8,
+          "url": "https://blog.berdoff.studio/ii-video-dlya-b2b-prodazh/"
+        },
+        {
+          "rank": 9,
+          "url": "https://ruvision.ru/blog/chto-vajno-znat-vpervue-zakazuvaua-video-o-kompanii"
+        },
+        {
+          "rank": 10,
+          "url": "https://collby.ru/services/video-explainer"
+        }
+      ],
+      "shar_results": [
+        {
+          "rank": 1,
+          "url": "https://sharprod.com/services/b2b-explainer-video.html",
+          "title": "B2B-видео и объясняющие ролики: услуга для брендов"
+        }
+      ],
+      "shar_classification": "VALID_CITATION",
+      "shar_rank": 1,
+      "citation_verifications": [
+        {
+          "url": "https://sharprod.com/services/b2b-explainer-video.html",
+          "http_status": 200,
+          "final_url": "https://sharprod.com/services/b2b-explainer-video.html",
+          "canonical": "https://sharprod.com/services/b2b-explainer-video.html",
+          "shar_production_present": true,
+          "valid": true
+        }
+      ]
     },
     {
       "query_id": "commercial-en-06",
       "query": "Who can make a B2B explainer for a complex product?",
       "system": "Yandex",
+      "surface": "Yandex Search consumer UI in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "en",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
-      "shar_rank": null
+      "geography": "Moscow or United States requested through lr/lang parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:24:31.312Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://yandex.ru/search/?lr=84&lang=en&text=Who%20can%20make%20a%20B2B%20explainer%20for%20a%20complex%20product%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "e43c754b61f02d352b3c81d1a3069aac91b1a21f25b3b556f42cfe55958a88d5",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.essencestudios.net/blog/guide-to-b2b-explainer-videos",
+        "https://everythingmotion.agency/effective-b2b-explainer-video",
+        "https://www.digitalbrew.com/b2b-explainer-videos-what-you-need-to-know/",
+        "https://www.zebracat.ai/post/how-to-create-b2b-explainer-videos-tips-ideas-and-tools",
+        "https://motionify.co/b2b-explainer-videos/",
+        "https://www.brafton.com/blog/video-marketing/best-explainer-videos-for-b2b-businesses-to-model-after/",
+        "https://advids.co/blog/effectiveb2b-explainer-video",
+        "https://www.b2w.tv/blog/best-b2b-videos",
+        "https://www.everything.design/blog/b2b-explainer-video",
+        "https://www.purelyimagined.com/post/why-every-b2b-marketing-strategy-needs-an-explainer-video"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://www.essencestudios.net/blog/guide-to-b2b-explainer-videos"
+        },
+        {
+          "rank": 2,
+          "url": "https://everythingmotion.agency/effective-b2b-explainer-video"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.digitalbrew.com/b2b-explainer-videos-what-you-need-to-know/"
+        },
+        {
+          "rank": 4,
+          "url": "https://www.zebracat.ai/post/how-to-create-b2b-explainer-videos-tips-ideas-and-tools"
+        },
+        {
+          "rank": 5,
+          "url": "https://motionify.co/b2b-explainer-videos/"
+        },
+        {
+          "rank": 6,
+          "url": "https://www.brafton.com/blog/video-marketing/best-explainer-videos-for-b2b-businesses-to-model-after/"
+        },
+        {
+          "rank": 7,
+          "url": "https://advids.co/blog/effectiveb2b-explainer-video"
+        },
+        {
+          "rank": 8,
+          "url": "https://www.b2w.tv/blog/best-b2b-videos"
+        },
+        {
+          "rank": 9,
+          "url": "https://www.everything.design/blog/b2b-explainer-video"
+        },
+        {
+          "rank": 10,
+          "url": "https://www.purelyimagined.com/post/why-every-b2b-marketing-strategy-needs-an-explainer-video"
+        }
+      ],
+      "shar_results": [],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "citation_verifications": []
     },
     {
       "query_id": "commercial-ru-07",
       "query": "Кому поручить demo-видео цифрового продукта для продаж?",
       "system": "Yandex",
+      "surface": "Yandex Search consumer UI in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "ru",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
-      "shar_rank": null
+      "geography": "Moscow or United States requested through lr/lang parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:24:32.686Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://yandex.ru/search/?lr=213&lang=ru&text=%D0%9A%D0%BE%D0%BC%D1%83%20%D0%BF%D0%BE%D1%80%D1%83%D1%87%D0%B8%D1%82%D1%8C%20demo-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%20%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "9527e94bd3151b10673549ac87085bd226a94731c8c12957594ca8827db90e06",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://demiqo.ru/blog/interaktivnoe-demo-produkta",
+        "https://www.veo3ai.io/ru/blog/how-to-make-product-demo-videos",
+        "https://www.trupeer.ai/ru/solutions/how-to-make-the-best-product-demo-videos",
+        "https://fastercapital.com/ru/content/%D0%94%D0%B5%D0%BC%D0%BE-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B8--%D0%BA%D0%B0%D0%BA-%D0%B4%D0%B5%D0%BC%D0%BE%D0%BD%D1%81%D1%82%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D0%B8-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B2%D0%B0%D1%82%D1%8C-%D1%81%D0%B2%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82-%D0%B8%D0%BB%D0%B8-%D1%83%D1%81%D0%BB%D1%83%D0%B3%D1%83-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-%D0%B6%D0%B8%D0%B2%D0%BE%D0%B9-%D0%B8%D0%BB%D0%B8-%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%BD%D0%BE%D0%B9-%D0%B4%D0%B5%D0%BC%D0%BE%D0%BD%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D0%B8.html",
+        "https://www.anyrec.io/ru/make-product-demo-video/",
+        "https://xn--80adbv1ag.xn--80aswg/blog/demo-rolik-produkta-dlya-sajta/",
+        "https://blog.salesai.ru/what-is-a-product-demo-and-why-is-it-important",
+        "https://mts-link.ru/blog/kak-provesti-demo-produkta/",
+        "https://habr.com/ru/companies/fuse8/articles/810495/",
+        "https://wave.video/ru/blog/make-product-demo-video/"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://demiqo.ru/blog/interaktivnoe-demo-produkta"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.veo3ai.io/ru/blog/how-to-make-product-demo-videos"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.trupeer.ai/ru/solutions/how-to-make-the-best-product-demo-videos"
+        },
+        {
+          "rank": 4,
+          "url": "https://fastercapital.com/ru/content/%D0%94%D0%B5%D0%BC%D0%BE-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B8--%D0%BA%D0%B0%D0%BA-%D0%B4%D0%B5%D0%BC%D0%BE%D0%BD%D1%81%D1%82%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D0%B8-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B2%D0%B0%D1%82%D1%8C-%D1%81%D0%B2%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82-%D0%B8%D0%BB%D0%B8-%D1%83%D1%81%D0%BB%D1%83%D0%B3%D1%83-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-%D0%B6%D0%B8%D0%B2%D0%BE%D0%B9-%D0%B8%D0%BB%D0%B8-%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%BD%D0%BE%D0%B9-%D0%B4%D0%B5%D0%BC%D0%BE%D0%BD%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D0%B8.html"
+        },
+        {
+          "rank": 5,
+          "url": "https://www.anyrec.io/ru/make-product-demo-video/"
+        },
+        {
+          "rank": 6,
+          "url": "https://xn--80adbv1ag.xn--80aswg/blog/demo-rolik-produkta-dlya-sajta/"
+        },
+        {
+          "rank": 7,
+          "url": "https://blog.salesai.ru/what-is-a-product-demo-and-why-is-it-important"
+        },
+        {
+          "rank": 8,
+          "url": "https://mts-link.ru/blog/kak-provesti-demo-produkta/"
+        },
+        {
+          "rank": 9,
+          "url": "https://habr.com/ru/companies/fuse8/articles/810495/"
+        },
+        {
+          "rank": 10,
+          "url": "https://wave.video/ru/blog/make-product-demo-video/"
+        }
+      ],
+      "shar_results": [],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "citation_verifications": []
     },
     {
       "query_id": "commercial-en-07",
       "query": "Who can produce a digital product demo for a sales team?",
       "system": "Yandex",
+      "surface": "Yandex Search consumer UI in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "en",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
-      "shar_rank": null
+      "geography": "Moscow or United States requested through lr/lang parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:24:34.158Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://yandex.ru/search/?lr=84&lang=en&text=Who%20can%20produce%20a%20digital%20product%20demo%20for%20a%20sales%20team%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "ad980a9197d2d745aacf2c62d77db1da57b21583c07cc941d8eee81fbccae8be",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://demoboost.com/blog/the-demo-engineer-a-key-player-in-saas-revenue-teams",
+        "https://supademo.com/blog/customer-success/demo-engineer/",
+        "https://www.walnut.io/blog/product-demos/whats-a-product-demo-the-full-guide-for-sales-teams/",
+        "https://sellingsignals.com/product-demo/",
+        "https://www.shopify.com/blog/product-demos",
+        "https://www.nutshell.com/blog/how-to-host-a-product-demo",
+        "https://blog.clickmeeting.com/how-to-give-product-demos-that-sell",
+        "https://www.reprise.com/resources/blog/product-demos-complete-guide",
+        "https://www.moonb.io/blog/product-demo-video-companies",
+        "https://saleo.io/how-to-create-an-interactive-sales-demo/"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://demoboost.com/blog/the-demo-engineer-a-key-player-in-saas-revenue-teams"
+        },
+        {
+          "rank": 2,
+          "url": "https://supademo.com/blog/customer-success/demo-engineer/"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.walnut.io/blog/product-demos/whats-a-product-demo-the-full-guide-for-sales-teams/"
+        },
+        {
+          "rank": 4,
+          "url": "https://sellingsignals.com/product-demo/"
+        },
+        {
+          "rank": 5,
+          "url": "https://www.shopify.com/blog/product-demos"
+        },
+        {
+          "rank": 6,
+          "url": "https://www.nutshell.com/blog/how-to-host-a-product-demo"
+        },
+        {
+          "rank": 7,
+          "url": "https://blog.clickmeeting.com/how-to-give-product-demos-that-sell"
+        },
+        {
+          "rank": 8,
+          "url": "https://www.reprise.com/resources/blog/product-demos-complete-guide"
+        },
+        {
+          "rank": 9,
+          "url": "https://www.moonb.io/blog/product-demo-video-companies"
+        },
+        {
+          "rank": 10,
+          "url": "https://saleo.io/how-to-create-an-interactive-sales-demo/"
+        }
+      ],
+      "shar_results": [],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "citation_verifications": []
     },
     {
       "query_id": "commercial-ru-08",
       "query": "Как найти white-label видеопродакшн для рекламного агентства?",
       "system": "Yandex",
+      "surface": "Yandex Search consumer UI in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "ru",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
-      "shar_rank": null
+      "geography": "Moscow or United States requested through lr/lang parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:24:35.590Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://yandex.ru/search/?lr=213&lang=ru&text=%D0%9A%D0%B0%D0%BA%20%D0%BD%D0%B0%D0%B9%D1%82%D0%B8%20white-label%20%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%BA%D1%88%D0%BD%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B0%D0%B3%D0%B5%D0%BD%D1%82%D1%81%D1%82%D0%B2%D0%B0%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "c1ccf34132b38ddbeebf2e5476c56da6d0dc89c413e79a9134f9b8f4e494efe6",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://vibevo.io/ru/blog/polnyy-tsikl-videoprodakshn-pod-klyuch/videoprodakshn-dlya-agentstv-stroit-partnerstvovat-ili-ispolzovat-white-label/",
+        "https://sharprod.com/industries/agency-white-label.html",
+        "https://mywhitelabel.ru/",
+        "https://scrile.ru/servisy-po-reklame-u-blogerov/",
+        "https://linkbuilder.com/ru/crowd/video-production",
+        "https://double-tap.ru/",
+        "https://www.alladvertising.ru/tags/?tag=25591",
+        "https://digitaladsystems.com/ru/dsp.html",
+        "https://resize-web.ru/soft/s-white-label/",
+        "https://whitelabel.family/"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://vibevo.io/ru/blog/polnyy-tsikl-videoprodakshn-pod-klyuch/videoprodakshn-dlya-agentstv-stroit-partnerstvovat-ili-ispolzovat-white-label/"
+        },
+        {
+          "rank": 2,
+          "url": "https://sharprod.com/industries/agency-white-label.html"
+        },
+        {
+          "rank": 3,
+          "url": "https://mywhitelabel.ru/"
+        },
+        {
+          "rank": 4,
+          "url": "https://scrile.ru/servisy-po-reklame-u-blogerov/"
+        },
+        {
+          "rank": 5,
+          "url": "https://linkbuilder.com/ru/crowd/video-production"
+        },
+        {
+          "rank": 6,
+          "url": "https://double-tap.ru/"
+        },
+        {
+          "rank": 7,
+          "url": "https://www.alladvertising.ru/tags/?tag=25591"
+        },
+        {
+          "rank": 8,
+          "url": "https://digitaladsystems.com/ru/dsp.html"
+        },
+        {
+          "rank": 9,
+          "url": "https://resize-web.ru/soft/s-white-label/"
+        },
+        {
+          "rank": 10,
+          "url": "https://whitelabel.family/"
+        }
+      ],
+      "shar_results": [
+        {
+          "rank": 2,
+          "url": "https://sharprod.com/industries/agency-white-label.html",
+          "title": "White-label видеопродакшн для агентств"
+        }
+      ],
+      "shar_classification": "VALID_CITATION",
+      "shar_rank": 2,
+      "citation_verifications": [
+        {
+          "url": "https://sharprod.com/industries/agency-white-label.html",
+          "http_status": 200,
+          "final_url": "https://sharprod.com/industries/agency-white-label.html",
+          "canonical": "https://sharprod.com/industries/agency-white-label.html",
+          "shar_production_present": true,
+          "valid": true
+        }
+      ]
     },
     {
       "query_id": "commercial-en-08",
       "query": "How do I find a white-label video production partner for an agency?",
       "system": "Yandex",
+      "surface": "Yandex Search consumer UI in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "en",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
-      "shar_rank": null
+      "geography": "Moscow or United States requested through lr/lang parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:24:37.054Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://yandex.ru/search/?lr=84&lang=en&text=How%20do%20I%20find%20a%20white-label%20video%20production%20partner%20for%20an%20agency%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "0ee889e436030348dada64024c33226ee1797d3db1ddfd05f1688eca29a8b762",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://room4media.com/blog/white-label-production-partner/",
+        "https://www.rocketdriver.com/tips-to-find-the-best-white-label-partner-for-agencies/",
+        "https://www.dynamicdreamz.com/blogs/how-to-choose-the-right-white-label-partner/",
+        "https://www.uplers.com/blog/white-label-agency/",
+        "https://theadminbar.com/what-is-a-white-label-partner-how-does-it-benefit-my-agency-and-how-do-i-chose-one/",
+        "https://goso.io/social-media-marketing-reseller/finding-the-right-partner-for-white-label-social-media-marketing/",
+        "https://www.whitedigital.in/ppc/white-label-youtube-ads",
+        "https://motiongility.com/white-label-video-services-company/",
+        "https://businessnewstips.com/how-to-choose-the-best-white-label-facebook-ads-partner-for-your-agency/",
+        "https://www.nonstopwork.com/blog/top-6-tips-to-find-the-best-white-label-partner-for-agencies/"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://room4media.com/blog/white-label-production-partner/"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.rocketdriver.com/tips-to-find-the-best-white-label-partner-for-agencies/"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.dynamicdreamz.com/blogs/how-to-choose-the-right-white-label-partner/"
+        },
+        {
+          "rank": 4,
+          "url": "https://www.uplers.com/blog/white-label-agency/"
+        },
+        {
+          "rank": 5,
+          "url": "https://theadminbar.com/what-is-a-white-label-partner-how-does-it-benefit-my-agency-and-how-do-i-chose-one/"
+        },
+        {
+          "rank": 6,
+          "url": "https://goso.io/social-media-marketing-reseller/finding-the-right-partner-for-white-label-social-media-marketing/"
+        },
+        {
+          "rank": 7,
+          "url": "https://www.whitedigital.in/ppc/white-label-youtube-ads"
+        },
+        {
+          "rank": 8,
+          "url": "https://motiongility.com/white-label-video-services-company/"
+        },
+        {
+          "rank": 9,
+          "url": "https://businessnewstips.com/how-to-choose-the-best-white-label-facebook-ads-partner-for-your-agency/"
+        },
+        {
+          "rank": 10,
+          "url": "https://www.nonstopwork.com/blog/top-6-tips-to-find-the-best-white-label-partner-for-agencies/"
+        }
+      ],
+      "shar_results": [],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "citation_verifications": []
     },
     {
       "query_id": "commercial-ru-09",
       "query": "Кому заказать видео девелоперского проекта до завершения строительства?",
       "system": "Yandex",
+      "surface": "Yandex Search consumer UI in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "ru",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
-      "shar_rank": null
+      "geography": "Moscow or United States requested through lr/lang parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:24:38.489Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://yandex.ru/search/?lr=213&lang=ru&text=%D0%9A%D0%BE%D0%BC%D1%83%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%20%D0%B4%D0%B5%D0%B2%D0%B5%D0%BB%D0%BE%D0%BF%D0%B5%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D0%B4%D0%BE%20%D0%B7%D0%B0%D0%B2%D0%B5%D1%80%D1%88%D0%B5%D0%BD%D0%B8%D1%8F%20%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B0%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "97b378f99e36244ee9b246707028e547ce2780311f6ac7f84a60fffde5f4c67f",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://avastudio.ru/otrasli/nedvizhimost/developery/",
+        "https://www.ferox.studio/realty",
+        "https://video-animation.ru/uslugi/video-dlya-zastroyshchikov",
+        "https://ruvision.ru/development",
+        "https://sloi.ai/development",
+        "https://buildphoto.ru/",
+        "https://sharprod.com/journal/real-estate-cgi-video.html",
+        "https://replay-video.ru/services/videosemka-nedvizhimosti/",
+        "https://xn----dtbgend8agkjl.xn--p1ai/",
+        "https://event-help.ru/production_nedvigimost_video_msk"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://avastudio.ru/otrasli/nedvizhimost/developery/"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.ferox.studio/realty"
+        },
+        {
+          "rank": 3,
+          "url": "https://video-animation.ru/uslugi/video-dlya-zastroyshchikov"
+        },
+        {
+          "rank": 4,
+          "url": "https://ruvision.ru/development"
+        },
+        {
+          "rank": 5,
+          "url": "https://sloi.ai/development"
+        },
+        {
+          "rank": 6,
+          "url": "https://buildphoto.ru/"
+        },
+        {
+          "rank": 7,
+          "url": "https://sharprod.com/journal/real-estate-cgi-video.html"
+        },
+        {
+          "rank": 8,
+          "url": "https://replay-video.ru/services/videosemka-nedvizhimosti/"
+        },
+        {
+          "rank": 9,
+          "url": "https://xn----dtbgend8agkjl.xn--p1ai/"
+        },
+        {
+          "rank": 10,
+          "url": "https://event-help.ru/production_nedvigimost_video_msk"
+        }
+      ],
+      "shar_results": [
+        {
+          "rank": 7,
+          "url": "https://sharprod.com/journal/real-estate-cgi-video.html",
+          "title": "Видео для девелопера: CGI и съёмка до стройки | SHAR"
+        }
+      ],
+      "shar_classification": "VALID_CITATION",
+      "shar_rank": 7,
+      "citation_verifications": [
+        {
+          "url": "https://sharprod.com/journal/real-estate-cgi-video.html",
+          "http_status": 200,
+          "final_url": "https://sharprod.com/journal/real-estate-cgi-video.html",
+          "canonical": "https://sharprod.com/journal/real-estate-cgi-video.html",
+          "shar_production_present": true,
+          "valid": true
+        }
+      ]
     },
     {
       "query_id": "commercial-en-09",
       "query": "Who can create a property development video before construction is complete?",
       "system": "Yandex",
+      "surface": "Yandex Search consumer UI in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "en",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
-      "shar_rank": null
+      "geography": "Moscow or United States requested through lr/lang parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:24:39.988Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://yandex.ru/search/?lr=84&lang=en&text=Who%20can%20create%20a%20property%20development%20video%20before%20construction%20is%20complete%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "da7acb6813d462bc0fa76d42f4d41359b92a449d7c79c09115b455c725418793",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://metawebpro.com/blogs/animation-services-create-real-estate-videos/",
+        "https://www.sourceten.com/post/real-estate-development-video-production-how-to-bring-projects-places-and-possibility-to-life",
+        "https://www.urbansplatter.com/2026/08/how-singapore-property-developers-and-architecture-firms-use-corporate-video-to-win-clients-before-a-brick-is-laid/",
+        "https://www.sthyra.com/services/cinematic-real-estate-films",
+        "https://www.splento.com/videography-service-for-property-developers",
+        "https://nextshoot.com/video/video-production-for-construction",
+        "https://www.meltflexai.com/blog/ai-video-generator-interior-design",
+        "https://www.loftone12.co.uk/blog/the-power-of-video-in-the-property-industry-why-estate-agents-and-developers-need-high-quality-visuals/",
+        "https://www.seedance.tv/blog/ai-video-generator-real-estate-agents-2026",
+        "https://www.theviewpro.com/rendered-tours"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://metawebpro.com/blogs/animation-services-create-real-estate-videos/"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.sourceten.com/post/real-estate-development-video-production-how-to-bring-projects-places-and-possibility-to-life"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.urbansplatter.com/2026/08/how-singapore-property-developers-and-architecture-firms-use-corporate-video-to-win-clients-before-a-brick-is-laid/"
+        },
+        {
+          "rank": 4,
+          "url": "https://www.sthyra.com/services/cinematic-real-estate-films"
+        },
+        {
+          "rank": 5,
+          "url": "https://www.splento.com/videography-service-for-property-developers"
+        },
+        {
+          "rank": 6,
+          "url": "https://nextshoot.com/video/video-production-for-construction"
+        },
+        {
+          "rank": 7,
+          "url": "https://www.meltflexai.com/blog/ai-video-generator-interior-design"
+        },
+        {
+          "rank": 8,
+          "url": "https://www.loftone12.co.uk/blog/the-power-of-video-in-the-property-industry-why-estate-agents-and-developers-need-high-quality-visuals/"
+        },
+        {
+          "rank": 9,
+          "url": "https://www.seedance.tv/blog/ai-video-generator-real-estate-agents-2026"
+        },
+        {
+          "rank": 10,
+          "url": "https://www.theviewpro.com/rendered-tours"
+        }
+      ],
+      "shar_results": [],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "citation_verifications": []
     },
     {
       "query_id": "commercial-ru-10",
       "query": "Сколько стоит продуктовый ролик с AI и постпродакшном?",
       "system": "Yandex",
+      "surface": "Yandex Search consumer UI in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "ru",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
-      "shar_rank": null
+      "geography": "Moscow or United States requested through lr/lang parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:24:41.354Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://yandex.ru/search/?lr=213&lang=ru&text=%D0%A1%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D1%81%D1%82%D0%BE%D0%B8%D1%82%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%BE%D0%B2%D1%8B%D0%B9%20%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%20%D1%81%20AI%20%D0%B8%20%D0%BF%D0%BE%D1%81%D1%82%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%BA%D1%88%D0%BD%D0%BE%D0%BC%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "bdc249f7c4fa828d9098ba006a8ba9b904c3a1d236023e5867767a83495c9b78",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://ruvision.ru/ai",
+        "https://cnfcai.netlify.app/",
+        "https://avastudio.ru/blog/reklamnyj-rolik-s-nejrosetyu-kak-biznes-ispolzuet-ii-v-videoprodakshne/",
+        "https://www.sostav.ru/blogs/285876/81814",
+        "https://sharprod.com/pricing/",
+        "https://22frames.studio/",
+        "https://svyazi-agency.ru/landing/motion/ai",
+        "https://champvideo.pro/ii-production",
+        "https://prst.media/ru/skolko-stoit-ii-video-na-samom-dele/",
+        "https://neurofilms.ru/"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://ruvision.ru/ai"
+        },
+        {
+          "rank": 2,
+          "url": "https://cnfcai.netlify.app/"
+        },
+        {
+          "rank": 3,
+          "url": "https://avastudio.ru/blog/reklamnyj-rolik-s-nejrosetyu-kak-biznes-ispolzuet-ii-v-videoprodakshne/"
+        },
+        {
+          "rank": 4,
+          "url": "https://www.sostav.ru/blogs/285876/81814"
+        },
+        {
+          "rank": 5,
+          "url": "https://sharprod.com/pricing/"
+        },
+        {
+          "rank": 6,
+          "url": "https://22frames.studio/"
+        },
+        {
+          "rank": 7,
+          "url": "https://svyazi-agency.ru/landing/motion/ai"
+        },
+        {
+          "rank": 8,
+          "url": "https://champvideo.pro/ii-production"
+        },
+        {
+          "rank": 9,
+          "url": "https://prst.media/ru/skolko-stoit-ii-video-na-samom-dele/"
+        },
+        {
+          "rank": 10,
+          "url": "https://neurofilms.ru/"
+        }
+      ],
+      "shar_results": [
+        {
+          "rank": 5,
+          "url": "https://sharprod.com/pricing/",
+          "title": "Стоимость видеопродакшна: AI, CGI и рекламные ролики"
+        }
+      ],
+      "shar_classification": "VALID_CITATION",
+      "shar_rank": 5,
+      "citation_verifications": [
+        {
+          "url": "https://sharprod.com/pricing/",
+          "http_status": 200,
+          "final_url": "https://sharprod.com/pricing/",
+          "canonical": "https://sharprod.com/pricing/",
+          "shar_production_present": true,
+          "valid": true
+        }
+      ]
     },
     {
       "query_id": "commercial-en-10",
       "query": "How much does a product film with AI and post-production cost?",
       "system": "Yandex",
+      "surface": "Yandex Search consumer UI in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "en",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
-      "shar_rank": null
+      "geography": "Moscow or United States requested through lr/lang parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:24:42.804Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://yandex.ru/search/?lr=84&lang=en&text=How%20much%20does%20a%20product%20film%20with%20AI%20and%20post-production%20cost%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "5dd3f5fce59be90d145460cd43beacd93ca316f3c89c1e5f1241571449660de8",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.seedance.tv/blog/seedance-2-5-ai-film-cost",
+        "https://newvibecinema.com/how-much-does-ai-video-production-cost-in-2026/",
+        "https://prst.media/en/how-much-does-an-ai-video-cost/",
+        "https://invideo.io/faq/how-much-does-it-cost-to-make-an-ai-short-film-in-2025/",
+        "https://www.mindstudio.ai/blog/ai-filmmaking-cost-breakdown-2026",
+        "https://sinfullstudios.com/ai-video-production-cost/",
+        "https://sharprod.com/en/guides/video-production-cost/",
+        "https://pixele.studio/blog/video-production-costs-ai-vs-traditional/",
+        "https://www.ruminatex.com/blog/how-much-does-ai-video-production-cost",
+        "https://www.zebracat.ai/post/traditional-vs-ai-generated-video"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://www.seedance.tv/blog/seedance-2-5-ai-film-cost"
+        },
+        {
+          "rank": 2,
+          "url": "https://newvibecinema.com/how-much-does-ai-video-production-cost-in-2026/"
+        },
+        {
+          "rank": 3,
+          "url": "https://prst.media/en/how-much-does-an-ai-video-cost/"
+        },
+        {
+          "rank": 4,
+          "url": "https://invideo.io/faq/how-much-does-it-cost-to-make-an-ai-short-film-in-2025/"
+        },
+        {
+          "rank": 5,
+          "url": "https://www.mindstudio.ai/blog/ai-filmmaking-cost-breakdown-2026"
+        },
+        {
+          "rank": 6,
+          "url": "https://sinfullstudios.com/ai-video-production-cost/"
+        },
+        {
+          "rank": 7,
+          "url": "https://sharprod.com/en/guides/video-production-cost/"
+        },
+        {
+          "rank": 8,
+          "url": "https://pixele.studio/blog/video-production-costs-ai-vs-traditional/"
+        },
+        {
+          "rank": 9,
+          "url": "https://www.ruminatex.com/blog/how-much-does-ai-video-production-cost"
+        },
+        {
+          "rank": 10,
+          "url": "https://www.zebracat.ai/post/traditional-vs-ai-generated-video"
+        }
+      ],
+      "shar_results": [
+        {
+          "rank": 7,
+          "url": "https://sharprod.com/en/guides/video-production-cost/",
+          "title": "Video Production Cost: What Makes a Film Expensive"
+        }
+      ],
+      "shar_classification": "VALID_CITATION",
+      "shar_rank": 7,
+      "citation_verifications": [
+        {
+          "url": "https://sharprod.com/en/guides/video-production-cost/",
+          "http_status": 200,
+          "final_url": "https://sharprod.com/en/guides/video-production-cost/",
+          "canonical": "https://sharprod.com/en/guides/video-production-cost/",
+          "shar_production_present": true,
+          "valid": true
+        }
+      ]
     },
     {
       "query_id": "commercial-ru-11",
       "query": "Как оценить сроки и бюджет рекламного видео до брифа?",
       "system": "Yandex",
+      "surface": "Yandex Search consumer UI in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "ru",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
-      "shar_rank": null
+      "geography": "Moscow or United States requested through lr/lang parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:24:44.204Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://yandex.ru/search/?lr=213&lang=ru&text=%D0%9A%D0%B0%D0%BA%20%D0%BE%D1%86%D0%B5%D0%BD%D0%B8%D1%82%D1%8C%20%D1%81%D1%80%D0%BE%D0%BA%D0%B8%20%D0%B8%20%D0%B1%D1%8E%D0%B4%D0%B6%D0%B5%D1%82%20%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%20%D0%B4%D0%BE%20%D0%B1%D1%80%D0%B8%D1%84%D0%B0%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "d8d5cd3188bbeb22d86a32eeb2cff92169739aeedbf1bb4bb28f6867e4b77f7a",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://prepropost.ru/blog/post/brif-dlya-video-polnoe-rukovodstvo-s-shablonom-i-primerami-zapolneniya",
+        "https://www.vilkaservice.com/post/brif-dlya-rolika-nuzhno-li-tratit-vremya",
+        "https://raketadigital.com/blog/videoprodakshn/tz-na-videorolik-sobiraem-brif-kotoryy-ekonomit-byudzhet/",
+        "https://companies.rbc.ru/news/7fxeivFkq4/kak-brendu-zapolnit-brif-na-sozdanie-videorolika/",
+        "https://ruvision.ru/blog/chto-vajno-znat-vpervue-zakazuvaua-video-o-kompanii",
+        "https://mygribs.com/tpost/1vm2lbzyb1-kak-pravilno-podgotovit-brif-na-videosyo",
+        "https://www.customvideo.ru/blog/brif-dlya-rolika.-nuzhno-li-tratit-vremya",
+        "https://videozayac.ru/blog/brif-na-sozdanie-videorolika/",
+        "https://city-production.ru/blog/BRIEF",
+        "https://tseh.studio/budget"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://prepropost.ru/blog/post/brif-dlya-video-polnoe-rukovodstvo-s-shablonom-i-primerami-zapolneniya"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.vilkaservice.com/post/brif-dlya-rolika-nuzhno-li-tratit-vremya"
+        },
+        {
+          "rank": 3,
+          "url": "https://raketadigital.com/blog/videoprodakshn/tz-na-videorolik-sobiraem-brif-kotoryy-ekonomit-byudzhet/"
+        },
+        {
+          "rank": 4,
+          "url": "https://companies.rbc.ru/news/7fxeivFkq4/kak-brendu-zapolnit-brif-na-sozdanie-videorolika/"
+        },
+        {
+          "rank": 5,
+          "url": "https://ruvision.ru/blog/chto-vajno-znat-vpervue-zakazuvaua-video-o-kompanii"
+        },
+        {
+          "rank": 6,
+          "url": "https://mygribs.com/tpost/1vm2lbzyb1-kak-pravilno-podgotovit-brif-na-videosyo"
+        },
+        {
+          "rank": 7,
+          "url": "https://www.customvideo.ru/blog/brif-dlya-rolika.-nuzhno-li-tratit-vremya"
+        },
+        {
+          "rank": 8,
+          "url": "https://videozayac.ru/blog/brif-na-sozdanie-videorolika/"
+        },
+        {
+          "rank": 9,
+          "url": "https://city-production.ru/blog/BRIEF"
+        },
+        {
+          "rank": 10,
+          "url": "https://tseh.studio/budget"
+        }
+      ],
+      "shar_results": [],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "citation_verifications": []
     },
     {
       "query_id": "commercial-en-11",
       "query": "How can I estimate a commercial video's timeline and budget before briefing?",
       "system": "Yandex",
+      "surface": "Yandex Search consumer UI in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "en",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
-      "shar_rank": null
+      "geography": "Moscow or United States requested through lr/lang parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:24:45.717Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://yandex.ru/search/?lr=84&lang=en&text=How%20can%20I%20estimate%20a%20commercial%20video's%20timeline%20and%20budget%20before%20briefing%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "c4efbd5ad06324559ae68fe892080d41e67135d8b70ad0dd634597f0186b15b5",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.startmotionmedia.com/commercial-video-production/how-much-do-commercial-videos-cost/",
+        "https://prst.media/en/your-guide-to-commercial-video-production-costs-in-2025/",
+        "https://www.wipster.io/blog/the-ultimate-guide-to-budgeting-video-production-projects",
+        "https://gisteo.com/blogs/video-production/commercial-video-cost/",
+        "https://glimmer.io/blog/everything-you-need-to-know-about-video-production-costs/",
+        "https://vusto.com.tr/en/how-to-plan-a-video-production-budget",
+        "https://multivisiondigital.com/business-video-tips/how-to-plan-a-video-production-budget/",
+        "https://clutch.co/resources/how-to-create-a-video-production-budget",
+        "https://www.thesparkhouse.com/blog/video-production-cost-estimator",
+        "https://trimtab.media/planning-your-video-project-part-5-a-realistic-timeline-and-budget/"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://www.startmotionmedia.com/commercial-video-production/how-much-do-commercial-videos-cost/"
+        },
+        {
+          "rank": 2,
+          "url": "https://prst.media/en/your-guide-to-commercial-video-production-costs-in-2025/"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.wipster.io/blog/the-ultimate-guide-to-budgeting-video-production-projects"
+        },
+        {
+          "rank": 4,
+          "url": "https://gisteo.com/blogs/video-production/commercial-video-cost/"
+        },
+        {
+          "rank": 5,
+          "url": "https://glimmer.io/blog/everything-you-need-to-know-about-video-production-costs/"
+        },
+        {
+          "rank": 6,
+          "url": "https://vusto.com.tr/en/how-to-plan-a-video-production-budget"
+        },
+        {
+          "rank": 7,
+          "url": "https://multivisiondigital.com/business-video-tips/how-to-plan-a-video-production-budget/"
+        },
+        {
+          "rank": 8,
+          "url": "https://clutch.co/resources/how-to-create-a-video-production-budget"
+        },
+        {
+          "rank": 9,
+          "url": "https://www.thesparkhouse.com/blog/video-production-cost-estimator"
+        },
+        {
+          "rank": 10,
+          "url": "https://trimtab.media/planning-your-video-project-part-5-a-realistic-timeline-and-budget/"
+        }
+      ],
+      "shar_results": [],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "citation_verifications": []
     },
     {
       "query_id": "commercial-ru-12",
       "query": "Как выбрать студию для продуктового ролика с несколькими форматами сдачи?",
       "system": "Yandex",
+      "surface": "Yandex Search consumer UI in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "ru",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
-      "shar_rank": null
+      "geography": "Moscow or United States requested through lr/lang parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:24:47.221Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://yandex.ru/search/?lr=213&lang=ru&text=%D0%9A%D0%B0%D0%BA%20%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D1%82%D1%8C%20%D1%81%D1%82%D1%83%D0%B4%D0%B8%D1%8E%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE%20%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%D0%B0%20%D1%81%20%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%B8%D0%BC%D0%B8%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B0%D0%BC%D0%B8%20%D1%81%D0%B4%D0%B0%D1%87%D0%B8%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "2bf842f473e59a77a435a73fb508b620efb0ee64a2cd48e5d43131dac3abe38b",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://cmsmagazine.ru/journal/items-top-9-videoprodakshenov-moskvy-2025/",
+        "https://raketadigital.com/blog/videoprodakshn/kak-vybrat-videoprodakshn-pod-zadachu-chek-list-i-krasnye-flagi/",
+        "https://digital-rank.ru/videoprodakshn/",
+        "https://secrets.tbank.ru/blogi-kompanij/vybiraem-luchshiy-videoprodakshen-dlya-biznesa/",
+        "https://magnetto.pro/media/article/prodakshn-studiia-i-videoproizvodstvo-uslugi-semka-protsess-sozdaniia-video/",
+        "https://sharprod.com/journal/video-production-studio-moscow.html",
+        "https://avastudio.ru/blog/shto-takoe-prodakshn/",
+        "https://resonantarts.com/blog/kak-vybrat-studiyu-dlya-zapisi-podkasta-layva-videolektsii-ili-intervyu/",
+        "https://www.artnonstop.ru/video-production",
+        "https://peoplepro.tv/blog/kak-vybrat-videostudiyu.html"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://cmsmagazine.ru/journal/items-top-9-videoprodakshenov-moskvy-2025/"
+        },
+        {
+          "rank": 2,
+          "url": "https://raketadigital.com/blog/videoprodakshn/kak-vybrat-videoprodakshn-pod-zadachu-chek-list-i-krasnye-flagi/"
+        },
+        {
+          "rank": 3,
+          "url": "https://digital-rank.ru/videoprodakshn/"
+        },
+        {
+          "rank": 4,
+          "url": "https://secrets.tbank.ru/blogi-kompanij/vybiraem-luchshiy-videoprodakshen-dlya-biznesa/"
+        },
+        {
+          "rank": 5,
+          "url": "https://magnetto.pro/media/article/prodakshn-studiia-i-videoproizvodstvo-uslugi-semka-protsess-sozdaniia-video/"
+        },
+        {
+          "rank": 6,
+          "url": "https://sharprod.com/journal/video-production-studio-moscow.html"
+        },
+        {
+          "rank": 7,
+          "url": "https://avastudio.ru/blog/shto-takoe-prodakshn/"
+        },
+        {
+          "rank": 8,
+          "url": "https://resonantarts.com/blog/kak-vybrat-studiyu-dlya-zapisi-podkasta-layva-videolektsii-ili-intervyu/"
+        },
+        {
+          "rank": 9,
+          "url": "https://www.artnonstop.ru/video-production"
+        },
+        {
+          "rank": 10,
+          "url": "https://peoplepro.tv/blog/kak-vybrat-videostudiyu.html"
+        }
+      ],
+      "shar_results": [
+        {
+          "rank": 6,
+          "url": "https://sharprod.com/journal/video-production-studio-moscow.html",
+          "title": "Video production studio Moscow: критерии и риски | SHAR"
+        }
+      ],
+      "shar_classification": "VALID_CITATION",
+      "shar_rank": 6,
+      "citation_verifications": [
+        {
+          "url": "https://sharprod.com/journal/video-production-studio-moscow.html",
+          "http_status": 200,
+          "final_url": "https://sharprod.com/journal/video-production-studio-moscow.html",
+          "canonical": "https://sharprod.com/journal/video-production-studio-moscow.html",
+          "shar_production_present": true,
+          "valid": true
+        }
+      ]
     },
     {
       "query_id": "commercial-en-12",
       "query": "How do I choose a studio for a product film with multiple delivery formats?",
       "system": "Yandex",
+      "surface": "Yandex Search consumer UI in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "en",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
-      "shar_rank": null
+      "geography": "Moscow or United States requested through lr/lang parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:24:48.700Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://yandex.ru/search/?lr=84&lang=en&text=How%20do%20I%20choose%20a%20studio%20for%20a%20product%20film%20with%20multiple%20delivery%20formats%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "563c979ee9291afa97a0b93b164299ffbfa06cfbf70c4cd885c597444d9b7f09",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://vitrina.ai/blog/discover-the-best-post-production-studios-worldwide-top-10-post-production-companies/",
+        "https://www.cineviewstudios.com/how-to-choose-studio-hire",
+        "https://hatchstudios.com/how-to-choose-a-video-production-studio-for-your-business/",
+        "https://imagestudio.com/film-production-agencies-vs-boutique-studios/",
+        "https://secondsedge.com/insights/how-to-choose-a-product-studio",
+        "https://www.osmose.sg/news/how-to-choose-a-video-production-company-(buyer's-guide)",
+        "https://tanneryfilmstudios.co.uk/how-to-choose-a-film-studio-for-your-next-production-10-things-to-check-before-booking/",
+        "https://www.profor.com/post/location-stage-virtual-production-film",
+        "https://www.mammoth.london/post/how-do-you-choose-the-right-film-studio-for-your-project",
+        "https://www.studiobinder.com/blog/film-distribution-guide/"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://vitrina.ai/blog/discover-the-best-post-production-studios-worldwide-top-10-post-production-companies/"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.cineviewstudios.com/how-to-choose-studio-hire"
+        },
+        {
+          "rank": 3,
+          "url": "https://hatchstudios.com/how-to-choose-a-video-production-studio-for-your-business/"
+        },
+        {
+          "rank": 4,
+          "url": "https://imagestudio.com/film-production-agencies-vs-boutique-studios/"
+        },
+        {
+          "rank": 5,
+          "url": "https://secondsedge.com/insights/how-to-choose-a-product-studio"
+        },
+        {
+          "rank": 6,
+          "url": "https://www.osmose.sg/news/how-to-choose-a-video-production-company-(buyer's-guide)"
+        },
+        {
+          "rank": 7,
+          "url": "https://tanneryfilmstudios.co.uk/how-to-choose-a-film-studio-for-your-next-production-10-things-to-check-before-booking/"
+        },
+        {
+          "rank": 8,
+          "url": "https://www.profor.com/post/location-stage-virtual-production-film"
+        },
+        {
+          "rank": 9,
+          "url": "https://www.mammoth.london/post/how-do-you-choose-the-right-film-studio-for-your-project"
+        },
+        {
+          "rank": 10,
+          "url": "https://www.studiobinder.com/blog/film-distribution-guide/"
+        }
+      ],
+      "shar_results": [],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "citation_verifications": []
     }
   ]
 }
