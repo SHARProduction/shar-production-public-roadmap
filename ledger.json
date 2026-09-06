@@ -95,7 +95,7 @@
       "cloudflare_url": "https://shar-production-open-tools.pages.dev/en/",
       "hugging_face_space": "https://sharproduction-production-open-tools.static.hf.space/en/index.html",
       "cost_usd": 0,
-      "indexnow_accepted_url_submissions": 518
+      "indexnow_accepted_url_submissions": 520
     }
   },
   "tasks": [
@@ -655,7 +655,7 @@
           "value": "https://www.threads.com/@shar.production"
         }
       ],
-      "next_step": "12 of 47 previously unknown exact URLs are recovered; 35 remain unknown. Continue targeted read-only recovery without editing existing profiles or treating search misses as absence. Ko-fi is live but provider-noindex."
+      "next_step": "13 of 47 previously unknown exact URLs are recovered; 34 remain unknown. Continue targeted read-only recovery without editing existing profiles or treating search misses as absence. Ko-fi is live but provider-noindex."
     },
     {
       "id": "PROFILE-03",

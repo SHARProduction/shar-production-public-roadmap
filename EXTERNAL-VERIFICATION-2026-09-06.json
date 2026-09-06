@@ -19,12 +19,13 @@
   },
   "recovery_progress": {
     "source_rows": 47,
-    "exact_urls_recovered_total": 12,
-    "exact_urls_still_required": 35,
+    "exact_urls_recovered_total": 13,
+    "exact_urls_still_required": 34,
     "wave_records": [
       "EXTERNAL-VERIFICATION-2026-09-06.json",
       "EXTERNAL-RECOVERY-WAVE-02-2026-09-06.json",
-      "EXTERNAL-RECOVERY-WAVE-03-2026-09-06.json"
+      "EXTERNAL-RECOVERY-WAVE-03-2026-09-06.json",
+      "EXTERNAL-RECOVERY-WAVE-04-2026-09-06.json"
     ]
   },
   "exact_url_recoveries": [

@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "brand": {
+    "name": "SHAR Production",
+    "website": "https://sharprod.com/"
+  },
+  "checked_at": "2026-09-06T12:40:00Z",
+  "method": "Continue bounded brand-handle probing and targeted site search, then verify surviving candidates with direct public GET and a rendered browser read without editing profiles.",
+  "access": "READ_ONLY",
+  "recovered": [
+    {
+      "source_id": "external-authority-v4-079",
+      "platform": "Google Groups",
+      "url": "https://groups.google.com/g/shar-production",
+      "http_status": 200,
+      "canonical": "https://groups.google.com/g/shar-production",
+      "indexability": "INDEXABLE_BY_META",
+      "brand_observed": true,
+      "website_observed": true,
+      "rendered_browser": "PASS",
+      "verified_content": [
+        "SHAR Production group name",
+        "https://sharprod.com/ public link",
+        "empty public discussion state"
+      ],
+      "status": "EXACT_URL_RECOVERED_LIVE"
+    }
+  ],
+  "rejected_candidates": [
+    {"platform": "Twitch", "url": "https://www.twitch.tv/sharproduction", "reason": "A channel shell exists, but the public page and About route expose neither the exact SHAR Production name nor sharprod.com, so attribution remains unverified."},
+    {"platform": "Mixcloud", "url": "https://www.mixcloud.com/sharproduction/", "reason": "Rendered page exposed only the generic Mixcloud shell and no SHAR Production attribution."},
+    {"platform": "LiveJournal", "url": "https://sharproduction.livejournal.com/", "reason": "Provider explicitly reports that this journal is not registered."},
+    {"platform": "ReverbNation", "url": "https://www.reverbnation.com/sharproduction", "reason": "Provider returned a rendered 404 page."},
+    {"platform": "X", "url": "https://x.com/sharprod", "reason": "The public result belongs to an unrelated person."}
+  ],
+  "totals": {
+    "source_rows": 47,
+    "previously_recovered": 12,
+    "newly_recovered": 1,
+    "recovered_total": 13,
+    "remaining_unknown": 34,
+    "new_indexable_by_meta": 1
+  },
+  "notes": [
+    "A live branded page establishes the exact public URL, not account ownership, third-party endorsement or a ranking gain.",
+    "A matching handle without public brand or website evidence is not enough for recovery.",
+    "Existing profiles and the Google Group were not edited."
+  ]
+}
