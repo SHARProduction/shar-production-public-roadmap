@@ -20,7 +20,7 @@ These results do not imply search ranking, third-party adoption, LLM training, e
 - Program complete: **no**
 - Tasks: **36**
 - Status distribution: LOCAL_READY 12, MEASURED 4, PLANNED 8, PUBLISHED_VERIFIED 12.
-- Exact external-profile recovery: 1 of 47 recovered in the current wave; 46 remain open without inferring absence from a search miss.
+- Exact external-profile recovery: 3 of 47 recovered in the current wave; 44 remain open without inferring absence from a search miss.
 - Controlled AI/search coverage: 24 questions × 8 named systems = 192 product/query slots remain unmeasured unless a compliant run is recorded.
 - No legacy repository, main-domain, DNS, Timeweb, paid-plan, domain-purchase, or GPU change is represented.
 
@@ -58,3 +58,4 @@ Authored taxonomy and synthetic dataset materials use CC-BY-4.0 at their publish
 ## Status rules
 
 PUBLISHED_VERIFIED requires a checked public result. LOCAL_READY means preparation only. SUBMITTED means a delivery receipt only. MEASURED requires a documented observation.
+

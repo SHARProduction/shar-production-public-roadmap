@@ -19,8 +19,8 @@
   },
   "recovery_progress": {
     "source_rows": 47,
-    "exact_urls_recovered_this_wave": 1,
-    "exact_urls_still_required": 46
+    "exact_urls_recovered_this_wave": 3,
+    "exact_urls_still_required": 44
   },
   "exact_url_recoveries": [
     {
@@ -34,6 +34,35 @@
         "hybrid production description covering AI, live action, CGI and 3D"
       ],
       "verification_method": "direct HTTP plus Jina Reader"
+    },
+    {
+      "source_id": "external-authority-v4-206",
+      "platform": "Orgpage",
+      "url": "https://www.orgpage.ru/moskva/shar-production-6203829.html",
+      "state": "EXACT_URL_RECOVERED",
+      "http_status": 200,
+      "verified_content": [
+        "SHAR Production name",
+        "https://sharprod.com/ website",
+        "canonical +7 931 981-54-84 phone",
+        "canonical Moscow meeting address"
+      ],
+      "verification_method": "direct HTTP plus Jina Reader",
+      "duplicate_observation": "https://www.orgpage.ru/moskva/shar-production-6144926.html returns 404"
+    },
+    {
+      "source_id": "external-authority-v4-208",
+      "platform": "Product Hunt",
+      "url": "https://www.producthunt.com/products/shar-production",
+      "state": "EXACT_URL_RECOVERED",
+      "http_status": 200,
+      "verified_content": [
+        "SHAR Production name",
+        "Hybrid AI, CGI and video production for brands tagline",
+        "https://sharprod.com/en website link",
+        "public launch and maker profile"
+      ],
+      "verification_method": "direct HTTP plus live in-app browser"
     }
   ],
   "supplemental_verified_surfaces": [
@@ -105,7 +134,6 @@
     "GitBook",
     "Hashnode",
     "LinkedIn",
-    "Product Hunt",
     "YouTube",
     "Cataloxy",
     "Rating Runeta",

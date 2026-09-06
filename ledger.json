@@ -610,9 +610,17 @@
         {
           "kind": "public_url",
           "value": "https://dzen.ru/sharprod"
+        },
+        {
+          "kind": "public_url",
+          "value": "https://www.orgpage.ru/moskva/shar-production-6203829.html"
+        },
+        {
+          "kind": "public_url",
+          "value": "https://www.producthunt.com/products/shar-production"
         }
       ],
-      "next_step": "Dzen exact URL recovered; 46 source rows still require exact URLs. Continue recovery without treating search misses as absence."
+      "next_step": "Dzen, Orgpage and Product Hunt exact URLs recovered; 44 source rows still require exact URLs. Continue recovery without treating search misses as absence."
     },
     {
       "id": "PROFILE-03",
