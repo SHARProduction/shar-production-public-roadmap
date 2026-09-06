@@ -10,7 +10,7 @@
 - SHAR PUBLIC DISTRIBUTION records **1503 verified placements**, above the 1500 minimum.
 - 155 meaningful public GitHub repositories and 23 public Hugging Face datasets are recorded.
 - Public Asset Registry v1.35.3 contains 152 immutable assets; Open Tools Hub v1.30.0 passes 25/25 checks.
-- A bilingual provenance-first entity graph is live on GitHub, Hugging Face and Cloudflare with 14 nodes, 14 evidence-backed relations and zero sameAs assertions.
+- A bilingual provenance-first entity graph is live on GitHub, Hugging Face and Cloudflare with 17 nodes, 17 evidence-backed relations and zero sameAs assertions.
 - Zero paid resources used; SHARsait, primary DNS, TimeWeb and the current MCP were not changed.
 
 ## Measured external remainder
@@ -18,7 +18,7 @@
 - Exact-profile recovery: 6 of 47 previously unknown exact URLs recovered; 41 remain unknown.
 - Earlier-known exact registry recheck: 66 rows checked, 47 returned direct HTTP 200, 44 exposed the exact brand and 34 exposed both the brand and sharprod.com. GoodFirms and Sortlist were additionally confirmed through a reader because direct requests were blocked.
 - These are page observations, not 34 independent endorsements or ranking gains.
-- Controlled AI/search panel: 24 questions × 8 systems = 192 product/query slots remain unmeasured unless a compliant recorded run exists.
+- Controlled AI/search panel: 33 of 192 product/query slots are measured. Google is 24/24 with five inspected SHAR citations (four observed rank 1, one observed rank 2); Bing is 9/24; 159 slots remain explicitly unmeasured.
 
 ## Operational ledger
 
@@ -55,7 +55,7 @@
 | LINK-01 | backlinks_citations | **PUBLISHED_VERIFIED** | Нет автоматической сети все-на-все<br>Копии одного происхождения не считаются независимыми<br>Landing соответствует задаче пользователя | Maintain provenance-specific graph links; continue domain and source-origin deduplication before reporting independent citations. |
 | LINK-02 | backlinks_citations | **MEASURED** | Нет сконструированных backlinks<br>Запрос и полученная ссылка разделены<br>Неизвестный backlink count не равен нулю | 34 page observations deduplicate to 13 final hosts: 1 first-party destination, 11 external platform hosts and 1 editorial candidate. Verified independent citations remain 0 until editorial control and commissioning are evidenced. |
 | SEARCH-01 | search | **LOCAL_READY** | Частотность не выдумана<br>Нет страниц на каждый синоним/фиктивный город<br>Существующие URL сохраняются | Use24 commercial questions; do not infer frequency or create synonyms pages. |
-| SEARCH-02 | search | **MEASURED** | Нет смешения разных окон GSC<br>Indexable не приравнен к indexed<br>Недоступный источник не заменён нулём | GSC measured; Yandex/Bing unavailable remain visible, no zero substitution. |
+| SEARCH-02 | search | **MEASURED** | Нет смешения разных окон GSC<br>Indexable не приравнен к indexed<br>Недоступный источник не заменён нулём | Wave 01 records Google 24/24, Bing 9/24 and Yandex 0/24; inaccessible slots remain NOT_MEASURED rather than zero. |
 | AI-01 | ai_visibility | **LOCAL_READY** | ChatGPT/Claude/Gemini/Perplexity/Alice сохранены в охвате<br>Версия и режим продукта указаны<br>Бренд не подставлен в небрендовый вопрос | Run clean independent product sessions when accessible and cost approved. |
 | AI-02 | ai_visibility | **PLANNED** | Текущий разговор не принят за независимую цитату<br>API не выдан за пользовательский продукт<br>MCP-вызов не принят за поисковую рекомендацию | Run 24 clean questions in each accessible named consumer product. Keep unavailable or paid-only product slots unmeasured rather than substituting API/current-chat answers. |
 | COMM-01 | commercial_outcome | **LOCAL_READY** | Нет публикации персональных данных<br>Клики, брифы и сделки различаются<br>Причинность не заявлена по совпадению дат | Current contact path verified; GA4/CRM qualification evidence still needed. |

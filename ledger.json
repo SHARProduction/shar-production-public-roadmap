@@ -899,9 +899,13 @@
         {
           "kind": "internal_record",
           "value": "gsc-readonly-evidence.json"
+        },
+        {
+          "kind": "public_record",
+          "value": "SEARCH-MEASUREMENT-WAVE-01-2026-09-06.json"
         }
       ],
-      "next_step": "GSC measured; Yandex/Bing unavailable remain visible, no zero substitution."
+      "next_step": "Wave 01: Google 24/24 measured, Bing 9/24 measured, Yandex 0/24 after access stop. Re-run unavailable slots only through compliant consumer surfaces; never substitute zero."
     },
     {
       "id": "AI-01",

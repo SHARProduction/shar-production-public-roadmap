@@ -1,0 +1,3249 @@
+{
+  "schema_version": "1.0.0",
+  "brand": "SHAR Production",
+  "website": "https://sharprod.com/",
+  "generated_at_utc": "2026-09-06T05:16:49Z",
+  "license": "MIT for this measurement schema and authored documentation; search-result facts and third-party pages retain their original rights",
+  "panel": {
+    "queries": 24,
+    "languages": {
+      "ru": 12,
+      "en": 12
+    },
+    "systems": 3,
+    "total_slots": 72
+  },
+  "coverage": {
+    "measured_slots": 33,
+    "not_measured_slots": 39,
+    "by_system": {
+      "Google": {
+        "measured": 24,
+        "not_measured": 0
+      },
+      "Bing": {
+        "measured": 9,
+        "not_measured": 15
+      },
+      "Yandex": {
+        "measured": 0,
+        "not_measured": 24
+      }
+    }
+  },
+  "observed_shar_visibility": {
+    "valid_google_citations": 5,
+    "rank_1": 4,
+    "rank_2": 1,
+    "queries": [
+      {
+        "query_id": "commercial-ru-04",
+        "query": "Какой продакшн объединит съёмку, CGI и AI в одном ролике?",
+        "rank": 1,
+        "url": "https://sharprod.com/services/hybrid-video-production.html"
+      },
+      {
+        "query_id": "commercial-en-04",
+        "query": "Which production partner can combine live action, CGI and AI in one film?",
+        "rank": 2,
+        "url": "https://sharprod.com/en/services/hybrid-video-production.html"
+      },
+      {
+        "query_id": "commercial-ru-06",
+        "query": "У кого заказать B2B-ролик для объяснения сложного продукта?",
+        "rank": 1,
+        "url": "https://sharprod.com/services/b2b-explainer-video.html"
+      },
+      {
+        "query_id": "commercial-ru-08",
+        "query": "Как найти white-label видеопродакшн для рекламного агентства?",
+        "rank": 1,
+        "url": "https://sharprod.com/industries/agency-white-label.html"
+      },
+      {
+        "query_id": "commercial-ru-10",
+        "query": "Сколько стоит продуктовый ролик с AI и постпродакшном?",
+        "rank": 1,
+        "url": "https://sharprod.com/pricing/"
+      }
+    ],
+    "scope_note": "One dated requested-locale observation per query. This does not prove stable rank, traffic, leads, causation, or visibility in another geography or product surface."
+  },
+  "methodology": {
+    "google": "Current in-app Google Search consumer UI, web-only udm=14, pws=0; complete accessibility tree and desktop screenshot retained for every query.",
+    "bing": "Clean Chrome headless consumer search surface; rendered DOM and desktop screenshot retained for every attempted query; RU01 and EN01 also captured at a 390x844 viewport.",
+    "yandex": "Clean Chrome headless consumer search surface; stopped on the first timed-out run after direct HTTP preflight redirected to showcaptcha.",
+    "cost": "USD 0; free public surfaces only."
+  },
+  "limitations": [
+    "Requested locale/country parameters are recorded; physical egress location was not independently verified.",
+    "Google was signed in but used pws=0; a non-personalized notice was preserved in 23 of 24 accessibility captures.",
+    "Lower Google URLs compacted to an ellipsis in some accessibility captures; screenshots preserve the rendered page and only parseable URLs are ranked.",
+    "Bing and Yandex inaccessible slots are NOT_MEASURED, not zero visibility.",
+    "IndexNow acceptance and an indexable page are not evidence of indexing or rank."
+  ],
+  "records": [
+    {
+      "query_id": "commercial-ru-01",
+      "query": "Как выбрать подрядчика для AI-рекламного ролика с постоянным персонажем?",
+      "system": "Google",
+      "surface": "Google Search web-only UI in current in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "web-only udm=14; pws=0",
+      "locale": "ru",
+      "geography": "Russia requested by gl=ru; UI reported Russia; physical location unknown",
+      "tested_at_utc": "2026-09-06T05:13:25.618Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.google.com/search?hl=ru&gl=ru&num=10&pws=0&udm=14&q=%D0%9A%D0%B0%D0%BA%20%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D1%82%D1%8C%20%D0%BF%D0%BE%D0%B4%D1%80%D1%8F%D0%B4%D1%87%D0%B8%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20AI-%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%D0%B0%20%D1%81%20%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D1%8B%D0%BC%20%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%B6%D0%B5%D0%BC%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "ax_file": "google-commercial-ru-01-desktop.ax.txt",
+        "ax_sha256": "16e29f6d22543c9d65677e77214a7dcbb9c11e4b58f0a5a3a21af40b1838d349",
+        "desktop_screenshot": "google-commercial-ru-01-desktop.png",
+        "desktop_screenshot_sha256": "9f252c6fdbee1a6f28f07e3aa8a7a049b1c2482c0c2ecfaf080374ac2fd8954c",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://vc.ru/ai/2861058-kak-vybrat-ai-podryadchika",
+        "https://sostav.ru/blogs/281190/105570",
+        "https://vc.ru/ai/2729854-kak-vybrat-podryadchika-dlya-ii-rolikov",
+        "https://mediakod.ru/expertise/vliyanie-ai-poiska-na-marketing",
+        "https://elama.ru/blog/vash-luchshiy-podryadchik-po-marketingu-gde-ego-nayti-i-kak-vybrat/",
+        "https://pavelfrolof.ru/blog/kak-vybrat-podryadchika-ai-agentov/",
+        "https://workspace.ru/blog/reyting-geo-agentstv-dlya-b2b-kak-vybrat-podryadchika-dlya-prodvizheniya-v-neyrosetyah/"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://vc.ru/ai/2861058-kak-vybrat-ai-podryadchika"
+        },
+        {
+          "rank": 2,
+          "url": "https://sostav.ru/blogs/281190/105570"
+        },
+        {
+          "rank": 3,
+          "url": "https://vc.ru/ai/2729854-kak-vybrat-podryadchika-dlya-ii-rolikov"
+        },
+        {
+          "rank": 4,
+          "url": "https://mediakod.ru/expertise/vliyanie-ai-poiska-na-marketing"
+        },
+        {
+          "rank": 5,
+          "url": "https://elama.ru/blog/vash-luchshiy-podryadchik-po-marketingu-gde-ego-nayti-i-kak-vybrat/"
+        },
+        {
+          "rank": 6,
+          "url": "https://pavelfrolof.ru/blog/kak-vybrat-podryadchika-ai-agentov/"
+        },
+        {
+          "rank": 7,
+          "url": "https://workspace.ru/blog/reyting-geo-agentstv-dlya-b2b-kak-vybrat-podryadchika-dlya-prodvizheniya-v-neyrosetyah/"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "nonpersonalized_notice": true
+    },
+    {
+      "query_id": "commercial-en-01",
+      "query": "How do I choose an AI video production partner for an ad with a consistent character?",
+      "system": "Google",
+      "surface": "Google Search web-only UI in current in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "web-only udm=14; pws=0",
+      "locale": "en",
+      "geography": "United States requested by gl=us; physical location unknown",
+      "tested_at_utc": "2026-09-06T05:13:33.028Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.google.com/search?hl=en&gl=us&num=10&pws=0&udm=14&q=How%20do%20I%20choose%20an%20AI%20video%20production%20partner%20for%20an%20ad%20with%20a%20consistent%20character%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "ax_file": "google-commercial-en-01-desktop.ax.txt",
+        "ax_sha256": "37287b980f70ac8e06e305282fab3b63da7ad9b61a734e0181f41425fe48188f",
+        "desktop_screenshot": "google-commercial-en-01-desktop.png",
+        "desktop_screenshot_sha256": "dab7fa99d702bdedc0dc5804842fb1ab0423d9cf8a3164239dea0deea88b71ea",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://hellobusinessdynamite.medium.com/how-to-choose-an-ai-video-tool-for-character-consistency-ca1a5eef9046",
+        "https://reddit.com/r/AI_UGC_Marketing/comments/1rskuar/which_ai_video_model_is_actually_maintaining/",
+        "https://elser.ai/blog/best-ai-video-model-character-consistency-2026",
+        "https://youtube.com/watch?v=LFRVoPa8ZDM",
+        "https://oakgen.ai/blog/ai-ugc-character-consistency-workflow",
+        "https://reddit.com/r/generativeAI/comments/1rpqydv/my_personal_workflow_for_nailing_ai_video/",
+        "https://vinora.ai/blogs/ai-character-consistency-video-ads-2026-guide"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://hellobusinessdynamite.medium.com/how-to-choose-an-ai-video-tool-for-character-consistency-ca1a5eef9046"
+        },
+        {
+          "rank": 2,
+          "url": "https://reddit.com/r/AI_UGC_Marketing/comments/1rskuar/which_ai_video_model_is_actually_maintaining/"
+        },
+        {
+          "rank": 3,
+          "url": "https://elser.ai/blog/best-ai-video-model-character-consistency-2026"
+        },
+        {
+          "rank": 4,
+          "url": "https://youtube.com/watch?v=LFRVoPa8ZDM"
+        },
+        {
+          "rank": 5,
+          "url": "https://oakgen.ai/blog/ai-ugc-character-consistency-workflow"
+        },
+        {
+          "rank": 6,
+          "url": "https://reddit.com/r/generativeAI/comments/1rpqydv/my_personal_workflow_for_nailing_ai_video/"
+        },
+        {
+          "rank": 7,
+          "url": "https://vinora.ai/blogs/ai-character-consistency-video-ads-2026-guide"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "nonpersonalized_notice": false
+    },
+    {
+      "query_id": "commercial-ru-02",
+      "query": "Кому заказать AI-видео продукта с точной формой упаковки?",
+      "system": "Google",
+      "surface": "Google Search web-only UI in current in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "web-only udm=14; pws=0",
+      "locale": "ru",
+      "geography": "Russia requested by gl=ru; UI reported Russia; physical location unknown",
+      "tested_at_utc": "2026-09-06T05:13:33.843Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.google.com/search?hl=ru&gl=ru&num=10&pws=0&udm=14&q=%D0%9A%D0%BE%D0%BC%D1%83%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20AI-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%B0%20%D1%81%20%D1%82%D0%BE%D1%87%D0%BD%D0%BE%D0%B9%20%D1%84%D0%BE%D1%80%D0%BC%D0%BE%D0%B9%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "ax_file": "google-commercial-ru-02-desktop.ax.txt",
+        "ax_sha256": "6995d982016dbd786f094cc4ec276cf9685536ea2b84a9d015707e88b7329227",
+        "desktop_screenshot": "google-commercial-ru-02-desktop.png",
+        "desktop_screenshot_sha256": "06342210014995d23599645c2b864a9a5a2ed96500f0e591202db8c4bde7f9c5",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://video-market.ru/production",
+        "https://videohunter.pro/uslugi/ai-video/",
+        "https://sostav.ru/blogs/272766/65540",
+        "https://champvideo.pro/ii-production",
+        "https://avastudio.ru/uslugi/sozdat-videorolik-s-neirosetiu/",
+        "https://svyazi-agency.ru/landing/motion/ai",
+        "https://ruvision.ru/ai",
+        "https://aivkadre.ru/",
+        "https://lemonads.ru/ai-video",
+        "https://trenity.tech/"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://video-market.ru/production"
+        },
+        {
+          "rank": 2,
+          "url": "https://videohunter.pro/uslugi/ai-video/"
+        },
+        {
+          "rank": 3,
+          "url": "https://sostav.ru/blogs/272766/65540"
+        },
+        {
+          "rank": 4,
+          "url": "https://champvideo.pro/ii-production"
+        },
+        {
+          "rank": 5,
+          "url": "https://avastudio.ru/uslugi/sozdat-videorolik-s-neirosetiu/"
+        },
+        {
+          "rank": 6,
+          "url": "https://svyazi-agency.ru/landing/motion/ai"
+        },
+        {
+          "rank": 7,
+          "url": "https://ruvision.ru/ai"
+        },
+        {
+          "rank": 8,
+          "url": "https://aivkadre.ru/"
+        },
+        {
+          "rank": 9,
+          "url": "https://lemonads.ru/ai-video"
+        },
+        {
+          "rank": 10,
+          "url": "https://trenity.tech/"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "nonpersonalized_notice": true
+    },
+    {
+      "query_id": "commercial-en-02",
+      "query": "Who can produce an AI product video that preserves packaging accuracy?",
+      "system": "Google",
+      "surface": "Google Search web-only UI in current in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "web-only udm=14; pws=0",
+      "locale": "en",
+      "geography": "United States requested by gl=us; physical location unknown",
+      "tested_at_utc": "2026-09-06T05:13:34.659Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.google.com/search?hl=en&gl=us&num=10&pws=0&udm=14&q=Who%20can%20produce%20an%20AI%20product%20video%20that%20preserves%20packaging%20accuracy%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "ax_file": "google-commercial-en-02-desktop.ax.txt",
+        "ax_sha256": "d5fbbd8ea3550ce4f154dbf7331aa4d135f4749ce8ec57f785335128e2ce08ff",
+        "desktop_screenshot": "google-commercial-en-02-desktop.png",
+        "desktop_screenshot_sha256": "abacd03d6fa3ab93466a4fd129497672e57e12020e9bd2237c44bc0e5ca9083a",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://rewarx.com/blogs/top-10-best-ai-product-video-generators-in-h1-2026",
+        "https://reddit.com/r/aitoolforU/comments/1u9v97h/which_ai_tool_is_best_for_creating_product_videos/",
+        "https://zeely.ai/blog/best-ai-product-video-generators/",
+        "https://lambdafilms.co.uk/ai-tools-product-consistency/",
+        "https://invideo.io/make/product-video/",
+        "https://creatify.ai/features/product-video",
+        "https://domoai.app/blog/ai-product-videos-without-warping-the-product",
+        "https://zapier.com/blog/best-ai-video-generator/",
+        "https://storylab.ai/best-ai-tools-product-consistency-ecommerce-video/",
+        "https://protoface.com/blog/can-ai-video-preserve-product-details-accurately"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://rewarx.com/blogs/top-10-best-ai-product-video-generators-in-h1-2026"
+        },
+        {
+          "rank": 2,
+          "url": "https://reddit.com/r/aitoolforU/comments/1u9v97h/which_ai_tool_is_best_for_creating_product_videos/"
+        },
+        {
+          "rank": 3,
+          "url": "https://zeely.ai/blog/best-ai-product-video-generators/"
+        },
+        {
+          "rank": 4,
+          "url": "https://lambdafilms.co.uk/ai-tools-product-consistency/"
+        },
+        {
+          "rank": 5,
+          "url": "https://invideo.io/make/product-video/"
+        },
+        {
+          "rank": 6,
+          "url": "https://creatify.ai/features/product-video"
+        },
+        {
+          "rank": 7,
+          "url": "https://domoai.app/blog/ai-product-videos-without-warping-the-product"
+        },
+        {
+          "rank": 8,
+          "url": "https://zapier.com/blog/best-ai-video-generator/"
+        },
+        {
+          "rank": 9,
+          "url": "https://storylab.ai/best-ai-tools-product-consistency-ecommerce-video/"
+        },
+        {
+          "rank": 10,
+          "url": "https://protoface.com/blog/can-ai-video-preserve-product-details-accurately"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "nonpersonalized_notice": true
+    },
+    {
+      "query_id": "commercial-ru-03",
+      "query": "Где заказать 3D-пакшот товара для рекламной кампании?",
+      "system": "Google",
+      "surface": "Google Search web-only UI in current in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "web-only udm=14; pws=0",
+      "locale": "ru",
+      "geography": "Russia requested by gl=ru; UI reported Russia; physical location unknown",
+      "tested_at_utc": "2026-09-06T05:13:35.449Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.google.com/search?hl=ru&gl=ru&num=10&pws=0&udm=14&q=%D0%93%D0%B4%D0%B5%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%203D-%D0%BF%D0%B0%D0%BA%D1%88%D0%BE%D1%82%20%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D0%BE%D0%B9%20%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "ax_file": "google-commercial-ru-03-desktop.ax.txt",
+        "ax_sha256": "1d1673989352204723e76e4b7cfeed9bc8f9bd01670c79cd00bb67f66aefe528",
+        "desktop_screenshot": "google-commercial-ru-03-desktop.png",
+        "desktop_screenshot_sha256": "2cc377c6decb055e79a12c05ae581764662abbc7abb9205c8e07bafa52ceaca9",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://modelica3d.ru/otrasli/reklama/",
+        "https://3dprintum.ru/area/bolshie-reklamnye-figury/",
+        "https://digitalcraft3d.com/services/maketirovanie/reklamnye-makety/",
+        "https://mockup.expert/mulyaj_product.html",
+        "https://3droom.pro/3d-pechat-v-marketinge",
+        "https://ads.studia3d.com/3dprinting-products/",
+        "https://3dmarket.su/services/3d-pechat-reklamnaya/",
+        "https://oaok.ru/",
+        "https://cubicprints.ru/3d-pechat-v-reklame/",
+        "https://3dtool.ru/3d-pechat-na-zakaz/"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://modelica3d.ru/otrasli/reklama/"
+        },
+        {
+          "rank": 2,
+          "url": "https://3dprintum.ru/area/bolshie-reklamnye-figury/"
+        },
+        {
+          "rank": 3,
+          "url": "https://digitalcraft3d.com/services/maketirovanie/reklamnye-makety/"
+        },
+        {
+          "rank": 4,
+          "url": "https://mockup.expert/mulyaj_product.html"
+        },
+        {
+          "rank": 5,
+          "url": "https://3droom.pro/3d-pechat-v-marketinge"
+        },
+        {
+          "rank": 6,
+          "url": "https://ads.studia3d.com/3dprinting-products/"
+        },
+        {
+          "rank": 7,
+          "url": "https://3dmarket.su/services/3d-pechat-reklamnaya/"
+        },
+        {
+          "rank": 8,
+          "url": "https://oaok.ru/"
+        },
+        {
+          "rank": 9,
+          "url": "https://cubicprints.ru/3d-pechat-v-reklame/"
+        },
+        {
+          "rank": 10,
+          "url": "https://3dtool.ru/3d-pechat-na-zakaz/"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "nonpersonalized_notice": true
+    },
+    {
+      "query_id": "commercial-en-03",
+      "query": "Where can I commission a 3D product packshot for an advertising campaign?",
+      "system": "Google",
+      "surface": "Google Search web-only UI in current in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "web-only udm=14; pws=0",
+      "locale": "en",
+      "geography": "United States requested by gl=us; physical location unknown",
+      "tested_at_utc": "2026-09-06T05:13:44.192Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.google.com/search?hl=en&gl=us&num=10&pws=0&udm=14&q=Where%20can%20I%20commission%20a%203D%20product%20packshot%20for%20an%20advertising%20campaign%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "ax_file": "google-commercial-en-03-desktop.ax.txt",
+        "ax_sha256": "97d80c4f4a7584d04a3650864cddf5134739fbbb978176ee45f28b819c894026",
+        "desktop_screenshot": "google-commercial-en-03-desktop.png",
+        "desktop_screenshot_sha256": "3fff7b02fcae7d3787652fe8d35b733b5404c0af6916658a8207020900fac8ac",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://emersya.com/3d-product-photography/",
+        "https://cgionly.com/index.php/service/product-packshot/",
+        "https://millergraphics.com/expertise/3d-packaging",
+        "https://sammdataservices.com/3d-product-modeling-rendering-services.html",
+        "https://maverickframe.com/services/3d-product-rendering-services/",
+        "https://advertflair.com/services/3d-rendering",
+        "https://freedesstudio.com/3d-product-rendering/",
+        "https://unearth3d.com/our-services/3d-product-rendering",
+        "https://outdesign.co/3d-product-rendering-services"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://emersya.com/3d-product-photography/"
+        },
+        {
+          "rank": 2,
+          "url": "https://cgionly.com/index.php/service/product-packshot/"
+        },
+        {
+          "rank": 3,
+          "url": "https://millergraphics.com/expertise/3d-packaging"
+        },
+        {
+          "rank": 4,
+          "url": "https://sammdataservices.com/3d-product-modeling-rendering-services.html"
+        },
+        {
+          "rank": 5,
+          "url": "https://maverickframe.com/services/3d-product-rendering-services/"
+        },
+        {
+          "rank": 6,
+          "url": "https://advertflair.com/services/3d-rendering"
+        },
+        {
+          "rank": 7,
+          "url": "https://freedesstudio.com/3d-product-rendering/"
+        },
+        {
+          "rank": 8,
+          "url": "https://unearth3d.com/our-services/3d-product-rendering"
+        },
+        {
+          "rank": 9,
+          "url": "https://outdesign.co/3d-product-rendering-services"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "nonpersonalized_notice": true
+    },
+    {
+      "query_id": "commercial-ru-04",
+      "query": "Какой продакшн объединит съёмку, CGI и AI в одном ролике?",
+      "system": "Google",
+      "surface": "Google Search web-only UI in current in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "web-only udm=14; pws=0",
+      "locale": "ru",
+      "geography": "Russia requested by gl=ru; UI reported Russia; physical location unknown",
+      "tested_at_utc": "2026-09-06T05:13:45.050Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.google.com/search?hl=ru&gl=ru&num=10&pws=0&udm=14&q=%D0%9A%D0%B0%D0%BA%D0%BE%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%BA%D1%88%D0%BD%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%B4%D0%B8%D0%BD%D0%B8%D1%82%20%D1%81%D1%8A%D1%91%D0%BC%D0%BA%D1%83%2C%20CGI%20%D0%B8%20AI%20%D0%B2%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC%20%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%D0%B5%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "ax_file": "google-commercial-ru-04-desktop.ax.txt",
+        "ax_sha256": "41698ea0564b6da48d25500d522c0ced116da3229ed0d8ba554f57944c60ff01",
+        "desktop_screenshot": "google-commercial-ru-04-desktop.png",
+        "desktop_screenshot_sha256": "ff267ea65d6088231f34f7ce19039f5fcdc32474117fa459575d9f9938c84d0e",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://sharprod.com/services/hybrid-video-production.html",
+        "https://sostav.ru/blogs/290917/97360",
+        "https://moreproduction.ru/hybrid/",
+        "https://sharprod.com/guides/hybrid-video-production/",
+        "https://nnets.ru/news/gibridnyj-prodakshen-kak-ai-i-cgi-ob-edinili-v-kejse-dlja-ostrova-mechty",
+        "https://ailabpro.ru/",
+        "https://unisender.com/ru/blog/nejroseti-v-reklamnom-prodakshene/",
+        "https://shchiprod.ru/ai",
+        "https://sharprod.com/journal/hybrid-video-production.html",
+        "https://cinecast.ru/ai"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://sharprod.com/services/hybrid-video-production.html"
+        },
+        {
+          "rank": 2,
+          "url": "https://sostav.ru/blogs/290917/97360"
+        },
+        {
+          "rank": 3,
+          "url": "https://moreproduction.ru/hybrid/"
+        },
+        {
+          "rank": 4,
+          "url": "https://sharprod.com/guides/hybrid-video-production/"
+        },
+        {
+          "rank": 5,
+          "url": "https://nnets.ru/news/gibridnyj-prodakshen-kak-ai-i-cgi-ob-edinili-v-kejse-dlja-ostrova-mechty"
+        },
+        {
+          "rank": 6,
+          "url": "https://ailabpro.ru/"
+        },
+        {
+          "rank": 7,
+          "url": "https://unisender.com/ru/blog/nejroseti-v-reklamnom-prodakshene/"
+        },
+        {
+          "rank": 8,
+          "url": "https://shchiprod.ru/ai"
+        },
+        {
+          "rank": 9,
+          "url": "https://sharprod.com/journal/hybrid-video-production.html"
+        },
+        {
+          "rank": 10,
+          "url": "https://cinecast.ru/ai"
+        }
+      ],
+      "shar_classification": "VALID_CITATION",
+      "shar_rank": 1,
+      "citation_verification": {
+        "tested_at_utc": "2026-09-06T05:15:23.209Z",
+        "http_status": 200,
+        "canonical": "https://sharprod.com/services/hybrid-video-production.html",
+        "brand_observed": true
+      },
+      "nonpersonalized_notice": true
+    },
+    {
+      "query_id": "commercial-en-04",
+      "query": "Which production partner can combine live action, CGI and AI in one film?",
+      "system": "Google",
+      "surface": "Google Search web-only UI in current in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "web-only udm=14; pws=0",
+      "locale": "en",
+      "geography": "United States requested by gl=us; physical location unknown",
+      "tested_at_utc": "2026-09-06T05:13:45.834Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.google.com/search?hl=en&gl=us&num=10&pws=0&udm=14&q=Which%20production%20partner%20can%20combine%20live%20action%2C%20CGI%20and%20AI%20in%20one%20film%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "ax_file": "google-commercial-en-04-desktop.ax.txt",
+        "ax_sha256": "44a0324400f28ba8feaf8216420b3ebe6cdb4a6c2c847945e09395083f71d65d",
+        "desktop_screenshot": "google-commercial-en-04-desktop.png",
+        "desktop_screenshot_sha256": "741973e31d821d22dca7386e5fd19cbad0eca4f39ff0dac80d3bc17dbe25e0f2",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/ancestra-behind-the-scenes/",
+        "https://sharprod.com/en/services/hybrid-video-production.html",
+        "https://hollywoodreporter.com/movies/movie-features/obsidian-studio-ai-filmmaking-1236577409/",
+        "https://utopaistudios.com/"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/ancestra-behind-the-scenes/"
+        },
+        {
+          "rank": 2,
+          "url": "https://sharprod.com/en/services/hybrid-video-production.html"
+        },
+        {
+          "rank": 3,
+          "url": "https://hollywoodreporter.com/movies/movie-features/obsidian-studio-ai-filmmaking-1236577409/"
+        },
+        {
+          "rank": 4,
+          "url": "https://utopaistudios.com/"
+        }
+      ],
+      "shar_classification": "VALID_CITATION",
+      "shar_rank": 2,
+      "citation_verification": {
+        "tested_at_utc": "2026-09-06T05:15:23.209Z",
+        "http_status": 200,
+        "canonical": "https://sharprod.com/en/services/hybrid-video-production.html",
+        "brand_observed": true
+      },
+      "nonpersonalized_notice": true
+    },
+    {
+      "query_id": "commercial-ru-05",
+      "query": "Кто изготовит рекламный ролик и версии для разных площадок?",
+      "system": "Google",
+      "surface": "Google Search web-only UI in current in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "web-only udm=14; pws=0",
+      "locale": "ru",
+      "geography": "Russia requested by gl=ru; UI reported Russia; physical location unknown",
+      "tested_at_utc": "2026-09-06T05:13:46.730Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.google.com/search?hl=ru&gl=ru&num=10&pws=0&udm=14&q=%D0%9A%D1%82%D0%BE%20%D0%B8%D0%B7%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%B8%D1%82%20%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D1%8B%D0%B9%20%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%20%D0%B8%20%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B0%D0%B7%D0%BD%D1%8B%D1%85%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BE%D0%BA%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "ax_file": "google-commercial-ru-05-desktop.ax.txt",
+        "ax_sha256": "2a2cb2dfd341018722964df13dd9556e21622c44cad17571671d917575037166",
+        "desktop_screenshot": "google-commercial-ru-05-desktop.png",
+        "desktop_screenshot_sha256": "6a3d2beb6ca3b7363b53a249dc8bdaa08237e3b2c53164088c5b4fceff28cc34",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://zolotov.studio/proizvodstvo-videorolikov",
+        "https://ayniproduction.ru/reklamnie-roliki",
+        "https://mediaheads.ru/uslugi/reklamnye-roliki",
+        "https://avastudio.ru/uslugi/reklamny-rolik/",
+        "https://lineinspace.studio/services/reklamnyy_rolik/",
+        "https://marketing-tech.ru/company_tags/video-production/",
+        "https://piter-pro.com/about-us/piterpro-production",
+        "https://rashmedia.ru/services/production/izgotovlenie-videorolikov/",
+        "https://videoshow.ru/how-to-create-an-advertisement-yourself.php",
+        "https://champvideo.pro/champvideo-krasnoyarsk"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://zolotov.studio/proizvodstvo-videorolikov"
+        },
+        {
+          "rank": 2,
+          "url": "https://ayniproduction.ru/reklamnie-roliki"
+        },
+        {
+          "rank": 3,
+          "url": "https://mediaheads.ru/uslugi/reklamnye-roliki"
+        },
+        {
+          "rank": 4,
+          "url": "https://avastudio.ru/uslugi/reklamny-rolik/"
+        },
+        {
+          "rank": 5,
+          "url": "https://lineinspace.studio/services/reklamnyy_rolik/"
+        },
+        {
+          "rank": 6,
+          "url": "https://marketing-tech.ru/company_tags/video-production/"
+        },
+        {
+          "rank": 7,
+          "url": "https://piter-pro.com/about-us/piterpro-production"
+        },
+        {
+          "rank": 8,
+          "url": "https://rashmedia.ru/services/production/izgotovlenie-videorolikov/"
+        },
+        {
+          "rank": 9,
+          "url": "https://videoshow.ru/how-to-create-an-advertisement-yourself.php"
+        },
+        {
+          "rank": 10,
+          "url": "https://champvideo.pro/champvideo-krasnoyarsk"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "nonpersonalized_notice": true
+    },
+    {
+      "query_id": "commercial-en-05",
+      "query": "Who can produce a commercial and versions for several channels?",
+      "system": "Google",
+      "surface": "Google Search web-only UI in current in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "web-only udm=14; pws=0",
+      "locale": "en",
+      "geography": "United States requested by gl=us; physical location unknown",
+      "tested_at_utc": "2026-09-06T05:13:47.501Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.google.com/search?hl=en&gl=us&num=10&pws=0&udm=14&q=Who%20can%20produce%20a%20commercial%20and%20versions%20for%20several%20channels%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "ax_file": "google-commercial-en-05-desktop.ax.txt",
+        "ax_sha256": "535638a985c2073f6a3aa58b626ec967e1fa0bda32a36044a7b6b606b1178dd2",
+        "desktop_screenshot": "google-commercial-en-05-desktop.png",
+        "desktop_screenshot_sha256": "88d99b666409190f386705de4124d5444e8aa28f824436db1544b9291215f09d",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://moonb.io/blog/commercial-production-companies",
+        "https://jasonjkhoo.com/blog/top-tv-commercial-production-companies",
+        "https://productionhub.com/directory/profiles/commercial-production-companies/us",
+        "https://thesparkhouse.com/blog/top-tv-commercial-production-companies",
+        "https://blackboxproductions.tv/service-commercial-production",
+        "https://tvamediagroup.com/tv-commercial-production-services/",
+        "https://theimgstudio.com/tv-commercials/",
+        "https://greenfroglabs.com/blog/tv-commercial-production-companies",
+        "https://wildaproductions.com/post/tv-commercial-production-services-that-perform",
+        "https://mediabarproductions.com/video-production/commercials"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://moonb.io/blog/commercial-production-companies"
+        },
+        {
+          "rank": 2,
+          "url": "https://jasonjkhoo.com/blog/top-tv-commercial-production-companies"
+        },
+        {
+          "rank": 3,
+          "url": "https://productionhub.com/directory/profiles/commercial-production-companies/us"
+        },
+        {
+          "rank": 4,
+          "url": "https://thesparkhouse.com/blog/top-tv-commercial-production-companies"
+        },
+        {
+          "rank": 5,
+          "url": "https://blackboxproductions.tv/service-commercial-production"
+        },
+        {
+          "rank": 6,
+          "url": "https://tvamediagroup.com/tv-commercial-production-services/"
+        },
+        {
+          "rank": 7,
+          "url": "https://theimgstudio.com/tv-commercials/"
+        },
+        {
+          "rank": 8,
+          "url": "https://greenfroglabs.com/blog/tv-commercial-production-companies"
+        },
+        {
+          "rank": 9,
+          "url": "https://wildaproductions.com/post/tv-commercial-production-services-that-perform"
+        },
+        {
+          "rank": 10,
+          "url": "https://mediabarproductions.com/video-production/commercials"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "nonpersonalized_notice": true
+    },
+    {
+      "query_id": "commercial-ru-06",
+      "query": "У кого заказать B2B-ролик для объяснения сложного продукта?",
+      "system": "Google",
+      "surface": "Google Search web-only UI in current in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "web-only udm=14; pws=0",
+      "locale": "ru",
+      "geography": "Russia requested by gl=ru; UI reported Russia; physical location unknown",
+      "tested_at_utc": "2026-09-06T05:13:58.862Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.google.com/search?hl=ru&gl=ru&num=10&pws=0&udm=14&q=%D0%A3%20%D0%BA%D0%BE%D0%B3%D0%BE%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20B2B-%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%20%D0%B4%D0%BB%D1%8F%20%D0%BE%D0%B1%D1%8A%D1%8F%D1%81%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F%20%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%B0%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "ax_file": "google-commercial-ru-06-desktop.ax.txt",
+        "ax_sha256": "12c4c714255cad9f95691a2f2e8374379036c7666b899d67ccf3cc4a04f69566",
+        "desktop_screenshot": "google-commercial-ru-06-desktop.png",
+        "desktop_screenshot_sha256": "91379e9b1d0e77c666faf0bf17d60f2af0e242749d8d84847e484d5299f62e91",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://sharprod.com/services/b2b-explainer-video.html"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://sharprod.com/services/b2b-explainer-video.html"
+        }
+      ],
+      "shar_classification": "VALID_CITATION",
+      "shar_rank": 1,
+      "citation_verification": {
+        "tested_at_utc": "2026-09-06T05:15:23.209Z",
+        "http_status": 200,
+        "canonical": "https://sharprod.com/services/b2b-explainer-video.html",
+        "brand_observed": true
+      },
+      "nonpersonalized_notice": true
+    },
+    {
+      "query_id": "commercial-en-06",
+      "query": "Who can make a B2B explainer for a complex product?",
+      "system": "Google",
+      "surface": "Google Search web-only UI in current in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "web-only udm=14; pws=0",
+      "locale": "en",
+      "geography": "United States requested by gl=us; physical location unknown",
+      "tested_at_utc": "2026-09-06T05:13:59.675Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.google.com/search?hl=en&gl=us&num=10&pws=0&udm=14&q=Who%20can%20make%20a%20B2B%20explainer%20for%20a%20complex%20product%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "ax_file": "google-commercial-en-06-desktop.ax.txt",
+        "ax_sha256": "f246ccbd272b30a9ed05bdab5809ace9625db35b11c7b3e030a36472967910e5",
+        "desktop_screenshot": "google-commercial-en-06-desktop.png",
+        "desktop_screenshot_sha256": "2bfb42748c5d82143409aba7f152e596a3e7e79087b5e418c82ab5050100fe6d",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://reddit.com/r/ProductMarketing/comments/1t0otwu/anyone_know_a_good_explainer_video_company_for/",
+        "https://explainify.com/",
+        "https://everything.design/blog/best-b2b-explainer-video-companies",
+        "https://tapvid.ai/blog/b2b-explainer-videos",
+        "https://studiopigeon.com/blog/best-b2b-explainer-animations/",
+        "https://ultimatevideo.co/blog/best-explainer-video-agency-for-b2b-saas-2026/",
+        "https://studiomonday.co/explainer-video/",
+        "https://digitalbrew.com/blog/bridging-the-gap-explainer-videos-for-niche-b2b-industries/",
+        "https://everythingmotion.agency/top-explainer-video-companies-b2b-saas-enterprise",
+        "https://linkedin.com/pulse/saas-explainer-video-2026-how-make-your-b2b-product-buckeridge-6rdrc"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://reddit.com/r/ProductMarketing/comments/1t0otwu/anyone_know_a_good_explainer_video_company_for/"
+        },
+        {
+          "rank": 2,
+          "url": "https://explainify.com/"
+        },
+        {
+          "rank": 3,
+          "url": "https://everything.design/blog/best-b2b-explainer-video-companies"
+        },
+        {
+          "rank": 4,
+          "url": "https://tapvid.ai/blog/b2b-explainer-videos"
+        },
+        {
+          "rank": 5,
+          "url": "https://studiopigeon.com/blog/best-b2b-explainer-animations/"
+        },
+        {
+          "rank": 6,
+          "url": "https://ultimatevideo.co/blog/best-explainer-video-agency-for-b2b-saas-2026/"
+        },
+        {
+          "rank": 7,
+          "url": "https://studiomonday.co/explainer-video/"
+        },
+        {
+          "rank": 8,
+          "url": "https://digitalbrew.com/blog/bridging-the-gap-explainer-videos-for-niche-b2b-industries/"
+        },
+        {
+          "rank": 9,
+          "url": "https://everythingmotion.agency/top-explainer-video-companies-b2b-saas-enterprise"
+        },
+        {
+          "rank": 10,
+          "url": "https://linkedin.com/pulse/saas-explainer-video-2026-how-make-your-b2b-product-buckeridge-6rdrc"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "nonpersonalized_notice": true
+    },
+    {
+      "query_id": "commercial-ru-07",
+      "query": "Кому поручить demo-видео цифрового продукта для продаж?",
+      "system": "Google",
+      "surface": "Google Search web-only UI in current in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "web-only udm=14; pws=0",
+      "locale": "ru",
+      "geography": "Russia requested by gl=ru; UI reported Russia; physical location unknown",
+      "tested_at_utc": "2026-09-06T05:14:00.512Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.google.com/search?hl=ru&gl=ru&num=10&pws=0&udm=14&q=%D0%9A%D0%BE%D0%BC%D1%83%20%D0%BF%D0%BE%D1%80%D1%83%D1%87%D0%B8%D1%82%D1%8C%20demo-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%20%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "ax_file": "google-commercial-ru-07-desktop.ax.txt",
+        "ax_sha256": "068db0747da998beca079325ec6c1b5a40a77b7df3e6ff5663992ac44e0bd2b8",
+        "desktop_screenshot": "google-commercial-ru-07-desktop.png",
+        "desktop_screenshot_sha256": "14da5e8e3da573dd39f2e744adbb707380273f6c93eb7618d9ee9304d7c52331",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://carrotquest.io/blog/demo-sales-techniques/",
+        "https://mts-link.ru/blog/kak-provesti-demo-produkta/"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://carrotquest.io/blog/demo-sales-techniques/"
+        },
+        {
+          "rank": 2,
+          "url": "https://mts-link.ru/blog/kak-provesti-demo-produkta/"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "nonpersonalized_notice": true
+    },
+    {
+      "query_id": "commercial-en-07",
+      "query": "Who can produce a digital product demo for a sales team?",
+      "system": "Google",
+      "surface": "Google Search web-only UI in current in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "web-only udm=14; pws=0",
+      "locale": "en",
+      "geography": "United States requested by gl=us; physical location unknown",
+      "tested_at_utc": "2026-09-06T05:14:01.281Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.google.com/search?hl=en&gl=us&num=10&pws=0&udm=14&q=Who%20can%20produce%20a%20digital%20product%20demo%20for%20a%20sales%20team%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "ax_file": "google-commercial-en-07-desktop.ax.txt",
+        "ax_sha256": "a8e9b201e591b35e15777b85d038e9cc38bbdf1fe7d5049e7bd61f8138e92d9b",
+        "desktop_screenshot": "google-commercial-en-07-desktop.png",
+        "desktop_screenshot_sha256": "203b6df1514d6d434a0b03b57c2ad48d014ffa9e2526989f75246bc6178114c6",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://atlassian.com/blog/loom/sales-demo-software",
+        "https://supademo.com/",
+        "https://goconsensus.com/blog/best-sales-demo-software-for-automation",
+        "https://navattic.com/blog/6-best-sales-demo-software",
+        "https://pipedrive.com/en/blog/sales-demo-software",
+        "https://reddit.com/r/ProductManagement/comments/9t9o9j/product_demos_whose_responsibility_are_they_pm_or/",
+        "https://impekable.com/services/sales-demos/",
+        "https://arcade.software/post/sales-demo-software",
+        "https://salestechstar.com/sales-engagement/tools-that-can-help-sales-people-drive-better-product-demos/"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://atlassian.com/blog/loom/sales-demo-software"
+        },
+        {
+          "rank": 2,
+          "url": "https://supademo.com/"
+        },
+        {
+          "rank": 3,
+          "url": "https://goconsensus.com/blog/best-sales-demo-software-for-automation"
+        },
+        {
+          "rank": 4,
+          "url": "https://navattic.com/blog/6-best-sales-demo-software"
+        },
+        {
+          "rank": 5,
+          "url": "https://pipedrive.com/en/blog/sales-demo-software"
+        },
+        {
+          "rank": 6,
+          "url": "https://reddit.com/r/ProductManagement/comments/9t9o9j/product_demos_whose_responsibility_are_they_pm_or/"
+        },
+        {
+          "rank": 7,
+          "url": "https://impekable.com/services/sales-demos/"
+        },
+        {
+          "rank": 8,
+          "url": "https://arcade.software/post/sales-demo-software"
+        },
+        {
+          "rank": 9,
+          "url": "https://salestechstar.com/sales-engagement/tools-that-can-help-sales-people-drive-better-product-demos/"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "nonpersonalized_notice": true
+    },
+    {
+      "query_id": "commercial-ru-08",
+      "query": "Как найти white-label видеопродакшн для рекламного агентства?",
+      "system": "Google",
+      "surface": "Google Search web-only UI in current in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "web-only udm=14; pws=0",
+      "locale": "ru",
+      "geography": "Russia requested by gl=ru; UI reported Russia; physical location unknown",
+      "tested_at_utc": "2026-09-06T05:14:02.124Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.google.com/search?hl=ru&gl=ru&num=10&pws=0&udm=14&q=%D0%9A%D0%B0%D0%BA%20%D0%BD%D0%B0%D0%B9%D1%82%D0%B8%20white-label%20%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%BA%D1%88%D0%BD%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B0%D0%B3%D0%B5%D0%BD%D1%82%D1%81%D1%82%D0%B2%D0%B0%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "ax_file": "google-commercial-ru-08-desktop.ax.txt",
+        "ax_sha256": "80a4bc33b989628a447c7bd0512fe3c88acfd4884a82032f5929dc0e2ab4a889",
+        "desktop_screenshot": "google-commercial-ru-08-desktop.png",
+        "desktop_screenshot_sha256": "3bc069e6b60c1c786822e55ca285860299ba0cbc4789a27e7d821f35b085d734",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://sharprod.com/industries/agency-white-label.html",
+        "https://whitelabel.by/video-prodakshn"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://sharprod.com/industries/agency-white-label.html"
+        },
+        {
+          "rank": 2,
+          "url": "https://whitelabel.by/video-prodakshn"
+        }
+      ],
+      "shar_classification": "VALID_CITATION",
+      "shar_rank": 1,
+      "citation_verification": {
+        "tested_at_utc": "2026-09-06T05:15:23.209Z",
+        "http_status": 200,
+        "canonical": "https://sharprod.com/industries/agency-white-label.html",
+        "brand_observed": true
+      },
+      "nonpersonalized_notice": true
+    },
+    {
+      "query_id": "commercial-en-08",
+      "query": "How do I find a white-label video production partner for an agency?",
+      "system": "Google",
+      "surface": "Google Search web-only UI in current in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "web-only udm=14; pws=0",
+      "locale": "en",
+      "geography": "United States requested by gl=us; physical location unknown",
+      "tested_at_utc": "2026-09-06T05:14:10.011Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.google.com/search?hl=en&gl=us&num=10&pws=0&udm=14&q=How%20do%20I%20find%20a%20white-label%20video%20production%20partner%20for%20an%20agency%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "ax_file": "google-commercial-en-08-desktop.ax.txt",
+        "ax_sha256": "d595fd4261d98b79630fbc1036cfc0d3082ebb26816ea37499b846dc7e3c7d1c",
+        "desktop_screenshot": "google-commercial-en-08-desktop.png",
+        "desktop_screenshot_sha256": "6a4d27114b20683416c17b44f11ab19fac30432bf75d277e2522259be8a14a51",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://vid.co/white-label",
+        "https://pixel8production.com/blog/best-white-label-video-editing-services",
+        "https://thriveagency.com/digital-marketing-services/white-label-video-service/",
+        "https://videoscale.co/blog/best-video-editing-services-for-agencies",
+        "https://room4media.com/video-production-outsourcing-for-agencies/",
+        "https://reddit.com/r/agency/comments/1evm2sr/are_whitelabel_productions_for_agencies_a_viable/",
+        "https://raisedmediaco.com/agency-partnership",
+        "https://increditors.com/best-white-label-video-editing/",
+        "https://killerspots.com/blog/white-label-video-audio-production-agencies",
+        "https://krishastudio.com/white-label-production-guide/"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://vid.co/white-label"
+        },
+        {
+          "rank": 2,
+          "url": "https://pixel8production.com/blog/best-white-label-video-editing-services"
+        },
+        {
+          "rank": 3,
+          "url": "https://thriveagency.com/digital-marketing-services/white-label-video-service/"
+        },
+        {
+          "rank": 4,
+          "url": "https://videoscale.co/blog/best-video-editing-services-for-agencies"
+        },
+        {
+          "rank": 5,
+          "url": "https://room4media.com/video-production-outsourcing-for-agencies/"
+        },
+        {
+          "rank": 6,
+          "url": "https://reddit.com/r/agency/comments/1evm2sr/are_whitelabel_productions_for_agencies_a_viable/"
+        },
+        {
+          "rank": 7,
+          "url": "https://raisedmediaco.com/agency-partnership"
+        },
+        {
+          "rank": 8,
+          "url": "https://increditors.com/best-white-label-video-editing/"
+        },
+        {
+          "rank": 9,
+          "url": "https://killerspots.com/blog/white-label-video-audio-production-agencies"
+        },
+        {
+          "rank": 10,
+          "url": "https://krishastudio.com/white-label-production-guide/"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "nonpersonalized_notice": true
+    },
+    {
+      "query_id": "commercial-ru-09",
+      "query": "Кому заказать видео девелоперского проекта до завершения строительства?",
+      "system": "Google",
+      "surface": "Google Search web-only UI in current in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "web-only udm=14; pws=0",
+      "locale": "ru",
+      "geography": "Russia requested by gl=ru; UI reported Russia; physical location unknown",
+      "tested_at_utc": "2026-09-06T05:14:10.918Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.google.com/search?hl=ru&gl=ru&num=10&pws=0&udm=14&q=%D0%9A%D0%BE%D0%BC%D1%83%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%20%D0%B4%D0%B5%D0%B2%D0%B5%D0%BB%D0%BE%D0%BF%D0%B5%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D0%B4%D0%BE%20%D0%B7%D0%B0%D0%B2%D0%B5%D1%80%D1%88%D0%B5%D0%BD%D0%B8%D1%8F%20%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B0%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "ax_file": "google-commercial-ru-09-desktop.ax.txt",
+        "ax_sha256": "74fd2fa29138f2d6bc8a4347d9a622a1ced831999a84f8291d7015d7358fa559",
+        "desktop_screenshot": "google-commercial-ru-09-desktop.png",
+        "desktop_screenshot_sha256": "c6dc1aebcecec419798fafd3ff80995e75627ddb2d9f1d1e2b1fccbe1386b72e",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://avastudio.ru/otrasli/nedvizhimost/developery/",
+        "https://ruvision.ru/development",
+        "https://marketing-tech.ru/company_tags/video-production/nedvizhimost-i-developpment/developperskie-kompanii/",
+        "https://video-animation.ru/uslugi/video-dlya-zastroyshchikov",
+        "https://ferox.studio/realty",
+        "https://sloi.ai/development",
+        "https://uslugi.yandex.ru/213-moscow/category",
+        "https://artlebedev.ru/competencies/pr/videoproduction/",
+        "https://supervideo27.ru/sm",
+        "https://replay-video.ru/business/stroitelstvo/"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://avastudio.ru/otrasli/nedvizhimost/developery/"
+        },
+        {
+          "rank": 2,
+          "url": "https://ruvision.ru/development"
+        },
+        {
+          "rank": 3,
+          "url": "https://marketing-tech.ru/company_tags/video-production/nedvizhimost-i-developpment/developperskie-kompanii/"
+        },
+        {
+          "rank": 4,
+          "url": "https://video-animation.ru/uslugi/video-dlya-zastroyshchikov"
+        },
+        {
+          "rank": 5,
+          "url": "https://ferox.studio/realty"
+        },
+        {
+          "rank": 6,
+          "url": "https://sloi.ai/development"
+        },
+        {
+          "rank": 7,
+          "url": "https://uslugi.yandex.ru/213-moscow/category"
+        },
+        {
+          "rank": 8,
+          "url": "https://artlebedev.ru/competencies/pr/videoproduction/"
+        },
+        {
+          "rank": 9,
+          "url": "https://supervideo27.ru/sm"
+        },
+        {
+          "rank": 10,
+          "url": "https://replay-video.ru/business/stroitelstvo/"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "nonpersonalized_notice": true
+    },
+    {
+      "query_id": "commercial-en-09",
+      "query": "Who can create a property development video before construction is complete?",
+      "system": "Google",
+      "surface": "Google Search web-only UI in current in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "web-only udm=14; pws=0",
+      "locale": "en",
+      "geography": "United States requested by gl=us; physical location unknown",
+      "tested_at_utc": "2026-09-06T05:14:11.676Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.google.com/search?hl=en&gl=us&num=10&pws=0&udm=14&q=Who%20can%20create%20a%20property%20development%20video%20before%20construction%20is%20complete%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "ax_file": "google-commercial-en-09-desktop.ax.txt",
+        "ax_sha256": "1a1ad5c1c07d3617bc6012f1d1ab2131f3edcb1cc2a36d65d55e1003732d6b7b",
+        "desktop_screenshot": "google-commercial-en-09-desktop.png",
+        "desktop_screenshot_sha256": "828b274f69bc935de35a67273627343422b6e061884aa50e804fe54eb8eb42c2",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://youtube.com/watch?v=8YHs-bgBoHk",
+        "https://youtube.com/watch?v=TJPjbuhD75Y",
+        "https://fiverr.com/epicaivideos/create-cinematic-pre-construction-property-development-launch-videos",
+        "https://instagram.com/reel/DUamp5xCLIJ/?hl=en",
+        "https://reddit.com/r/videography/comments/10xq05v/drone_property_development_video_ideas_and_example/",
+        "https://youtube.com/watch?v=F7gTbXqsUcY",
+        "https://facebook.com/61578877284661/videos/-veo-for-real-estateturn-ideas-into-property-videoscaptionwhat-if-you-could-show/1293081189448893/",
+        "https://instagram.com/reel/DUh_9t2jUTN/",
+        "https://instagram.com/reel/DZVvcpfhVPo/",
+        "https://instagram.com/reel/DTs4yBpiD5Z/?hl=en"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://youtube.com/watch?v=8YHs-bgBoHk"
+        },
+        {
+          "rank": 2,
+          "url": "https://youtube.com/watch?v=TJPjbuhD75Y"
+        },
+        {
+          "rank": 3,
+          "url": "https://fiverr.com/epicaivideos/create-cinematic-pre-construction-property-development-launch-videos"
+        },
+        {
+          "rank": 4,
+          "url": "https://instagram.com/reel/DUamp5xCLIJ/?hl=en"
+        },
+        {
+          "rank": 5,
+          "url": "https://reddit.com/r/videography/comments/10xq05v/drone_property_development_video_ideas_and_example/"
+        },
+        {
+          "rank": 6,
+          "url": "https://youtube.com/watch?v=F7gTbXqsUcY"
+        },
+        {
+          "rank": 7,
+          "url": "https://facebook.com/61578877284661/videos/-veo-for-real-estateturn-ideas-into-property-videoscaptionwhat-if-you-could-show/1293081189448893/"
+        },
+        {
+          "rank": 8,
+          "url": "https://instagram.com/reel/DUh_9t2jUTN/"
+        },
+        {
+          "rank": 9,
+          "url": "https://instagram.com/reel/DZVvcpfhVPo/"
+        },
+        {
+          "rank": 10,
+          "url": "https://instagram.com/reel/DTs4yBpiD5Z/?hl=en"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "nonpersonalized_notice": true
+    },
+    {
+      "query_id": "commercial-ru-10",
+      "query": "Сколько стоит продуктовый ролик с AI и постпродакшном?",
+      "system": "Google",
+      "surface": "Google Search web-only UI in current in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "web-only udm=14; pws=0",
+      "locale": "ru",
+      "geography": "Russia requested by gl=ru; UI reported Russia; physical location unknown",
+      "tested_at_utc": "2026-09-06T05:14:12.512Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.google.com/search?hl=ru&gl=ru&num=10&pws=0&udm=14&q=%D0%A1%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D1%81%D1%82%D0%BE%D0%B8%D1%82%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%BE%D0%B2%D1%8B%D0%B9%20%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%20%D1%81%20AI%20%D0%B8%20%D0%BF%D0%BE%D1%81%D1%82%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%BA%D1%88%D0%BD%D0%BE%D0%BC%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "ax_file": "google-commercial-ru-10-desktop.ax.txt",
+        "ax_sha256": "ba28fc60d2f4e1c0935064a63e71177357c0e52136b52df2b76cc26f83e4d9a6",
+        "desktop_screenshot": "google-commercial-ru-10-desktop.png",
+        "desktop_screenshot_sha256": "3c54d9b429f5326bb8c7691dcf5ab0a224ec35fdc3ed7717c3a6b7389b96e95a",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://sharprod.com/pricing/",
+        "https://sloi.ai/pricing",
+        "https://avastudio.ru/uslugi/sozdat-videorolik-s-neirosetiu/",
+        "https://ai-creator.su/ai-video/ceny/",
+        "https://video-market.ru/production"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://sharprod.com/pricing/"
+        },
+        {
+          "rank": 2,
+          "url": "https://sloi.ai/pricing"
+        },
+        {
+          "rank": 3,
+          "url": "https://avastudio.ru/uslugi/sozdat-videorolik-s-neirosetiu/"
+        },
+        {
+          "rank": 4,
+          "url": "https://ai-creator.su/ai-video/ceny/"
+        },
+        {
+          "rank": 5,
+          "url": "https://video-market.ru/production"
+        }
+      ],
+      "shar_classification": "VALID_CITATION",
+      "shar_rank": 1,
+      "citation_verification": {
+        "tested_at_utc": "2026-09-06T05:15:23.209Z",
+        "http_status": 200,
+        "canonical": "https://sharprod.com/pricing/",
+        "brand_observed": true
+      },
+      "nonpersonalized_notice": true
+    },
+    {
+      "query_id": "commercial-en-10",
+      "query": "How much does a product film with AI and post-production cost?",
+      "system": "Google",
+      "surface": "Google Search web-only UI in current in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "web-only udm=14; pws=0",
+      "locale": "en",
+      "geography": "United States requested by gl=us; physical location unknown",
+      "tested_at_utc": "2026-09-06T05:14:13.341Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.google.com/search?hl=en&gl=us&num=10&pws=0&udm=14&q=How%20much%20does%20a%20product%20film%20with%20AI%20and%20post-production%20cost%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "ax_file": "google-commercial-en-10-desktop.ax.txt",
+        "ax_sha256": "bc60534072fb32de578a60122f56f2df0bf8bdc7074ff433971eeb38935980aa",
+        "desktop_screenshot": "google-commercial-en-10-desktop.png",
+        "desktop_screenshot_sha256": "df3fccdb015870e4acf54f46590bbf85c268dc47674a1ec07ebb2b8b60165b07",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://layer3labs.io/guides/ai-generated-film-production-cost",
+        "https://databazaardigital.com/blog/ai-generated-movies-vs-traditional-filmmaking-comparison-2026",
+        "https://invideo.io/faq/ai-film-production-vs-traditional-film-production-cost/",
+        "https://linkedin.com/posts/sirioberati_ai-filmmaking-is-more-expensive-than-traditional-activity-7491529009000857600-Gd4Z",
+        "https://reddit.com/r/reactnative/comments/1my9zpj/the_real_cost_of_ai_video_generation_why_i_burned/",
+        "https://lemonlight.com/blog/ai-video-production-cost/",
+        "https://facebook.com/groups/baddiesinai/posts/1069837239369633/",
+        "https://mindstudio.ai/blog/ai-filmmaking-cost-breakdown-2026",
+        "https://storylab.ai/how-much-does-ai-filmmaking-cost/",
+        "https://leadde.ai/blog/product-video-production-cost-2026-guide"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://layer3labs.io/guides/ai-generated-film-production-cost"
+        },
+        {
+          "rank": 2,
+          "url": "https://databazaardigital.com/blog/ai-generated-movies-vs-traditional-filmmaking-comparison-2026"
+        },
+        {
+          "rank": 3,
+          "url": "https://invideo.io/faq/ai-film-production-vs-traditional-film-production-cost/"
+        },
+        {
+          "rank": 4,
+          "url": "https://linkedin.com/posts/sirioberati_ai-filmmaking-is-more-expensive-than-traditional-activity-7491529009000857600-Gd4Z"
+        },
+        {
+          "rank": 5,
+          "url": "https://reddit.com/r/reactnative/comments/1my9zpj/the_real_cost_of_ai_video_generation_why_i_burned/"
+        },
+        {
+          "rank": 6,
+          "url": "https://lemonlight.com/blog/ai-video-production-cost/"
+        },
+        {
+          "rank": 7,
+          "url": "https://facebook.com/groups/baddiesinai/posts/1069837239369633/"
+        },
+        {
+          "rank": 8,
+          "url": "https://mindstudio.ai/blog/ai-filmmaking-cost-breakdown-2026"
+        },
+        {
+          "rank": 9,
+          "url": "https://storylab.ai/how-much-does-ai-filmmaking-cost/"
+        },
+        {
+          "rank": 10,
+          "url": "https://leadde.ai/blog/product-video-production-cost-2026-guide"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "nonpersonalized_notice": true
+    },
+    {
+      "query_id": "commercial-ru-11",
+      "query": "Как оценить сроки и бюджет рекламного видео до брифа?",
+      "system": "Google",
+      "surface": "Google Search web-only UI in current in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "web-only udm=14; pws=0",
+      "locale": "ru",
+      "geography": "Russia requested by gl=ru; UI reported Russia; physical location unknown",
+      "tested_at_utc": "2026-09-06T05:14:20.164Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.google.com/search?hl=ru&gl=ru&num=10&pws=0&udm=14&q=%D0%9A%D0%B0%D0%BA%20%D0%BE%D1%86%D0%B5%D0%BD%D0%B8%D1%82%D1%8C%20%D1%81%D1%80%D0%BE%D0%BA%D0%B8%20%D0%B8%20%D0%B1%D1%8E%D0%B4%D0%B6%D0%B5%D1%82%20%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%20%D0%B4%D0%BE%20%D0%B1%D1%80%D0%B8%D1%84%D0%B0%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "ax_file": "google-commercial-ru-11-desktop.ax.txt",
+        "ax_sha256": "b776ce5232ffae5fb25d2ce9624e9c525664f926e1b9877df849548acdf100bc",
+        "desktop_screenshot": "google-commercial-ru-11-desktop.png",
+        "desktop_screenshot_sha256": "abb9e61fd1e76b55d8c9fac319a5ab1a48998e65f06c718f8c83fed7fd89900f",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://video-animation.ru/blog/videoprodakshn-sroki-i-byudzhet",
+        "https://city-production.ru/blog/BRIEF"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://video-animation.ru/blog/videoprodakshn-sroki-i-byudzhet"
+        },
+        {
+          "rank": 2,
+          "url": "https://city-production.ru/blog/BRIEF"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "nonpersonalized_notice": true
+    },
+    {
+      "query_id": "commercial-en-11",
+      "query": "How can I estimate a commercial video's timeline and budget before briefing?",
+      "system": "Google",
+      "surface": "Google Search web-only UI in current in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "web-only udm=14; pws=0",
+      "locale": "en",
+      "geography": "United States requested by gl=us; physical location unknown",
+      "tested_at_utc": "2026-09-06T05:14:20.982Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.google.com/search?hl=en&gl=us&num=10&pws=0&udm=14&q=How%20can%20I%20estimate%20a%20commercial%20video's%20timeline%20and%20budget%20before%20briefing%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "ax_file": "google-commercial-en-11-desktop.ax.txt",
+        "ax_sha256": "ca88ae3648974b401bdc5190ff8449acc1401ef2131568891a0144fd01f9dc0c",
+        "desktop_screenshot": "google-commercial-en-11-desktop.png",
+        "desktop_screenshot_sha256": "aa3ca6285228f68cb30c6f4f8e4379161e63490b627cf1059fe253e87530eea3",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://interviewgrid.com/tools/video-production-budget-timeline-estimator",
+        "https://tylerwursta.com/resources/video-production-pricing-calculator",
+        "https://oncevisual.com/en/video-production/1057.html",
+        "https://mediabarproductions.com/resources/media-bar-answers/what-a-production-company-needs-for-an-estimate"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://interviewgrid.com/tools/video-production-budget-timeline-estimator"
+        },
+        {
+          "rank": 2,
+          "url": "https://tylerwursta.com/resources/video-production-pricing-calculator"
+        },
+        {
+          "rank": 3,
+          "url": "https://oncevisual.com/en/video-production/1057.html"
+        },
+        {
+          "rank": 4,
+          "url": "https://mediabarproductions.com/resources/media-bar-answers/what-a-production-company-needs-for-an-estimate"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "nonpersonalized_notice": true
+    },
+    {
+      "query_id": "commercial-ru-12",
+      "query": "Как выбрать студию для продуктового ролика с несколькими форматами сдачи?",
+      "system": "Google",
+      "surface": "Google Search web-only UI in current in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "web-only udm=14; pws=0",
+      "locale": "ru",
+      "geography": "Russia requested by gl=ru; UI reported Russia; physical location unknown",
+      "tested_at_utc": "2026-09-06T05:14:21.826Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.google.com/search?hl=ru&gl=ru&num=10&pws=0&udm=14&q=%D0%9A%D0%B0%D0%BA%20%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D1%82%D1%8C%20%D1%81%D1%82%D1%83%D0%B4%D0%B8%D1%8E%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE%20%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%D0%B0%20%D1%81%20%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%B8%D0%BC%D0%B8%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B0%D0%BC%D0%B8%20%D1%81%D0%B4%D0%B0%D1%87%D0%B8%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "ax_file": "google-commercial-ru-12-desktop.ax.txt",
+        "ax_sha256": "8b349d5337bfe638c1fa3937c831e78cead85c024284a79639ec44e11351acfb",
+        "desktop_screenshot": "google-commercial-ru-12-desktop.png",
+        "desktop_screenshot_sha256": "e71a83cbc09b141ce142295093fe4b672ce797e9d951d953a6705fac392f1ec5",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://stoletproduction.ru/blog/43-kak-vybrat-studiiu-videoprodaksena-5-vaznyx-kriteriev",
+        "https://iconfilm.ru/story1",
+        "https://medium.com/%D0%BE%D0%B1%D0%BB%D0%B0%D0%BA%D0%BE-production/howchoosestudio-3bd68cb2e7c2",
+        "https://companies.rbc.ru/news/1tWhVDdw5F/videoprodakshn-v-moskve-kak-vyibrat-videoprodakshn-studiyu-polnogo-tsikla/",
+        "https://ruvision.ru/blog/6-osnovn-formatov-video-dlua-biznesa",
+        "https://videozayac.ru/blog/kak-vybrat-videoprodakshn-studiyu/",
+        "https://videoglobal.ru/articles/kak-vibrat-videoprodakshn-studiyu-dlya-semki-korporativnogo-filma-o-kompanii.html",
+        "https://sostav.ru/blogs/286717/99569",
+        "https://vc.ru/media/2877385-videoproductsion-v-moskve-luchshie-studii-i-agentstva",
+        "https://infomult.ru/blog/video-reklama-v-moskve-kak-vyibrat-studiyu/"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://stoletproduction.ru/blog/43-kak-vybrat-studiiu-videoprodaksena-5-vaznyx-kriteriev"
+        },
+        {
+          "rank": 2,
+          "url": "https://iconfilm.ru/story1"
+        },
+        {
+          "rank": 3,
+          "url": "https://medium.com/%D0%BE%D0%B1%D0%BB%D0%B0%D0%BA%D0%BE-production/howchoosestudio-3bd68cb2e7c2"
+        },
+        {
+          "rank": 4,
+          "url": "https://companies.rbc.ru/news/1tWhVDdw5F/videoprodakshn-v-moskve-kak-vyibrat-videoprodakshn-studiyu-polnogo-tsikla/"
+        },
+        {
+          "rank": 5,
+          "url": "https://ruvision.ru/blog/6-osnovn-formatov-video-dlua-biznesa"
+        },
+        {
+          "rank": 6,
+          "url": "https://videozayac.ru/blog/kak-vybrat-videoprodakshn-studiyu/"
+        },
+        {
+          "rank": 7,
+          "url": "https://videoglobal.ru/articles/kak-vibrat-videoprodakshn-studiyu-dlya-semki-korporativnogo-filma-o-kompanii.html"
+        },
+        {
+          "rank": 8,
+          "url": "https://sostav.ru/blogs/286717/99569"
+        },
+        {
+          "rank": 9,
+          "url": "https://vc.ru/media/2877385-videoproductsion-v-moskve-luchshie-studii-i-agentstva"
+        },
+        {
+          "rank": 10,
+          "url": "https://infomult.ru/blog/video-reklama-v-moskve-kak-vyibrat-studiyu/"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "nonpersonalized_notice": true
+    },
+    {
+      "query_id": "commercial-en-12",
+      "query": "How do I choose a studio for a product film with multiple delivery formats?",
+      "system": "Google",
+      "surface": "Google Search web-only UI in current in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "web-only udm=14; pws=0",
+      "locale": "en",
+      "geography": "United States requested by gl=us; physical location unknown",
+      "tested_at_utc": "2026-09-06T05:14:22.618Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.google.com/search?hl=en&gl=us&num=10&pws=0&udm=14&q=How%20do%20I%20choose%20a%20studio%20for%20a%20product%20film%20with%20multiple%20delivery%20formats%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "ax_file": "google-commercial-en-12-desktop.ax.txt",
+        "ax_sha256": "3628d698f563c4dcac2c9723034c50aa7c6153529b218a4169c41c89ad95833b",
+        "desktop_screenshot": "google-commercial-en-12-desktop.png",
+        "desktop_screenshot_sha256": "c79f6fcb02216ff153e614fae0c6a813618e4c1f925d04509aa16a6ed6d9d798",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://studionoorderfabriek.nl/en/blog/events/7-ways-to-choose-the-perfect-film-studio-for-your-project/",
+        "https://imagetecphoto.com/2026/08/23/the-ultimate-product-photography-studio-checklist-choosing-a-partner-for-e-commerce-success/",
+        "https://trivisionstudios.com/how-to-choose-a-video-production-company-12-key-factors/",
+        "https://pixelstudiosinc.com/blog/how-to-choose-3d-animation-company",
+        "https://cineviewstudios.com/the-ultimate-guide-to-photo-studio-hire-find-the-perfect-space-for-your-shoot",
+        "https://tanneryfilmstudios.co.uk/how-to-choose-a-film-studio-for-your-next-production-10-things-to-check-before-booking/",
+        "https://proshotmediagroup.com/blog/product-photography-studio-los-angeles-guide/",
+        "https://skuflow.studio/articles/what-to-look-for-choosing-product-photography-studio",
+        "https://mammoth.london/post/how-do-you-choose-the-right-film-studio-for-your-project",
+        "https://scouty.com/en-us/blog/different-types-of-video-production-companies"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://studionoorderfabriek.nl/en/blog/events/7-ways-to-choose-the-perfect-film-studio-for-your-project/"
+        },
+        {
+          "rank": 2,
+          "url": "https://imagetecphoto.com/2026/08/23/the-ultimate-product-photography-studio-checklist-choosing-a-partner-for-e-commerce-success/"
+        },
+        {
+          "rank": 3,
+          "url": "https://trivisionstudios.com/how-to-choose-a-video-production-company-12-key-factors/"
+        },
+        {
+          "rank": 4,
+          "url": "https://pixelstudiosinc.com/blog/how-to-choose-3d-animation-company"
+        },
+        {
+          "rank": 5,
+          "url": "https://cineviewstudios.com/the-ultimate-guide-to-photo-studio-hire-find-the-perfect-space-for-your-shoot"
+        },
+        {
+          "rank": 6,
+          "url": "https://tanneryfilmstudios.co.uk/how-to-choose-a-film-studio-for-your-next-production-10-things-to-check-before-booking/"
+        },
+        {
+          "rank": 7,
+          "url": "https://proshotmediagroup.com/blog/product-photography-studio-los-angeles-guide/"
+        },
+        {
+          "rank": 8,
+          "url": "https://skuflow.studio/articles/what-to-look-for-choosing-product-photography-studio"
+        },
+        {
+          "rank": 9,
+          "url": "https://mammoth.london/post/how-do-you-choose-the-right-film-studio-for-your-project"
+        },
+        {
+          "rank": 10,
+          "url": "https://scouty.com/en-us/blog/different-types-of-video-production-companies"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null,
+      "nonpersonalized_notice": true
+    },
+    {
+      "query_id": "commercial-ru-01",
+      "query": "Как выбрать подрядчика для AI-рекламного ролика с постоянным персонажем?",
+      "system": "Bing",
+      "surface": "public consumer search results rendered in clean Chrome headless session",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
+      "locale": "ru",
+      "geography": "RU requested by gl/cc/lr parameter",
+      "physical_egress_location": "NOT_INDEPENDENTLY_VERIFIED",
+      "tested_at_utc": "2026-09-06T05:08:18Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free public surface"
+      },
+      "request_url": "https://www.bing.com/search?setlang=ru-RU&cc=RU&count=10&q=%D0%9A%D0%B0%D0%BA+%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D1%82%D1%8C+%D0%BF%D0%BE%D0%B4%D1%80%D1%8F%D0%B4%D1%87%D0%B8%D0%BA%D0%B0+%D0%B4%D0%BB%D1%8F+AI-%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE+%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%D0%B0+%D1%81+%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D1%8B%D0%BC+%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%B6%D0%B5%D0%BC%3F",
+      "status": "MEASURED",
+      "unavailable_reason": null,
+      "raw_evidence": {
+        "desktop_dom_gzip": "bing-commercial-ru-01-desktop.html.gz",
+        "desktop_dom_sha256": "f2c3af5a75708adcc315b41193e2fc0b7647e33dea14c1bbfc33a0d7f082c18c",
+        "desktop_screenshot": "bing-commercial-ru-01-desktop.png",
+        "desktop_screenshot_sha256": "ef02a62681d76ee31b1bcbd4409896d283d75653760a297f1abf8690c7f5b106",
+        "mobile_dom_gzip": "bing-commercial-ru-01-mobile.html.gz",
+        "mobile_dom_sha256": "fc3f5d30cd4ddf20e40f6394a059ab9f5cbb0487a6690dd4be3f0d44a6ac299c",
+        "mobile_screenshot": "bing-commercial-ru-01-mobile.png",
+        "mobile_screenshot_sha256": "75aa666ec106264473fdf4095b6ee15526bb5da57b966b5c058168ff71ca6759",
+        "mobile_parseable_results": 10,
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://savingsays.co.uk/blog/how-much-do-verisure-alarms-cost",
+        "https://www.verisure.co.uk/advice-and-help/frequently-asked-questions/how-much-does-a-verisure-alarm-cost",
+        "https://www.verisure.it/",
+        "https://www.verisure.co.uk/advice-and-help/frequently-asked-questions/how-much-is-verisure-monthly",
+        "https://britainreviews.co.uk/services/verisure-smart-alarms-reviews",
+        "https://crimerate.co.uk/security-systems/verisure",
+        "https://www.verisure.it/antifurto-casa",
+        "https://www.verisure.com/",
+        "https://www.verisure.no/en/alarm-products",
+        "https://www.which.co.uk/reviews/burglar-alarms-and-smart-security-systems/article/best-burglar-alarms-and-smart-security-systems-arvkF1C5xoEg",
+        "http://go.microsoft.com/fwlink/?LinkID=617350",
+        "http://go.microsoft.com/fwlink/?LinkId=521839",
+        "http://go.microsoft.com/fwlink/?LinkID=246338",
+        "https://support.microsoft.com/topic/how-bing-delivers-search-results-d18fc815-ac37-4723-bc67-9229ce3eb6a3?"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "title": "How Much Do Verisure Alarms Cost? Costs & Fees Explained",
+          "url": "https://savingsays.co.uk/blog/how-much-do-verisure-alarms-cost"
+        },
+        {
+          "rank": 2,
+          "title": "How much does a Verisure Alarm System cost? | Verisure UK",
+          "url": "https://www.verisure.co.uk/advice-and-help/frequently-asked-questions/how-much-does-a-verisure-alarm-cost"
+        },
+        {
+          "rank": 3,
+          "title": "Verisure - Sistemi d'allarme per la tua Casa e per il tuo Business",
+          "url": "https://www.verisure.it/"
+        },
+        {
+          "rank": 4,
+          "title": "How Much is Verisure a Month? | Verisure UK",
+          "url": "https://www.verisure.co.uk/advice-and-help/frequently-asked-questions/how-much-is-verisure-monthly"
+        },
+        {
+          "rank": 5,
+          "title": "Shocking Honesty: Verisure Smart Alarms Reviews 2026",
+          "url": "https://britainreviews.co.uk/services/verisure-smart-alarms-reviews"
+        },
+        {
+          "rank": 6,
+          "title": "Verisure Alarm and Security System Costs Reviewed | CrimeRate",
+          "url": "https://crimerate.co.uk/security-systems/verisure"
+        },
+        {
+          "rank": 7,
+          "title": "Allarme casa: soluzioni antifurto per la casa | Verisure",
+          "url": "https://www.verisure.it/antifurto-casa"
+        },
+        {
+          "rank": 8,
+          "title": "Verisure | Number 1 of professionally monitored security services",
+          "url": "https://www.verisure.com/"
+        },
+        {
+          "rank": 9,
+          "title": "Verisure alarm products | Verisure",
+          "url": "https://www.verisure.no/en/alarm-products"
+        },
+        {
+          "rank": 10,
+          "title": "Best burglar alarms and smart security systems - Which?",
+          "url": "https://www.which.co.uk/reviews/burglar-alarms-and-smart-security-systems/article/best-burglar-alarms-and-smart-security-systems-arvkF1C5xoEg"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-en-01",
+      "query": "How do I choose an AI video production partner for an ad with a consistent character?",
+      "system": "Bing",
+      "surface": "public consumer search results rendered in clean Chrome headless session",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
+      "locale": "en",
+      "geography": "US requested by gl/cc/lr parameter",
+      "physical_egress_location": "NOT_INDEPENDENTLY_VERIFIED",
+      "tested_at_utc": "2026-09-06T05:08:31Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free public surface"
+      },
+      "request_url": "https://www.bing.com/search?setlang=en-US&cc=US&count=10&q=How+do+I+choose+an+AI+video+production+partner+for+an+ad+with+a+consistent+character%3F",
+      "status": "MEASURED",
+      "unavailable_reason": null,
+      "raw_evidence": {
+        "desktop_dom_gzip": "bing-commercial-en-01-desktop.html.gz",
+        "desktop_dom_sha256": "01bff87145c9da13997908cc47e9b8a05ccc656b7c2c49cc121a3bac3f0dffce",
+        "desktop_screenshot": "bing-commercial-en-01-desktop.png",
+        "desktop_screenshot_sha256": "20005871d01e11245bf9e0a91f22894e6cfc3a7af8d7f402ecfd7431274a017b",
+        "mobile_dom_gzip": "bing-commercial-en-01-mobile.html.gz",
+        "mobile_dom_sha256": "637952e437a091dcdb12cbb58f7165057930f041821178940c1f72b4545e13b5",
+        "mobile_screenshot": "bing-commercial-en-01-mobile.png",
+        "mobile_screenshot_sha256": "16d44dcb3b3d77267aff92406caf5bca0077e4705f72c470f358d6f9eb7a98fa",
+        "mobile_parseable_results": 10,
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.merriam-webster.com/dictionary/do",
+        "https://m.youtube.com/watch?v=g0poc28x6mA",
+        "https://dictionary.cambridge.org/dictionary/english/do",
+        "https://www.webmd.com/a-to-z-guides/difference-between-md-and-do",
+        "https://www.dictionary.com/browse/do",
+        "https://www.thefreedictionary.com/do",
+        "https://www.collinsdictionary.com/dictionary/english/do",
+        "https://www.collinsdictionary.com/english-language-learning/do",
+        "https://www.vocabulary.com/dictionary/do",
+        "https://en.m.wikipedia.org/wiki/Do",
+        "http://go.microsoft.com/fwlink/?LinkId=521839",
+        "http://go.microsoft.com/fwlink/?LinkID=246338",
+        "https://support.microsoft.com/topic/how-bing-delivers-search-results-d18fc815-ac37-4723-bc67-9229ce3eb6a3?"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "title": "DO Definition & Meaning - Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/do"
+        },
+        {
+          "rank": 2,
+          "title": "Basic English Grammar | How To Use DO, DOES, DID, DONE",
+          "url": "https://m.youtube.com/watch?v=g0poc28x6mA"
+        },
+        {
+          "rank": 3,
+          "title": "DO | English meaning - Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/do"
+        },
+        {
+          "rank": 4,
+          "title": "DO vs. MD: What's the Difference - WebMD",
+          "url": "https://www.webmd.com/a-to-z-guides/difference-between-md-and-do"
+        },
+        {
+          "rank": 5,
+          "title": "DO Definition & Meaning | Dictionary.com",
+          "url": "https://www.dictionary.com/browse/do"
+        },
+        {
+          "rank": 6,
+          "title": "Do - definition of do by The Free Dictionary",
+          "url": "https://www.thefreedictionary.com/do"
+        },
+        {
+          "rank": 7,
+          "title": "DO definition and meaning | Collins English Dictionary",
+          "url": "https://www.collinsdictionary.com/dictionary/english/do"
+        },
+        {
+          "rank": 8,
+          "title": "DO - Meaning & Translations | Collins English Dictionary",
+          "url": "https://www.collinsdictionary.com/english-language-learning/do"
+        },
+        {
+          "rank": 9,
+          "title": "Do - Definition, Meaning & Synonyms | Vocabulary.com",
+          "url": "https://www.vocabulary.com/dictionary/do"
+        },
+        {
+          "rank": 10,
+          "title": "Do - Wikipedia",
+          "url": "https://en.m.wikipedia.org/wiki/Do"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-ru-02",
+      "query": "Кому заказать AI-видео продукта с точной формой упаковки?",
+      "system": "Bing",
+      "surface": "public consumer search results rendered in clean Chrome headless session",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
+      "locale": "ru",
+      "geography": "RU requested by gl/cc/lr parameter",
+      "physical_egress_location": "NOT_INDEPENDENTLY_VERIFIED",
+      "tested_at_utc": "2026-09-06T05:08:41Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free public surface"
+      },
+      "request_url": "https://www.bing.com/search?setlang=ru-RU&cc=RU&count=10&q=%D0%9A%D0%BE%D0%BC%D1%83+%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C+AI-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE+%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%B0+%D1%81+%D1%82%D0%BE%D1%87%D0%BD%D0%BE%D0%B9+%D1%84%D0%BE%D1%80%D0%BC%D0%BE%D0%B9+%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%3F",
+      "status": "MEASURED",
+      "unavailable_reason": null,
+      "raw_evidence": {
+        "desktop_dom_gzip": "bing-commercial-ru-02-desktop.html.gz",
+        "desktop_dom_sha256": "ec7cf825eaff0077d658824d9be2a2f1b868ba43d588ad0fecea2b15265f71c6",
+        "desktop_screenshot": "bing-commercial-ru-02-desktop.png",
+        "desktop_screenshot_sha256": "02f0c29154fd9bd399e01f2faaa9e25baa490b4967430c6d1ffd464bfdcfafb5",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.bolshoyvopros.ru/questions/2224594-kamu-ili-komu-kak-pravilno-pisat.html",
+        "https://ru.m.wiktionary.org/wiki/%D0%BA%D0%BE%D0%BC%D1%83",
+        "https://kak-pishetsya.com/%D0%BA%D0%BE%D0%BC%D1%83",
+        "https://kartaslov.ru/%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%BB%D0%BE%D0%B2%D0%B0/%D0%BA%D0%BE%D0%BC%D1%83",
+        "https://m.youtube.com/watch?v=z26QjhIfVXU",
+        "https://dic.academic.ru/dic.nsf/rus_orthography/32554/%D0%BA%D0%BE%D0%BC%D1%83",
+        "https://ru.hinative.com/questions/1553522",
+        "https://dic.academic.ru/dic.nsf/ushakov/838402",
+        "https://en.m.wiktionary.org/wiki/%D0%BA%D0%BE%D0%BC%D1%83",
+        "https://deinfeuer.ru/pravila-i-primery-pravilnogo-ispolzovaniya-predlogov-komu-i-k-komu-dlya-dostizheniya-grammaticheskoy-tochnosti-v-russkom-yazyke/",
+        "http://go.microsoft.com/fwlink/?LinkID=617350",
+        "http://go.microsoft.com/fwlink/?LinkId=521839",
+        "http://go.microsoft.com/fwlink/?LinkID=246338",
+        "https://support.microsoft.com/topic/how-bing-delivers-search-results-d18fc815-ac37-4723-bc67-9229ce3eb6a3?"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "title": "ÐÐ°Ð¼Ñ Ð¸Ð»Ð¸ ÐºÐ¾Ð¼Ñ - ÐºÐ°Ðº Ð¿ÑÐ°Ð²Ð¸Ð»ÑÐ½Ð¾ Ð¿Ð¸ÑÐ°ÑÑ?",
+          "url": "https://www.bolshoyvopros.ru/questions/2224594-kamu-ili-komu-kak-pravilno-pisat.html"
+        },
+        {
+          "rank": 2,
+          "title": "ÐºÐ¾Ð¼Ñ â ÐÐ¸ÐºÐ¸ÑÐ»Ð¾Ð²Ð°ÑÑ",
+          "url": "https://ru.m.wiktionary.org/wiki/кому"
+        },
+        {
+          "rank": 3,
+          "title": "ÐÐ¾Ð¼Ñ ÐºÐ°Ðº Ð¿Ð¸ÑÐµÑÑÑ?",
+          "url": "https://kak-pishetsya.com/кому"
+        },
+        {
+          "rank": 4,
+          "title": "ÐÐ½Ð°ÑÐµÐ½Ð¸Ðµ ÑÐ»Ð¾Ð²Ð° ÐÐÐÐ£. Ð§ÑÐ¾ ÑÐ°ÐºÐ¾Ðµ ÐÐÐÐ£?",
+          "url": "https://kartaslov.ru/значение-слова/кому"
+        },
+        {
+          "rank": 5,
+          "title": "JANAGA - ÐÐ¾Ð¼Ñ (feat. Sevak) (Official Audio) - YouTube",
+          "url": "https://m.youtube.com/watch?v=z26QjhIfVXU"
+        },
+        {
+          "rank": 6,
+          "title": "ÐºÐ¾Ð¼Ñ | ÑÑÐ¾... Ð§ÑÐ¾ ÑÐ°ÐºÐ¾Ðµ ÐºÐ¾Ð¼Ñ? - ÐÐºÐ°Ð´ÐµÐ¼Ð¸Ðº",
+          "url": "https://dic.academic.ru/dic.nsf/rus_orthography/32554/кому"
+        },
+        {
+          "rank": 7,
+          "title": "Ð ÑÐµÐ¼ ÑÐ°Ð·Ð½Ð¸ÑÐ° Ð¼ÐµÐ¶Ð´Ñ \"ÐºÐ¾Ð³Ð¾\" Ð¸ \"ÐºÐ¾Ð¼Ñ \" ? | HiNative",
+          "url": "https://ru.hinative.com/questions/1553522"
+        },
+        {
+          "rank": 8,
+          "title": "ÐºÐ¾Ð¼Ñ | ÑÑÐ¾... Ð§ÑÐ¾ ÑÐ°ÐºÐ¾Ðµ ÐºÐ¾Ð¼Ñ? - ÐÐºÐ°Ð´ÐµÐ¼Ð¸Ðº",
+          "url": "https://dic.academic.ru/dic.nsf/ushakov/838402"
+        },
+        {
+          "rank": 9,
+          "title": "ÐºÐ¾Ð¼Ñ - Wiktionary, the free dictionary",
+          "url": "https://en.m.wiktionary.org/wiki/кому"
+        },
+        {
+          "rank": 10,
+          "title": "ÐÑÐ°Ð²Ð¾Ð¿Ð¸ÑÐ°Ð½Ð¸Ðµ Ð¸ Ð¿ÑÐ°Ð²Ð¸Ð»Ð°: ÐºÐ¾Ð¼Ñ Ð¸Ð»Ð¸ Ðº ÐºÐ¾Ð¼Ñ? ÐÐ°Ðº Ð¿ÑÐ°Ð²Ð¸Ð»ÑÐ½Ð¾ Ð¿Ð¸ÑÐ°ÑÑ?",
+          "url": "https://deinfeuer.ru/pravila-i-primery-pravilnogo-ispolzovaniya-predlogov-komu-i-k-komu-dlya-dostizheniya-grammaticheskoy-tochnosti-v-russkom-yazyke/"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-en-02",
+      "query": "Who can produce an AI product video that preserves packaging accuracy?",
+      "system": "Bing",
+      "surface": "public consumer search results rendered in clean Chrome headless session",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
+      "locale": "en",
+      "geography": "US requested by gl/cc/lr parameter",
+      "physical_egress_location": "NOT_INDEPENDENTLY_VERIFIED",
+      "tested_at_utc": "2026-09-06T05:08:46Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free public surface"
+      },
+      "request_url": "https://www.bing.com/search?setlang=en-US&cc=US&count=10&q=Who+can+produce+an+AI+product+video+that+preserves+packaging+accuracy%3F",
+      "status": "MEASURED",
+      "unavailable_reason": null,
+      "raw_evidence": {
+        "desktop_dom_gzip": "bing-commercial-en-02-desktop.html.gz",
+        "desktop_dom_sha256": "f2233e6876b531c89325fbd7793b562f4556a7adb7cd476b6539e6f8b7413ee6",
+        "desktop_screenshot": "bing-commercial-en-02-desktop.png",
+        "desktop_screenshot_sha256": "606a2c6f4161745a86a787053788a4afc045aecd5877f8265c81d6ff12be5337",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.merriam-webster.com/dictionary/can",
+        "https://dictionary.cambridge.org/dictionary/english/can",
+        "https://www.canva.com/?msockid=0caab6e526666f373468a129274c6ebb",
+        "https://www.youtube.com/watch?v=j8brjlHycW0",
+        "https://www.dictionary.com/browse/can",
+        "https://www.thefreedictionary.com/can",
+        "https://en.wikipedia.org/wiki/CAN_bus",
+        "https://dictionary.cambridge.org/grammar/british-grammar/can",
+        "https://www.collinsdictionary.com/us/dictionary/english/can",
+        "https://www.englishwithashish.com/all-uses-of-can/",
+        "http://go.microsoft.com/fwlink/?LinkId=521839",
+        "http://go.microsoft.com/fwlink/?LinkID=246338",
+        "https://support.microsoft.com/topic/how-bing-delivers-search-results-d18fc815-ac37-4723-bc67-9229ce3eb6a3?"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "title": "CAN Definition & Meaning - Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/can"
+        },
+        {
+          "rank": 2,
+          "title": "CAN | English meaning - Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/can"
+        },
+        {
+          "rank": 3,
+          "title": "Canva: Visual Suite for Everyone",
+          "url": "https://www.canva.com/?msockid=0caab6e526666f373468a129274c6ebb"
+        },
+        {
+          "rank": 4,
+          "title": "“CAN” or “COULD”? What’s the difference? - YouTube",
+          "url": "https://www.youtube.com/watch?v=j8brjlHycW0"
+        },
+        {
+          "rank": 5,
+          "title": "CAN Definition & Meaning | Dictionary.com",
+          "url": "https://www.dictionary.com/browse/can"
+        },
+        {
+          "rank": 6,
+          "title": "Can - definition of can by The Free Dictionary",
+          "url": "https://www.thefreedictionary.com/can"
+        },
+        {
+          "rank": 7,
+          "title": "CAN bus - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/CAN_bus"
+        },
+        {
+          "rank": 8,
+          "title": "Can - Grammar - Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/grammar/british-grammar/can"
+        },
+        {
+          "rank": 9,
+          "title": "CAN definition in American English | Collins English Dictionary",
+          "url": "https://www.collinsdictionary.com/us/dictionary/english/can"
+        },
+        {
+          "rank": 10,
+          "title": "CAN masterclass (all usages, tips, and examples) - English With Ashish",
+          "url": "https://www.englishwithashish.com/all-uses-of-can/"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-ru-03",
+      "query": "Где заказать 3D-пакшот товара для рекламной кампании?",
+      "system": "Bing",
+      "surface": "public consumer search results rendered in clean Chrome headless session",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
+      "locale": "ru",
+      "geography": "RU requested by gl/cc/lr parameter",
+      "physical_egress_location": "NOT_INDEPENDENTLY_VERIFIED",
+      "tested_at_utc": "2026-09-06T05:08:51Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free public surface"
+      },
+      "request_url": "https://www.bing.com/search?setlang=ru-RU&cc=RU&count=10&q=%D0%93%D0%B4%D0%B5+%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C+3D-%D0%BF%D0%B0%D0%BA%D1%88%D0%BE%D1%82+%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0+%D0%B4%D0%BB%D1%8F+%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D0%BE%D0%B9+%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8%3F",
+      "status": "MEASURED",
+      "unavailable_reason": null,
+      "raw_evidence": {
+        "desktop_dom_gzip": "bing-commercial-ru-03-desktop.html.gz",
+        "desktop_dom_sha256": "e738cf837145977d2b7f7a24984ea386f1906edb1bc5726c53334d7a35bf9764",
+        "desktop_screenshot": "bing-commercial-ru-03-desktop.png",
+        "desktop_screenshot_sha256": "90fb629c9c98713ab8b243eaadd34d1ed703f5d5166f1738e1543a92f1e2244e",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://worldmetrics.org/best/utility-bill-tracking-software/",
+        "https://sense.com/homes/product/",
+        "https://www.amber.com.au/energy-monitor",
+        "https://www.vivint.com/resources/article/energy-monitoring",
+        "https://energyrates.ca/product-reviews/the-best-home-energy-monitors/",
+        "https://grus.io/blog/how-to-track-energy-usage-without-manually-checking-each-appliance/",
+        "https://sg.rs-online.com/web/content/discovery/ideas-and-advice/energy-monitoring-solutions-for-home-from-data-to-savings",
+        "https://realitypathing.com/ideas-for-using-utility-apps-to-track-and-manage-consumption/",
+        "https://www.bobvila.com/reviews/best-home-energy-monitors-2025/",
+        "https://energyguide.org.uk/energy-monitors/",
+        "http://go.microsoft.com/fwlink/?LinkId=521839",
+        "http://go.microsoft.com/fwlink/?LinkID=246338",
+        "https://support.microsoft.com/topic/how-bing-delivers-search-results-d18fc815-ac37-4723-bc67-9229ce3eb6a3?"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "title": "Top 10 Best Utility Bill Tracking Software | Ranked for 2026",
+          "url": "https://worldmetrics.org/best/utility-bill-tracking-software/"
+        },
+        {
+          "rank": 2,
+          "title": "Product - Sense",
+          "url": "https://sense.com/homes/product/"
+        },
+        {
+          "rank": 3,
+          "title": "Powerpal Home Energy Monitor | Track & Save With Amber",
+          "url": "https://www.amber.com.au/energy-monitor"
+        },
+        {
+          "rank": 4,
+          "title": "The Best Energy Monitoring Tools in 2026: How To Lower Your",
+          "url": "https://www.vivint.com/resources/article/energy-monitoring"
+        },
+        {
+          "rank": 5,
+          "title": "The Best Home Energy Monitors in Canada â EnergyRates.ca",
+          "url": "https://energyrates.ca/product-reviews/the-best-home-energy-monitors/"
+        },
+        {
+          "rank": 6,
+          "title": "How to Track Home Energy Use Without Checking Every Appliance",
+          "url": "https://grus.io/blog/how-to-track-energy-usage-without-manually-checking-each-appliance/"
+        },
+        {
+          "rank": 7,
+          "title": "Energy Monitoring Solutions For Homes | RS Singapore",
+          "url": "https://sg.rs-online.com/web/content/discovery/ideas-and-advice/energy-monitoring-solutions-for-home-from-data-to-savings"
+        },
+        {
+          "rank": 8,
+          "title": "Ideas for Using Utility Apps to Track and Manage Consumption",
+          "url": "https://realitypathing.com/ideas-for-using-utility-apps-to-track-and-manage-consumption/"
+        },
+        {
+          "rank": 9,
+          "title": "Best Home Energy Monitors of 2025 - Picks by Bob Vila",
+          "url": "https://www.bobvila.com/reviews/best-home-energy-monitors-2025/"
+        },
+        {
+          "rank": 10,
+          "title": "Best Home Energy Monitors For UK Homes 2026 â Energy Guide",
+          "url": "https://energyguide.org.uk/energy-monitors/"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-en-03",
+      "query": "Where can I commission a 3D product packshot for an advertising campaign?",
+      "system": "Bing",
+      "surface": "public consumer search results rendered in clean Chrome headless session",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
+      "locale": "en",
+      "geography": "US requested by gl/cc/lr parameter",
+      "physical_egress_location": "NOT_INDEPENDENTLY_VERIFIED",
+      "tested_at_utc": "2026-09-06T05:08:55Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free public surface"
+      },
+      "request_url": "https://www.bing.com/search?setlang=en-US&cc=US&count=10&q=Where+can+I+commission+a+3D+product+packshot+for+an+advertising+campaign%3F",
+      "status": "MEASURED",
+      "unavailable_reason": null,
+      "raw_evidence": {
+        "desktop_dom_gzip": "bing-commercial-en-03-desktop.html.gz",
+        "desktop_dom_sha256": "2a1a6f9827a1e73f69940fd46fd6aa6493cdde40bfb5a84551e0d78136c01dda",
+        "desktop_screenshot": "bing-commercial-en-03-desktop.png",
+        "desktop_screenshot_sha256": "08d80397413206b92309b40d6f5aad974da23a1bfc3afc832305cf88996e45ce",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.canva.com/?msockid=0caab6e526666f373468a129274c6ebb",
+        "https://dictionary.cambridge.org/dictionary/english/can",
+        "https://www.merriam-webster.com/dictionary/can",
+        "https://www.thefreedictionary.com/can",
+        "https://simple.wiktionary.org/wiki/can",
+        "https://www.dictionary.com/browse/can",
+        "https://www.britannica.com/dictionary/can",
+        "https://www.youtube.com/watch?v=j8brjlHycW0",
+        "https://www.englishwithashish.com/all-uses-of-can/",
+        "https://www.englishpage.com/modals/can.html",
+        "http://go.microsoft.com/fwlink/?LinkId=521839",
+        "http://go.microsoft.com/fwlink/?LinkID=246338",
+        "https://support.microsoft.com/topic/how-bing-delivers-search-results-d18fc815-ac37-4723-bc67-9229ce3eb6a3?"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "title": "Canva: Visual Suite for Everyone",
+          "url": "https://www.canva.com/?msockid=0caab6e526666f373468a129274c6ebb"
+        },
+        {
+          "rank": 2,
+          "title": "CAN | English meaning - Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/can"
+        },
+        {
+          "rank": 3,
+          "title": "CAN Definition & Meaning - Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/can"
+        },
+        {
+          "rank": 4,
+          "title": "Can - definition of can by The Free Dictionary",
+          "url": "https://www.thefreedictionary.com/can"
+        },
+        {
+          "rank": 5,
+          "title": "can - Simple English Wiktionary",
+          "url": "https://simple.wiktionary.org/wiki/can"
+        },
+        {
+          "rank": 6,
+          "title": "CAN Definition & Meaning | Dictionary.com",
+          "url": "https://www.dictionary.com/browse/can"
+        },
+        {
+          "rank": 7,
+          "title": "Can Definition & Meaning | Britannica Dictionary",
+          "url": "https://www.britannica.com/dictionary/can"
+        },
+        {
+          "rank": 8,
+          "title": "“CAN” or “COULD”? What’s the difference? - YouTube",
+          "url": "https://www.youtube.com/watch?v=j8brjlHycW0"
+        },
+        {
+          "rank": 9,
+          "title": "CAN masterclass (all usages, tips, and examples) - English With Ashish",
+          "url": "https://www.englishwithashish.com/all-uses-of-can/"
+        },
+        {
+          "rank": 10,
+          "title": "Can | ENGLISH PAGE",
+          "url": "https://www.englishpage.com/modals/can.html"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-ru-04",
+      "query": "Какой продакшн объединит съёмку, CGI и AI в одном ролике?",
+      "system": "Bing",
+      "surface": "public consumer search results rendered in clean Chrome headless session",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
+      "locale": "ru",
+      "geography": "RU requested by gl/cc/lr parameter",
+      "physical_egress_location": "NOT_INDEPENDENTLY_VERIFIED",
+      "tested_at_utc": "2026-09-06T05:09:00Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free public surface"
+      },
+      "request_url": "https://www.bing.com/search?setlang=ru-RU&cc=RU&count=10&q=%D0%9A%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%BA%D1%88%D0%BD+%D0%BE%D0%B1%D1%8A%D0%B5%D0%B4%D0%B8%D0%BD%D0%B8%D1%82+%D1%81%D1%8A%D1%91%D0%BC%D0%BA%D1%83%2C+CGI+%D0%B8+AI+%D0%B2+%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC+%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%D0%B5%3F",
+      "status": "MEASURED",
+      "unavailable_reason": null,
+      "raw_evidence": {
+        "desktop_dom_gzip": "bing-commercial-ru-04-desktop.html.gz",
+        "desktop_dom_sha256": "25eb5178cf614298fc8fe64307ccc5aa006c2bd2c9e94721f8a15bbba3f6662b",
+        "desktop_screenshot": "bing-commercial-ru-04-desktop.png",
+        "desktop_screenshot_sha256": "e97b21b0716c1a36e87b1c80d67fcd4aabb4a192c3b803f8be1572a1bdf0bd8d",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.npmjs.com/package/nocache",
+        "https://github.com/Feh/nocache",
+        "https://stackoverflow.com/questions/38333569/adding-nocache-1-to-every-url-including-the-assets-like-stylesheet-behind-the",
+        "https://github.com/Feh/nocache/blob/master/README",
+        "https://www.tek-tips.com/threads/what-does-nocache-do.707798/",
+        "https://no-cache.net/",
+        "https://community.cloudflare.com/t/caching-issue-nocache-1-suffix-has-to-be-used/170290",
+        "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control",
+        "https://www.smarty.net/docs/en/language.function.nocache.tpl",
+        "https://learn.microsoft.com/en-us/dotnet/api/system.net.http.headers.cachecontrolheadervalue.nocache?view=net-10.0",
+        "http://go.microsoft.com/fwlink/?LinkID=617350",
+        "http://go.microsoft.com/fwlink/?LinkId=521839",
+        "http://go.microsoft.com/fwlink/?LinkID=246338",
+        "https://support.microsoft.com/topic/how-bing-delivers-search-results-d18fc815-ac37-4723-bc67-9229ce3eb6a3?"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "title": "nocache - npm",
+          "url": "https://www.npmjs.com/package/nocache"
+        },
+        {
+          "rank": 2,
+          "title": "GitHub - Feh/nocache: minimize caching effects",
+          "url": "https://github.com/Feh/nocache"
+        },
+        {
+          "rank": 3,
+          "title": "regex - Adding ?nocache=1 to every url (including the assets like ...",
+          "url": "https://stackoverflow.com/questions/38333569/adding-nocache-1-to-every-url-including-the-assets-like-stylesheet-behind-the"
+        },
+        {
+          "rank": 4,
+          "title": "nocache/README at master Â· Feh/nocache Â· GitHub",
+          "url": "https://github.com/Feh/nocache/blob/master/README"
+        },
+        {
+          "rank": 5,
+          "title": "What does NOCACHE do? | Tek-Tips",
+          "url": "https://www.tek-tips.com/threads/what-does-nocache-do.707798/"
+        },
+        {
+          "rank": 6,
+          "title": "Cache directive \"no-cache\" | An explaination of the HTTP Cache â¦",
+          "url": "https://no-cache.net/"
+        },
+        {
+          "rank": 7,
+          "title": "Caching issue -- ?nocache=1 suffix has to be used",
+          "url": "https://community.cloudflare.com/t/caching-issue-nocache-1-suffix-has-to-be-used/170290"
+        },
+        {
+          "rank": 8,
+          "title": "Cache-Control header - HTTP | MDN - MDN Web Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control"
+        },
+        {
+          "rank": 9,
+          "title": "{nocache} | Smarty",
+          "url": "https://www.smarty.net/docs/en/language.function.nocache.tpl"
+        },
+        {
+          "rank": 10,
+          "title": "CacheControlHeaderValue.NoCache Property â¦",
+          "url": "https://learn.microsoft.com/en-us/dotnet/api/system.net.http.headers.cachecontrolheadervalue.nocache?view=net-10.0"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-en-04",
+      "query": "Which production partner can combine live action, CGI and AI in one film?",
+      "system": "Bing",
+      "surface": "public consumer search results rendered in clean Chrome headless session",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
+      "locale": "en",
+      "geography": "US requested by gl/cc/lr parameter",
+      "physical_egress_location": "NOT_INDEPENDENTLY_VERIFIED",
+      "tested_at_utc": "2026-09-06T05:09:08Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free public surface"
+      },
+      "request_url": "https://www.bing.com/search?setlang=en-US&cc=US&count=10&q=Which+production+partner+can+combine+live+action%2C+CGI+and+AI+in+one+film%3F",
+      "status": "MEASURED",
+      "unavailable_reason": null,
+      "raw_evidence": {
+        "desktop_dom_gzip": "bing-commercial-en-04-desktop.html.gz",
+        "desktop_dom_sha256": "113a6a693111f4cb58d3fe109b59c977082ef57124873283321f9e081faf0e7a",
+        "desktop_screenshot": "bing-commercial-en-04-desktop.png",
+        "desktop_screenshot_sha256": "2c90abe9358a92eda9e8c4c99a9e4000b2d1d2a8df10d6dd9d0b67e89ae7e1bb",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://en.wikipedia.org/wiki/Production_(economics)",
+        "https://educationleaves.com/what-is-production/",
+        "https://www.merriam-webster.com/dictionary/production",
+        "https://en.wikipedia.org/wiki/Production",
+        "https://dictionary.cambridge.org/dictionary/english/production",
+        "https://quickonomics.com/terms/production/",
+        "https://dictionary.cambridge.org/us/dictionary/english/production",
+        "https://www.vocabulary.com/dictionary/production",
+        "https://www.wallstreetmojo.com/production/",
+        "https://www.britannica.com/topic/production",
+        "http://go.microsoft.com/fwlink/?LinkID=617350",
+        "http://go.microsoft.com/fwlink/?LinkId=521839",
+        "http://go.microsoft.com/fwlink/?LinkID=246338",
+        "https://support.microsoft.com/topic/how-bing-delivers-search-results-d18fc815-ac37-4723-bc67-9229ce3eb6a3?"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "title": "Production (economics) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Production_(economics)"
+        },
+        {
+          "rank": 2,
+          "title": "What is Production? 4 types of production, Factors of production ...",
+          "url": "https://educationleaves.com/what-is-production/"
+        },
+        {
+          "rank": 3,
+          "title": "PRODUCTION Definition & Meaning - Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/production"
+        },
+        {
+          "rank": 4,
+          "title": "Production - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Production"
+        },
+        {
+          "rank": 5,
+          "title": "PRODUCTION | English meaning - Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/production"
+        },
+        {
+          "rank": 6,
+          "title": "Production Definition & Examples - Quickonomics",
+          "url": "https://quickonomics.com/terms/production/"
+        },
+        {
+          "rank": 7,
+          "title": "PRODUCTION | definition in the Cambridge English Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/production"
+        },
+        {
+          "rank": 8,
+          "title": "Production - Definition, Meaning & Synonyms | Vocabulary.com",
+          "url": "https://www.vocabulary.com/dictionary/production"
+        },
+        {
+          "rank": 9,
+          "title": "Production - Meaning, Types, Examples - WallStreetMojo",
+          "url": "https://www.wallstreetmojo.com/production/"
+        },
+        {
+          "rank": 10,
+          "title": "Production | economics | Britannica",
+          "url": "https://www.britannica.com/topic/production"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-ru-05",
+      "query": "Кто изготовит рекламный ролик и версии для разных площадок?",
+      "system": "Bing",
+      "surface": "public consumer search results rendered in clean Chrome headless session",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
+      "locale": "ru",
+      "geography": "RU requested by gl/cc/lr parameter",
+      "physical_egress_location": "NOT_INDEPENDENTLY_VERIFIED",
+      "tested_at_utc": "2026-09-06T05:09:13Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free public surface"
+      },
+      "request_url": "https://www.bing.com/search?setlang=ru-RU&cc=RU&count=10&q=%D0%9A%D1%82%D0%BE+%D0%B8%D0%B7%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%B8%D1%82+%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D1%8B%D0%B9+%D1%80%D0%BE%D0%BB%D0%B8%D0%BA+%D0%B8+%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B8+%D0%B4%D0%BB%D1%8F+%D1%80%D0%B0%D0%B7%D0%BD%D1%8B%D1%85+%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BE%D0%BA%3F",
+      "status": "MEASURED",
+      "unavailable_reason": null,
+      "raw_evidence": {
+        "desktop_dom_gzip": "bing-commercial-ru-05-desktop.html.gz",
+        "desktop_dom_sha256": "8002f83dbb03214e41dd3de2387013905bbdf045adff17dbee8eedd47951e8f1",
+        "desktop_screenshot": "bing-commercial-ru-05-desktop.png",
+        "desktop_screenshot_sha256": "1cd390461c4975a8de460200c8e5790c24b3307f304c2a0ece861d784b7543c4",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.wikipedia.org/",
+        "https://de.wikipedia.org/wiki/Wikipedia:Hauptseite",
+        "https://en.wikipedia.org/wiki/Wikipedia",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://www.wikipedia.de/",
+        "https://de.wikipedia.org/wiki/Wikipedia",
+        "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+        "https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0",
+        "https://uk.wikipedia.org/wiki/%D0%93%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0_%D1%81%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B0",
+        "https://simple.wikipedia.org/wiki/Main_Page",
+        "http://go.microsoft.com/fwlink/?LinkId=521839",
+        "http://go.microsoft.com/fwlink/?LinkID=246338",
+        "https://support.microsoft.com/topic/how-bing-delivers-search-results-d18fc815-ac37-4723-bc67-9229ce3eb6a3?"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "title": "Wikipedia",
+          "url": "https://www.wikipedia.org/"
+        },
+        {
+          "rank": 2,
+          "title": "Wikipedia â Die freie EnzyklopÃ¤die",
+          "url": "https://de.wikipedia.org/wiki/Wikipedia:Hauptseite"
+        },
+        {
+          "rank": 3,
+          "title": "Wikipedia - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Wikipedia"
+        },
+        {
+          "rank": 4,
+          "title": "Wikipedia, the free encyclopedia",
+          "url": "https://en.wikipedia.org/wiki/Main_Page"
+        },
+        {
+          "rank": 5,
+          "title": "Wikipedia, die freie EnzyklopÃ¤die",
+          "url": "https://www.wikipedia.de/"
+        },
+        {
+          "rank": 6,
+          "title": "Wikipedia â Wikipedia",
+          "url": "https://de.wikipedia.org/wiki/Wikipedia"
+        },
+        {
+          "rank": 7,
+          "title": "WikipÃ©dia, l'encyclopÃ©die libre",
+          "url": "https://fr.wikipedia.org/wiki/Wikipédia:Accueil_principal"
+        },
+        {
+          "rank": 8,
+          "title": "ÐÐ¸ÐºÐ¸Ð¿ÐµÐ´Ð¸Ñ â ÑÐ²Ð¾Ð±Ð¾Ð´Ð½Ð°Ñ ÑÐ½ÑÐ¸ÐºÐ»Ð¾Ð¿ÐµÐ´Ð¸Ñ",
+          "url": "https://ru.wikipedia.org/wiki/Заглавная_страница"
+        },
+        {
+          "rank": 9,
+          "title": "ÐÑÐºÑÐ¿ÐµÐ´ÑÑ",
+          "url": "https://uk.wikipedia.org/wiki/Головна_сторінка"
+        },
+        {
+          "rank": 10,
+          "title": "Wikipedia",
+          "url": "https://simple.wikipedia.org/wiki/Main_Page"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-en-05",
+      "query": "Who can produce a commercial and versions for several channels?",
+      "system": "Bing",
+      "surface": "public consumer search results rendered in clean Chrome headless session",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
+      "locale": "en",
+      "geography": "US requested by gl/cc/lr parameter",
+      "physical_egress_location": "NOT_INDEPENDENTLY_VERIFIED",
+      "tested_at_utc": "2026-09-06T05:09:17Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free public surface"
+      },
+      "request_url": "https://www.bing.com/search?setlang=en-US&cc=US&count=10&q=Who+can+produce+a+commercial+and+versions+for+several+channels%3F",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "CAPTCHA_OR_NO_PARSEABLE_RESULTS",
+      "raw_evidence": {
+        "desktop_dom_gzip": "bing-commercial-en-05-desktop.html.gz",
+        "desktop_dom_sha256": "eaa4eb1f7691e2a072e39977d1a7fcc84dc3150f476a57dc08523c4b8e514c91",
+        "desktop_screenshot": "bing-commercial-en-05-desktop.png",
+        "desktop_screenshot_sha256": "441eb86e461453373a97b021974cd21f4958140e9a8788f195e1f38dc366fde5",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "organic_results": [],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-ru-06",
+      "query": "У кого заказать B2B-ролик для объяснения сложного продукта?",
+      "system": "Bing",
+      "locale": "ru",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-en-06",
+      "query": "Who can make a B2B explainer for a complex product?",
+      "system": "Bing",
+      "locale": "en",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-ru-07",
+      "query": "Кому поручить demo-видео цифрового продукта для продаж?",
+      "system": "Bing",
+      "locale": "ru",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-en-07",
+      "query": "Who can produce a digital product demo for a sales team?",
+      "system": "Bing",
+      "locale": "en",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-ru-08",
+      "query": "Как найти white-label видеопродакшн для рекламного агентства?",
+      "system": "Bing",
+      "locale": "ru",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-en-08",
+      "query": "How do I find a white-label video production partner for an agency?",
+      "system": "Bing",
+      "locale": "en",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-ru-09",
+      "query": "Кому заказать видео девелоперского проекта до завершения строительства?",
+      "system": "Bing",
+      "locale": "ru",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-en-09",
+      "query": "Who can create a property development video before construction is complete?",
+      "system": "Bing",
+      "locale": "en",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-ru-10",
+      "query": "Сколько стоит продуктовый ролик с AI и постпродакшном?",
+      "system": "Bing",
+      "locale": "ru",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-en-10",
+      "query": "How much does a product film with AI and post-production cost?",
+      "system": "Bing",
+      "locale": "en",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-ru-11",
+      "query": "Как оценить сроки и бюджет рекламного видео до брифа?",
+      "system": "Bing",
+      "locale": "ru",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-en-11",
+      "query": "How can I estimate a commercial video's timeline and budget before briefing?",
+      "system": "Bing",
+      "locale": "en",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-ru-12",
+      "query": "Как выбрать студию для продуктового ролика с несколькими форматами сдачи?",
+      "system": "Bing",
+      "locale": "ru",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-en-12",
+      "query": "How do I choose a studio for a product film with multiple delivery formats?",
+      "system": "Bing",
+      "locale": "en",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-ru-01",
+      "query": "Как выбрать подрядчика для AI-рекламного ролика с постоянным персонажем?",
+      "system": "Yandex",
+      "surface": "public consumer search results rendered in clean Chrome headless session",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
+      "locale": "ru",
+      "geography": "RU requested by gl/cc/lr parameter",
+      "physical_egress_location": "NOT_INDEPENDENTLY_VERIFIED",
+      "tested_at_utc": "2026-09-06T05:11:14Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free public surface"
+      },
+      "request_url": "https://yandex.ru/search/?lr=213&lang=ru&text=%D0%9A%D0%B0%D0%BA+%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D1%82%D1%8C+%D0%BF%D0%BE%D0%B4%D1%80%D1%8F%D0%B4%D1%87%D0%B8%D0%BA%D0%B0+%D0%B4%D0%BB%D1%8F+AI-%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE+%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%D0%B0+%D1%81+%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D1%8B%D0%BC+%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%B6%D0%B5%D0%BC%3F",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "CAPTCHA_OR_NO_PARSEABLE_RESULTS",
+      "raw_evidence": {
+        "desktop_dom_gzip": "yandex-commercial-ru-01-desktop.html.gz",
+        "desktop_dom_sha256": "d267fd8aa6e5c0fd93e632e8085603dc075315c77f46be5d80b336da848a3d8e",
+        "desktop_screenshot": null,
+        "desktop_screenshot_sha256": null,
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [],
+      "organic_results": [],
+      "shar_classification": "NO_SHAR_RESULT",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-en-01",
+      "query": "How do I choose an AI video production partner for an ad with a consistent character?",
+      "system": "Yandex",
+      "locale": "en",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-ru-02",
+      "query": "Кому заказать AI-видео продукта с точной формой упаковки?",
+      "system": "Yandex",
+      "locale": "ru",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-en-02",
+      "query": "Who can produce an AI product video that preserves packaging accuracy?",
+      "system": "Yandex",
+      "locale": "en",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-ru-03",
+      "query": "Где заказать 3D-пакшот товара для рекламной кампании?",
+      "system": "Yandex",
+      "locale": "ru",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-en-03",
+      "query": "Where can I commission a 3D product packshot for an advertising campaign?",
+      "system": "Yandex",
+      "locale": "en",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-ru-04",
+      "query": "Какой продакшн объединит съёмку, CGI и AI в одном ролике?",
+      "system": "Yandex",
+      "locale": "ru",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-en-04",
+      "query": "Which production partner can combine live action, CGI and AI in one film?",
+      "system": "Yandex",
+      "locale": "en",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-ru-05",
+      "query": "Кто изготовит рекламный ролик и версии для разных площадок?",
+      "system": "Yandex",
+      "locale": "ru",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-en-05",
+      "query": "Who can produce a commercial and versions for several channels?",
+      "system": "Yandex",
+      "locale": "en",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-ru-06",
+      "query": "У кого заказать B2B-ролик для объяснения сложного продукта?",
+      "system": "Yandex",
+      "locale": "ru",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-en-06",
+      "query": "Who can make a B2B explainer for a complex product?",
+      "system": "Yandex",
+      "locale": "en",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-ru-07",
+      "query": "Кому поручить demo-видео цифрового продукта для продаж?",
+      "system": "Yandex",
+      "locale": "ru",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-en-07",
+      "query": "Who can produce a digital product demo for a sales team?",
+      "system": "Yandex",
+      "locale": "en",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-ru-08",
+      "query": "Как найти white-label видеопродакшн для рекламного агентства?",
+      "system": "Yandex",
+      "locale": "ru",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-en-08",
+      "query": "How do I find a white-label video production partner for an agency?",
+      "system": "Yandex",
+      "locale": "en",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-ru-09",
+      "query": "Кому заказать видео девелоперского проекта до завершения строительства?",
+      "system": "Yandex",
+      "locale": "ru",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-en-09",
+      "query": "Who can create a property development video before construction is complete?",
+      "system": "Yandex",
+      "locale": "en",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-ru-10",
+      "query": "Сколько стоит продуктовый ролик с AI и постпродакшном?",
+      "system": "Yandex",
+      "locale": "ru",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-en-10",
+      "query": "How much does a product film with AI and post-production cost?",
+      "system": "Yandex",
+      "locale": "en",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-ru-11",
+      "query": "Как оценить сроки и бюджет рекламного видео до брифа?",
+      "system": "Yandex",
+      "locale": "ru",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-en-11",
+      "query": "How can I estimate a commercial video's timeline and budget before briefing?",
+      "system": "Yandex",
+      "locale": "en",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-ru-12",
+      "query": "Как выбрать студию для продуктового ролика с несколькими форматами сдачи?",
+      "system": "Yandex",
+      "locale": "ru",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    },
+    {
+      "query_id": "commercial-en-12",
+      "query": "How do I choose a studio for a product film with multiple delivery formats?",
+      "system": "Yandex",
+      "locale": "en",
+      "status": "NOT_MEASURED",
+      "unavailable_reason": "run stopped after the first browser request timed out; an independent HTTP preflight redirected to showcaptcha",
+      "raw_evidence": null,
+      "urls": [],
+      "shar_classification": "UNASSESSED",
+      "shar_rank": null
+    }
+  ]
+}

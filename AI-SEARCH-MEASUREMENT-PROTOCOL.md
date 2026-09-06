@@ -14,9 +14,9 @@
 
 | System | Surface | Current state | Completed queries | Evidence required to become MEASURED |
 |---|---|---|---:|---|
-| Google | Search results | **NOT_MEASURED** | 0/24 | Clean session; exact query; date/time; locale and geography; model/version and search mode when applicable; full result/answer; all cited URLs inspected. |
+| Google | Search results | **MEASURED** | 24/24 | Wave 01 used exact queries in the current consumer UI with `udm=14` and `pws=0`; accessibility evidence, screenshots, timestamps and inspected SHAR URLs are recorded. |
 | Yandex | Search results | **NOT_MEASURED** | 0/24 | Clean session; exact query; date/time; locale and geography; model/version and search mode when applicable; full result/answer; all cited URLs inspected. |
-| Bing | Search results | **NOT_MEASURED** | 0/24 | Clean session; exact query; date/time; locale and geography; model/version and search mode when applicable; full result/answer; all cited URLs inspected. |
+| Bing | Search results | **PARTIAL** | 9/24 | Nine exact queries have complete rendered evidence. The tenth returned no parseable results, so the run stopped and the remaining 15 slots stayed `NOT_MEASURED`. |
 | ChatGPT | AI answer | **NOT_MEASURED** | 0/24 | Clean session; exact query; date/time; locale and geography; model/version and search mode when applicable; full result/answer; all cited URLs inspected. |
 | Claude | AI answer | **NOT_MEASURED** | 0/24 | Clean session; exact query; date/time; locale and geography; model/version and search mode when applicable; full result/answer; all cited URLs inspected. |
 | Gemini | AI answer | **NOT_MEASURED** | 0/24 | Clean session; exact query; date/time; locale and geography; model/version and search mode when applicable; full result/answer; all cited URLs inspected. |
@@ -64,5 +64,5 @@ Google Search Console aggregate performance is a separate `MEASURED` baseline. I
 
 ## Current coverage
 
-All eight required target systems remain `NOT_MEASURED` for the controlled 24-query panel. This protocol intentionally makes no ranking or visibility claim.
+`SEARCH-MEASUREMENT-WAVE-01-2026-09-06.json` records all 72 search-engine/query slots: Google 24 `MEASURED`, Bing 9 `MEASURED` plus 15 `NOT_MEASURED`, and Yandex 24 `NOT_MEASURED` after an access block. Five Google rows contain inspected valid SHAR citations: four observed rank 1 and one observed rank 2. These dated observations do not establish stable rank, traffic, leads, causation or visibility in another geography or product surface. The five AI-answer systems remain `NOT_MEASURED` at 0/24 each.
 
