@@ -19,8 +19,13 @@
   },
   "recovery_progress": {
     "source_rows": 47,
-    "exact_urls_recovered_this_wave": 3,
-    "exact_urls_still_required": 44
+    "exact_urls_recovered_total": 12,
+    "exact_urls_still_required": 35,
+    "wave_records": [
+      "EXTERNAL-VERIFICATION-2026-09-06.json",
+      "EXTERNAL-RECOVERY-WAVE-02-2026-09-06.json",
+      "EXTERNAL-RECOVERY-WAVE-03-2026-09-06.json"
+    ]
   },
   "exact_url_recoveries": [
     {
@@ -145,6 +150,12 @@
     "X"
   ],
   "search_no_match_meaning": "No exact SHAR Production result was found in the dated query. The account or page may still exist and the source recovery row remains open.",
+  "recovered_after_historical_search_miss": [
+    "DEV.to",
+    "GitBook",
+    "Hashnode",
+    "Linktree"
+  ],
   "owner_scope": {
     "effective_on": "2026-09-06",
     "existing_profiles_mode": "READ_ONLY",

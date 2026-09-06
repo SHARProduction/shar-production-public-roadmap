@@ -90,12 +90,12 @@
       "github_repositories": 155,
       "hugging_face_datasets": 23,
       "registry_assets": 152,
-      "registry_release": "v1.35.5",
-      "hub_release": "v1.30.2",
+      "registry_release": "v1.35.6",
+      "hub_release": "v1.30.3",
       "cloudflare_url": "https://shar-production-open-tools.pages.dev/en/",
       "hugging_face_space": "https://sharproduction-production-open-tools.static.hf.space/en/index.html",
       "cost_usd": 0,
-      "indexnow_accepted_url_submissions": 516
+      "indexnow_accepted_url_submissions": 518
     }
   },
   "tasks": [
@@ -655,7 +655,7 @@
           "value": "https://www.threads.com/@shar.production"
         }
       ],
-      "next_step": "6 of 47 previously unknown exact URLs are recovered; 41 remain unknown. Continue first-party link extraction and targeted recovery without editing existing profiles or treating search misses as absence."
+      "next_step": "12 of 47 previously unknown exact URLs are recovered; 35 remain unknown. Continue targeted read-only recovery without editing existing profiles or treating search misses as absence. Ko-fi is live but provider-noindex."
     },
     {
       "id": "PROFILE-03",

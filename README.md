@@ -9,9 +9,9 @@ This package preserves all 36 tasks and all 14 program layers from the approved 
 - GitHub: [https://github.com/Ares3333333/production-brief-schema](https://github.com/Ares3333333/production-brief-schema) — PUBLISHED_VERIFIED, CI passed.
 - Hugging Face: [https://huggingface.co/datasets/SHARProduction/production-brief-taxonomy](https://huggingface.co/datasets/SHARProduction/production-brief-taxonomy) — PUBLISHED_VERIFIED, public CC-BY-4.0 dataset.
 - Cloudflare: [https://production-brief-browser.bullolaya.workers.dev/](https://production-brief-browser.bullolaya.workers.dev/) — PUBLISHED_VERIFIED, HTTP 200 and desktop/mobile checks passed.
-- Public engine: 222/222 working bilingual tools, 1503 verified distribution placements, 155 meaningful public GitHub repositories, 23 public Hugging Face datasets, Registry `v1.35.5`, and Hub `v1.30.2`.
+- Public engine: 222/222 working bilingual tools, 1503 verified distribution placements, 155 meaningful public GitHub repositories, 23 public Hugging Face datasets, Registry `v1.35.6`, and Hub `v1.30.3`.
 - Cloudflare Hub: [https://shar-production-open-tools.pages.dev/en/](https://shar-production-open-tools.pages.dev/en/) — 152 public asset cards, desktop/mobile verified.
-- Hugging Face mirror: [https://sharproduction-production-open-tools.static.hf.space/en/index.html](https://sharproduction-production-open-tools.static.hf.space/en/index.html) — PUBLISHED_VERIFIED public static mirror at `v1.30.2`.
+- Hugging Face mirror: [https://sharproduction-production-open-tools.static.hf.space/en/index.html](https://sharproduction-production-open-tools.static.hf.space/en/index.html) — PUBLISHED_VERIFIED public static mirror at `v1.30.3`.
 
 These results do not imply search ranking, third-party adoption, LLM training, editorial acceptance, or commercial performance.
 
@@ -20,7 +20,7 @@ These results do not imply search ranking, third-party adoption, LLM training, e
 - Program complete: **no**
 - Tasks: **36**
 - Status distribution: LOCAL_READY 9, MEASURED 6, PLANNED 5, PUBLISHED_VERIFIED 15, SUBMITTED 1.
-- Exact external-profile recovery: 6 of 47 recovered; 41 remain open without inferring absence from a search miss.
+- Exact external-profile recovery: 12 of 47 recovered; 35 remain open without inferring absence from a search miss. Five of the six Wave 03 pages are indexable by their page metadata; Ko-fi is live but explicitly `noindex,nofollow`.
 - Controlled AI/search coverage: 81 of 192 product/query slots are measured (Google 24/24, Bing 9/24, Alice 24/24, Gemini 24/24); 111 remain unmeasured. The dated Alice run produced seven SHAR mentions and five independently HTTP-verified linked citations; the Gemini Flash run produced one mention and zero direct valid citations.
 - No legacy repository, main-domain, DNS, Timeweb, paid-plan, domain-purchase, or GPU change is represented.
 
@@ -58,6 +58,7 @@ These results do not imply search ranking, third-party adoption, LLM training, e
 - EXTERNAL-VERIFICATION-2026-09-06.json — dated exact-URL recovery, live conflict observations, resolved redirects, and search misses.
 - EXTERNAL-REGISTRY-RECHECK-2026-09-06.json — repeat HTTP/content observations for 66 earlier-known exact public rows.
 - EXTERNAL-RECOVERY-WAVE-02-2026-09-06.json — first-party-link recovery of Facebook, Pinterest and Threads exact URLs.
+- EXTERNAL-RECOVERY-WAVE-03-2026-09-06.json — read-only exact-URL recovery of DEV.to, GitBook, Hashnode, Ko-fi, Linktree and Pastebin with canonical, indexability and rendered-page evidence.
 - POST-1500-AUDIT-2026-09-06.md — verified completion boundary and the remaining program work.
 - DOMAIN-ORIGIN-AUDIT-2026-09-06.json — conservative root-host and source-origin deduplication for observed links.
 - Entity graph: https://shar-production-open-tools.pages.dev/entity-graph/en/ — provenance-first bilingual public explorer.

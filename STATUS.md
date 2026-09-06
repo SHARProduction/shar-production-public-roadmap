@@ -9,13 +9,13 @@
 - 222/222 working bilingual tools are publicly released.
 - SHAR PUBLIC DISTRIBUTION records **1503 verified placements**, above the 1500 minimum.
 - 155 meaningful public GitHub repositories and 23 public Hugging Face datasets are recorded.
-- Public Asset Registry v1.35.5 contains 152 immutable assets; Open Tools Hub v1.30.2 passes 25/25 checks.
+- Public Asset Registry v1.35.6 contains 152 immutable assets; Open Tools Hub v1.30.3 passes 25/25 checks.
 - A bilingual provenance-first entity graph is live on GitHub, Hugging Face and Cloudflare with 17 nodes, 17 evidence-backed relations and zero sameAs assertions.
 - Zero paid resources used; SHARsait, primary DNS, TimeWeb and the current MCP were not changed.
 
 ## Measured external remainder
 
-- Exact-profile recovery: 6 of 47 previously unknown exact URLs recovered; 41 remain unknown.
+- Exact-profile recovery: 12 of 47 previously unknown exact URLs recovered; 35 remain unknown. Wave 03 recovered DEV.to, GitBook, Hashnode, Ko-fi, Linktree and Pastebin; Ko-fi is live but carries provider `noindex,nofollow` metadata.
 - Earlier-known exact registry recheck: 66 rows checked, 47 returned direct HTTP 200, 44 exposed the exact brand and 34 exposed both the brand and sharprod.com. GoodFirms and Sortlist were additionally confirmed through a reader because direct requests were blocked.
 - These are page observations, not 34 independent endorsements or ranking gains.
 - Controlled AI/search panel: 81 of 192 product/query slots are measured. Google is 24/24 with five inspected SHAR citations (four observed rank 1, one observed rank 2); Bing is 9/24; Alice is 24/24 with seven SHAR mentions and five valid linked citations; Gemini Flash is 24/24 with one SHAR mention and zero direct valid citations; 111 slots remain explicitly unmeasured.
@@ -45,7 +45,7 @@
 | T23-01 | tier23 | **LOCAL_READY** | Формат адаптирован под платформу<br>Кредиты и ссылки соответствуют конкретной работе<br>Нет подложных участников или отзывов | Use platform-specific text and public links now; hold only media whose reuse rights remain unconfirmed. |
 | T23-02 | tier23 | **PLANNED** | Нет универсального потолка площадок<br>Каждая отклонённая площадка имеет причину<br>Синдикация не посчитана независимой рекомендацией | Continue free platform distribution where an authenticated account and compliant route are available; preserve per-platform outcomes. |
 | PROFILE-01 | profiles | **MEASURED** | Старый конфликт не выдан за текущий без проверки<br>Неизвестные поля не заполнены догадками<br>Нет новой канонической базы цен | Act on the dated conflict audit: Marketing-Tech, orgs.biz and Dprofile need specific corrections; sharportfolio.pro is resolved by a verified one-hop 301. |
-| PROFILE-02 | profiles | **MEASURED** | URL получен из источника, не сконструирован как доказательство<br>Не найдено не равно не существует | 6 of 47 previously unknown exact URLs are recovered; 41 remain unknown. Continue first-party link extraction and targeted recovery without editing existing profiles or treating search misses as absence. |
+| PROFILE-02 | profiles | **MEASURED** | URL получен из ограниченного брендового кандидата и подтверждён содержимым страницы, а не принят из конструкции без проверки<br>Не найдено не равно не существует<br>Provider noindex учитывается отдельно | 12 of 47 previously unknown exact URLs are recovered; 35 remain unknown. Continue targeted read-only recovery without editing existing profiles or treating search misses as absence. |
 | PROFILE-03 | profiles | **SUBMITTED** | Существующий read-only monitor не редактирует аккаунты<br>Нет дублей профилей/фиктивных офисов<br>Отдельно указано что выполнено владельцем | Monitor the Marketing-Tech page read-only for a public change. Keep all existing profiles read-only and provide the dated correction list to the owner; do not resubmit or edit. |
 | PROFILE-04 | profiles | **PLANNED** | Шорт-лист не назван победой<br>Нет глобального вывода из одной площадки<br>Запрос отзывов только реальным клиентам | Preserve11 historical platform review records; make fresh per-platform reads before any review request. |
 | TOOLS-01 | tools | **MEASURED** | Нет дублирующего калькулятора<br>Нет самовольной замены цен<br>Исправление только по воспроизводимому дефекту | Reuse existing calculator; resolve observed RU/EN multiplier discrepancy before extracting model. |

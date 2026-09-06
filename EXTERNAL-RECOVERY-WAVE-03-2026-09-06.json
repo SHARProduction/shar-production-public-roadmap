@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0.0",
+  "brand": {
+    "name": "SHAR Production",
+    "website": "https://sharprod.com/"
+  },
+  "checked_at": "2026-09-06T12:10:00Z",
+  "method": "Probe only three brand-derived handles for each unresolved platform, reject generic and not-found responses, then verify surviving pages by direct public GET and a rendered browser read without editing the profiles.",
+  "access": "READ_ONLY",
+  "recovered": [
+    {
+      "source_id": "external-authority-v4-073",
+      "platform": "DEV.to",
+      "url": "https://dev.to/shar-production",
+      "http_status": 200,
+      "canonical": "https://dev.to/shar-production",
+      "indexability": "INDEXABLE_BY_META",
+      "brand_observed": true,
+      "website_observed": true,
+      "rendered_browser": "PASS",
+      "verified_content": ["SHAR Production profile name", "hybrid AI, CGI and video production description", "https://sharprod.com/en/ website link", "one public article"],
+      "status": "EXACT_URL_RECOVERED_LIVE"
+    },
+    {
+      "source_id": "external-authority-v4-077",
+      "platform": "GitBook",
+      "url": "https://shar-production.gitbook.io/shar-production",
+      "http_status": 200,
+      "canonical": "https://shar-production.gitbook.io/shar-production",
+      "robots": "index, follow",
+      "indexability": "INDEXABLE_BY_META",
+      "brand_observed": true,
+      "website_observed": true,
+      "rendered_browser": "PASS",
+      "verified_content": ["SHAR Production Docs title", "AI, CGI and video production content", "https://sharprod.com/ website link", "llms.txt and Markdown links"],
+      "status": "EXACT_URL_RECOVERED_LIVE"
+    },
+    {
+      "source_id": "external-authority-v4-080",
+      "platform": "Hashnode",
+      "url": "https://hashnode.com/@shar-production",
+      "http_status": 200,
+      "canonical": "https://hashnode.com/@shar-production",
+      "indexability": "INDEXABLE_BY_META",
+      "brand_observed": true,
+      "website_observed": true,
+      "rendered_browser": "PASS",
+      "verified_content": ["Ars Alexandrov profile", "SHAR Production studio description", "sharprod.com website text"],
+      "status": "EXACT_URL_RECOVERED_LIVE"
+    },
+    {
+      "source_id": "external-authority-v4-084",
+      "platform": "Ko-fi",
+      "url": "https://ko-fi.com/sharproduction",
+      "http_status": 200,
+      "canonical": "https://ko-fi.com/sharproduction",
+      "robots": "noindex, nofollow",
+      "indexability": "PROVIDER_NOINDEX",
+      "brand_observed": true,
+      "website_observed": true,
+      "rendered_browser": "PASS",
+      "verified_content": ["SHAR profile", "SHAR Production studio description", "https://sharprod.com website text and link"],
+      "status": "EXACT_URL_RECOVERED_LIVE_NOINDEX"
+    },
+    {
+      "source_id": "external-authority-v4-085",
+      "platform": "Linktree",
+      "url": "https://linktr.ee/SHARproduction",
+      "http_status": 200,
+      "canonical": "https://linktr.ee/SHARproduction",
+      "indexability": "INDEXABLE_BY_META",
+      "brand_observed": true,
+      "website_observed": true,
+      "rendered_browser": "PASS",
+      "verified_content": ["SHARproduction profile title", "SHAR Production description", "https://sharprod.com/ website link", "YouTube, Facebook, Pinterest, Instagram, TikTok and Threads links"],
+      "status": "EXACT_URL_RECOVERED_LIVE"
+    },
+    {
+      "source_id": "external-authority-v4-090",
+      "platform": "Pastebin",
+      "url": "https://pastebin.com/u/shar-production",
+      "http_status": 200,
+      "canonical": "https://pastebin.com/u/shar-production",
+      "indexability": "INDEXABLE_BY_META",
+      "brand_observed": true,
+      "website_observed": true,
+      "rendered_browser": "PASS",
+      "verified_content": ["SHAR-Production profile title", "https://sharprod.com/en/ website link", "public SHAR Production paste"],
+      "status": "EXACT_URL_RECOVERED_LIVE"
+    }
+  ],
+  "rejected_candidates": [
+    {"platform": "Hashnode", "reason": "User not found responses for sharproduction and sharprod"},
+    {"platform": "Twitch", "reason": "Generic client response did not establish that any tested profile exists"},
+    {"platform": "X", "reason": "Tested responses did not establish the SHAR Production profile; sharprod belongs to an unrelated person"}
+  ],
+  "totals": {
+    "source_rows": 47,
+    "previously_recovered": 6,
+    "newly_recovered": 6,
+    "recovered_total": 12,
+    "remaining_unknown": 35,
+    "new_indexable_by_meta": 5,
+    "new_provider_noindex": 1
+  },
+  "notes": [
+    "A live branded page establishes the exact public URL, not account ownership, third-party endorsement or a ranking gain.",
+    "Ko-fi is recovered as a live public URL but is explicitly noindex,nofollow and is not represented as indexable.",
+    "The successful recoveries after earlier search misses demonstrate why a search miss is not treated as absence.",
+    "Existing profiles were not edited."
+  ]
+}
