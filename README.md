@@ -9,9 +9,9 @@ This package preserves all 36 tasks and all 14 program layers from the approved 
 - GitHub: [https://github.com/Ares3333333/production-brief-schema](https://github.com/Ares3333333/production-brief-schema) — PUBLISHED_VERIFIED, CI passed.
 - Hugging Face: [https://huggingface.co/datasets/SHARProduction/production-brief-taxonomy](https://huggingface.co/datasets/SHARProduction/production-brief-taxonomy) — PUBLISHED_VERIFIED, public CC-BY-4.0 dataset.
 - Cloudflare: [https://production-brief-browser.bullolaya.workers.dev/](https://production-brief-browser.bullolaya.workers.dev/) — PUBLISHED_VERIFIED, HTTP 200 and desktop/mobile checks passed.
-- Public engine: 222/222 working bilingual tools, 1503 verified distribution placements, 155 meaningful public GitHub repositories, 23 public Hugging Face datasets, Registry `v1.35.3`, and Hub `v1.30.0`.
+- Public engine: 222/222 working bilingual tools, 1503 verified distribution placements, 155 meaningful public GitHub repositories, 23 public Hugging Face datasets, Registry `v1.35.4`, and Hub `v1.30.1`.
 - Cloudflare Hub: [https://shar-production-open-tools.pages.dev/en/](https://shar-production-open-tools.pages.dev/en/) — 152 public asset cards, desktop/mobile verified.
-- Hugging Face mirror: [https://sharproduction-production-open-tools.static.hf.space/en/index.html](https://sharproduction-production-open-tools.static.hf.space/en/index.html) — RUNNING public static mirror.
+- Hugging Face mirror: [https://sharproduction-production-open-tools.static.hf.space/en/index.html](https://sharproduction-production-open-tools.static.hf.space/en/index.html) — PUBLISHED_VERIFIED public static mirror at `v1.30.1`.
 
 These results do not imply search ranking, third-party adoption, LLM training, editorial acceptance, or commercial performance.
 
@@ -19,9 +19,9 @@ These results do not imply search ranking, third-party adoption, LLM training, e
 
 - Program complete: **no**
 - Tasks: **36**
-- Status distribution: LOCAL_READY 9, MEASURED 5, PLANNED 6, PUBLISHED_VERIFIED 15, SUBMITTED 1.
+- Status distribution: LOCAL_READY 9, MEASURED 6, PLANNED 5, PUBLISHED_VERIFIED 15, SUBMITTED 1.
 - Exact external-profile recovery: 6 of 47 recovered; 41 remain open without inferring absence from a search miss.
-- Controlled AI/search coverage: 33 of 192 product/query slots are measured (Google 24/24, Bing 9/24); 159 remain unmeasured. Yandex and the five AI-answer systems remain explicitly unmeasured where no compliant run exists.
+- Controlled AI/search coverage: 57 of 192 product/query slots are measured (Google 24/24, Bing 9/24, Alice 24/24); 135 remain unmeasured. The dated Alice run produced seven SHAR mentions and five independently HTTP-verified linked citations.
 - No legacy repository, main-domain, DNS, Timeweb, paid-plan, domain-purchase, or GPU change is represented.
 
 ## Layers
@@ -39,7 +39,7 @@ These results do not imply search ranking, third-party adoption, LLM training, e
 | entity | 2 | LOCAL_READY: 1, PLANNED: 1 |
 | backlinks_citations | 2 | LOCAL_READY: 1, PLANNED: 1 |
 | search | 2 | LOCAL_READY: 1, MEASURED: 1 |
-| ai_visibility | 2 | LOCAL_READY: 1, PLANNED: 1 |
+| ai_visibility | 2 | LOCAL_READY: 1, MEASURED: 1 |
 | commercial_outcome | 1 | LOCAL_READY: 1 |
 | qa | 1 | LOCAL_READY: 1 |
 
@@ -51,6 +51,8 @@ These results do not imply search ranking, third-party adoption, LLM training, e
 - COMMERCIAL-INTENT-MAP.md — eight commercial clusters and the 24-query RU/EN non-brand panel.
 - AI-SEARCH-MEASUREMENT-PROTOCOL.md — controlled coverage and evidence rules for five AI systems and three search engines.
 - SEARCH-MEASUREMENT-WAVE-01-2026-09-06.json — 72-slot Google/Bing/Yandex record with 33 measured slots and five inspected Google citations to SHAR Production.
+- AI-SEARCH-MEASUREMENT-WAVE-02-2026-09-06.json — 24/24 Alice consumer-answer observations with seven SHAR mentions and five valid linked citations.
+- build-ai-wave.py and validate-ai-wave.py — public-safe assembly and invariant validation for the Alice wave; complete answers and screenshots remain in the private checkpoint.
 - run-serp-panel.py, build-search-wave.py and validate-search-wave.py — reproducible capture, public-safe assembly and invariant validation for the search panel (`requirements-search.txt`).
 - EXTERNAL-VERIFICATION-2026-09-06.json — dated exact-URL recovery, live conflict observations, resolved redirects, and search misses.
 - EXTERNAL-REGISTRY-RECHECK-2026-09-06.json — repeat HTTP/content observations for 66 earlier-known exact public rows.

@@ -21,7 +21,7 @@
 | Claude | AI answer | **NOT_MEASURED** | 0/24 | Clean session; exact query; date/time; locale and geography; model/version and search mode when applicable; full result/answer; all cited URLs inspected. |
 | Gemini | AI answer | **NOT_MEASURED** | 0/24 | Clean session; exact query; date/time; locale and geography; model/version and search mode when applicable; full result/answer; all cited URLs inspected. |
 | Perplexity | AI answer | **NOT_MEASURED** | 0/24 | Clean session; exact query; date/time; locale and geography; model/version and search mode when applicable; full result/answer; all cited URLs inspected. |
-| Alice | AI answer | **NOT_MEASURED** | 0/24 | Clean session; exact query; date/time; locale and geography; model/version and search mode when applicable; full result/answer; all cited URLs inspected. |
+| Alice | AI answer | **MEASURED** | 24/24 | Signed-in free consumer UI, `Intelligence: Auto`; exact queries; dated full-answer hashes, AX hashes, screenshots, conversation URLs and source URLs retained. Seven SHAR mentions and five valid linked citations were observed. |
 
 Google Search Console aggregate performance is a separate `MEASURED` baseline. It does not make the controlled Google commercial-query panel measured and does not establish ranking, leads, or causation.
 
@@ -64,5 +64,7 @@ Google Search Console aggregate performance is a separate `MEASURED` baseline. I
 
 ## Current coverage
 
-`SEARCH-MEASUREMENT-WAVE-01-2026-09-06.json` records all 72 search-engine/query slots: Google 24 `MEASURED`, Bing 9 `MEASURED` plus 15 `NOT_MEASURED`, and Yandex 24 `NOT_MEASURED` after an access block. Five Google rows contain inspected valid SHAR citations: four observed rank 1 and one observed rank 2. These dated observations do not establish stable rank, traffic, leads, causation or visibility in another geography or product surface. The five AI-answer systems remain `NOT_MEASURED` at 0/24 each.
+`SEARCH-MEASUREMENT-WAVE-01-2026-09-06.json` records all 72 search-engine/query slots: Google 24 `MEASURED`, Bing 9 `MEASURED` plus 15 `NOT_MEASURED`, and Yandex 24 `NOT_MEASURED` after an access block. Five Google rows contain inspected valid SHAR citations: four observed rank 1 and one observed rank 2.
+
+`AI-SEARCH-MEASUREMENT-WAVE-02-2026-09-06.json` records Alice at 24/24 `MEASURED` in the signed-in free consumer UI with `Intelligence: Auto`. Seven answers mentioned SHAR and five supplied a direct sharprod.com source; all four unique citation targets returned HTTP 200 with exact self-canonical URLs and the brand present. These dated observations do not establish stable rank, traffic, leads, causation or visibility in another geography or product surface. ChatGPT, Claude, Gemini and Perplexity remain `NOT_MEASURED` until their named consumer surfaces are accessible and identifiable under this protocol.
 

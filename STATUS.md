@@ -9,7 +9,7 @@
 - 222/222 working bilingual tools are publicly released.
 - SHAR PUBLIC DISTRIBUTION records **1503 verified placements**, above the 1500 minimum.
 - 155 meaningful public GitHub repositories and 23 public Hugging Face datasets are recorded.
-- Public Asset Registry v1.35.3 contains 152 immutable assets; Open Tools Hub v1.30.0 passes 25/25 checks.
+- Public Asset Registry v1.35.4 contains 152 immutable assets; Open Tools Hub v1.30.1 passes 25/25 checks.
 - A bilingual provenance-first entity graph is live on GitHub, Hugging Face and Cloudflare with 17 nodes, 17 evidence-backed relations and zero sameAs assertions.
 - Zero paid resources used; SHARsait, primary DNS, TimeWeb and the current MCP were not changed.
 
@@ -18,7 +18,7 @@
 - Exact-profile recovery: 6 of 47 previously unknown exact URLs recovered; 41 remain unknown.
 - Earlier-known exact registry recheck: 66 rows checked, 47 returned direct HTTP 200, 44 exposed the exact brand and 34 exposed both the brand and sharprod.com. GoodFirms and Sortlist were additionally confirmed through a reader because direct requests were blocked.
 - These are page observations, not 34 independent endorsements or ranking gains.
-- Controlled AI/search panel: 33 of 192 product/query slots are measured. Google is 24/24 with five inspected SHAR citations (four observed rank 1, one observed rank 2); Bing is 9/24; 159 slots remain explicitly unmeasured.
+- Controlled AI/search panel: 57 of 192 product/query slots are measured. Google is 24/24 with five inspected SHAR citations (four observed rank 1, one observed rank 2); Bing is 9/24; Alice is 24/24 with seven SHAR mentions and five valid linked citations; 135 slots remain explicitly unmeasured.
 
 ## Operational ledger
 
@@ -57,6 +57,6 @@
 | SEARCH-01 | search | **LOCAL_READY** | Частотность не выдумана<br>Нет страниц на каждый синоним/фиктивный город<br>Существующие URL сохраняются | Use24 commercial questions; do not infer frequency or create synonyms pages. |
 | SEARCH-02 | search | **MEASURED** | Нет смешения разных окон GSC<br>Indexable не приравнен к indexed<br>Недоступный источник не заменён нулём | Wave 01 records Google 24/24, Bing 9/24 and Yandex 0/24; inaccessible slots remain NOT_MEASURED rather than zero. |
 | AI-01 | ai_visibility | **LOCAL_READY** | ChatGPT/Claude/Gemini/Perplexity/Alice сохранены в охвате<br>Версия и режим продукта указаны<br>Бренд не подставлен в небрендовый вопрос | Run clean independent product sessions when accessible and cost approved. |
-| AI-02 | ai_visibility | **PLANNED** | Текущий разговор не принят за независимую цитату<br>API не выдан за пользовательский продукт<br>MCP-вызов не принят за поисковую рекомендацию | Run 24 clean questions in each accessible named consumer product. Keep unavailable or paid-only product slots unmeasured rather than substituting API/current-chat answers. |
+| AI-02 | ai_visibility | **MEASURED** | Текущий разговор не принят за независимую цитату<br>API не выдан за пользовательский продукт<br>MCP-вызов не принят за поисковую рекомендацию | Alice is complete at 24/24 in the signed-in free consumer UI: seven SHAR mentions and five valid linked citations. Continue ChatGPT, Claude, Gemini and Perplexity only on identifiable accessible consumer surfaces. |
 | COMM-01 | commercial_outcome | **LOCAL_READY** | Нет публикации персональных данных<br>Клики, брифы и сделки различаются<br>Причинность не заявлена по совпадению дат | Current contact path verified; GA4/CRM qualification evidence still needed. |
 | QA-01 | qa | **LOCAL_READY** | Нет утечки private исходников/секретов<br>Каждый статус подтверждён соответствующим доказательством<br>Все направления утверждённой цепочки остаются в очереди | Local kit gates complete; inherited website route gate remains separately disclosed. |

@@ -1,0 +1,939 @@
+{
+  "schema_version": "1.0.0",
+  "brand": "SHAR Production",
+  "website": "https://sharprod.com/",
+  "generated_at_utc": "2026-09-06T05:53:40Z",
+  "license": "MIT for this measurement schema and authored documentation; AI answers and third-party pages retain their original rights",
+  "panel": {
+    "queries": 24,
+    "languages": {
+      "ru": 12,
+      "en": 12
+    },
+    "system": "Alice"
+  },
+  "coverage": {
+    "measured": 24,
+    "not_measured": 0
+  },
+  "observed_shar_visibility": {
+    "mentions": 7,
+    "valid_citations": 5,
+    "mention_rate": 0.2916666666666667,
+    "citation_rate": 0.20833333333333334,
+    "citation_target_http_verification": "All four unique sharprod.com targets returned HTTP 200, exposed exact self-canonical URLs and contained the brand in a separate dated check.",
+    "query_ids": [
+      "commercial-en-03",
+      "commercial-en-06",
+      "commercial-en-10",
+      "commercial-ru-03",
+      "commercial-ru-04",
+      "commercial-ru-08",
+      "commercial-ru-12"
+    ]
+  },
+  "methodology": {
+    "surface": "Signed-in Alice AI consumer web UI",
+    "mode": "Intelligence: Auto",
+    "account_tier": "Free",
+    "cost": "USD 0",
+    "evidence": "Complete answer hash, accessibility-tree hash, screenshot hash, conversation URL and all extracted source URLs retained per query."
+  },
+  "limitations": [
+    "This is one dated run per query and does not prove stable future visibility.",
+    "Alice did not disclose a model version in the observed UI.",
+    "The physical egress location was not independently verified.",
+    "A brand mention without a direct source URL is classified separately from a valid citation.",
+    "The observation does not prove traffic, leads, conversions, causation or visibility in another AI product."
+  ],
+  "records": [
+    {
+      "query_id": "commercial-en-01",
+      "query": "How do I choose an AI video production partner for an ad with a consistent character?",
+      "system": "Alice",
+      "surface": "Alice AI consumer web",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "Intelligence: Auto",
+      "locale": "en",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T05:41:59.139Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free account tier"
+      },
+      "conversation_url": "https://alice.yandex.ru/chat/01a0753c-a12f-4933-a86f-d4a636e4e3a8/",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "b23e4040c249effeb61fd9a23811f749807e2dfdaa9de35cc7ebe9db8b4863e4",
+        "ax_file": "commercial-en-01.ax.txt",
+        "ax_sha256": "a41919943d9da3b0b2ff64720955744a1176a29b9c64d59339a63e34581bc8c2",
+        "desktop_screenshot": "commercial-en-01.desktop.png",
+        "desktop_screenshot_sha256": "94d70bdebed94754e0e60db1d0be11618561e10382afab034ac86269611a89a0",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://pixverse.ai/en/blog/ai-video-generator-with-character-consistency",
+        "https://imagenstudio.com/",
+        "https://www.superside.com/blog/ai-video-production-companies"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-02",
+      "query": "Who can produce an AI product video that preserves packaging accuracy?",
+      "system": "Alice",
+      "surface": "Alice AI consumer web",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "Intelligence: Auto",
+      "locale": "en",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T05:42:31.727Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free account tier"
+      },
+      "conversation_url": "https://alice.yandex.ru/chat/01a0753d-20d5-4933-a86f-d4af72849d95/",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "a35046cbd13f646ab05ff04e441978c0b844595f30b563acab600e6b232e9423",
+        "ax_file": "commercial-en-02.ax.txt",
+        "ax_sha256": "427e30d32d27f4558a20bdbe310cbaf426a0c130c7e83fadad9c1417aaee0aa2",
+        "desktop_screenshot": "commercial-en-02.desktop.png",
+        "desktop_screenshot_sha256": "7bc250d5afaed59af144edc50c47fba22164ed3650a21cc3ba6196bad76d6a71",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://apob.ai/ai-product-video-generator/",
+        "https://www.insmind.com/ru-ru/ai-video-generator/ecommerce",
+        "https://www.pacdora.com/tools/ai-packaging-video-generator",
+        "https://queststudio.io/blog/how-to-make-an-ai-product-video"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-03",
+      "query": "Where can I commission a 3D product packshot for an advertising campaign?",
+      "system": "Alice",
+      "surface": "Alice AI consumer web",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "Intelligence: Auto",
+      "locale": "en",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T05:44:47.955Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free account tier"
+      },
+      "conversation_url": "https://alice.yandex.ru/chat/01a0753f-3489-4933-a86f-d4ba988149dc/",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "72cce5311e90fef59cc9b7fcd8a2e0676e3963478e4d17f4d419255d661e844e",
+        "ax_file": "commercial-en-03.ax.txt",
+        "ax_sha256": "a72c731110b9602bcd85ee2467b363c642e2cf85b470e00a8471fdd5fcf1bb57",
+        "desktop_screenshot": "commercial-en-03.desktop.png",
+        "desktop_screenshot_sha256": "108f9d9c5ba838b59a28edbe2323dfe226f17308b4010c2d4d77a5b41cf023ca",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://render-vision.com/services/3d-product-rendering-services/",
+        "https://www.danthree.studio/en/3d-visualization/clipping-pack-shot",
+        "https://sharprod.com/services/3d-packshot-video.html",
+        "https://www.freelancer.com/projects/graphic-design/product-packshot-model-high-quality",
+        "https://freelance.ru/freelancers/3d-graphics",
+        "https://www.behance.net/search/projects/product%20packshot%20advertising",
+        "https://pinkman.ru/advertising-campaigns/",
+        "https://maverickframe.com/blog/3d-rendering-pricing/",
+        "https://freedesstudio.com/blog/how-much-does-3d-rendering-cost/",
+        "https://packshot.com/"
+      ],
+      "shar_classification": "VALID_CITATION",
+      "shar_source_urls": [
+        "https://sharprod.com/services/3d-packshot-video.html"
+      ]
+    },
+    {
+      "query_id": "commercial-en-04",
+      "query": "Which production partner can combine live action, CGI and AI in one film?",
+      "system": "Alice",
+      "surface": "Alice AI consumer web",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "Intelligence: Auto",
+      "locale": "en",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T05:45:19.010Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free account tier"
+      },
+      "conversation_url": "https://alice.yandex.ru/chat/01a0753f-ae29-4933-a86f-d4c2fbfc1902/",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "d94550e50bf5b1dabbbf8e04b65b118733fc87a8d282b9b02a4a40492164aa9c",
+        "ax_file": "commercial-en-04.ax.txt",
+        "ax_sha256": "6cbc76d5097e2628fbc2174ea06479161e9b9d04468dfe69f39af074b9104f1d",
+        "desktop_screenshot": "commercial-en-04.desktop.png",
+        "desktop_screenshot_sha256": "f1e99a295e541ab893f8d9a0d60913780b4794089c30a55d41541f6fdf66d3db",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://moodwalkrs.com/"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-05",
+      "query": "Who can produce a commercial and versions for several channels?",
+      "system": "Alice",
+      "surface": "Alice AI consumer web",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "Intelligence: Auto",
+      "locale": "en",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T05:45:58.827Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free account tier"
+      },
+      "conversation_url": "https://alice.yandex.ru/chat/01a07540-49d1-4933-a86f-d4cb9da20557/",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "8b5bca2449dd4bca47c98edfc8abf59fe1d4e3686dc860d8e58a7e9083c416a8",
+        "ax_file": "commercial-en-05.ax.txt",
+        "ax_sha256": "c1e7c328ce9d7bce9a767b19c6faf1aa51970827c54e13ab84bfc38a5111958d",
+        "desktop_screenshot": "commercial-en-05.desktop.png",
+        "desktop_screenshot_sha256": "b4beeb4496b8e61def06323a2f9cb31e2db5331a0c7d3fe3faf8a2a46526525f",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://timemediagroup.ru/"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-06",
+      "query": "Who can make a B2B explainer for a complex product?",
+      "system": "Alice",
+      "surface": "Alice AI consumer web",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "Intelligence: Auto",
+      "locale": "en",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T05:46:37.440Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free account tier"
+      },
+      "conversation_url": "https://alice.yandex.ru/chat/01a07540-e08a-4933-a86f-d4d491c066cf/",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "af8ba674bdc807b9ca17858b309eb31f222e6ef6e160d437acaf7f54bec530f3",
+        "ax_file": "commercial-en-06.ax.txt",
+        "ax_sha256": "93a9c3d6e2f876535975a1760bc1c9a18e1d4202762890f4f14d0fe704ab4e4b",
+        "desktop_screenshot": "commercial-en-06.desktop.png",
+        "desktop_screenshot_sha256": "fb0f978158a0b8633b1c8cca75e5689e38a466caf703748fb98c0fa7b5570de8",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://sharprod.com/services/b2b-explainer-video.html",
+        "https://fastable.ru/",
+        "https://explainify.com/",
+        "https://explainercue.com/",
+        "https://animation-studios.com/news/how-to-sell-complex-products-using-video-and-animation-explainer-content-for-b2b,-it,-and-tech-companies"
+      ],
+      "shar_classification": "VALID_CITATION",
+      "shar_source_urls": [
+        "https://sharprod.com/services/b2b-explainer-video.html"
+      ]
+    },
+    {
+      "query_id": "commercial-en-07",
+      "query": "Who can produce a digital product demo for a sales team?",
+      "system": "Alice",
+      "surface": "Alice AI consumer web",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "Intelligence: Auto",
+      "locale": "en",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T05:47:10.045Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free account tier"
+      },
+      "conversation_url": "https://alice.yandex.ru/chat/01a07541-5fde-4933-a86f-d4dca96edaa2/",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "307a83ef835718b6a2624f4e840fec3abb9fb34e51aa78dd556ebe3cf28668f3",
+        "ax_file": "commercial-en-07.ax.txt",
+        "ax_sha256": "11a59c0e17fce5d010af409347485ddf40ae429be065628cc6c8df4f62fdd867",
+        "desktop_screenshot": "commercial-en-07.desktop.png",
+        "desktop_screenshot_sha256": "1f2b874b83515066d918cb57c40b35ec3d1fb1fd958ceb93f0cf5def195601ad",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://demoboost.com/blog/the-demo-engineer-a-key-player-in-saas-revenue-teams",
+        "https://supademo.com/blog/demo-engineer",
+        "https://www.impekable.com/services/sales-demos/"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-08",
+      "query": "How do I find a white-label video production partner for an agency?",
+      "system": "Alice",
+      "surface": "Alice AI consumer web",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "Intelligence: Auto",
+      "locale": "en",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T05:47:53.007Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free account tier"
+      },
+      "conversation_url": "https://alice.yandex.ru/chat/01a07541-f58b-4933-a86f-d4e52a5e107c/",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "d9c3c32a2ff8c7bfc86c2e499f858ed5be773e9d5d16ca9dc11c1a94a91066ab",
+        "ax_file": "commercial-en-08.ax.txt",
+        "ax_sha256": "0b1fa1834fc4a2ad794f871dda64f08abc2a245998cd5561bb8022eec2422864",
+        "desktop_screenshot": "commercial-en-08.desktop.png",
+        "desktop_screenshot_sha256": "0aa1a12a626fb5735b42c424a3bb62096d9bb285428582aa26920db7ec849b70",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://room4media.com/blog/white-label-production-partner/",
+        "https://vid.co/blog/white-label-video-production",
+        "https://www.whatastory.agency/join/whitelabel-services",
+        "https://www.krishastudio.com/white-label-video-production/",
+        "https://www.yansmedia.com/blog/how-to-find-an-animation-outsourcing-partner",
+        "https://guidecreative.co/blog-posts/white-label-video-partner-guide"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-09",
+      "query": "Who can create a property development video before construction is complete?",
+      "system": "Alice",
+      "surface": "Alice AI consumer web",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "Intelligence: Auto",
+      "locale": "en",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T05:48:31.377Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free account tier"
+      },
+      "conversation_url": "https://alice.yandex.ru/chat/01a07542-a391-4933-a86f-d4ee31227250/",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "4a37c460dc5aed04c040af6b339b8308acab256c384611487bed7d756a923b06",
+        "ax_file": "commercial-en-09.ax.txt",
+        "ax_sha256": "8830fe4a026caca9f0ba23e00e8247699b99aa333db0adb404a71c2e746bbc9c",
+        "desktop_screenshot": "commercial-en-09.desktop.png",
+        "desktop_screenshot_sha256": "ae304ec95bcf62b4f49e0b5468d63d0f25abf608b91918ffdfd1ed1dbb90587c",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.youtube.com/channel/UCJLgaZIAtnyw8oywq5mEa4Q",
+        "https://videoestate.ai/en/use-cases/property-developers",
+        "https://www.sourceten.com/post/real-estate-development-video-production-how-to-bring-projects-places-and-possibility-to-life"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-10",
+      "query": "How much does a product film with AI and post-production cost?",
+      "system": "Alice",
+      "surface": "Alice AI consumer web",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "Intelligence: Auto",
+      "locale": "en",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T05:49:02.541Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free account tier"
+      },
+      "conversation_url": "https://alice.yandex.ru/chat/01a07543-1d13-4933-a86f-d4f767cf1729/",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "846ba99556b3532725129ca6de554cde8311a0870e0eff280854584b25eb9b60",
+        "ax_file": "commercial-en-10.ax.txt",
+        "ax_sha256": "904d715c5fbb3ec6fe26469b8df092718b7a09423c0ad2fe46461a81cffb7452",
+        "desktop_screenshot": "commercial-en-10.desktop.png",
+        "desktop_screenshot_sha256": "fe79b08b0bfa8195af474e0372dee831ed4563c8885d590791759eebdc7bbcb0",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://sharprod.com/pricing/"
+      ],
+      "shar_classification": "VALID_CITATION",
+      "shar_source_urls": [
+        "https://sharprod.com/pricing/"
+      ]
+    },
+    {
+      "query_id": "commercial-en-11",
+      "query": "How can I estimate a commercial video's timeline and budget before briefing?",
+      "system": "Alice",
+      "surface": "Alice AI consumer web",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "Intelligence: Auto",
+      "locale": "en",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T05:49:40.424Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free account tier"
+      },
+      "conversation_url": "https://alice.yandex.ru/chat/01a07543-ab0b-4933-a86f-d4ff84690637/",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "9599a26853b502c4248e7e46ac30e9a09bd4ebd64df5980a16bc8583d774c6ea",
+        "ax_file": "commercial-en-11.ax.txt",
+        "ax_sha256": "b9c97d91d3b22e99ca5bb3adf9a6b5c51e8626e646d64fe1940ea8417b523125",
+        "desktop_screenshot": "commercial-en-11.desktop.png",
+        "desktop_screenshot_sha256": "02ad81f6535aada14d0243a8e7b22f4ceac06440aac8fc2109535c80e5baffc5",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://videozayac.ru/blog/smeta-na-sozdanie-videorolika/",
+        "https://vidico.com/news/video-production-cost/",
+        "https://mypromovideos.com/blog/explainer-video-production-cost-pricing-guide/",
+        "https://ruvision.ru/blog/byudzhet-na-video-dlya-biznesa",
+        "https://companies.rbc.ru/news/1k4kHUgT23/skolko-stoit-videorolik-dlya-biznesa-i-ot-chego-zavisit-byudzhet/",
+        "https://dzen.ru/a/apCSOSDTfxfSGnQV"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-en-12",
+      "query": "How do I choose a studio for a product film with multiple delivery formats?",
+      "system": "Alice",
+      "surface": "Alice AI consumer web",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "Intelligence: Auto",
+      "locale": "en",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T05:50:23.022Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free account tier"
+      },
+      "conversation_url": "https://alice.yandex.ru/chat/01a07544-4577-4933-a86f-d508e5226152/",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "3d629febc6ecb0c66ceddfb616d32d0a41ac9c6eea4124ba07f77ea24aceb2e8",
+        "ax_file": "commercial-en-12.ax.txt",
+        "ax_sha256": "0650745024717b15ce04e4c1f0c809e5159e35ae28d7a24a8e4e4f221cc2c157",
+        "desktop_screenshot": "commercial-en-12.desktop.png",
+        "desktop_screenshot_sha256": "d64a037711c6b1cce75476546b84b58621e49e46dbaa7bb18ec432ffbfd4d964",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://videoset.moscow/kak_adaptirovat_video",
+        "https://capturemotion.ru/blog/kak-premium-studiia-adaptiruet-animaciiu-pod-raznye-formaty/",
+        "https://mediabanda.ru/blog/kak-vybrat-videoprodakshn/",
+        "https://magnetto.pro/media/article/prodakshn-studiia-i-videoproizvodstvo-uslugi-semka-protsess-sozdaniia-video/"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-01",
+      "query": "Как выбрать подрядчика для AI-рекламного ролика с постоянным персонажем?",
+      "system": "Alice",
+      "surface": "Alice AI consumer web",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "Intelligence: Auto",
+      "locale": "ru",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T05:44:24.792Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free account tier"
+      },
+      "conversation_url": "https://alice.yandex.ru/chat/01a0753a-87f5-4000-a86f-d49a18e6063c/",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "560fb41233749f725841d1f5278d3f1de020d5d06c94bfd51b0cb920404562df",
+        "ax_file": "commercial-ru-01.ax.txt",
+        "ax_sha256": "f55b1c805635d8af6f87d94791f669a62b4700178629f0eeec7f3cf5e538917f",
+        "desktop_screenshot": "commercial-ru-01.desktop.png",
+        "desktop_screenshot_sha256": "5454d43c7c2d5facf542d7fb09978ec6e10e75bb088a4f21e0dfa7eeece2896c",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://companies.rbc.ru/news/x34J8ld0t8/ii-avataryi-dlya-biznesa-kak-snizit-zatratyi-na-videokontent/",
+        "https://primexai.ru/blog/kak-vybrat-ai-agentstvo/",
+        "https://primexai.ru/blog/kak-vybrat-ai-agentstvo/",
+        "https://sloger.press/p/1038"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-02",
+      "query": "Кому заказать AI-видео продукта с точной формой упаковки?",
+      "system": "Alice",
+      "surface": "Alice AI consumer web",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "Intelligence: Auto",
+      "locale": "ru",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T05:42:15.436Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free account tier"
+      },
+      "conversation_url": "https://alice.yandex.ru/chat/01a0753c-e129-4933-a86f-d4ab9d60dc2c/",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "b1fc50df6ab28a0b3df75b0b08bfaeb3581c3169d3d9277c9033e3a6cb0b8423",
+        "ax_file": "commercial-ru-02.ax.txt",
+        "ax_sha256": "43ddc231ee73ba79ae7eb2615be9f059ce8123b7fc738ee70bda4302e194a15b",
+        "desktop_screenshot": "commercial-ru-02.desktop.png",
+        "desktop_screenshot_sha256": "d5ddf8725775b6a390970a60c9ce379ea5dbb898426631ff8226c26565ef5799",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.pacdora.com/tools/ai-packaging-video-generator",
+        "https://imideo.io/ai-product-video-generator",
+        "https://higgsfield.ai/ai-product-video-generator",
+        "https://studiowe.ru/",
+        "https://champvideo.pro/ii-production",
+        "https://kwork.ru/categories/videogeneration"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-03",
+      "query": "Где заказать 3D-пакшот товара для рекламной кампании?",
+      "system": "Alice",
+      "surface": "Alice AI consumer web",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "Intelligence: Auto",
+      "locale": "ru",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T05:42:45.012Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free account tier"
+      },
+      "conversation_url": "https://alice.yandex.ru/chat/01a0753d-606e-4933-a86f-d4b392afe3ae/",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "903b7052a45a63e16d9318d462d80cdbebac66fbe150ed5a2c27cb9c74c3554d",
+        "ax_file": "commercial-ru-03.ax.txt",
+        "ax_sha256": "262b967fda26a064e5bb1fd7b4644c99b0e58ce3d07cf7ced50762c6cbc4a23e",
+        "desktop_screenshot": "commercial-ru-03.desktop.png",
+        "desktop_screenshot_sha256": "a5225c97ddabfe0c30070d6fc54286525bf050ae546bb528e44f817d37db363c",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://sharprod.com/services/3d-packshot-video.html",
+        "https://3dtovarov.ru/",
+        "https://cgionly.com/index.php/service/product-packshot/",
+        "https://kwork.ru/vector-tracing/25763052/3d-model-tovara-vizualizatsiya-dlya-marketpleysov",
+        "https://uslugi.yandex.ru/213-moscow/category?text=3d+%D0%B2%D0%B8%D0%B7%D1%83%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F+%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0+%D0%B4%D0%BB%D1%8F+%D0%BC%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D0%BF%D0%BB%D0%B5%D0%B9%D1%81%D0%BE%D0%B2+%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2+%D0%B8+%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2",
+        "https://www.3dvue.fr/en/packshot-3d/"
+      ],
+      "shar_classification": "VALID_CITATION",
+      "shar_source_urls": [
+        "https://sharprod.com/services/3d-packshot-video.html"
+      ]
+    },
+    {
+      "query_id": "commercial-ru-04",
+      "query": "Какой продакшн объединит съёмку, CGI и AI в одном ролике?",
+      "system": "Alice",
+      "surface": "Alice AI consumer web",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "Intelligence: Auto",
+      "locale": "ru",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T05:45:02.688Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free account tier"
+      },
+      "conversation_url": "https://alice.yandex.ru/chat/01a0753f-7499-4933-a86f-d4be59a82179/",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "631468bb2492c2e17cd39226f079b594cfe955cfe9630d07992ce2cef997c43b",
+        "ax_file": "commercial-ru-04.ax.txt",
+        "ax_sha256": "470eb1f4e57733c853feb54729c0f28c9e4ff3ed2af6d991c6c13a708cfddb1d",
+        "desktop_screenshot": "commercial-ru-04.desktop.png",
+        "desktop_screenshot_sha256": "ec0f8d47f7555fb969d2551e6fc865c61dcdcda90cda6fbb6e018b4ec146de69",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://sharprod.com/",
+        "https://rencgi.com/",
+        "https://kenguru.agency/",
+        "https://22frames.studio/",
+        "https://www.sostav.ru/blogs/290917/97360"
+      ],
+      "shar_classification": "VALID_CITATION",
+      "shar_source_urls": [
+        "https://sharprod.com/"
+      ]
+    },
+    {
+      "query_id": "commercial-ru-05",
+      "query": "Кто изготовит рекламный ролик и версии для разных площадок?",
+      "system": "Alice",
+      "surface": "Alice AI consumer web",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "Intelligence: Auto",
+      "locale": "ru",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T05:45:42.543Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free account tier"
+      },
+      "conversation_url": "https://alice.yandex.ru/chat/01a07540-03b0-4933-a86f-d4c7d8e9c07a/",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "6a917d0f00c6c32dd696834aa968a9069ba2a32ea404d8ef96ab2ba2a75dd7b0",
+        "ax_file": "commercial-ru-05.ax.txt",
+        "ax_sha256": "25dae5c253de6d799bf39368661a928dffdb923afbfa3fa9e50a2379f3b2348c",
+        "desktop_screenshot": "commercial-ru-05.desktop.png",
+        "desktop_screenshot_sha256": "c917c23745174c8d47ce6dc85580a5466153f566de9d53fd98545098775a0aaa",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://uncle.agency/",
+        "https://mosvideo.org/services/prodayuschie-roliki/",
+        "https://yandex.ru/maps/?ll=37.625468%2C55.77126&rtext=%7E55.77126%2C37.625468&rtt=pd&ruri=%7Eymapsbm1%3A%2F%2Forg%3Foid%3D80565751997&z=16",
+        "https://yandex.ru/maps/?ll=37.601683%2C55.815735&rtext=%7E55.815735%2C37.601683&rtt=pd&ruri=%7Eymapsbm1%3A%2F%2Forg%3Foid%3D175197653238&z=16",
+        "https://www.ferox.studio/",
+        "https://bigcityfilm.ru/news/sozdanie-i-adaptacziya-video-dlya-soczialnyix-setej/"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-06",
+      "query": "У кого заказать B2B-ролик для объяснения сложного продукта?",
+      "system": "Alice",
+      "surface": "Alice AI consumer web",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "Intelligence: Auto",
+      "locale": "ru",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T05:46:16.694Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free account tier"
+      },
+      "conversation_url": "https://alice.yandex.ru/chat/01a07540-896c-4933-a86f-d4cff71ae50f/",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "5b218fe66b8e02ab1476ace43ac81fb2a9f4c02d2d28125bbd52022f247135df",
+        "ax_file": "commercial-ru-06.ax.txt",
+        "ax_sha256": "6a4309ba4c6b92ad8395129574523264950957e928efdca54b72b7d828bb6f6d",
+        "desktop_screenshot": "commercial-ru-06.desktop.png",
+        "desktop_screenshot_sha256": "b2e90a207f18ea7c931957e1d9f9664e8ee0200814396019af831c11945bcecd",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://videoglobal.ru/o-kompanii.html",
+        "https://fastable.ru/",
+        "https://studio.anix-ai.pro/",
+        "https://avt.digital/company/",
+        "https://itfortit.ru/",
+        "https://yandex.ru/maps/?ll=37.460687%2C55.702313&rtext=%7E55.702313%2C37.460687&rtt=pd&ruri=%7Eymapsbm1%3A%2F%2Forg%3Foid%3D54634212369&z=16"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-07",
+      "query": "Кому поручить demo-видео цифрового продукта для продаж?",
+      "system": "Alice",
+      "surface": "Alice AI consumer web",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "Intelligence: Auto",
+      "locale": "ru",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T05:46:53.747Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free account tier"
+      },
+      "conversation_url": "https://alice.yandex.ru/chat/01a07541-2042-4933-a86f-d4d827cb8b5c/",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "f1d23f89444b684d7b9848f0436cddf173ddecd90cbf6cfe39ef342eeebee068",
+        "ax_file": "commercial-ru-07.ax.txt",
+        "ax_sha256": "58b6db9ef4cf51b69cc369bbdcf0060edf3884921cca0da2cd18fee50eebd077",
+        "desktop_screenshot": "commercial-ru-07.desktop.png",
+        "desktop_screenshot_sha256": "18f68ac1ed9a826141c504d96f3c1dff7817ac763b51c3b5f295003999c2ea42",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://mts-link.ru/blog/kak-provesti-demo-produkta/",
+        "https://media.contented.ru/znaniya/professions/professiya-videograf-chto-nuzhno-znat/",
+        "https://www.veo3ai.io/ru/blog/how-to-make-product-demo-videos"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-08",
+      "query": "Как найти white-label видеопродакшн для рекламного агентства?",
+      "system": "Alice",
+      "surface": "Alice AI consumer web",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "Intelligence: Auto",
+      "locale": "ru",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T05:47:32.040Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free account tier"
+      },
+      "conversation_url": "https://alice.yandex.ru/chat/01a07541-afb1-4933-a86f-d4e1ced2e111/",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "0904142a752d14e005de1a337092f8860004118e7475c2b024dcd295acc60da7",
+        "ax_file": "commercial-ru-08.ax.txt",
+        "ax_sha256": "5b45e14e80a7a730b9f15f890a35c9ffeb56b54fb4fb3623364df8bbe10523a5",
+        "desktop_screenshot": "commercial-ru-08.desktop.png",
+        "desktop_screenshot_sha256": "45a4e616ba18d0bf9d285b6d183e50c239497bb749e77b11e49af2f3fa55e304",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://videoeditingcompany.com/white-label-video-editing/",
+        "https://propellant.media/white-label-companies-to-reach-out-to/",
+        "https://www.pixel8production.com/blog/white-label-video-editing-agencies",
+        "https://www.yansmedia.com/blog/what-is-white-label-explainer-video-production",
+        "https://almcorp.com/blog/white-label-video-production-for-agencies/",
+        "https://northwestmediasystems.com/blog/white-label-video-production-marketing-agencies/",
+        "https://www.whatastory.agency/join/whitelabel-services"
+      ],
+      "shar_classification": "MENTION_ONLY",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-09",
+      "query": "Кому заказать видео девелоперского проекта до завершения строительства?",
+      "system": "Alice",
+      "surface": "Alice AI consumer web",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "Intelligence: Auto",
+      "locale": "ru",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T05:48:09.356Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free account tier"
+      },
+      "conversation_url": "https://alice.yandex.ru/chat/01a07542-4784-4933-a86f-d4ea4ecb2226/",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "ede2bb4c9e9d18d09615c2731347560d6f723673953d151ad94c1fe7dfde5b68",
+        "ax_file": "commercial-ru-09.ax.txt",
+        "ax_sha256": "99adf0b9c3c0a7a59b02f733a74dfc62b087111e64c61ec9fbaefb07ef769acc",
+        "desktop_screenshot": "commercial-ru-09.desktop.png",
+        "desktop_screenshot_sha256": "80ea51bca1aa87c70cb9900fb26e7869f98c922f8c47aad50a20d6bae33b508e",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://avastudio.ru/otrasli/nedvizhimost/developery/",
+        "https://ruvision.ru/development",
+        "https://www.ferox.studio/ai/development",
+        "https://sloi.ai/development",
+        "https://video-animation.ru/uslugi/video-dlya-zastroyshchikov",
+        "https://yandex.ru/maps/?ll=37.59471%2C55.80571&rtext=%7E55.80571%2C37.59471&rtt=pd&ruri=%7Eymapsbm1%3A%2F%2Forg%3Foid%3D111166337508&z=16"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-10",
+      "query": "Сколько стоит продуктовый ролик с AI и постпродакшном?",
+      "system": "Alice",
+      "surface": "Alice AI consumer web",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "Intelligence: Auto",
+      "locale": "ru",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T05:48:47.684Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free account tier"
+      },
+      "conversation_url": "https://alice.yandex.ru/chat/01a07542-dd3f-4933-a86f-d4f27153c83e/",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "e09188d5daafdbad7ebef159acf3faddfd5b25c2267c67d077acb0e004afaa90",
+        "ax_file": "commercial-ru-10.ax.txt",
+        "ax_sha256": "856b12ee7b6323f28a93119083530a237c8b33d600ebad1e8f6a4c5b10791c78",
+        "desktop_screenshot": "commercial-ru-10.desktop.png",
+        "desktop_screenshot_sha256": "f957666ac72b8e7ed1695b3f69c9043f11e4ec187103f348026987325fca01fd",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://sloi.ai/pricing",
+        "https://avastudio.ru/uslugi/sozdat-videorolik-s-neirosetiu/"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-11",
+      "query": "Как оценить сроки и бюджет рекламного видео до брифа?",
+      "system": "Alice",
+      "surface": "Alice AI consumer web",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "Intelligence: Auto",
+      "locale": "ru",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T05:49:24.020Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free account tier"
+      },
+      "conversation_url": "https://alice.yandex.ru/chat/01a07543-6afb-4933-a86f-d4fb1625b2df/",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "615ed9af75254e5adf3b65c7575ff4aa9a59bec2ca744e42015b09f73193e997",
+        "ax_file": "commercial-ru-11.ax.txt",
+        "ax_sha256": "ac4d9028f9ebd610bbb6928e5cabbd9d4f312a00ecb69390bd47d1d659b54219",
+        "desktop_screenshot": "commercial-ru-11.desktop.png",
+        "desktop_screenshot_sha256": "a57e8d7ee8b0684c922c2ff7f91f671301e6c9c1ed13b627c867fc365953ba8d",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://videozayac.ru/blog/smeta-na-sozdanie-videorolika/",
+        "https://champvideo.pro/blog/promo-rolik-vidy-etapi-proizvodstva-tcena-zachem-nuzhen-dliy-biznesa",
+        "https://avastudio.ru/blog/sekretyi-tsenoobrazovaniya-skolko-stoit-sozdat-reklamniy-rolik/",
+        "https://mediabanda.ru/blog/reklamnyy-rolik-stoimost-smeta/",
+        "https://raketadigital.com/blog/videoprodakshn/skolko-stoit-snyat-reklamnyy-rolik-dlya-tv-v-2026-realnye-tseny-i-chto-vliyaet-na-itogovyy-chek/",
+        "https://prepropost.ru/blog/post/brif-dlya-video-polnoe-rukovodstvo-s-shablonom-i-primerami-zapolneniya",
+        "https://blog.pressfoto.ru/how-much-does-marketing-video-production-cost",
+        "https://infomult.ru/tsena-videorolika",
+        "https://raketadigital.com/blog/videoprodakshn/tz-na-videorolik-sobiraem-brif-kotoryy-ekonomit-byudzhet/"
+      ],
+      "shar_classification": "NO_SHAR_MENTION",
+      "shar_source_urls": []
+    },
+    {
+      "query_id": "commercial-ru-12",
+      "query": "Как выбрать студию для продуктового ролика с несколькими форматами сдачи?",
+      "system": "Alice",
+      "surface": "Alice AI consumer web",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "Intelligence: Auto",
+      "locale": "ru",
+      "geography": "Account/UI locale observed; physical egress location not independently verified",
+      "tested_at_utc": "2026-09-06T05:50:03.573Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "observed free account tier"
+      },
+      "conversation_url": "https://alice.yandex.ru/chat/01a07543-f963-4933-a86f-d504ad38ecad/",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "answer_sha256": "6d929f2e903a96454b907b4ee912a1a9a494394916cebf663d33293e4406e620",
+        "ax_file": "commercial-ru-12.ax.txt",
+        "ax_sha256": "b81cbdf6501147a7cd918df8fd82eaad5f48d8cff95153882522a662fc5fc5ba",
+        "desktop_screenshot": "commercial-ru-12.desktop.png",
+        "desktop_screenshot_sha256": "f6a386bb29c20333ee3ca9ce80a7da4e1b610583333c0a4a99b4c79e579e223c",
+        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://magnetto.pro/media/article/prodakshn-studiia-i-videoproizvodstvo-uslugi-semka-protsess-sozdaniia-video/",
+        "https://avastudio.ru/otrasli/produkty-pitaniya/",
+        "https://yandex.ru/maps/?ll=37.59471%2C55.80571&rtext=%7E55.80571%2C37.59471&rtt=pd&ruri=%7Eymapsbm1%3A%2F%2Forg%3Foid%3D111166337508&z=16"
+      ],
+      "shar_classification": "MENTION_ONLY",
+      "shar_source_urls": []
+    }
+  ]
+}
