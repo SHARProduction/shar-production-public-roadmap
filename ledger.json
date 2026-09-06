@@ -84,12 +84,17 @@
     "public_engine": {
       "status": "PUBLISHED_VERIFIED",
       "tools": 222,
-      "github_repositories": 133,
+      "bilingual_tool_pages": 444,
+      "distribution_target": 1500,
+      "distribution_verified": 1500,
+      "github_repositories": 154,
+      "hugging_face_datasets": 22,
       "registry_assets": 149,
-      "registry_release": "v1.12.1",
-      "hub_release": "v1.12.1",
+      "registry_release": "v1.34.0",
+      "hub_release": "v1.26.0",
       "cloudflare_url": "https://shar-production-open-tools.pages.dev/en/",
-      "hugging_face_space": "https://sharproduction-production-open-tools.static.hf.space/en/index.html"
+      "hugging_face_space": "https://sharproduction-production-open-tools.static.hf.space/en/index.html",
+      "cost_usd": 0
     }
   },
   "tasks": [
@@ -179,7 +184,7 @@
           "value": "../PROJECT_STATE.md"
         }
       ],
-      "next_step": "Maintain the verified 133-repository organization inventory and add only independently useful modules."
+      "next_step": "Maintain the verified 154-repository inventory and add only independently useful modules."
     },
     {
       "id": "GH-02",
@@ -228,7 +233,7 @@
         },
         {
           "kind": "public_url",
-          "value": "https://github.com/SHARProduction/shar-public-asset-registry/releases/tag/v1.12.1"
+          "value": "https://github.com/SHARProduction/shar-public-asset-registry/releases/tag/v1.34.0"
         }
       ],
       "next_step": "Maintain the public proposed standard, deliverables, MCP examples and orchestrator lineage without claiming external standard status."
@@ -458,7 +463,7 @@
           "value": "../PROJECT_STATE.md"
         }
       ],
-      "next_step": "The useful zero-spend cloud expansion reached Waves 01-11 and the static mirror. Add further surfaces only for a distinct user task."
+      "next_step": "The useful zero-spend cloud expansion reached 21 distribution waves and the static mirror. Add surfaces only for a distinct user task."
     },
     {
       "id": "T1-01",
@@ -618,9 +623,13 @@
         {
           "kind": "public_url",
           "value": "https://www.producthunt.com/products/shar-production"
+        },
+        {
+          "kind": "internal_record",
+          "value": "EXTERNAL-REGISTRY-RECHECK-2026-09-06.json"
         }
       ],
-      "next_step": "Dzen, Orgpage and Product Hunt exact URLs recovered; 44 source rows still require exact URLs. Continue recovery without treating search misses as absence."
+      "next_step": "Keep recovery and recheck metrics separate: 3 of 47 previously unknown exact URLs recovered, 44 still unknown; 66 earlier-known exact rows were rechecked independently."
     },
     {
       "id": "PROFILE-03",
@@ -714,7 +723,7 @@
         },
         {
           "kind": "public_url",
-          "value": "https://github.com/SHARProduction/shar-public-asset-registry/releases/tag/v1.12.1"
+          "value": "https://github.com/SHARProduction/shar-public-asset-registry/releases/tag/v1.34.0"
         }
       ],
       "next_step": "Maintain the completed 222-tool bilingual public set; future tools require an independently useful scope and the same release verification gate."
@@ -724,7 +733,7 @@
       "layer": "entity",
       "title_ru": "Сверить идентичность SHAR и публичные связи",
       "priority": "P1",
-      "status": "LOCAL_READY",
+      "status": "MEASURED",
       "depends_on": [
         "BASE-02"
       ],
@@ -737,9 +746,13 @@
         {
           "kind": "internal_record",
           "value": "correction-drafts.json"
+        },
+        {
+          "kind": "internal_record",
+          "value": "EXTERNAL-REGISTRY-RECHECK-2026-09-06.json"
         }
       ],
-      "next_step": "Canonical identity and roles referenced; no sameAs changes or new entity registration."
+      "next_step": "Use the verified identity observations to build a public-safe entity graph with explicit provenance and no unsupported sameAs claims."
     },
     {
       "id": "ENTITY-02",
@@ -786,7 +799,7 @@
       "layer": "backlinks_citations",
       "title_ru": "Восстанавливать подтверждённые credits и измерять ссылки",
       "priority": "P1",
-      "status": "PLANNED",
+      "status": "MEASURED",
       "depends_on": [
         "LINK-01"
       ],
@@ -795,8 +808,13 @@
         "Запрос и полученная ссылка разделены",
         "Неизвестный backlink count не равен нулю"
       ],
-      "evidence": [],
-      "next_step": "Credit requests prepared but not sent; confirm real client/agency identity, permission and exact target page."
+      "evidence": [
+        {
+          "kind": "internal_record",
+          "value": "EXTERNAL-REGISTRY-RECHECK-2026-09-06.json"
+        }
+      ],
+      "next_step": "34 known public page responses contained both SHAR Production and sharprod.com; deduplicate by root domain and source origin before reporting independent citations."
     },
     {
       "id": "SEARCH-01",
