@@ -20,7 +20,7 @@ These results do not imply search ranking, third-party adoption, LLM training, e
 - Program complete: **no**
 - Tasks: **36**
 - Status distribution: LOCAL_READY 9, MEASURED 6, PLANNED 5, PUBLISHED_VERIFIED 15, SUBMITTED 1.
-- Exact external-profile recovery: 13 of 47 recovered; 34 remain open without inferring absence from a search miss. Wave 04 added the indexable Google Groups page. Ko-fi remains the one recovered provider-noindex page.
+- Exact external-profile recovery: 13 of 47 exact URLs are recovered; Clutch is separately closed as a provider refusal with no public profile; 33 remain unresolved without treating search misses as absence. Wave 04 added the indexable Google Groups page. Ko-fi remains the one recovered provider-noindex page.
 - Controlled AI/search coverage: 81 of 192 product/query slots are measured (Google 24/24, Bing 9/24, Alice 24/24, Gemini 24/24); 111 remain unmeasured. The dated Alice run produced seven SHAR mentions and five independently HTTP-verified linked citations; the Gemini Flash run produced one mention and zero direct valid citations.
 - No legacy repository, main-domain, DNS, Timeweb, paid-plan, domain-purchase, or GPU change is represented.
 
@@ -60,6 +60,7 @@ These results do not imply search ranking, third-party adoption, LLM training, e
 - EXTERNAL-RECOVERY-WAVE-02-2026-09-06.json — first-party-link recovery of Facebook, Pinterest and Threads exact URLs.
 - EXTERNAL-RECOVERY-WAVE-03-2026-09-06.json — read-only exact-URL recovery of DEV.to, GitBook, Hashnode, Ko-fi, Linktree and Pastebin with canonical, indexability and rendered-page evidence.
 - EXTERNAL-RECOVERY-WAVE-04-2026-09-06.json — read-only recovery of the Google Groups URL plus explicit rejection evidence for unattributed or nonexistent handle candidates.
+- EXTERNAL-RECOVERY-WAVE-05-2026-09-06.json — privacy-minimized provider-history resolution for Clutch and non-counted Disqus registration evidence.
 - POST-1500-AUDIT-2026-09-06.md — verified completion boundary and the remaining program work.
 - DOMAIN-ORIGIN-AUDIT-2026-09-06.json — conservative root-host and source-origin deduplication for observed links.
 - Entity graph: https://shar-production-open-tools.pages.dev/entity-graph/en/ — provenance-first bilingual public explorer.
@@ -71,3 +72,4 @@ Authored taxonomy and synthetic dataset materials use CC-BY-4.0 at their publish
 ## Status rules
 
 PUBLISHED_VERIFIED requires a checked public result. LOCAL_READY means preparation only. SUBMITTED means a delivery receipt only. MEASURED requires a documented observation.
+

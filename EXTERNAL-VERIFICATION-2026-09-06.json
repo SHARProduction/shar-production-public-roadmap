@@ -20,13 +20,15 @@
   "recovery_progress": {
     "source_rows": 47,
     "exact_urls_recovered_total": 13,
-    "exact_urls_still_required": 34,
+    "exact_urls_still_required": 33,
     "wave_records": [
       "EXTERNAL-VERIFICATION-2026-09-06.json",
       "EXTERNAL-RECOVERY-WAVE-02-2026-09-06.json",
       "EXTERNAL-RECOVERY-WAVE-03-2026-09-06.json",
-      "EXTERNAL-RECOVERY-WAVE-04-2026-09-06.json"
-    ]
+      "EXTERNAL-RECOVERY-WAVE-04-2026-09-06.json",
+      "EXTERNAL-RECOVERY-WAVE-05-2026-09-06.json"
+    ],
+    "resolved_without_public_url": 1
   },
   "exact_url_recoveries": [
     {
@@ -180,6 +182,24 @@
         "external-wave2/marketing-tech-receipt.json"
       ],
       "note": "Delivery receipt only. No public correction is claimed. No resubmission under the current read-only directive."
+    }
+  ],
+  "provider_resolutions": [
+    {
+      "source_id": "external-authority-v4-070",
+      "platform": "Clutch",
+      "state": "RESOLVED_PROVIDER_REFUSAL_NO_PUBLIC_PROFILE",
+      "evidence": "Owner-authorized provider email dated 2026-07-03; public search found no exact profile.",
+      "public_placement_counted": false
+    }
+  ],
+  "registration_evidence_not_counted": [
+    {
+      "source_id": "external-authority-v4-074",
+      "platform": "Disqus",
+      "state": "REGISTERED_ACCOUNT_PUBLIC_PROFILE_UNVERIFIED",
+      "evidence": "Owner-authorized provider mail confirms signup and incomplete publisher installation.",
+      "public_placement_counted": false
     }
   ]
 }

@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "brand": {
+    "name": "SHAR Production",
+    "website": "https://sharprod.com/"
+  },
+  "checked_at": "2026-09-06T13:05:00Z",
+  "method": "Read-only review of the owner-authorized Gmail account, exact provider messages and public provider pages; no profile was edited.",
+  "access": "READ_ONLY",
+  "resolved_without_public_url": [
+    {
+      "source_id": "external-authority-v4-070",
+      "platform": "Clutch",
+      "state": "RESOLVED_PROVIDER_REFUSAL_NO_PUBLIC_PROFILE",
+      "provider_message_date": "2026-07-03",
+      "provider_sender": "Clutch team <no-reply@clutch.co>",
+      "provider_subject": "SHAR Production's Clutch Profile",
+      "provider_statement_summary": "Clutch stated that it had suspended business activity with companies based in Russia and Belarus and therefore could not list SHAR Production.",
+      "public_search_result": "NO_EXACT_PROFILE_FOUND",
+      "counting": "NOT_A_PUBLIC_PLACEMENT"
+    }
+  ],
+  "registration_evidence_not_counted": [
+    {
+      "source_id": "external-authority-v4-074",
+      "platform": "Disqus",
+      "state": "REGISTERED_ACCOUNT_PUBLIC_PROFILE_UNVERIFIED",
+      "provider_messages": [
+        "Welcome to Disqus, Ars Alexandrov!",
+        "Action required: complete your Disqus installation",
+        "SHAR Production, thanks for checking out Disqus"
+      ],
+      "provider_observation": "Provider mail addresses SHAR Production and states that publisher installation was not completed.",
+      "public_check": "Current public Disqus home showed login options; no authenticated session or exact public SHAR Production profile URL was available.",
+      "counting": "NOT_A_PUBLIC_PLACEMENT"
+    }
+  ],
+  "totals": {
+    "source_rows": 47,
+    "exact_urls_recovered_total": 13,
+    "resolved_no_public_profile": 1,
+    "remaining_unresolved": 33
+  },
+  "privacy_note": "No email body, address credential, verification code or private tracking URL is published. This record stores only provider identity, date, subject and a minimal outcome summary.",
+  "notes": [
+    "Provider refusal is stronger than a search miss and closes the Clutch recovery row without inventing a public URL.",
+    "Disqus registration does not satisfy the public URL, brand, website and rendered-page evidence gate.",
+    "Existing profiles were not edited."
+  ]
+}
