@@ -101,7 +101,11 @@ def main() -> None:
         },
         "limitations": [
             "This is one dated run per query and does not prove stable future visibility.",
-            "Alice did not disclose a model version in the observed UI.",
+            (
+                "Alice did not disclose a model version in the observed UI."
+                if args.system == "Alice"
+                else f"The observed UI identified the model only as {records[0]['model_version'] if records else 'NOT_DISCLOSED'}."
+            ),
             "The physical egress location was not independently verified.",
             "A brand mention without a direct source URL is classified separately from a valid citation.",
             "The observation does not prove traffic, leads, conversions, causation or visibility in another AI product.",

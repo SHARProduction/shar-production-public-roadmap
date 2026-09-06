@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "brand": "SHAR Production",
   "website": "https://sharprod.com/",
-  "generated_at_utc": "2026-09-06T06:25:59Z",
+  "generated_at_utc": "2026-09-06T06:28:19Z",
   "license": "MIT for this measurement schema and authored documentation; AI answers and third-party pages retain their original rights",
   "panel": {
     "queries": 24,
@@ -35,7 +35,7 @@
   },
   "limitations": [
     "This is one dated run per query and does not prove stable future visibility.",
-    "Alice did not disclose a model version in the observed UI.",
+    "The observed UI identified the model only as Flash (UI label).",
     "The physical egress location was not independently verified.",
     "A brand mention without a direct source URL is classified separately from a valid citation.",
     "The observation does not prove traffic, leads, conversions, causation or visibility in another AI product."
