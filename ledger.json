@@ -90,12 +90,12 @@
       "github_repositories": 155,
       "hugging_face_datasets": 23,
       "registry_assets": 152,
-      "registry_release": "v1.35.11",
-      "hub_release": "v1.30.8",
+      "registry_release": "v1.35.14",
+      "hub_release": "v1.30.11",
       "cloudflare_url": "https://shar-production-open-tools.pages.dev/en/",
       "hugging_face_space": "https://sharproduction-production-open-tools.static.hf.space/en/index.html",
       "cost_usd": 0,
-      "indexnow_accepted_url_submissions": 528
+      "indexnow_accepted_url_submissions": 534
     }
   },
   "tasks": [
@@ -671,7 +671,7 @@
           "value": "EXTERNAL-RECOVERY-WAVE-06-2026-09-06.json"
         }
       ],
-      "next_step": "12 of 40 owner-reported account URLs are recovered; one row is closed by provider refusal and 27 remain unresolved. Two supplemental exact URLs are tracked outside the denominator. Continue targeted read-only recovery; X is a nonbranded correction candidate and Ko-fi is provider-noindex."
+      "next_step": "13 of 40 owner-reported account URLs are recovered; one row is closed by provider refusal and 26 remain unresolved. Two supplemental exact URLs are tracked outside the denominator. Continue targeted read-only recovery without editing existing profiles or treating search misses as absence."
     },
     {
       "id": "PROFILE-03",

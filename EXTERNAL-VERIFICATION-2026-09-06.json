@@ -20,10 +20,10 @@
   "recovery_progress": {
     "legacy_mixed_scope_rows": 47,
     "owner_reported_registration_rows": 40,
-    "exact_owner_reported_urls_recovered_total": 12,
+    "exact_owner_reported_urls_recovered_total": 13,
     "supplemental_exact_urls_recovered": 2,
     "resolved_without_public_url": 1,
-    "owner_reported_rows_still_unresolved": 27,
+    "owner_reported_rows_still_unresolved": 26,
     "scope_note": "The earlier 47-row denominator mixed 40 owner-reported registration rows with supplemental recoveries and opportunity rows. Current recovery progress uses only source rows whose status is OWNER-REPORTED REGISTERED/PRESENT.",
     "wave_records": [
       "EXTERNAL-VERIFICATION-2026-09-06.json",
@@ -31,7 +31,8 @@
       "EXTERNAL-RECOVERY-WAVE-03-2026-09-06.json",
       "EXTERNAL-RECOVERY-WAVE-04-2026-09-06.json",
       "EXTERNAL-RECOVERY-WAVE-05-2026-09-06.json",
-      "EXTERNAL-RECOVERY-WAVE-06-2026-09-06.json"
+      "EXTERNAL-RECOVERY-WAVE-06-2026-09-06.json",
+      "EXTERNAL-RECOVERY-WAVE-07-2026-09-06.json"
     ]
   },
   "exact_url_recoveries": [
@@ -75,6 +76,19 @@
         "public launch and maker profile"
       ],
       "verification_method": "direct HTTP plus live in-app browser"
+    },
+    {
+      "source_id": "external-authority-v4-087",
+      "platform": "Mixcloud",
+      "url": "https://www.mixcloud.com/INOQ/",
+      "state": "EXACT_URL_RECOVERED",
+      "http_status": 200,
+      "verified_content": [
+        "SHAR Production brand name and page title",
+        "https://sharprod.com/en/ website link",
+        "Hybrid AI, CGI and video production studio description"
+      ],
+      "verification_method": "owner-authorized provider-mail identity plus direct HTTP and Agent Reach/Jina Reader"
     }
   ],
   "supplemental_verified_surfaces": [

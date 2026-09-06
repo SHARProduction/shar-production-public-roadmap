@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "brand": {
+    "name": "SHAR Production",
+    "website": "https://sharprod.com/"
+  },
+  "checked_at": "2026-09-06T09:48:00Z",
+  "method": "Read-only provider-mail identity reconciliation plus direct public HTTP and Agent Reach web retrieval through Jina Reader. Existing profiles were not edited.",
+  "access": "READ_ONLY",
+  "recovered": [
+    {
+      "source_id": "external-authority-v4-087",
+      "platform": "Mixcloud",
+      "url": "https://www.mixcloud.com/INOQ/",
+      "state": "EXACT_URL_RECOVERED_LIVE_BRANDED",
+      "provider_evidence": "Owner-authorized Mixcloud welcome mail identifies the account name INOQ; a later provider verification message confirms continued account access.",
+      "public_check": {
+        "http_status": 200,
+        "final_url": "https://www.mixcloud.com/INOQ/",
+        "canonical": "https://www.mixcloud.com/INOQ/",
+        "title": "SHAR Production | Mixcloud",
+        "brand_observed": true,
+        "website_observed": "https://sharprod.com/en/",
+        "description_observed": "Hybrid AI, CGI and video production studio creating commercials, product videos, brand films, 3D visuals and VFX for brands.",
+        "robots": "noai, noimageai"
+      },
+      "verification_method": "direct public HTTP plus Agent Reach/Jina Reader",
+      "public_placement_counted": false
+    }
+  ],
+  "scope_reconciliation": {
+    "owner_reported_registration_rows": 40,
+    "exact_owner_reported_urls_recovered": 13,
+    "resolved_without_public_url": 1,
+    "owner_reported_rows_still_unresolved": 26
+  },
+  "counting_note": "This recovers an existing owner-reported account URL. It is evidence of a live branded public profile, not a new placement, independent citation, endorsement or ranking gain.",
+  "privacy_note": "No email address, verification code, login link or private tracking parameter is published.",
+  "cost_rub": 0
+}
