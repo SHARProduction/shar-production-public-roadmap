@@ -20,10 +20,10 @@
   "recovery_progress": {
     "legacy_mixed_scope_rows": 47,
     "owner_reported_registration_rows": 40,
-    "exact_owner_reported_urls_recovered_total": 13,
+    "exact_owner_reported_urls_recovered_total": 14,
     "supplemental_exact_urls_recovered": 2,
     "resolved_without_public_url": 1,
-    "owner_reported_rows_still_unresolved": 26,
+    "owner_reported_rows_still_unresolved": 25,
     "scope_note": "The earlier 47-row denominator mixed 40 owner-reported registration rows with supplemental recoveries and opportunity rows. Current recovery progress uses only source rows whose status is OWNER-REPORTED REGISTERED/PRESENT.",
     "wave_records": [
       "EXTERNAL-VERIFICATION-2026-09-06.json",
@@ -32,7 +32,8 @@
       "EXTERNAL-RECOVERY-WAVE-04-2026-09-06.json",
       "EXTERNAL-RECOVERY-WAVE-05-2026-09-06.json",
       "EXTERNAL-RECOVERY-WAVE-06-2026-09-06.json",
-      "EXTERNAL-RECOVERY-WAVE-07-2026-09-06.json"
+      "EXTERNAL-RECOVERY-WAVE-07-2026-09-06.json",
+      "EXTERNAL-RECOVERY-WAVE-08-2026-09-06.json"
     ]
   },
   "exact_url_recoveries": [
@@ -89,6 +90,23 @@
         "Hybrid AI, CGI and video production studio description"
       ],
       "verification_method": "owner-authorized provider-mail identity plus direct HTTP and Agent Reach/Jina Reader"
+    },
+    {
+      "source_id": "external-authority-v4-100",
+      "platform": "Telegraph",
+      "url": "https://telegra.ph/Gibridnyj-AICGI-videoprodakshn-dlya-reklamnyh-rolikov-i-brendinga-07-11",
+      "state": "EXACT_URL_RECOVERED_LIVE_COMMISSIONED_MATERIAL",
+      "http_status": 200,
+      "canonical": "https://telegra.ph/Gibridnyj-AICGI-videoprodakshn-dlya-reklamnyh-rolikov-i-brendinga-07-11",
+      "robots": "index, follow",
+      "verified_content": [
+        "SHAR Production brand name",
+        "https://sharprod.com/ link",
+        "public indexable commissioned article"
+      ],
+      "verification_method": "owner-authorized provider report plus direct HTTP, Jina Reader and 390 px rendered check",
+      "independent_citation_counted": false,
+      "correction_review": "Named authorship and numerical claims were not independently verified; existing surface remains read-only."
     }
   ],
   "supplemental_verified_surfaces": [

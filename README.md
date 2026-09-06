@@ -9,9 +9,9 @@ This package preserves all 36 tasks and all 14 program layers from the approved 
 - GitHub: [https://github.com/Ares3333333/production-brief-schema](https://github.com/Ares3333333/production-brief-schema) — PUBLISHED_VERIFIED, CI passed.
 - Hugging Face: [https://huggingface.co/datasets/SHARProduction/production-brief-taxonomy](https://huggingface.co/datasets/SHARProduction/production-brief-taxonomy) — PUBLISHED_VERIFIED, public CC-BY-4.0 dataset.
 - Cloudflare: [https://production-brief-browser.bullolaya.workers.dev/](https://production-brief-browser.bullolaya.workers.dev/) — PUBLISHED_VERIFIED, HTTP 200 and desktop/mobile checks passed.
-- Public engine: 222/222 working bilingual tools, 1503 verified distribution placements, 155 meaningful public GitHub repositories, 23 public Hugging Face datasets, Registry `v1.35.14`, and Hub `v1.30.11`.
+- Public engine: 222/222 working bilingual tools, 1503 verified distribution placements, 155 meaningful public GitHub repositories, 23 public Hugging Face datasets, Registry `v1.35.15`, and Hub `v1.30.12`.
 - Cloudflare Hub: [https://shar-production-open-tools.pages.dev/en/](https://shar-production-open-tools.pages.dev/en/) — 152 public asset cards, desktop/mobile verified.
-- Hugging Face mirror: [https://sharproduction-production-open-tools.static.hf.space/en/index.html](https://sharproduction-production-open-tools.static.hf.space/en/index.html) — PUBLISHED_VERIFIED public static mirror at `v1.30.11`.
+- Hugging Face mirror: [https://sharproduction-production-open-tools.static.hf.space/en/index.html](https://sharproduction-production-open-tools.static.hf.space/en/index.html) — PUBLISHED_VERIFIED public static mirror at `v1.30.12`.
 
 These results do not imply search ranking, third-party adoption, LLM training, editorial acceptance, or commercial performance.
 
@@ -20,7 +20,7 @@ These results do not imply search ranking, third-party adoption, LLM training, e
 - Program complete: **no**
 - Tasks: **36**
 - Status distribution: LOCAL_READY 9, MEASURED 6, PLANNED 5, PUBLISHED_VERIFIED 15, SUBMITTED 1.
-- Exact external-profile recovery now uses the correct 40-row owner-reported denominator: 13 owner-account URLs are recovered, one row is closed by the provider refusal, and 26 remain unresolved. Two additional exact URLs (Orgpage and Product Hunt) are tracked as supplemental recoveries. The recovered X account is public but lacks SHAR Production and sharprod.com, so it is a correction candidate and not a placement. Ko-fi remains the one recovered provider-noindex page.
+- Exact external-profile recovery now uses the correct 40-row owner-reported denominator: 14 owner-reported exact URLs are recovered, one row is closed by the provider refusal, and 25 remain unresolved. Two additional exact URLs (Orgpage and Product Hunt) are tracked as supplemental recoveries. The recovered X account is public but lacks SHAR Production and sharprod.com, so it is a correction candidate and not a placement. Ko-fi remains the one recovered provider-noindex page.
 - Controlled AI/search coverage: 168 of 192 product/query slots are measured. Google, Bing and Yandex are 24/24; Alice, Gemini, ChatGPT and Claude are also 24/24. Only Perplexity remains unmeasured. Google produced five inspected SHAR citations; Yandex produced ten direct SHAR-controlled result links across nine queries, all re-fetched with HTTP 200 and exact canonical metadata; Bing produced zero SHAR Production results. Alice produced seven SHAR mentions and five independently HTTP-verified linked citations; Gemini Flash produced one mention and zero direct valid citations; unsigned guest ChatGPT and authenticated free Claude each produced zero mentions and zero direct valid citations.
 - No legacy repository, main-domain, DNS, Timeweb, paid-plan, domain-purchase, or GPU change is represented.
 
@@ -65,6 +65,7 @@ These results do not imply search ranking, third-party adoption, LLM training, e
 - EXTERNAL-RECOVERY-WAVE-05-2026-09-06.json — privacy-minimized provider-history resolution for Clutch and non-counted Disqus registration evidence.
 - EXTERNAL-RECOVERY-WAVE-06-2026-09-06.json — corrected recovery scope plus privacy-minimized account evidence for X, Heylink, Credly, Indiegogo, Rakuten and ReverbNation.
 - EXTERNAL-RECOVERY-WAVE-07-2026-09-06.json — read-only recovery of the branded Mixcloud profile through provider identity evidence plus direct public and Jina Reader checks.
+- EXTERNAL-RECOVERY-WAVE-08-2026-09-06.json — read-only recovery of an exact Telegraph URL from an owner-authorized publisher report, with direct HTTP, Jina Reader, mobile checks and a correction-review flag.
 - POST-1500-AUDIT-2026-09-06.md — verified completion boundary and the remaining program work.
 - DOMAIN-ORIGIN-AUDIT-2026-09-06.json — conservative root-host and source-origin deduplication for observed links.
 - Entity graph: https://shar-production-open-tools.pages.dev/entity-graph/en/ — provenance-first bilingual public explorer.

@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "brand": {
+    "name": "SHAR Production",
+    "website": "https://sharprod.com/"
+  },
+  "checked_at": "2026-09-06T10:18:00Z",
+  "method": "Read-only recovery from an owner-authorized publisher completion report, followed by direct public HTTP, Jina Reader and 390 px rendered-page verification. Existing accounts and publications were not edited.",
+  "access": "READ_ONLY",
+  "recovered": [
+    {
+      "source_id": "external-authority-v4-100",
+      "platform": "Telegraph",
+      "url": "https://telegra.ph/Gibridnyj-AICGI-videoprodakshn-dlya-reklamnyh-rolikov-i-brendinga-07-11",
+      "state": "EXACT_URL_RECOVERED_LIVE_COMMISSIONED_MATERIAL",
+      "provider_evidence": "An owner-authorized PromoPilot completion report ties this exact Telegraph URL to the sharprod.com campaign.",
+      "public_check": {
+        "http_status": 200,
+        "final_url": "https://telegra.ph/Gibridnyj-AICGI-videoprodakshn-dlya-reklamnyh-rolikov-i-brendinga-07-11",
+        "canonical": "https://telegra.ph/Gibridnyj-AICGI-videoprodakshn-dlya-reklamnyh-rolikov-i-brendinga-07-11",
+        "title": "Гибридный AI/CGI видеопродакшн для рекламных роликов и брендинга – Telegraph",
+        "brand_observed": true,
+        "website_observed": "https://sharprod.com/",
+        "robots": "index, follow",
+        "viewport_width": 390,
+        "horizontal_overflow": false
+      },
+      "verification_method": "provider report plus direct HTTP, Jina Reader and rendered mobile check",
+      "public_placement_counted": false,
+      "independent_citation_counted": false
+    }
+  ],
+  "correction_review": [
+    {
+      "url": "https://telegra.ph/Gibridnyj-AICGI-videoprodakshn-dlya-reklamnyh-rolikov-i-brendinga-07-11",
+      "state": "CONTENT_REVIEW_REQUIRED_READ_ONLY",
+      "observations": [
+        "The article is commissioned promotional material and is not an independent editorial citation.",
+        "Named authorship and numerical market or outcome claims were not independently verified in this recovery wave.",
+        "No edit or removal request was sent because existing external surfaces are read-only under the current owner instruction."
+      ]
+    }
+  ],
+  "scope_reconciliation": {
+    "owner_reported_registration_rows": 40,
+    "exact_owner_reported_urls_recovered": 14,
+    "resolved_without_public_url": 1,
+    "owner_reported_rows_still_unresolved": 25
+  },
+  "counting_note": "This recovers an existing owner-associated public URL. It is not a new placement, independent citation, endorsement, ranking gain or proof of account ownership.",
+  "privacy_note": "No email address, attachment identifier, tracking parameter, login link or private recipient data is published.",
+  "cost_rub": 0
+}
