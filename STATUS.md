@@ -16,7 +16,7 @@
 ## Measured external remainder
 
 - Exact-profile recovery: 3 of 47 recovered in this wave (Dzen, Orgpage and Product Hunt); 44 remain unknown.
-- Conflict audit: Marketing-Tech, orgs.biz and Dprofile have exact corrections; `sharportfolio.pro` is resolved by a verified one-hop 301 to `https://sharprod.com/`.
+- Conflict audit: Marketing-Tech, orgs.biz and Dprofile have exact corrections; `sharportfolio.pro` is resolved by a verified one-hop 301 to `https://sharprod.com/`. Existing profiles are now read-only by owner directive; only a correction list will be maintained.
 - Editorial and Tier-2/3 distribution remains outcome-gated: prepared or sent material is not counted as published until a public URL is verified.
 - Controlled AI/search panel: 24 questions × 8 systems = 192 product/query slots remain unmeasured unless a compliant recorded run exists.
 
@@ -46,7 +46,7 @@
 | T23-02 | tier23 | **PLANNED** | Нет универсального потолка площадок<br>Каждая отклонённая площадка имеет причину<br>Синдикация не посчитана независимой рекомендацией | Continue free platform distribution where an authenticated account and compliant route are available; preserve per-platform outcomes. |
 | PROFILE-01 | profiles | **MEASURED** | Старый конфликт не выдан за текущий без проверки<br>Неизвестные поля не заполнены догадками<br>Нет новой канонической базы цен | Act on the dated conflict audit: Marketing-Tech, orgs.biz and Dprofile need specific corrections; sharportfolio.pro is resolved by a verified one-hop 301. |
 | PROFILE-02 | profiles | **MEASURED** | URL получен из источника, не сконструирован как доказательство<br>Не найдено не равно не существует | Dzen, Orgpage and Product Hunt exact URLs recovered; 44 source rows still require exact URLs. Continue recovery without treating search misses as absence. |
-| PROFILE-03 | profiles | **LOCAL_READY** | Существующий read-only monitor не редактирует аккаунты<br>Нет дублей профилей/фиктивных офисов<br>Отдельно указано что выполнено владельцем | Apply exact corrections through already authenticated owner/editor routes. Owner action is required only when a platform asks for login, 2FA or CAPTCHA. |
+| PROFILE-03 | profiles | **SUBMITTED** | Существующий read-only monitor не редактирует аккаунты<br>Нет дублей профилей/фиктивных офисов<br>Отдельно указано что выполнено владельцем | The Marketing-Tech correction request was delivered before the latest owner directive and remains unverified publicly. Keep all existing profiles read-only and provide the owner with the dated correction list; do not resubmit or edit. |
 | PROFILE-04 | profiles | **PLANNED** | Шорт-лист не назван победой<br>Нет глобального вывода из одной площадки<br>Запрос отзывов только реальным клиентам | Preserve11 historical platform review records; make fresh per-platform reads before any review request. |
 | TOOLS-01 | tools | **MEASURED** | Нет дублирующего калькулятора<br>Нет самовольной замены цен<br>Исправление только по воспроизводимому дефекту | Reuse existing calculator; resolve observed RU/EN multiplier discrepancy before extracting model. |
 | TOOLS-02 | tools | **PUBLISHED_VERIFIED** | Полезный результат без обязательного контакта<br>Форма не изображает отправку в несуществующий backend<br>RU/EN и клавиатурный сценарий проверены | Maintain the completed 222-tool bilingual public set; future tools require an independently useful scope and the same release verification gate. |

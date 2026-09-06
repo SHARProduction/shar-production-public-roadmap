@@ -144,5 +144,30 @@
     "Threads",
     "X"
   ],
-  "search_no_match_meaning": "No exact SHAR Production result was found in the dated query. The account or page may still exist and the source recovery row remains open."
+  "search_no_match_meaning": "No exact SHAR Production result was found in the dated query. The account or page may still exist and the source recovery row remains open.",
+  "owner_scope": {
+    "effective_on": "2026-09-06",
+    "existing_profiles_mode": "READ_ONLY",
+    "instruction": "Do not edit existing external platforms or profiles; maintain a factual correction list for the owner.",
+    "exception_history": "The Marketing-Tech correction request below was delivered before this instruction was received."
+  },
+  "submissions": [
+    {
+      "platform": "Marketing-Tech",
+      "source_url": "https://marketing-tech.ru/companies/shar-production/",
+      "route": "https://marketing-tech.ru/wp-json/contact-form-7/v1/contact-forms/5/feedback",
+      "state": "SUBMITTED",
+      "submitted_at": "2026-09-06T00:03:23.8279733Z",
+      "http_status": 200,
+      "provider_status": "mail_sent",
+      "posted_data_hash": "8c11e46d7b7d57d1be26d0307ba11adc",
+      "public_change_verified": false,
+      "cost_rub": 0,
+      "evidence": [
+        "external-wave2/marketing-tech-request.json",
+        "external-wave2/marketing-tech-receipt.json"
+      ],
+      "note": "Delivery receipt only. No public correction is claimed. No resubmission under the current read-only directive."
+    }
+  ]
 }

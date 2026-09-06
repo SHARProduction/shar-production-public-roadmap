@@ -627,7 +627,7 @@
       "layer": "profiles",
       "title_ru": "Исправить существующие и добавить действительно отсутствующие профили",
       "priority": "P1",
-      "status": "LOCAL_READY",
+      "status": "SUBMITTED",
       "depends_on": [
         "PROFILE-01",
         "PROFILE-02",
@@ -640,15 +640,19 @@
       ],
       "evidence": [
         {
+          "kind": "provider_receipt",
+          "value": "external-wave2/marketing-tech-receipt.json; HTTP 200; mail_sent; 2026-09-06"
+        },
+        {
           "kind": "owner_directive",
-          "value": "2026-09-06 profile correction authorization"
+          "value": "2026-09-06: existing external platforms and profiles are read-only; provide correction list only"
         },
         {
           "kind": "internal_record",
           "value": "EXTERNAL-VERIFICATION-2026-09-06.json"
         }
       ],
-      "next_step": "Apply exact corrections through already authenticated owner/editor routes. Owner action is required only when a platform asks for login, 2FA or CAPTCHA."
+      "next_step": "Monitor the Marketing-Tech page read-only for a public change. Keep all existing profiles read-only and provide the dated correction list to the owner; do not resubmit or edit."
     },
     {
       "id": "PROFILE-04",

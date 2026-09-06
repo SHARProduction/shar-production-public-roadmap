@@ -19,7 +19,7 @@ These results do not imply search ranking, third-party adoption, LLM training, e
 
 - Program complete: **no**
 - Tasks: **36**
-- Status distribution: LOCAL_READY 12, MEASURED 4, PLANNED 8, PUBLISHED_VERIFIED 12.
+- Status distribution: LOCAL_READY 11, MEASURED 4, PLANNED 8, PUBLISHED_VERIFIED 12, SUBMITTED 1.
 - Exact external-profile recovery: 3 of 47 recovered in the current wave; 44 remain open without inferring absence from a search miss.
 - Controlled AI/search coverage: 24 questions × 8 named systems = 192 product/query slots remain unmeasured unless a compliant run is recorded.
 - No legacy repository, main-domain, DNS, Timeweb, paid-plan, domain-purchase, or GPU change is represented.
@@ -34,7 +34,7 @@ These results do not imply search ranking, third-party adoption, LLM training, e
 | cloud_stacking | 4 | PUBLISHED_VERIFIED: 4 |
 | tier1 | 3 | LOCAL_READY: 1, PLANNED: 2 |
 | tier23 | 2 | LOCAL_READY: 1, PLANNED: 1 |
-| profiles | 4 | LOCAL_READY: 1, MEASURED: 2, PLANNED: 1 |
+| profiles | 4 | MEASURED: 2, PLANNED: 1, SUBMITTED: 1 |
 | tools | 2 | MEASURED: 1, PUBLISHED_VERIFIED: 1 |
 | entity | 2 | LOCAL_READY: 1, PLANNED: 1 |
 | backlinks_citations | 2 | LOCAL_READY: 1, PLANNED: 1 |
@@ -51,6 +51,7 @@ These results do not imply search ranking, third-party adoption, LLM training, e
 - COMMERCIAL-INTENT-MAP.md — eight commercial clusters and the 24-query RU/EN non-brand panel.
 - AI-SEARCH-MEASUREMENT-PROTOCOL.md — controlled coverage and evidence rules for five AI systems and three search engines.
 - EXTERNAL-VERIFICATION-2026-09-06.json — dated exact-URL recovery, live conflict observations, resolved redirects, and search misses.
+- external-wave2/ — delivery evidence for the single correction request sent before existing profiles became read-only.
 - LICENSE — MIT license for this documentation and schema.
 
 Authored taxonomy and synthetic dataset materials use CC-BY-4.0 at their published source. This ledger does not relicense third-party material.

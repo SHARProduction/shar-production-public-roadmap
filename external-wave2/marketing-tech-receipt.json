@@ -1,0 +1,11 @@
+{
+  "at": "2026-09-06T00:03:23.8279733Z",
+  "route": "https://marketing-tech.ru/wp-json/contact-form-7/v1/contact-forms/5/feedback",
+  "http_status": 200,
+  "contact_form_id": 5,
+  "status": "mail_sent",
+  "message": "Thank you for your message. It has been sent.",
+  "invalid_fields": [],
+  "posted_data_hash": "8c11e46d7b7d57d1be26d0307ba11adc",
+  "into": "#wpcf7-f5-o3"
+}
