@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0.0",
+  "brand": {
+    "name": "SHAR Production",
+    "website": "https://sharprod.com/"
+  },
+  "checked_at": "2026-09-06T10:25:09Z",
+  "method": "Read-only recovery from exact URLs already present in first-party structured data, followed by direct HTTP, Jina Reader, authenticated browser and desktop/mobile transport checks. Existing accounts and publications were not edited.",
+  "access": "READ_ONLY",
+  "recovered": [
+    {
+      "source_id": "external-authority-v4-083",
+      "platform": "JSFiddle",
+      "url": "https://jsfiddle.net/gaeo4knm/latest/",
+      "state": "EXACT_URL_RECOVERED",
+      "source_evidence": "The exact URL is present in first-party SHAR Production structured data as an external subjectOf page.",
+      "public_check": {
+        "http_status": 200,
+        "final_url": "https://jsfiddle.net/gaeo4knm/latest/",
+        "canonical": null,
+        "canonical_observation": "No rel=canonical was exposed by the provider page.",
+        "title": "SHAR Production - JSFiddle - React, Tailwind, and code Playground",
+        "brand_observed": true,
+        "website_observed": "https://sharprod.com/",
+        "robots": "index, follow",
+        "desktop_http_status": 200,
+        "mobile_http_status": 200,
+        "mobile_viewport_width": 390,
+        "mobile_horizontal_overflow_px": 12
+      },
+      "verification_method": "first-party exact URL plus direct HTTP, Jina Reader, live browser and 1365/390 px rendered checks",
+      "public_placement_counted": false
+    },
+    {
+      "source_id": "external-authority-v4-105",
+      "platform": "Yandex Business",
+      "url": "https://yandex.ru/maps/org/shar_production/88597396193/",
+      "source_alias_url": "https://yandex.ru/profile/-/CPxKmVNi",
+      "state": "EXACT_URL_RECOVERED",
+      "source_evidence": "The exact alias URL is present in first-party SHAR Production structured data as an external subjectOf page and resolves to the public organization card.",
+      "public_check": {
+        "http_status": 200,
+        "final_url": "https://yandex.ru/maps/org/shar_production/88597396193/",
+        "canonical": "https://yandex.ru/maps/org/shar_production/88597396193/",
+        "title": "Shar Production, видеопроизводство",
+        "brand_observed": true,
+        "website_observed": "https://sharprod.com/",
+        "canonical_phone_observed": "+7 931 981-54-84",
+        "desktop_http_status": 200,
+        "mobile_http_status": 200,
+        "live_browser_rendered": true,
+        "headless_rate_limit_observation": "A repeated headless render received provider HTTP 429; authenticated in-app rendering and direct desktop/mobile transports remained available."
+      },
+      "verification_method": "first-party exact URL plus direct HTTP, Jina Reader, live in-app browser and desktop/mobile transport checks",
+      "public_placement_counted": false
+    }
+  ],
+  "correction_review": [
+    {
+      "url": "https://yandex.ru/maps/org/shar_production/88597396193/",
+      "state": "BRAND_CAPITALIZATION_REVIEW_READ_ONLY",
+      "observations": [
+        "The provider title displays 'Shar Production' rather than the owner-approved 'SHAR Production'.",
+        "The canonical website and public phone are present.",
+        "No edit was made because existing external profiles are read-only under the current owner instruction."
+      ]
+    },
+    {
+      "url": "https://jsfiddle.net/gaeo4knm/latest/",
+      "state": "PROVIDER_RENDERING_OBSERVATION",
+      "observations": [
+        "The provider exposes no rel=canonical on the public fiddle page.",
+        "The 390 px rendered page exceeded the viewport by 12 px while remaining readable and operational.",
+        "No edit was made because existing external profiles are read-only under the current owner instruction."
+      ]
+    }
+  ],
+  "searches_without_exact_match": [
+    "AllAdvertising",
+    "Camp-Fire",
+    "Cataloxy",
+    "DesignRush",
+    "NewBiz",
+    "Rating Runeta",
+    "Ruward",
+    "SPR",
+    "Spravker",
+    "Tagline",
+    "The Manifest",
+    "Yell"
+  ],
+  "scope_reconciliation": {
+    "owner_reported_registration_rows": 40,
+    "exact_owner_reported_urls_recovered": 16,
+    "resolved_without_public_url": 1,
+    "owner_reported_rows_still_unresolved": 23
+  },
+  "counting_note": "This recovers two existing owner-associated public URLs. They are not new placements, independent citations, endorsements, ranking gains or proof of account ownership.",
+  "cost_rub": 0
+}

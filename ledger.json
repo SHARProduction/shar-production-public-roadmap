@@ -672,10 +672,26 @@
         },
         {
           "kind": "recovery_record",
+          "value": "EXTERNAL-RECOVERY-WAVE-07-2026-09-06.json"
+        },
+        {
+          "kind": "recovery_record",
           "value": "EXTERNAL-RECOVERY-WAVE-08-2026-09-06.json"
+        },
+        {
+          "kind": "recovery_record",
+          "value": "EXTERNAL-RECOVERY-WAVE-09-2026-09-06.json"
+        },
+        {
+          "kind": "public_url",
+          "value": "https://jsfiddle.net/gaeo4knm/latest/"
+        },
+        {
+          "kind": "public_url",
+          "value": "https://yandex.ru/maps/org/shar_production/88597396193/"
         }
       ],
-      "next_step": "14 of 40 owner-reported exact URLs are recovered; one row is closed by provider refusal and 25 remain unresolved. Two supplemental exact URLs are tracked outside the denominator. Continue targeted read-only recovery without editing existing profiles or treating search misses as absence."
+      "next_step": "16 of 40 owner-reported exact URLs are recovered; one row is closed by provider refusal and 23 remain unresolved. Two supplemental exact URLs are tracked outside the denominator. Continue targeted read-only recovery without editing existing profiles or treating search misses as absence."
     },
     {
       "id": "PROFILE-03",

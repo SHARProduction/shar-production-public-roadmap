@@ -20,10 +20,10 @@
   "recovery_progress": {
     "legacy_mixed_scope_rows": 47,
     "owner_reported_registration_rows": 40,
-    "exact_owner_reported_urls_recovered_total": 14,
+    "exact_owner_reported_urls_recovered_total": 16,
     "supplemental_exact_urls_recovered": 2,
     "resolved_without_public_url": 1,
-    "owner_reported_rows_still_unresolved": 25,
+    "owner_reported_rows_still_unresolved": 23,
     "scope_note": "The earlier 47-row denominator mixed 40 owner-reported registration rows with supplemental recoveries and opportunity rows. Current recovery progress uses only source rows whose status is OWNER-REPORTED REGISTERED/PRESENT.",
     "wave_records": [
       "EXTERNAL-VERIFICATION-2026-09-06.json",
@@ -33,7 +33,8 @@
       "EXTERNAL-RECOVERY-WAVE-05-2026-09-06.json",
       "EXTERNAL-RECOVERY-WAVE-06-2026-09-06.json",
       "EXTERNAL-RECOVERY-WAVE-07-2026-09-06.json",
-      "EXTERNAL-RECOVERY-WAVE-08-2026-09-06.json"
+      "EXTERNAL-RECOVERY-WAVE-08-2026-09-06.json",
+      "EXTERNAL-RECOVERY-WAVE-09-2026-09-06.json"
     ]
   },
   "exact_url_recoveries": [
@@ -107,6 +108,42 @@
       "verification_method": "owner-authorized provider report plus direct HTTP, Jina Reader and 390 px rendered check",
       "independent_citation_counted": false,
       "correction_review": "Named authorship and numerical claims were not independently verified; existing surface remains read-only."
+    },
+    {
+      "source_id": "external-authority-v4-083",
+      "platform": "JSFiddle",
+      "url": "https://jsfiddle.net/gaeo4knm/latest/",
+      "state": "EXACT_URL_RECOVERED",
+      "http_status": 200,
+      "canonical": null,
+      "robots": "index, follow",
+      "verified_content": [
+        "SHAR Production title and authored code",
+        "https://sharprod.com/ link in the public fiddle source"
+      ],
+      "verification_method": "first-party exact URL plus direct HTTP, Jina Reader, live browser and desktop/mobile checks",
+      "public_placement_counted": false,
+      "provider_observations": [
+        "No rel=canonical was exposed",
+        "The 390 px render exceeded the viewport by 12 px but remained readable and operational"
+      ]
+    },
+    {
+      "source_id": "external-authority-v4-105",
+      "platform": "Yandex Business",
+      "url": "https://yandex.ru/maps/org/shar_production/88597396193/",
+      "source_alias_url": "https://yandex.ru/profile/-/CPxKmVNi",
+      "state": "EXACT_URL_RECOVERED",
+      "http_status": 200,
+      "canonical": "https://yandex.ru/maps/org/shar_production/88597396193/",
+      "verified_content": [
+        "SHAR Production organization card",
+        "https://sharprod.com/ website",
+        "canonical +7 931 981-54-84 phone"
+      ],
+      "verification_method": "first-party exact URL plus direct HTTP, Jina Reader, live browser and desktop/mobile transport checks",
+      "public_placement_counted": false,
+      "correction_review": "Provider title uses 'Shar Production'; existing profile remains read-only."
     }
   ],
   "supplemental_verified_surfaces": [
