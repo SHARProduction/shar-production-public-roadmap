@@ -9,13 +9,13 @@
 - 222/222 working bilingual tools are publicly released.
 - SHAR PUBLIC DISTRIBUTION records **1503 verified placements**, above the 1500 minimum.
 - 155 meaningful public GitHub repositories and 23 public Hugging Face datasets are recorded.
-- Public Asset Registry v1.35.1 contains 152 immutable assets; Open Tools Hub v1.28.0 passes 25/25 checks.
+- Public Asset Registry v1.35.3 contains 152 immutable assets; Open Tools Hub v1.30.0 passes 25/25 checks.
 - A bilingual provenance-first entity graph is live on GitHub, Hugging Face and Cloudflare with 14 nodes, 14 evidence-backed relations and zero sameAs assertions.
 - Zero paid resources used; SHARsait, primary DNS, TimeWeb and the current MCP were not changed.
 
 ## Measured external remainder
 
-- Exact-profile recovery: 3 of 47 previously unknown exact URLs recovered; 44 remain unknown.
+- Exact-profile recovery: 6 of 47 previously unknown exact URLs recovered; 41 remain unknown.
 - Earlier-known exact registry recheck: 66 rows checked, 47 returned direct HTTP 200, 44 exposed the exact brand and 34 exposed both the brand and sharprod.com. GoodFirms and Sortlist were additionally confirmed through a reader because direct requests were blocked.
 - These are page observations, not 34 independent endorsements or ranking gains.
 - Controlled AI/search panel: 24 questions × 8 systems = 192 product/query slots remain unmeasured unless a compliant recorded run exists.
@@ -38,14 +38,14 @@
 | CLOUD-01 | cloud_stacking | **PUBLISHED_VERIFIED** | Назначение каждой поверхности понятно<br>Нет миграции TimeWeb<br>Тариф/правила не предполагаются автоматически | Maintain distinct source, registry, interactive hub and static mirror roles at zero spend. |
 | CLOUD-02 | cloud_stacking | **PUBLISHED_VERIFIED** | Проверено desktop/mobile<br>Нет новой базы, логина или скрытых платных вызовов<br>Нет утечки введённого брифа | Revalidate desktop/mobile, exact canonical and browser-only behavior on every release. |
 | CLOUD-03 | cloud_stacking | **PUBLISHED_VERIFIED** | URL ведёт на результат, не заглушку<br>Не объявлена передача авторитета провайдера<br>Локальная сборка не принята за deployment | Monitor availability and revalidate every release. |
-| CLOUD-04 | cloud_stacking | **PUBLISHED_VERIFIED** | Нет общей численной квоты<br>Нет бессодержательных клонов<br>Затраты и синхронизация фактов контролируются | The zero-spend cloud layer includes the bilingual entity graph in Open Tools Hub v1.28.0. Add surfaces only for a distinct user task. |
+| CLOUD-04 | cloud_stacking | **PUBLISHED_VERIFIED** | Нет общей численной квоты<br>Нет бессодержательных клонов<br>Затраты и синхронизация фактов контролируются | The zero-spend cloud layer includes the bilingual entity graph in Open Tools Hub v1.30.0. Add surfaces only for a distinct user task. |
 | T1-01 | tier1 | **PLANNED** | Площадки и контакты проверены перед отправкой<br>Есть тема и доказательный материал<br>Tier не выдан за метрику Google | Selected outlets/pitches exist in external/placement-packages.md; current editorial terms/recipient must be verified before submission. |
 | T1-02 | tier1 | **LOCAL_READY** | Материалы не ждут большого benchmark<br>Чужая роль не присвоена SHAR<br>Платное размещение явно отделено от редакционного | Use text and public links for rights-safe pitches; attach third-party media only after specific reuse rights are confirmed. |
 | T1-03 | tier1 | **PLANNED** | Pitch не назван отправкой<br>Отправка не названа принятием/публикацией<br>Публикация проверена по реальной странице | Verify current free editorial routes and submit authorized rights-safe text pitches; record SUBMITTED only with a receipt and PUBLISHED_VERIFIED only after a live page check. |
 | T23-01 | tier23 | **LOCAL_READY** | Формат адаптирован под платформу<br>Кредиты и ссылки соответствуют конкретной работе<br>Нет подложных участников или отзывов | Use platform-specific text and public links now; hold only media whose reuse rights remain unconfirmed. |
 | T23-02 | tier23 | **PLANNED** | Нет универсального потолка площадок<br>Каждая отклонённая площадка имеет причину<br>Синдикация не посчитана независимой рекомендацией | Continue free platform distribution where an authenticated account and compliant route are available; preserve per-platform outcomes. |
 | PROFILE-01 | profiles | **MEASURED** | Старый конфликт не выдан за текущий без проверки<br>Неизвестные поля не заполнены догадками<br>Нет новой канонической базы цен | Act on the dated conflict audit: Marketing-Tech, orgs.biz and Dprofile need specific corrections; sharportfolio.pro is resolved by a verified one-hop 301. |
-| PROFILE-02 | profiles | **MEASURED** | URL получен из источника, не сконструирован как доказательство<br>Не найдено не равно не существует | Keep recovery and recheck metrics separate: 3 of 47 previously unknown exact URLs recovered, 44 still unknown; 66 earlier-known exact rows were rechecked independently. |
+| PROFILE-02 | profiles | **MEASURED** | URL получен из источника, не сконструирован как доказательство<br>Не найдено не равно не существует | 6 of 47 previously unknown exact URLs are recovered; 41 remain unknown. Continue first-party link extraction and targeted recovery without editing existing profiles or treating search misses as absence. |
 | PROFILE-03 | profiles | **SUBMITTED** | Существующий read-only monitor не редактирует аккаунты<br>Нет дублей профилей/фиктивных офисов<br>Отдельно указано что выполнено владельцем | Monitor the Marketing-Tech page read-only for a public change. Keep all existing profiles read-only and provide the dated correction list to the owner; do not resubmit or edit. |
 | PROFILE-04 | profiles | **PLANNED** | Шорт-лист не назван победой<br>Нет глобального вывода из одной площадки<br>Запрос отзывов только реальным клиентам | Preserve11 historical platform review records; make fresh per-platform reads before any review request. |
 | TOOLS-01 | tools | **MEASURED** | Нет дублирующего калькулятора<br>Нет самовольной замены цен<br>Исправление только по воспроизводимому дефекту | Reuse existing calculator; resolve observed RU/EN multiplier discrepancy before extracting model. |

@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "brand": { "name": "SHAR Production", "website": "https://sharprod.com/" },
+  "checked_at": "2026-09-06T04:53:00Z",
+  "method": "Extract exact public profile links from the live first-party homepage, then perform direct public GET checks without editing profiles.",
+  "source": { "url": "https://sharprod.com/", "http_status": 200, "access": "READ_ONLY" },
+  "recovered": [
+    {"platform":"Facebook","url":"https://www.facebook.com/people/SHAR-Production/61591180456716","source_evidence":"FIRST_PARTY_PUBLIC_LINK","http_status":200,"brand_observed":true,"website_observed":false,"status":"EXACT_URL_RECOVERED_LIVE"},
+    {"platform":"Pinterest","url":"https://www.pinterest.com/sharproduction1","source_evidence":"FIRST_PARTY_PUBLIC_LINK","http_status":200,"brand_observed":true,"website_observed":true,"status":"EXACT_URL_RECOVERED_LIVE"},
+    {"platform":"Threads","url":"https://www.threads.com/@shar.production","source_evidence":"FIRST_PARTY_PUBLIC_LINK","http_status":200,"brand_observed":false,"website_observed":true,"status":"EXACT_URL_RECOVERED_LIVE"}
+  ],
+  "totals": { "source_rows": 47, "previously_recovered": 3, "newly_recovered": 3, "recovered_total": 6, "remaining_unknown": 41 },
+  "notes": [
+    "An exact first-party link plus a live HTTP response establishes the URL, not third-party endorsement or account control.",
+    "Existing profiles were not edited. Search misses for DEV.to, Hashnode, Linktree, X and LiveJournal were not treated as absence."
+  ]
+}
