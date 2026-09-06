@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "brand": "SHAR Production",
   "website": "https://sharprod.com/",
-  "generated_at_utc": "2026-09-06T05:16:49Z",
+  "generated_at_utc": "2026-09-06T09:15:19Z",
   "license": "MIT for this measurement schema and authored documentation; search-result facts and third-party pages retain their original rights",
   "panel": {
     "queries": 24,
@@ -14,16 +14,16 @@
     "total_slots": 72
   },
   "coverage": {
-    "measured_slots": 33,
-    "not_measured_slots": 39,
+    "measured_slots": 48,
+    "not_measured_slots": 24,
     "by_system": {
       "Google": {
         "measured": 24,
         "not_measured": 0
       },
       "Bing": {
-        "measured": 9,
-        "not_measured": 15
+        "measured": 24,
+        "not_measured": 0
       },
       "Yandex": {
         "measured": 0,
@@ -71,7 +71,7 @@
   },
   "methodology": {
     "google": "Current in-app Google Search consumer UI, web-only udm=14, pws=0; complete accessibility tree and desktop screenshot retained for every query.",
-    "bing": "Clean Chrome headless consumer search surface; rendered DOM and desktop screenshot retained for every attempted query; RU01 and EN01 also captured at a 390x844 viewport.",
+    "bing": "Nine accepted clean Chrome headless observations retained from the dated baseline; fifteen remaining fixed non-brand queries measured in the current Codex in-app browser. Result URLs and full visible-text hashes are retained.",
     "yandex": "Clean Chrome headless consumer search surface; stopped on the first timed-out run after direct HTTP preflight redirected to showcaptcha.",
     "cost": "USD 0; free public surfaces only."
   },
@@ -79,7 +79,7 @@
     "Requested locale/country parameters are recorded; physical egress location was not independently verified.",
     "Google was signed in but used pws=0; a non-personalized notice was preserved in 23 of 24 accessibility captures.",
     "Lower Google URLs compacted to an ellipsis in some accessibility captures; screenshots preserve the rendered page and only parseable URLs are ranked.",
-    "Bing and Yandex inaccessible slots are NOT_MEASURED, not zero visibility.",
+    "Yandex inaccessible slots are NOT_MEASURED, not zero visibility.",
     "IndexNow acceptance and an indexable page are not evidence of indexing or rank."
   ],
   "records": [
@@ -2739,32 +2739,80 @@
       "query_id": "commercial-en-05",
       "query": "Who can produce a commercial and versions for several channels?",
       "system": "Bing",
-      "surface": "public consumer search results rendered in clean Chrome headless session",
+      "surface": "Bing Search in current Codex in-app browser",
       "model_version": "NOT_DISCLOSED",
       "search_mode": "standard web search",
       "locale": "en",
-      "geography": "US requested by gl/cc/lr parameter",
-      "physical_egress_location": "NOT_INDEPENDENTLY_VERIFIED",
-      "tested_at_utc": "2026-09-06T05:09:17Z",
+      "geography": "RU or US requested through setlang/cc parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:12:42.096Z",
       "repetition": 1,
       "cost": {
         "amount": 0,
         "currency": "USD",
-        "basis": "free public surface"
+        "basis": "free consumer UI"
       },
-      "request_url": "https://www.bing.com/search?setlang=en-US&cc=US&count=10&q=Who+can+produce+a+commercial+and+versions+for+several+channels%3F",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "CAPTCHA_OR_NO_PARSEABLE_RESULTS",
+      "request_url": "https://www.bing.com/search?setlang=en-US&cc=US&count=10&q=Who%20can%20produce%20a%20commercial%20and%20versions%20for%20several%20channels%3F",
+      "status": "MEASURED",
       "raw_evidence": {
-        "desktop_dom_gzip": "bing-commercial-en-05-desktop.html.gz",
-        "desktop_dom_sha256": "eaa4eb1f7691e2a072e39977d1a7fcc84dc3150f476a57dc08523c4b8e514c91",
-        "desktop_screenshot": "bing-commercial-en-05-desktop.png",
-        "desktop_screenshot_sha256": "441eb86e461453373a97b021974cd21f4958140e9a8788f195e1f38dc366fde5",
-        "retention": "private local checkpoint; filenames and SHA-256 retained in this public record",
+        "visible_text_sha256": "8fbe31c393464c45fa6586dd2761c9e2fec03ac1d41be029d77dfdc265a364ea",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
         "publicly_embedded": false
       },
-      "urls": [],
-      "organic_results": [],
+      "urls": [
+        "https://www.bing.com/ck/a?!&&p=69abfefafde89d8ff223cc423db07ff397874f04bbcdffb44b4042e8ef379781JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuY2FudmEuY29tLz9tc29ja2lkPTE0MThmZWU0Mzg4ZTZlN2YzNjNlZTk0NjM5ZjU2ZjQw&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=5ae4beb8f060027e15ee4d74da35fba808202af1ec94c3f25985a1346b9a2a85JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvZGljdGlvbmFyeS9lbmdsaXNoL2Nhbg&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=09ecdbb60be27482884dd64a3f7d085a1ce24abaf25cd166d3e985e0970fcf7cJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cubWVycmlhbS13ZWJzdGVyLmNvbS9kaWN0aW9uYXJ5L2Nhbg&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=5268ca264bf861c51f623543a3988b089eaca9af2447909ad2049823cd47280eJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cudGhlZnJlZWRpY3Rpb25hcnkuY29tL2Nhbg&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=cbc0273fb9425444a21b191effb120b84d651bd44d80326a4d0ed4a607036977JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZGljdGlvbmFyeS5jb20vYnJvd3NlL2Nhbg&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=a0e9d4bf1cf80c1a4a329db31b9488a16dbcaf073debab0d5ef075cff7ce7b52JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZW5nbGlzaHdpdGhhc2hpc2guY29tL2FsbC11c2VzLW9mLWNhbi8&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=6adf02cce61a592333fc5537a8aa483d2fbded70b5542358cc7a7fbe8f2f9d66JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvdXMvZGljdGlvbmFyeS9lbmdsaXNoL2Nhbg&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=9d9bcb866390ce748019fdc65d233ad2c943505b9049d7413960edfc5f1c7753JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9sYW5nZWVrLmNvL2VuL2dyYW1tYXIvY291cnNlLzczNy9jYW4&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=467f8ea2f3f106d79e1ee62f0a5320c949bfdf8f11666dbf7a28b6b24e4d00d9JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvQ2Fu&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=ac3e856c0e1f69b7263def92913a3a69dee2caea9d0648f3fbc36dc146884a8dJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1qOGJyamxIeWNXMA&ntb=1"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://www.bing.com/ck/a?!&&p=69abfefafde89d8ff223cc423db07ff397874f04bbcdffb44b4042e8ef379781JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuY2FudmEuY29tLz9tc29ja2lkPTE0MThmZWU0Mzg4ZTZlN2YzNjNlZTk0NjM5ZjU2ZjQw&ntb=1"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.bing.com/ck/a?!&&p=5ae4beb8f060027e15ee4d74da35fba808202af1ec94c3f25985a1346b9a2a85JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvZGljdGlvbmFyeS9lbmdsaXNoL2Nhbg&ntb=1"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.bing.com/ck/a?!&&p=09ecdbb60be27482884dd64a3f7d085a1ce24abaf25cd166d3e985e0970fcf7cJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cubWVycmlhbS13ZWJzdGVyLmNvbS9kaWN0aW9uYXJ5L2Nhbg&ntb=1"
+        },
+        {
+          "rank": 4,
+          "url": "https://www.bing.com/ck/a?!&&p=5268ca264bf861c51f623543a3988b089eaca9af2447909ad2049823cd47280eJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cudGhlZnJlZWRpY3Rpb25hcnkuY29tL2Nhbg&ntb=1"
+        },
+        {
+          "rank": 5,
+          "url": "https://www.bing.com/ck/a?!&&p=cbc0273fb9425444a21b191effb120b84d651bd44d80326a4d0ed4a607036977JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZGljdGlvbmFyeS5jb20vYnJvd3NlL2Nhbg&ntb=1"
+        },
+        {
+          "rank": 6,
+          "url": "https://www.bing.com/ck/a?!&&p=a0e9d4bf1cf80c1a4a329db31b9488a16dbcaf073debab0d5ef075cff7ce7b52JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZW5nbGlzaHdpdGhhc2hpc2guY29tL2FsbC11c2VzLW9mLWNhbi8&ntb=1"
+        },
+        {
+          "rank": 7,
+          "url": "https://www.bing.com/ck/a?!&&p=6adf02cce61a592333fc5537a8aa483d2fbded70b5542358cc7a7fbe8f2f9d66JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvdXMvZGljdGlvbmFyeS9lbmdsaXNoL2Nhbg&ntb=1"
+        },
+        {
+          "rank": 8,
+          "url": "https://www.bing.com/ck/a?!&&p=9d9bcb866390ce748019fdc65d233ad2c943505b9049d7413960edfc5f1c7753JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9sYW5nZWVrLmNvL2VuL2dyYW1tYXIvY291cnNlLzczNy9jYW4&ntb=1"
+        },
+        {
+          "rank": 9,
+          "url": "https://www.bing.com/ck/a?!&&p=467f8ea2f3f106d79e1ee62f0a5320c949bfdf8f11666dbf7a28b6b24e4d00d9JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvQ2Fu&ntb=1"
+        },
+        {
+          "rank": 10,
+          "url": "https://www.bing.com/ck/a?!&&p=ac3e856c0e1f69b7263def92913a3a69dee2caea9d0648f3fbc36dc146884a8dJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1qOGJyamxIeWNXMA&ntb=1"
+        }
+      ],
       "shar_classification": "NO_SHAR_RESULT",
       "shar_rank": null
     },
@@ -2772,168 +2820,1109 @@
       "query_id": "commercial-ru-06",
       "query": "У кого заказать B2B-ролик для объяснения сложного продукта?",
       "system": "Bing",
+      "surface": "Bing Search in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "ru",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
+      "geography": "RU or US requested through setlang/cc parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:12:51.872Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.bing.com/search?setlang=ru-RU&cc=RU&count=10&q=%D0%A3%20%D0%BA%D0%BE%D0%B3%D0%BE%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20B2B-%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%20%D0%B4%D0%BB%D1%8F%20%D0%BE%D0%B1%D1%8A%D1%8F%D1%81%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F%20%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%B0%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "69e908224b78003eee47cf095f2dc2257cf389da317324e137e0731f60bd888a",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.bing.com/ck/a?!&&p=4619f57267b0473ebaead71b1fecce4bdbd9e93a412854a45de46deee4224308JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9ydS53aWtpcGVkaWEub3JnL3dpa2kvJUQwJUEz&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=21327aa6f3f094727ed4e513e6a3bfe2dbf10e25dbb037f97ac557df8ca26d54JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQ3cyNURybWZDejVfeXlfSGsxc1RRS1E&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=05d83c0bff04c089297aedffc0160a85eca24a80cf41c573faca6c07192e38faJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly91Y2hpLnJ1Lw&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=e3e56cd4d021badab0b204110fe64da3440e76275a211cf8cb5fad05273ffed3JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj12ZTZxYkNHd2hqMA&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=a51a38bb4ca603fd9e529de61238fdcff0532cfcf2b667fc9802d03df32aa375JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9ydXR1YmUucnUvdmlkZW8vOWY1ZWE0MWQyNTNkODQyMjQ3MDM1ZmU2ZDFiNTIxNDEv&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=c195882fccc5b3b0ff2eb4cd99cc9d26080315360e68b5f3ba26ea05f194e118JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvVV8oQ3lyaWxsaWMp&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=d4fb8ba5e3fe9923bbe44493b400a6df4b4f889b81e9833df2e6ce4fbca2b4eaJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9ydXR1YmUucnUvdmlkZW8vMTFjZDQ3ZjVjNGRlMjYwZDU5ZWJlMjRjY2M2ODZhNmUv&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=4429efe5a3877d9daa8eb0200e55ae610f499c9ec1ed787ff55bfb2ce6ba99deJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9ydS53aWt0aW9uYXJ5Lm9yZy93aWtpLyVEMSU4Mw&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=d9c3e0df769fc4711121f8206370bc4f68a339976e11bc200e5a90dded446c2cJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cudS10di5ydS8&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=1b6c2808ec0bcc3ada85daa7b9b4e6cafc51dafb67fdb02af72996d7824d5436JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9ydS53aWtpcGVkaWEub3JnL3dpa2kvJUMzJTlD&ntb=1"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://www.bing.com/ck/a?!&&p=4619f57267b0473ebaead71b1fecce4bdbd9e93a412854a45de46deee4224308JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9ydS53aWtpcGVkaWEub3JnL3dpa2kvJUQwJUEz&ntb=1"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.bing.com/ck/a?!&&p=21327aa6f3f094727ed4e513e6a3bfe2dbf10e25dbb037f97ac557df8ca26d54JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQ3cyNURybWZDejVfeXlfSGsxc1RRS1E&ntb=1"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.bing.com/ck/a?!&&p=05d83c0bff04c089297aedffc0160a85eca24a80cf41c573faca6c07192e38faJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly91Y2hpLnJ1Lw&ntb=1"
+        },
+        {
+          "rank": 4,
+          "url": "https://www.bing.com/ck/a?!&&p=e3e56cd4d021badab0b204110fe64da3440e76275a211cf8cb5fad05273ffed3JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj12ZTZxYkNHd2hqMA&ntb=1"
+        },
+        {
+          "rank": 5,
+          "url": "https://www.bing.com/ck/a?!&&p=a51a38bb4ca603fd9e529de61238fdcff0532cfcf2b667fc9802d03df32aa375JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9ydXR1YmUucnUvdmlkZW8vOWY1ZWE0MWQyNTNkODQyMjQ3MDM1ZmU2ZDFiNTIxNDEv&ntb=1"
+        },
+        {
+          "rank": 6,
+          "url": "https://www.bing.com/ck/a?!&&p=c195882fccc5b3b0ff2eb4cd99cc9d26080315360e68b5f3ba26ea05f194e118JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvVV8oQ3lyaWxsaWMp&ntb=1"
+        },
+        {
+          "rank": 7,
+          "url": "https://www.bing.com/ck/a?!&&p=d4fb8ba5e3fe9923bbe44493b400a6df4b4f889b81e9833df2e6ce4fbca2b4eaJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9ydXR1YmUucnUvdmlkZW8vMTFjZDQ3ZjVjNGRlMjYwZDU5ZWJlMjRjY2M2ODZhNmUv&ntb=1"
+        },
+        {
+          "rank": 8,
+          "url": "https://www.bing.com/ck/a?!&&p=4429efe5a3877d9daa8eb0200e55ae610f499c9ec1ed787ff55bfb2ce6ba99deJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9ydS53aWt0aW9uYXJ5Lm9yZy93aWtpLyVEMSU4Mw&ntb=1"
+        },
+        {
+          "rank": 9,
+          "url": "https://www.bing.com/ck/a?!&&p=d9c3e0df769fc4711121f8206370bc4f68a339976e11bc200e5a90dded446c2cJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cudS10di5ydS8&ntb=1"
+        },
+        {
+          "rank": 10,
+          "url": "https://www.bing.com/ck/a?!&&p=1b6c2808ec0bcc3ada85daa7b9b4e6cafc51dafb67fdb02af72996d7824d5436JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9ydS53aWtpcGVkaWEub3JnL3dpa2kvJUMzJTlD&ntb=1"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
       "shar_rank": null
     },
     {
       "query_id": "commercial-en-06",
       "query": "Who can make a B2B explainer for a complex product?",
       "system": "Bing",
+      "surface": "Bing Search in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "en",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
+      "geography": "RU or US requested through setlang/cc parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:12:43.320Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.bing.com/search?setlang=en-US&cc=US&count=10&q=Who%20can%20make%20a%20B2B%20explainer%20for%20a%20complex%20product%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "8fbe31c393464c45fa6586dd2761c9e2fec03ac1d41be029d77dfdc265a364ea",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.bing.com/ck/a?!&&p=69abfefafde89d8ff223cc423db07ff397874f04bbcdffb44b4042e8ef379781JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuY2FudmEuY29tLz9tc29ja2lkPTE0MThmZWU0Mzg4ZTZlN2YzNjNlZTk0NjM5ZjU2ZjQw&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=5ae4beb8f060027e15ee4d74da35fba808202af1ec94c3f25985a1346b9a2a85JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvZGljdGlvbmFyeS9lbmdsaXNoL2Nhbg&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=09ecdbb60be27482884dd64a3f7d085a1ce24abaf25cd166d3e985e0970fcf7cJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cubWVycmlhbS13ZWJzdGVyLmNvbS9kaWN0aW9uYXJ5L2Nhbg&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=5268ca264bf861c51f623543a3988b089eaca9af2447909ad2049823cd47280eJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cudGhlZnJlZWRpY3Rpb25hcnkuY29tL2Nhbg&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=cbc0273fb9425444a21b191effb120b84d651bd44d80326a4d0ed4a607036977JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZGljdGlvbmFyeS5jb20vYnJvd3NlL2Nhbg&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=a0e9d4bf1cf80c1a4a329db31b9488a16dbcaf073debab0d5ef075cff7ce7b52JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZW5nbGlzaHdpdGhhc2hpc2guY29tL2FsbC11c2VzLW9mLWNhbi8&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=6adf02cce61a592333fc5537a8aa483d2fbded70b5542358cc7a7fbe8f2f9d66JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvdXMvZGljdGlvbmFyeS9lbmdsaXNoL2Nhbg&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=9d9bcb866390ce748019fdc65d233ad2c943505b9049d7413960edfc5f1c7753JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9sYW5nZWVrLmNvL2VuL2dyYW1tYXIvY291cnNlLzczNy9jYW4&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=467f8ea2f3f106d79e1ee62f0a5320c949bfdf8f11666dbf7a28b6b24e4d00d9JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvQ2Fu&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=ac3e856c0e1f69b7263def92913a3a69dee2caea9d0648f3fbc36dc146884a8dJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1qOGJyamxIeWNXMA&ntb=1"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://www.bing.com/ck/a?!&&p=69abfefafde89d8ff223cc423db07ff397874f04bbcdffb44b4042e8ef379781JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuY2FudmEuY29tLz9tc29ja2lkPTE0MThmZWU0Mzg4ZTZlN2YzNjNlZTk0NjM5ZjU2ZjQw&ntb=1"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.bing.com/ck/a?!&&p=5ae4beb8f060027e15ee4d74da35fba808202af1ec94c3f25985a1346b9a2a85JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvZGljdGlvbmFyeS9lbmdsaXNoL2Nhbg&ntb=1"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.bing.com/ck/a?!&&p=09ecdbb60be27482884dd64a3f7d085a1ce24abaf25cd166d3e985e0970fcf7cJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cubWVycmlhbS13ZWJzdGVyLmNvbS9kaWN0aW9uYXJ5L2Nhbg&ntb=1"
+        },
+        {
+          "rank": 4,
+          "url": "https://www.bing.com/ck/a?!&&p=5268ca264bf861c51f623543a3988b089eaca9af2447909ad2049823cd47280eJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cudGhlZnJlZWRpY3Rpb25hcnkuY29tL2Nhbg&ntb=1"
+        },
+        {
+          "rank": 5,
+          "url": "https://www.bing.com/ck/a?!&&p=cbc0273fb9425444a21b191effb120b84d651bd44d80326a4d0ed4a607036977JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZGljdGlvbmFyeS5jb20vYnJvd3NlL2Nhbg&ntb=1"
+        },
+        {
+          "rank": 6,
+          "url": "https://www.bing.com/ck/a?!&&p=a0e9d4bf1cf80c1a4a329db31b9488a16dbcaf073debab0d5ef075cff7ce7b52JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZW5nbGlzaHdpdGhhc2hpc2guY29tL2FsbC11c2VzLW9mLWNhbi8&ntb=1"
+        },
+        {
+          "rank": 7,
+          "url": "https://www.bing.com/ck/a?!&&p=6adf02cce61a592333fc5537a8aa483d2fbded70b5542358cc7a7fbe8f2f9d66JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvdXMvZGljdGlvbmFyeS9lbmdsaXNoL2Nhbg&ntb=1"
+        },
+        {
+          "rank": 8,
+          "url": "https://www.bing.com/ck/a?!&&p=9d9bcb866390ce748019fdc65d233ad2c943505b9049d7413960edfc5f1c7753JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9sYW5nZWVrLmNvL2VuL2dyYW1tYXIvY291cnNlLzczNy9jYW4&ntb=1"
+        },
+        {
+          "rank": 9,
+          "url": "https://www.bing.com/ck/a?!&&p=467f8ea2f3f106d79e1ee62f0a5320c949bfdf8f11666dbf7a28b6b24e4d00d9JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvQ2Fu&ntb=1"
+        },
+        {
+          "rank": 10,
+          "url": "https://www.bing.com/ck/a?!&&p=ac3e856c0e1f69b7263def92913a3a69dee2caea9d0648f3fbc36dc146884a8dJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1qOGJyamxIeWNXMA&ntb=1"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
       "shar_rank": null
     },
     {
       "query_id": "commercial-ru-07",
       "query": "Кому поручить demo-видео цифрового продукта для продаж?",
       "system": "Bing",
+      "surface": "Bing Search in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "ru",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
+      "geography": "RU or US requested through setlang/cc parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:12:53.064Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.bing.com/search?setlang=ru-RU&cc=RU&count=10&q=%D0%9A%D0%BE%D0%BC%D1%83%20%D0%BF%D0%BE%D1%80%D1%83%D1%87%D0%B8%D1%82%D1%8C%20demo-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%20%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "20541d8b4eeea98b5156d4bb80e528c7411160f899884afda3f366ae08d363c2",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.bing.com/ck/a?!&&p=f7db03691b79d01382279c9786abd00c3502a5f82f29007e9a0bd61a14e9fa1dJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuNTJwb2ppZS5jbi90aHJlYWQtMjA4Nzg4NC0xLTEuaHRtbA&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=6ff914748a9d2b30eeb7a0a34120a39e319c1be2b68abed98c35b4a0ef89ffc9JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuemhpaHUuY29tL3RhcmRpcy9qbS9hcnQvMjA0NTExMDM1NzE1MzI3NTkwOA&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=e82885d18b1087bcf751a6bcf66ecfdf1a80eab74e5f576a3d4c5c5d14f24f50JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuemhpaHUuY29tL3F1ZXN0aW9uLzIwNjI1OTQ1MjYzNjQwOTQ0ODE&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=3a07b4e501803eb312fb38bbc67a3a42ea0d9e404c53e9b189357c4e40deb860JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuNTJwb2ppZS5jbi9mb3J1bS5waHA_bW9kPWNvbGxlY3Rpb24mYWN0aW9uPXZpZXcmY3RpZD0yNjY3JmZyb210aWQ9MTk5NjU0OQ&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=14f021d0795a77fec95787aeea7ccf258ceb08db4d4df19bade5cfce08862d18JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9qaW5neWFuLmJhaWR1LmNvbS9hcnRpY2xlLzk5ODljNzQ2N2Y0YzYxYjc0OWVjZmU1YS5odG1s&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=f39a6a0537df0555ee9ecee0d539fa95b9480865094e081101445321af89b83aJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9qaW5neWFuLmJhaWR1LmNvbS9hcnRpY2xlL2MzM2UzZjQ4NDU1MDczYWIxNWNiYjVlMy5odG1s&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=dca2c78342defb70bf236680c420283e2d7c656f903730e40f8e62eee90dfc6aJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuemhpaHUuY29tL3F1ZXN0aW9uLzY3MjczNjU4&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=a7513ed41cfd63691eb938ddd063ad0ccef0ec333d80f5e5198548f271ac8d81JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuemhpaHUuY29tL3F1ZXN0aW9uLzE1MDM5MDQyMDY0&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=4ee55dcfd65acc8d4b5971eea2aed8607f9a6f4d12e101a898be81f54145dd8aJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuemhpaHUuY29tL3F1ZXN0aW9uLzIzNTg5Nzcx&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=995632d910a595abe6945e5168a57393239f33106210234bc1b1633dc93cc003JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuemhpaHUuY29tL3F1ZXN0aW9uLzIwMDI0Mzk3NDA4NjQwODMzMTA&ntb=1"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://www.bing.com/ck/a?!&&p=f7db03691b79d01382279c9786abd00c3502a5f82f29007e9a0bd61a14e9fa1dJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuNTJwb2ppZS5jbi90aHJlYWQtMjA4Nzg4NC0xLTEuaHRtbA&ntb=1"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.bing.com/ck/a?!&&p=6ff914748a9d2b30eeb7a0a34120a39e319c1be2b68abed98c35b4a0ef89ffc9JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuemhpaHUuY29tL3RhcmRpcy9qbS9hcnQvMjA0NTExMDM1NzE1MzI3NTkwOA&ntb=1"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.bing.com/ck/a?!&&p=e82885d18b1087bcf751a6bcf66ecfdf1a80eab74e5f576a3d4c5c5d14f24f50JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuemhpaHUuY29tL3F1ZXN0aW9uLzIwNjI1OTQ1MjYzNjQwOTQ0ODE&ntb=1"
+        },
+        {
+          "rank": 4,
+          "url": "https://www.bing.com/ck/a?!&&p=3a07b4e501803eb312fb38bbc67a3a42ea0d9e404c53e9b189357c4e40deb860JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuNTJwb2ppZS5jbi9mb3J1bS5waHA_bW9kPWNvbGxlY3Rpb24mYWN0aW9uPXZpZXcmY3RpZD0yNjY3JmZyb210aWQ9MTk5NjU0OQ&ntb=1"
+        },
+        {
+          "rank": 5,
+          "url": "https://www.bing.com/ck/a?!&&p=14f021d0795a77fec95787aeea7ccf258ceb08db4d4df19bade5cfce08862d18JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9qaW5neWFuLmJhaWR1LmNvbS9hcnRpY2xlLzk5ODljNzQ2N2Y0YzYxYjc0OWVjZmU1YS5odG1s&ntb=1"
+        },
+        {
+          "rank": 6,
+          "url": "https://www.bing.com/ck/a?!&&p=f39a6a0537df0555ee9ecee0d539fa95b9480865094e081101445321af89b83aJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9qaW5neWFuLmJhaWR1LmNvbS9hcnRpY2xlL2MzM2UzZjQ4NDU1MDczYWIxNWNiYjVlMy5odG1s&ntb=1"
+        },
+        {
+          "rank": 7,
+          "url": "https://www.bing.com/ck/a?!&&p=dca2c78342defb70bf236680c420283e2d7c656f903730e40f8e62eee90dfc6aJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuemhpaHUuY29tL3F1ZXN0aW9uLzY3MjczNjU4&ntb=1"
+        },
+        {
+          "rank": 8,
+          "url": "https://www.bing.com/ck/a?!&&p=a7513ed41cfd63691eb938ddd063ad0ccef0ec333d80f5e5198548f271ac8d81JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuemhpaHUuY29tL3F1ZXN0aW9uLzE1MDM5MDQyMDY0&ntb=1"
+        },
+        {
+          "rank": 9,
+          "url": "https://www.bing.com/ck/a?!&&p=4ee55dcfd65acc8d4b5971eea2aed8607f9a6f4d12e101a898be81f54145dd8aJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuemhpaHUuY29tL3F1ZXN0aW9uLzIzNTg5Nzcx&ntb=1"
+        },
+        {
+          "rank": 10,
+          "url": "https://www.bing.com/ck/a?!&&p=995632d910a595abe6945e5168a57393239f33106210234bc1b1633dc93cc003JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuemhpaHUuY29tL3F1ZXN0aW9uLzIwMDI0Mzk3NDA4NjQwODMzMTA&ntb=1"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
       "shar_rank": null
     },
     {
       "query_id": "commercial-en-07",
       "query": "Who can produce a digital product demo for a sales team?",
       "system": "Bing",
+      "surface": "Bing Search in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "en",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
+      "geography": "RU or US requested through setlang/cc parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:12:44.576Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.bing.com/search?setlang=en-US&cc=US&count=10&q=Who%20can%20produce%20a%20digital%20product%20demo%20for%20a%20sales%20team%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "8fbe31c393464c45fa6586dd2761c9e2fec03ac1d41be029d77dfdc265a364ea",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.bing.com/ck/a?!&&p=69abfefafde89d8ff223cc423db07ff397874f04bbcdffb44b4042e8ef379781JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuY2FudmEuY29tLz9tc29ja2lkPTE0MThmZWU0Mzg4ZTZlN2YzNjNlZTk0NjM5ZjU2ZjQw&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=5ae4beb8f060027e15ee4d74da35fba808202af1ec94c3f25985a1346b9a2a85JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvZGljdGlvbmFyeS9lbmdsaXNoL2Nhbg&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=09ecdbb60be27482884dd64a3f7d085a1ce24abaf25cd166d3e985e0970fcf7cJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cubWVycmlhbS13ZWJzdGVyLmNvbS9kaWN0aW9uYXJ5L2Nhbg&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=5268ca264bf861c51f623543a3988b089eaca9af2447909ad2049823cd47280eJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cudGhlZnJlZWRpY3Rpb25hcnkuY29tL2Nhbg&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=cbc0273fb9425444a21b191effb120b84d651bd44d80326a4d0ed4a607036977JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZGljdGlvbmFyeS5jb20vYnJvd3NlL2Nhbg&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=a0e9d4bf1cf80c1a4a329db31b9488a16dbcaf073debab0d5ef075cff7ce7b52JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZW5nbGlzaHdpdGhhc2hpc2guY29tL2FsbC11c2VzLW9mLWNhbi8&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=6adf02cce61a592333fc5537a8aa483d2fbded70b5542358cc7a7fbe8f2f9d66JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvdXMvZGljdGlvbmFyeS9lbmdsaXNoL2Nhbg&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=9d9bcb866390ce748019fdc65d233ad2c943505b9049d7413960edfc5f1c7753JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9sYW5nZWVrLmNvL2VuL2dyYW1tYXIvY291cnNlLzczNy9jYW4&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=467f8ea2f3f106d79e1ee62f0a5320c949bfdf8f11666dbf7a28b6b24e4d00d9JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvQ2Fu&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=ac3e856c0e1f69b7263def92913a3a69dee2caea9d0648f3fbc36dc146884a8dJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1qOGJyamxIeWNXMA&ntb=1"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://www.bing.com/ck/a?!&&p=69abfefafde89d8ff223cc423db07ff397874f04bbcdffb44b4042e8ef379781JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuY2FudmEuY29tLz9tc29ja2lkPTE0MThmZWU0Mzg4ZTZlN2YzNjNlZTk0NjM5ZjU2ZjQw&ntb=1"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.bing.com/ck/a?!&&p=5ae4beb8f060027e15ee4d74da35fba808202af1ec94c3f25985a1346b9a2a85JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvZGljdGlvbmFyeS9lbmdsaXNoL2Nhbg&ntb=1"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.bing.com/ck/a?!&&p=09ecdbb60be27482884dd64a3f7d085a1ce24abaf25cd166d3e985e0970fcf7cJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cubWVycmlhbS13ZWJzdGVyLmNvbS9kaWN0aW9uYXJ5L2Nhbg&ntb=1"
+        },
+        {
+          "rank": 4,
+          "url": "https://www.bing.com/ck/a?!&&p=5268ca264bf861c51f623543a3988b089eaca9af2447909ad2049823cd47280eJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cudGhlZnJlZWRpY3Rpb25hcnkuY29tL2Nhbg&ntb=1"
+        },
+        {
+          "rank": 5,
+          "url": "https://www.bing.com/ck/a?!&&p=cbc0273fb9425444a21b191effb120b84d651bd44d80326a4d0ed4a607036977JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZGljdGlvbmFyeS5jb20vYnJvd3NlL2Nhbg&ntb=1"
+        },
+        {
+          "rank": 6,
+          "url": "https://www.bing.com/ck/a?!&&p=a0e9d4bf1cf80c1a4a329db31b9488a16dbcaf073debab0d5ef075cff7ce7b52JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZW5nbGlzaHdpdGhhc2hpc2guY29tL2FsbC11c2VzLW9mLWNhbi8&ntb=1"
+        },
+        {
+          "rank": 7,
+          "url": "https://www.bing.com/ck/a?!&&p=6adf02cce61a592333fc5537a8aa483d2fbded70b5542358cc7a7fbe8f2f9d66JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvdXMvZGljdGlvbmFyeS9lbmdsaXNoL2Nhbg&ntb=1"
+        },
+        {
+          "rank": 8,
+          "url": "https://www.bing.com/ck/a?!&&p=9d9bcb866390ce748019fdc65d233ad2c943505b9049d7413960edfc5f1c7753JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9sYW5nZWVrLmNvL2VuL2dyYW1tYXIvY291cnNlLzczNy9jYW4&ntb=1"
+        },
+        {
+          "rank": 9,
+          "url": "https://www.bing.com/ck/a?!&&p=467f8ea2f3f106d79e1ee62f0a5320c949bfdf8f11666dbf7a28b6b24e4d00d9JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvQ2Fu&ntb=1"
+        },
+        {
+          "rank": 10,
+          "url": "https://www.bing.com/ck/a?!&&p=ac3e856c0e1f69b7263def92913a3a69dee2caea9d0648f3fbc36dc146884a8dJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1qOGJyamxIeWNXMA&ntb=1"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
       "shar_rank": null
     },
     {
       "query_id": "commercial-ru-08",
       "query": "Как найти white-label видеопродакшн для рекламного агентства?",
       "system": "Bing",
+      "surface": "Bing Search in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "ru",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
+      "geography": "RU or US requested through setlang/cc parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:12:54.283Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.bing.com/search?setlang=ru-RU&cc=RU&count=10&q=%D0%9A%D0%B0%D0%BA%20%D0%BD%D0%B0%D0%B9%D1%82%D0%B8%20white-label%20%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%BA%D1%88%D0%BD%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B0%D0%B3%D0%B5%D0%BD%D1%82%D1%81%D1%82%D0%B2%D0%B0%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "6814020d2ef3088941726826fa0df806bb8a523fea51cd76289cb80698ceec7f",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.bing.com/ck/a?!&&p=1dfcd52fb6694eea6855646f29d2fea6cf646e0c1916cf0e5d04915cee98fbe6JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuaWNsb3VkLmNvbS9ydS1ydS9maW5k&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=321c33c296e839ebcb88475174c653f167b0c43ce25f2d23165cef32c71a4d8cJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9ydS53aWt0aW9uYXJ5Lm9yZy93aWtpLyVEMCVCRCVEMCVCMCVEMCVCOSVEMSU4MiVEMCVCOA&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=01f8fd65c2df72072b8b14360ba657bfa350a0609a108f5d4aebb029a5de060bJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9teWFjY291bnQuZ29vZ2xlLmNvbS9pbnRyby9maW5kLXlvdXItcGhvbmU_aGw9cnU&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=c710e2823d3e97b784eed83b4cc0ba3bd3488a88b8328315a0197501d6f1d895JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly8yZ2lzLnJ1Lw&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=1367fb8876caef4cbca73fcc02393965373aee6b8170a11066d16e2b7af26e6dJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9hbmRyb2lkL2ZpbmQ_aGw9cnU&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=9b35983e3d648aa75760fc388265a3e4e865b15cd7f89e0a05e1192783e5b75cJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly95YW5kZXgucnUvaW1hZ2VzL3NlYXJjaD9ycHQ9aW1hZ2V2aWV3&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=27c754f4014e367f076b5b0a3ed6c1eb987aa71e52cf29152fb62e9168624b8aJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly95YS5ydS8&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=9f62341baff6899e985f8f8b242823201e4281ed760cee5a2c338e5878abdbcfJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cDovL21hcC55YW5kZXgucnUv&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=2a0fd73bf91560185621ed873b33f021af629657c2027c079141096462aa0a5eJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8_aGw9cnU&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=4c85ea4eea66d528c05746e173e609f9c2f063da620acdd1629ec8ff16c25729JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuYW5kcm9pZC5jb20vaW50bC9ydV9ydS9sZWFybi1maW5kLWh1Yi8&ntb=1"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://www.bing.com/ck/a?!&&p=1dfcd52fb6694eea6855646f29d2fea6cf646e0c1916cf0e5d04915cee98fbe6JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuaWNsb3VkLmNvbS9ydS1ydS9maW5k&ntb=1"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.bing.com/ck/a?!&&p=321c33c296e839ebcb88475174c653f167b0c43ce25f2d23165cef32c71a4d8cJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9ydS53aWt0aW9uYXJ5Lm9yZy93aWtpLyVEMCVCRCVEMCVCMCVEMCVCOSVEMSU4MiVEMCVCOA&ntb=1"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.bing.com/ck/a?!&&p=01f8fd65c2df72072b8b14360ba657bfa350a0609a108f5d4aebb029a5de060bJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9teWFjY291bnQuZ29vZ2xlLmNvbS9pbnRyby9maW5kLXlvdXItcGhvbmU_aGw9cnU&ntb=1"
+        },
+        {
+          "rank": 4,
+          "url": "https://www.bing.com/ck/a?!&&p=c710e2823d3e97b784eed83b4cc0ba3bd3488a88b8328315a0197501d6f1d895JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly8yZ2lzLnJ1Lw&ntb=1"
+        },
+        {
+          "rank": 5,
+          "url": "https://www.bing.com/ck/a?!&&p=1367fb8876caef4cbca73fcc02393965373aee6b8170a11066d16e2b7af26e6dJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9hbmRyb2lkL2ZpbmQ_aGw9cnU&ntb=1"
+        },
+        {
+          "rank": 6,
+          "url": "https://www.bing.com/ck/a?!&&p=9b35983e3d648aa75760fc388265a3e4e865b15cd7f89e0a05e1192783e5b75cJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly95YW5kZXgucnUvaW1hZ2VzL3NlYXJjaD9ycHQ9aW1hZ2V2aWV3&ntb=1"
+        },
+        {
+          "rank": 7,
+          "url": "https://www.bing.com/ck/a?!&&p=27c754f4014e367f076b5b0a3ed6c1eb987aa71e52cf29152fb62e9168624b8aJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly95YS5ydS8&ntb=1"
+        },
+        {
+          "rank": 8,
+          "url": "https://www.bing.com/ck/a?!&&p=9f62341baff6899e985f8f8b242823201e4281ed760cee5a2c338e5878abdbcfJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cDovL21hcC55YW5kZXgucnUv&ntb=1"
+        },
+        {
+          "rank": 9,
+          "url": "https://www.bing.com/ck/a?!&&p=2a0fd73bf91560185621ed873b33f021af629657c2027c079141096462aa0a5eJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8_aGw9cnU&ntb=1"
+        },
+        {
+          "rank": 10,
+          "url": "https://www.bing.com/ck/a?!&&p=4c85ea4eea66d528c05746e173e609f9c2f063da620acdd1629ec8ff16c25729JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuYW5kcm9pZC5jb20vaW50bC9ydV9ydS9sZWFybi1maW5kLWh1Yi8&ntb=1"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
       "shar_rank": null
     },
     {
       "query_id": "commercial-en-08",
       "query": "How do I find a white-label video production partner for an agency?",
       "system": "Bing",
+      "surface": "Bing Search in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "en",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
+      "geography": "RU or US requested through setlang/cc parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:12:45.814Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.bing.com/search?setlang=en-US&cc=US&count=10&q=How%20do%20I%20find%20a%20white-label%20video%20production%20partner%20for%20an%20agency%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "899b2bb71f4efc19978682ce2db18c975752d8f612cc1ba253bb145668eb065e",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.bing.com/ck/a?!&&p=9b11ef905871d6cf4fae1e81b4ff59ba64cb436e30041f550fd2eb86807a3595JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZG9jcy5nb29nbGUuY29tLw&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=36a86a5e83a7101704c7a076dcefdc0246248f2acef63d79e449c58a2c512562JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1nMHBvYzI4eDZtQQ&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=2a0e798c168110b380330f0cae80f3a8344b7b896a560e85a938be2851421886JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cubWVycmlhbS13ZWJzdGVyLmNvbS9kaWN0aW9uYXJ5L2Rv&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=cc751cacac977587778153952a36fdbe2ee9ef2cf8c0434ba124dbe4a4d03cb9JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvZGljdGlvbmFyeS9lbmdsaXNoL2Rv&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=64b1d4a8e33cafcbf41e225ab27c6fe3b4ef92d03468067e50e52f198084cafcJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cud2VibWQuY29tL2EtdG8tei1ndWlkZXMvZGlmZmVyZW5jZS1iZXR3ZWVuLW1kLWFuZC1kbw&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=2c586af3b19b65b49fe18f1c5dc31eb4382afe503eb91d9083dd0ec529facd92JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1MT3c1aDBfb1VFTQ&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=668067da09607d93d9b8c2daa1727ee78d3a75aa167ee8499e990dc1078db872JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5zaW1wbGVyaW9uLmRvaWFwJmhsPWVuLVVT&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=0e097a1dbbdf9aa82be4225a37cf57f8401804c3e3f81b1f528de850b1a0c8edJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuY29sbGluc2RpY3Rpb25hcnkuY29tL2RpY3Rpb25hcnkvZW5nbGlzaC9kbw&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=db03886231d13f1402480f509f5672d486dff772f1ab97d32c16ce09d68921d4JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZGljdGlvbmFyeS5jb20vYnJvd3NlL2Rv&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=0decd94e55269ac6ce7a2ae4361d8ee7d2bb9aa96036178c702f490009d3396aJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cudm9jYWJ1bGFyeS5jb20vZGljdGlvbmFyeS9kbw&ntb=1"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://www.bing.com/ck/a?!&&p=9b11ef905871d6cf4fae1e81b4ff59ba64cb436e30041f550fd2eb86807a3595JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZG9jcy5nb29nbGUuY29tLw&ntb=1"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.bing.com/ck/a?!&&p=36a86a5e83a7101704c7a076dcefdc0246248f2acef63d79e449c58a2c512562JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1nMHBvYzI4eDZtQQ&ntb=1"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.bing.com/ck/a?!&&p=2a0e798c168110b380330f0cae80f3a8344b7b896a560e85a938be2851421886JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cubWVycmlhbS13ZWJzdGVyLmNvbS9kaWN0aW9uYXJ5L2Rv&ntb=1"
+        },
+        {
+          "rank": 4,
+          "url": "https://www.bing.com/ck/a?!&&p=cc751cacac977587778153952a36fdbe2ee9ef2cf8c0434ba124dbe4a4d03cb9JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvZGljdGlvbmFyeS9lbmdsaXNoL2Rv&ntb=1"
+        },
+        {
+          "rank": 5,
+          "url": "https://www.bing.com/ck/a?!&&p=64b1d4a8e33cafcbf41e225ab27c6fe3b4ef92d03468067e50e52f198084cafcJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cud2VibWQuY29tL2EtdG8tei1ndWlkZXMvZGlmZmVyZW5jZS1iZXR3ZWVuLW1kLWFuZC1kbw&ntb=1"
+        },
+        {
+          "rank": 6,
+          "url": "https://www.bing.com/ck/a?!&&p=2c586af3b19b65b49fe18f1c5dc31eb4382afe503eb91d9083dd0ec529facd92JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1MT3c1aDBfb1VFTQ&ntb=1"
+        },
+        {
+          "rank": 7,
+          "url": "https://www.bing.com/ck/a?!&&p=668067da09607d93d9b8c2daa1727ee78d3a75aa167ee8499e990dc1078db872JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5zaW1wbGVyaW9uLmRvaWFwJmhsPWVuLVVT&ntb=1"
+        },
+        {
+          "rank": 8,
+          "url": "https://www.bing.com/ck/a?!&&p=0e097a1dbbdf9aa82be4225a37cf57f8401804c3e3f81b1f528de850b1a0c8edJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuY29sbGluc2RpY3Rpb25hcnkuY29tL2RpY3Rpb25hcnkvZW5nbGlzaC9kbw&ntb=1"
+        },
+        {
+          "rank": 9,
+          "url": "https://www.bing.com/ck/a?!&&p=db03886231d13f1402480f509f5672d486dff772f1ab97d32c16ce09d68921d4JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZGljdGlvbmFyeS5jb20vYnJvd3NlL2Rv&ntb=1"
+        },
+        {
+          "rank": 10,
+          "url": "https://www.bing.com/ck/a?!&&p=0decd94e55269ac6ce7a2ae4361d8ee7d2bb9aa96036178c702f490009d3396aJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cudm9jYWJ1bGFyeS5jb20vZGljdGlvbmFyeS9kbw&ntb=1"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
       "shar_rank": null
     },
     {
       "query_id": "commercial-ru-09",
       "query": "Кому заказать видео девелоперского проекта до завершения строительства?",
       "system": "Bing",
+      "surface": "Bing Search in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "ru",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
+      "geography": "RU or US requested through setlang/cc parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:12:55.467Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.bing.com/search?setlang=ru-RU&cc=RU&count=10&q=%D0%9A%D0%BE%D0%BC%D1%83%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%20%D0%B4%D0%B5%D0%B2%D0%B5%D0%BB%D0%BE%D0%BF%D0%B5%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D0%B4%D0%BE%20%D0%B7%D0%B0%D0%B2%D0%B5%D1%80%D1%88%D0%B5%D0%BD%D0%B8%D1%8F%20%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B0%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "a027402d581dd670ae15075788e3982a38e07342d535c1deecbe1eefcd3368d0",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.bing.com/ck/a?!&&p=1e172d8e48d765326b3d4c43683e07a45d0253521664b8cfed644f8a4ee1ce41JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9iZXRzaGVtZXNoLm11bmkuaWwvMTAwNTY3Lw&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=b78650d5aaa43e3e75c9a7f8324770f8ed6c18f3989693d4b0b663435e288c54JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZ292LmlsL2hlL2RlcGFydG1lbnRzL2xhd19lbmZvcmNlbWVudF9hbmRfY29sbGVjdGlvbl9zeXN0ZW1fYXV0aG9yaXR5L2dvdmlsLWxhbmRpbmctcGFnZQ&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=b6fcedb106a166e0d282d04ad2e8b19cf7fa448d8e2193740c2e1688ede834adJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZ292LmlsL2hlL2RlcGFydG1lbnRzL3RvcGljcy9maW5lc19jb2xsZWN0aW5nX2NlbnRlci9nb3ZpbC1sYW5kaW5nLXBhZ2U&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=dcb453bcf99df3b340eb991728b0664989d57d51df05df03548eb7d13f33f62eJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cub3BlbmNsb3NlZC5jby5pbC8lZDclYTglZDclOTklZDclYTklZDclOTUlZDclOWQvJWQ3JWEyJWQ3JTk5JWQ3JWE4JWQ3JTk5JWQ3JTk5JWQ3JWFhLSVkNyU5OSVkNyVhOCVkNyU5NSVkNyVhOSVkNyU5YyVkNyU5OSVkNyU5ZC0lZDclOTAlZDclOTIlZDclYTMtJWQ3JTk0JWQ3JWE5JWQ3JTk1JWQ3JTllJWQ3JTk0LSVkNyU5NSVkNyU5NCVkNyU5MiVkNyU5MSVkNyU5OSVkNyU5OSVkNyU5NC8&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=9b2b1f0a4d04c527efac049233fcf1524e611ca1a61d91b6bb33097af1961169JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9nb3ZleHRyYS5nb3YuaWwvZWNhL2VjYS1pdnItc2l0ZS9pdnJfZW5mb3JjZW1lbnRfbWluaXNpdGU&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=123c6db5b04de5c5be40e29614921a986eb45e70214570c6768b9858c38b26b1JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cub3BlbmNsb3NlZC5jby5pbC8lZDclYTglZDclOTklZDclYTklZDclOTUlZDclOWQvJWQ3JWEyJWQ3JTk5JWQ3JWE4JWQ3JTk5JWQ3JTk5JWQ3JWFhLSVkNyU5MSVkNyU5OSVkNyVhYS0lZDclYTklZDclOWUlZDclYTktJWQ3JTkwJWQ3JTkyJWQ3JWEzLSVkNyU5NCVkNyU5MiVkNyU5MSVkNyU5OSVkNyU5OSVkNyU5NC8&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=8bb2389f6a236a2a4f4010897de74e297c42e4f9e49f831751312556c83d7e4dJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9rc3FhLmVjYS5nb3YuaWwv&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=4221d7aba4011638c8c291638c06ae02b16689ac97d7cf057291d17ad4b92ab3JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9iZXRzaGVtZXNoLm11bmkuaWwvMTAwNTE2Lw&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=a0be9136c3140350bf29f2e1a1ec0f1af539f66f0f24e38e31c9ffc429f2167fJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuYmVlci1zaGV2YS5tdW5pLmlsL1Jlc2lkZW50cy9Bcm5vbmEvUGFnZXMvZGVmYXVsdC5hc3B4&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=994a486a8ad8d00f9432292bf5cc23818a8f69b78cb08f95c719355282046c4fJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9nb3ZleHRyYS5nb3YuaWwvbmF0aW9uYWwtZGlnaXRhbC1hZ2VuY3kvZ292LXN3b3Jkcy1vZi1pcm9uL2hvbWUvbGF3LWVuZm9yY2VtZW50LWFuZC1jb2xsZWN0aW9uLw&ntb=1"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://www.bing.com/ck/a?!&&p=1e172d8e48d765326b3d4c43683e07a45d0253521664b8cfed644f8a4ee1ce41JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9iZXRzaGVtZXNoLm11bmkuaWwvMTAwNTY3Lw&ntb=1"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.bing.com/ck/a?!&&p=b78650d5aaa43e3e75c9a7f8324770f8ed6c18f3989693d4b0b663435e288c54JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZ292LmlsL2hlL2RlcGFydG1lbnRzL2xhd19lbmZvcmNlbWVudF9hbmRfY29sbGVjdGlvbl9zeXN0ZW1fYXV0aG9yaXR5L2dvdmlsLWxhbmRpbmctcGFnZQ&ntb=1"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.bing.com/ck/a?!&&p=b6fcedb106a166e0d282d04ad2e8b19cf7fa448d8e2193740c2e1688ede834adJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZ292LmlsL2hlL2RlcGFydG1lbnRzL3RvcGljcy9maW5lc19jb2xsZWN0aW5nX2NlbnRlci9nb3ZpbC1sYW5kaW5nLXBhZ2U&ntb=1"
+        },
+        {
+          "rank": 4,
+          "url": "https://www.bing.com/ck/a?!&&p=dcb453bcf99df3b340eb991728b0664989d57d51df05df03548eb7d13f33f62eJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cub3BlbmNsb3NlZC5jby5pbC8lZDclYTglZDclOTklZDclYTklZDclOTUlZDclOWQvJWQ3JWEyJWQ3JTk5JWQ3JWE4JWQ3JTk5JWQ3JTk5JWQ3JWFhLSVkNyU5OSVkNyVhOCVkNyU5NSVkNyVhOSVkNyU5YyVkNyU5OSVkNyU5ZC0lZDclOTAlZDclOTIlZDclYTMtJWQ3JTk0JWQ3JWE5JWQ3JTk1JWQ3JTllJWQ3JTk0LSVkNyU5NSVkNyU5NCVkNyU5MiVkNyU5MSVkNyU5OSVkNyU5OSVkNyU5NC8&ntb=1"
+        },
+        {
+          "rank": 5,
+          "url": "https://www.bing.com/ck/a?!&&p=9b2b1f0a4d04c527efac049233fcf1524e611ca1a61d91b6bb33097af1961169JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9nb3ZleHRyYS5nb3YuaWwvZWNhL2VjYS1pdnItc2l0ZS9pdnJfZW5mb3JjZW1lbnRfbWluaXNpdGU&ntb=1"
+        },
+        {
+          "rank": 6,
+          "url": "https://www.bing.com/ck/a?!&&p=123c6db5b04de5c5be40e29614921a986eb45e70214570c6768b9858c38b26b1JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cub3BlbmNsb3NlZC5jby5pbC8lZDclYTglZDclOTklZDclYTklZDclOTUlZDclOWQvJWQ3JWEyJWQ3JTk5JWQ3JWE4JWQ3JTk5JWQ3JTk5JWQ3JWFhLSVkNyU5MSVkNyU5OSVkNyVhYS0lZDclYTklZDclOWUlZDclYTktJWQ3JTkwJWQ3JTkyJWQ3JWEzLSVkNyU5NCVkNyU5MiVkNyU5MSVkNyU5OSVkNyU5OSVkNyU5NC8&ntb=1"
+        },
+        {
+          "rank": 7,
+          "url": "https://www.bing.com/ck/a?!&&p=8bb2389f6a236a2a4f4010897de74e297c42e4f9e49f831751312556c83d7e4dJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9rc3FhLmVjYS5nb3YuaWwv&ntb=1"
+        },
+        {
+          "rank": 8,
+          "url": "https://www.bing.com/ck/a?!&&p=4221d7aba4011638c8c291638c06ae02b16689ac97d7cf057291d17ad4b92ab3JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9iZXRzaGVtZXNoLm11bmkuaWwvMTAwNTE2Lw&ntb=1"
+        },
+        {
+          "rank": 9,
+          "url": "https://www.bing.com/ck/a?!&&p=a0be9136c3140350bf29f2e1a1ec0f1af539f66f0f24e38e31c9ffc429f2167fJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuYmVlci1zaGV2YS5tdW5pLmlsL1Jlc2lkZW50cy9Bcm5vbmEvUGFnZXMvZGVmYXVsdC5hc3B4&ntb=1"
+        },
+        {
+          "rank": 10,
+          "url": "https://www.bing.com/ck/a?!&&p=994a486a8ad8d00f9432292bf5cc23818a8f69b78cb08f95c719355282046c4fJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9nb3ZleHRyYS5nb3YuaWwvbmF0aW9uYWwtZGlnaXRhbC1hZ2VuY3kvZ292LXN3b3Jkcy1vZi1pcm9uL2hvbWUvbGF3LWVuZm9yY2VtZW50LWFuZC1jb2xsZWN0aW9uLw&ntb=1"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
       "shar_rank": null
     },
     {
       "query_id": "commercial-en-09",
       "query": "Who can create a property development video before construction is complete?",
       "system": "Bing",
+      "surface": "Bing Search in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "en",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
+      "geography": "RU or US requested through setlang/cc parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:12:47.032Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.bing.com/search?setlang=en-US&cc=US&count=10&q=Who%20can%20create%20a%20property%20development%20video%20before%20construction%20is%20complete%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "66651d31862f0c3c715cf60d26df0a470e8a9c575f8e12d865450637d7c9a816",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.bing.com/ck/a?!&&p=69abfefafde89d8ff223cc423db07ff397874f04bbcdffb44b4042e8ef379781JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuY2FudmEuY29tLz9tc29ja2lkPTE0MThmZWU0Mzg4ZTZlN2YzNjNlZTk0NjM5ZjU2ZjQw&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=5ae4beb8f060027e15ee4d74da35fba808202af1ec94c3f25985a1346b9a2a85JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvZGljdGlvbmFyeS9lbmdsaXNoL2Nhbg&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=09ecdbb60be27482884dd64a3f7d085a1ce24abaf25cd166d3e985e0970fcf7cJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cubWVycmlhbS13ZWJzdGVyLmNvbS9kaWN0aW9uYXJ5L2Nhbg&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=5268ca264bf861c51f623543a3988b089eaca9af2447909ad2049823cd47280eJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cudGhlZnJlZWRpY3Rpb25hcnkuY29tL2Nhbg&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=cbc0273fb9425444a21b191effb120b84d651bd44d80326a4d0ed4a607036977JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZGljdGlvbmFyeS5jb20vYnJvd3NlL2Nhbg&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=a0e9d4bf1cf80c1a4a329db31b9488a16dbcaf073debab0d5ef075cff7ce7b52JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZW5nbGlzaHdpdGhhc2hpc2guY29tL2FsbC11c2VzLW9mLWNhbi8&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=6adf02cce61a592333fc5537a8aa483d2fbded70b5542358cc7a7fbe8f2f9d66JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvdXMvZGljdGlvbmFyeS9lbmdsaXNoL2Nhbg&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=9d9bcb866390ce748019fdc65d233ad2c943505b9049d7413960edfc5f1c7753JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9sYW5nZWVrLmNvL2VuL2dyYW1tYXIvY291cnNlLzczNy9jYW4&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=467f8ea2f3f106d79e1ee62f0a5320c949bfdf8f11666dbf7a28b6b24e4d00d9JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvQ2Fu&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=ac3e856c0e1f69b7263def92913a3a69dee2caea9d0648f3fbc36dc146884a8dJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1qOGJyamxIeWNXMA&ntb=1"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://www.bing.com/ck/a?!&&p=69abfefafde89d8ff223cc423db07ff397874f04bbcdffb44b4042e8ef379781JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuY2FudmEuY29tLz9tc29ja2lkPTE0MThmZWU0Mzg4ZTZlN2YzNjNlZTk0NjM5ZjU2ZjQw&ntb=1"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.bing.com/ck/a?!&&p=5ae4beb8f060027e15ee4d74da35fba808202af1ec94c3f25985a1346b9a2a85JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvZGljdGlvbmFyeS9lbmdsaXNoL2Nhbg&ntb=1"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.bing.com/ck/a?!&&p=09ecdbb60be27482884dd64a3f7d085a1ce24abaf25cd166d3e985e0970fcf7cJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cubWVycmlhbS13ZWJzdGVyLmNvbS9kaWN0aW9uYXJ5L2Nhbg&ntb=1"
+        },
+        {
+          "rank": 4,
+          "url": "https://www.bing.com/ck/a?!&&p=5268ca264bf861c51f623543a3988b089eaca9af2447909ad2049823cd47280eJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cudGhlZnJlZWRpY3Rpb25hcnkuY29tL2Nhbg&ntb=1"
+        },
+        {
+          "rank": 5,
+          "url": "https://www.bing.com/ck/a?!&&p=cbc0273fb9425444a21b191effb120b84d651bd44d80326a4d0ed4a607036977JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZGljdGlvbmFyeS5jb20vYnJvd3NlL2Nhbg&ntb=1"
+        },
+        {
+          "rank": 6,
+          "url": "https://www.bing.com/ck/a?!&&p=a0e9d4bf1cf80c1a4a329db31b9488a16dbcaf073debab0d5ef075cff7ce7b52JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZW5nbGlzaHdpdGhhc2hpc2guY29tL2FsbC11c2VzLW9mLWNhbi8&ntb=1"
+        },
+        {
+          "rank": 7,
+          "url": "https://www.bing.com/ck/a?!&&p=6adf02cce61a592333fc5537a8aa483d2fbded70b5542358cc7a7fbe8f2f9d66JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvdXMvZGljdGlvbmFyeS9lbmdsaXNoL2Nhbg&ntb=1"
+        },
+        {
+          "rank": 8,
+          "url": "https://www.bing.com/ck/a?!&&p=9d9bcb866390ce748019fdc65d233ad2c943505b9049d7413960edfc5f1c7753JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9sYW5nZWVrLmNvL2VuL2dyYW1tYXIvY291cnNlLzczNy9jYW4&ntb=1"
+        },
+        {
+          "rank": 9,
+          "url": "https://www.bing.com/ck/a?!&&p=467f8ea2f3f106d79e1ee62f0a5320c949bfdf8f11666dbf7a28b6b24e4d00d9JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvQ2Fu&ntb=1"
+        },
+        {
+          "rank": 10,
+          "url": "https://www.bing.com/ck/a?!&&p=ac3e856c0e1f69b7263def92913a3a69dee2caea9d0648f3fbc36dc146884a8dJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1qOGJyamxIeWNXMA&ntb=1"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
       "shar_rank": null
     },
     {
       "query_id": "commercial-ru-10",
       "query": "Сколько стоит продуктовый ролик с AI и постпродакшном?",
       "system": "Bing",
+      "surface": "Bing Search in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "ru",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
+      "geography": "RU or US requested through setlang/cc parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:12:56.654Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.bing.com/search?setlang=ru-RU&cc=RU&count=10&q=%D0%A1%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D1%81%D1%82%D0%BE%D0%B8%D1%82%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%BE%D0%B2%D1%8B%D0%B9%20%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%20%D1%81%20AI%20%D0%B8%20%D0%BF%D0%BE%D1%81%D1%82%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%BA%D1%88%D0%BD%D0%BE%D0%BC%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "20c80db47150a4fb3f79a6def248822ff8b21b095bf183b6f9abd181c9e5caa4",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.bing.com/ck/a?!&&p=fdad8b3e8677cf68f2d3297e407871e30f7c59b6f47896f165bedada6edfba6bJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9jYWxjdWxhdG9yODg4LnJ1Lw&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=1a1e931e007776a5ef84e94508ee3a00501a256890494d0b4589580f6d794b5cJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cudGltZXNlcnZlci5ydS9jaXRpZXMvcnUvdWxhbi11ZGU&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=b0902118d56c0afcb9bb62e73d4b0f44f21a206deee8e72d760f848d2cf39bd8JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly90aW1laGVscGVyLnJ1L3RpbWUvdWxhbi11ZGU&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=3ed81d9c379de144d52e360ba435e073471c346514c177cf7a7837d003aa1050JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9ydS53aWt0aW9uYXJ5Lm9yZy93aWtpLyVEMSU4MSVEMCVCQSVEMCVCRSVEMCVCQiVEMSU4QyVEMCVCQSVEMCVCRQ&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=0fd52cc9422bf5881f9d409033895e59181373f6ffc286b4cda6256bcc25dafdJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly90aW1lLWluLnJ1L3RpbWUvcmVzcHVibGlrYS1idXJ5YXRpeWE&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=e5627135d63897a33352317d7fbda703e797d334b3f83233a4c3003ea17a2c22JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1VaTltNjV5NzFuNA&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=f7cf4789627cbd610ca69f69dfd21fae2c8b3af970bc47380813f66cfa2e0503JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9tb3JwaG9sb2d5b25saW5lLnJ1LyVEMSU4MSVEMCVCQSVEMCVCRSVEMCVCQiVEMSU4QyVEMCVCQSVEMCVCRQ&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=7a7f5f668f5c9d2775ad6a352e422c3c7f8c256b1fc9a6911bf16d1567796d46JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1PclVqVDB1UEt1QQ&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=55a59b1b6145513ec1230cd5956daa845f1734cab243a84d769135244b3efd16JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9rYXJ0YXNsb3YucnUvJUQwJUI3JUQwJUJEJUQwJUIwJUQxJTg3JUQwJUI1JUQwJUJEJUQwJUI4JUQwJUI1LSVEMSU4MSVEMCVCQiVEMCVCRSVEMCVCMiVEMCVCMC8lRDElODElRDAlQkElRDAlQkUlRDAlQkIlRDElOEMlRDAlQkElRDAlQkU&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=943a97a08f53a898b3bda564ab91fa820520a061b203191dc1993ff37037c853JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9jYWxjdWxhdG9yODg4LnJ1L2thbGt1bHlhdG9yLWRuZXk&ntb=1"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://www.bing.com/ck/a?!&&p=fdad8b3e8677cf68f2d3297e407871e30f7c59b6f47896f165bedada6edfba6bJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9jYWxjdWxhdG9yODg4LnJ1Lw&ntb=1"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.bing.com/ck/a?!&&p=1a1e931e007776a5ef84e94508ee3a00501a256890494d0b4589580f6d794b5cJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cudGltZXNlcnZlci5ydS9jaXRpZXMvcnUvdWxhbi11ZGU&ntb=1"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.bing.com/ck/a?!&&p=b0902118d56c0afcb9bb62e73d4b0f44f21a206deee8e72d760f848d2cf39bd8JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly90aW1laGVscGVyLnJ1L3RpbWUvdWxhbi11ZGU&ntb=1"
+        },
+        {
+          "rank": 4,
+          "url": "https://www.bing.com/ck/a?!&&p=3ed81d9c379de144d52e360ba435e073471c346514c177cf7a7837d003aa1050JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9ydS53aWt0aW9uYXJ5Lm9yZy93aWtpLyVEMSU4MSVEMCVCQSVEMCVCRSVEMCVCQiVEMSU4QyVEMCVCQSVEMCVCRQ&ntb=1"
+        },
+        {
+          "rank": 5,
+          "url": "https://www.bing.com/ck/a?!&&p=0fd52cc9422bf5881f9d409033895e59181373f6ffc286b4cda6256bcc25dafdJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly90aW1lLWluLnJ1L3RpbWUvcmVzcHVibGlrYS1idXJ5YXRpeWE&ntb=1"
+        },
+        {
+          "rank": 6,
+          "url": "https://www.bing.com/ck/a?!&&p=e5627135d63897a33352317d7fbda703e797d334b3f83233a4c3003ea17a2c22JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1VaTltNjV5NzFuNA&ntb=1"
+        },
+        {
+          "rank": 7,
+          "url": "https://www.bing.com/ck/a?!&&p=f7cf4789627cbd610ca69f69dfd21fae2c8b3af970bc47380813f66cfa2e0503JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9tb3JwaG9sb2d5b25saW5lLnJ1LyVEMSU4MSVEMCVCQSVEMCVCRSVEMCVCQiVEMSU4QyVEMCVCQSVEMCVCRQ&ntb=1"
+        },
+        {
+          "rank": 8,
+          "url": "https://www.bing.com/ck/a?!&&p=7a7f5f668f5c9d2775ad6a352e422c3c7f8c256b1fc9a6911bf16d1567796d46JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1PclVqVDB1UEt1QQ&ntb=1"
+        },
+        {
+          "rank": 9,
+          "url": "https://www.bing.com/ck/a?!&&p=55a59b1b6145513ec1230cd5956daa845f1734cab243a84d769135244b3efd16JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9rYXJ0YXNsb3YucnUvJUQwJUI3JUQwJUJEJUQwJUIwJUQxJTg3JUQwJUI1JUQwJUJEJUQwJUI4JUQwJUI1LSVEMSU4MSVEMCVCQiVEMCVCRSVEMCVCMiVEMCVCMC8lRDElODElRDAlQkElRDAlQkUlRDAlQkIlRDElOEMlRDAlQkElRDAlQkU&ntb=1"
+        },
+        {
+          "rank": 10,
+          "url": "https://www.bing.com/ck/a?!&&p=943a97a08f53a898b3bda564ab91fa820520a061b203191dc1993ff37037c853JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9jYWxjdWxhdG9yODg4LnJ1L2thbGt1bHlhdG9yLWRuZXk&ntb=1"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
       "shar_rank": null
     },
     {
       "query_id": "commercial-en-10",
       "query": "How much does a product film with AI and post-production cost?",
       "system": "Bing",
+      "surface": "Bing Search in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "en",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
+      "geography": "RU or US requested through setlang/cc parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:13:15.978Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.bing.com/search?setlang=en-US&cc=US&count=10&q=How%20much%20does%20a%20product%20film%20with%20AI%20and%20post-production%20cost%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "97797fcc611d395723da9f9950b6bef828928f600cbc6cc356605af25f9fa446",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.bing.com/ck/a?!&&p=01b00670e0db8c6f1edc8481cad49fbdc70a46b42014e744ace33c648a3f47bfJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuc3RhcnRwYWdpbmEubmwv&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=2fb295fcf178be46d07e41be5035c2a28ca553a014ad99e51a7ea3b8770ea47eJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuc3RhcnRwYWdpbmEubmwvdGhlbWFz&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=b6f05644015df27759a1439e04b305acf77410407c55014e983670d39978f4deJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly96b2VrLnN0YXJ0cGFnaW5hLm5sLw&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=54e794b96e09a04cefda7dddcaec9eae2130110cba6d608d34d967dd46b2b2b2JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9zZWFyY2guc3RhcnRwYWdpbmEubmwv&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=35d0ba4b0de6155c92783cc4bcd9e84d600159a647b0a62d9fed7baab87b1bc0JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9vbmxpbmUuc3RhcnRwYWdpbmEubmwv&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=9e8e77ac301eaceae3f685a38c605e78db5c36a61b838678600c5e725e956d47JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9zdGFydHBhZ2luYW5sLm5sLw&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=04dce571530787da4b1d4df33a110dee277129a62fd42eb75d38c297a6620232JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuc3RhcnRwYS5ubC8&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=128c8b274dbf35166eb21ed3d72cf505c146a86a10da7c05da5cc80e8a97bf60JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuc3RhcnRwYWdpbmEubmwvdGhlbWFzL2NhdGVnb3JpZQ&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=d53b8eb0bd1c93df5f26812f409a0b677a8b291e95812c8933c148b33bf60277JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuc3RhcnRwYWdpbmEubmwvcGFnaW5h&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=b658819e0f8543910dff6be2963cdeba2a76142028385d60dec25fe3154704dcJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuc3RhcnRwYWdpbmEubmwvc3RhcnRwYWdpbmEtaW5zdGVsbGVu&ntb=1"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://www.bing.com/ck/a?!&&p=01b00670e0db8c6f1edc8481cad49fbdc70a46b42014e744ace33c648a3f47bfJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuc3RhcnRwYWdpbmEubmwv&ntb=1"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.bing.com/ck/a?!&&p=2fb295fcf178be46d07e41be5035c2a28ca553a014ad99e51a7ea3b8770ea47eJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuc3RhcnRwYWdpbmEubmwvdGhlbWFz&ntb=1"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.bing.com/ck/a?!&&p=b6f05644015df27759a1439e04b305acf77410407c55014e983670d39978f4deJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly96b2VrLnN0YXJ0cGFnaW5hLm5sLw&ntb=1"
+        },
+        {
+          "rank": 4,
+          "url": "https://www.bing.com/ck/a?!&&p=54e794b96e09a04cefda7dddcaec9eae2130110cba6d608d34d967dd46b2b2b2JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9zZWFyY2guc3RhcnRwYWdpbmEubmwv&ntb=1"
+        },
+        {
+          "rank": 5,
+          "url": "https://www.bing.com/ck/a?!&&p=35d0ba4b0de6155c92783cc4bcd9e84d600159a647b0a62d9fed7baab87b1bc0JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9vbmxpbmUuc3RhcnRwYWdpbmEubmwv&ntb=1"
+        },
+        {
+          "rank": 6,
+          "url": "https://www.bing.com/ck/a?!&&p=9e8e77ac301eaceae3f685a38c605e78db5c36a61b838678600c5e725e956d47JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9zdGFydHBhZ2luYW5sLm5sLw&ntb=1"
+        },
+        {
+          "rank": 7,
+          "url": "https://www.bing.com/ck/a?!&&p=04dce571530787da4b1d4df33a110dee277129a62fd42eb75d38c297a6620232JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuc3RhcnRwYS5ubC8&ntb=1"
+        },
+        {
+          "rank": 8,
+          "url": "https://www.bing.com/ck/a?!&&p=128c8b274dbf35166eb21ed3d72cf505c146a86a10da7c05da5cc80e8a97bf60JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuc3RhcnRwYWdpbmEubmwvdGhlbWFzL2NhdGVnb3JpZQ&ntb=1"
+        },
+        {
+          "rank": 9,
+          "url": "https://www.bing.com/ck/a?!&&p=d53b8eb0bd1c93df5f26812f409a0b677a8b291e95812c8933c148b33bf60277JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuc3RhcnRwYWdpbmEubmwvcGFnaW5h&ntb=1"
+        },
+        {
+          "rank": 10,
+          "url": "https://www.bing.com/ck/a?!&&p=b658819e0f8543910dff6be2963cdeba2a76142028385d60dec25fe3154704dcJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuc3RhcnRwYWdpbmEubmwvc3RhcnRwYWdpbmEtaW5zdGVsbGVu&ntb=1"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
       "shar_rank": null
     },
     {
       "query_id": "commercial-ru-11",
       "query": "Как оценить сроки и бюджет рекламного видео до брифа?",
       "system": "Bing",
+      "surface": "Bing Search in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "ru",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
+      "geography": "RU or US requested through setlang/cc parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:12:57.788Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.bing.com/search?setlang=ru-RU&cc=RU&count=10&q=%D0%9A%D0%B0%D0%BA%20%D0%BE%D1%86%D0%B5%D0%BD%D0%B8%D1%82%D1%8C%20%D1%81%D1%80%D0%BE%D0%BA%D0%B8%20%D0%B8%20%D0%B1%D1%8E%D0%B4%D0%B6%D0%B5%D1%82%20%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%20%D0%B4%D0%BE%20%D0%B1%D1%80%D0%B8%D1%84%D0%B0%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "10211f22a6f0f5e72f7862224a14754898c1b70f070a3d39907eb8616919d8fd",
+        "result_count": 5,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.bing.com/ck/a?!&&p=c20f3df11fe5a10fe7c1740a8f029ba48b0b64cce1b127a5f9aac0d2d0ae7d18JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9vbmVkcml2ZS5saXZlLmNvbS8&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=f15d9093be9b5e3a9823f926a1677008e40c252265ddbc914fd23addd22f6d3bJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9vbmVkcml2ZS5saXZlLmNvbS9sb2dpbi9lbi11cy8&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=bdb51d7eed05c01f75bb15941176aa0b75deeb49f7e2f78efdd572cb9e2fd03aJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9vbmVkcml2ZS5saXZlLmNvbS9hYm91dC9ydS1ydS9zaWduaW4&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=dacfd0bb60acb4b224fea27141e5bd3a222bbc8d6d49f92279ec9b18e53cbb66JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9vbmVkcml2ZS5saXZlLmNvbS9zYQ&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=27c57bfb69df5cbd00e9ce26e149c9c8324b6753d79ca972016a8d324e531c47JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9vbmVkcml2ZS5saXZlLmNvbS9zaWdudXA&ntb=1"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://www.bing.com/ck/a?!&&p=c20f3df11fe5a10fe7c1740a8f029ba48b0b64cce1b127a5f9aac0d2d0ae7d18JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9vbmVkcml2ZS5saXZlLmNvbS8&ntb=1"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.bing.com/ck/a?!&&p=f15d9093be9b5e3a9823f926a1677008e40c252265ddbc914fd23addd22f6d3bJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9vbmVkcml2ZS5saXZlLmNvbS9sb2dpbi9lbi11cy8&ntb=1"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.bing.com/ck/a?!&&p=bdb51d7eed05c01f75bb15941176aa0b75deeb49f7e2f78efdd572cb9e2fd03aJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9vbmVkcml2ZS5saXZlLmNvbS9hYm91dC9ydS1ydS9zaWduaW4&ntb=1"
+        },
+        {
+          "rank": 4,
+          "url": "https://www.bing.com/ck/a?!&&p=dacfd0bb60acb4b224fea27141e5bd3a222bbc8d6d49f92279ec9b18e53cbb66JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9vbmVkcml2ZS5saXZlLmNvbS9zYQ&ntb=1"
+        },
+        {
+          "rank": 5,
+          "url": "https://www.bing.com/ck/a?!&&p=27c57bfb69df5cbd00e9ce26e149c9c8324b6753d79ca972016a8d324e531c47JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9vbmVkcml2ZS5saXZlLmNvbS9zaWdudXA&ntb=1"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
       "shar_rank": null
     },
     {
       "query_id": "commercial-en-11",
       "query": "How can I estimate a commercial video's timeline and budget before briefing?",
       "system": "Bing",
+      "surface": "Bing Search in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "en",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
+      "geography": "RU or US requested through setlang/cc parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:12:49.361Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.bing.com/search?setlang=en-US&cc=US&count=10&q=How%20can%20I%20estimate%20a%20commercial%20video's%20timeline%20and%20budget%20before%20briefing%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "e3554e6845b7ff6df30a16e7e977a054ad6df96bac9f47717b75d6e0aafa9f53",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.bing.com/ck/a?!&&p=69abfefafde89d8ff223cc423db07ff397874f04bbcdffb44b4042e8ef379781JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuY2FudmEuY29tLz9tc29ja2lkPTE0MThmZWU0Mzg4ZTZlN2YzNjNlZTk0NjM5ZjU2ZjQw&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=5ae4beb8f060027e15ee4d74da35fba808202af1ec94c3f25985a1346b9a2a85JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvZGljdGlvbmFyeS9lbmdsaXNoL2Nhbg&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=09ecdbb60be27482884dd64a3f7d085a1ce24abaf25cd166d3e985e0970fcf7cJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cubWVycmlhbS13ZWJzdGVyLmNvbS9kaWN0aW9uYXJ5L2Nhbg&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=5268ca264bf861c51f623543a3988b089eaca9af2447909ad2049823cd47280eJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cudGhlZnJlZWRpY3Rpb25hcnkuY29tL2Nhbg&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=cbc0273fb9425444a21b191effb120b84d651bd44d80326a4d0ed4a607036977JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZGljdGlvbmFyeS5jb20vYnJvd3NlL2Nhbg&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=a0e9d4bf1cf80c1a4a329db31b9488a16dbcaf073debab0d5ef075cff7ce7b52JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZW5nbGlzaHdpdGhhc2hpc2guY29tL2FsbC11c2VzLW9mLWNhbi8&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=6adf02cce61a592333fc5537a8aa483d2fbded70b5542358cc7a7fbe8f2f9d66JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvdXMvZGljdGlvbmFyeS9lbmdsaXNoL2Nhbg&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=9d9bcb866390ce748019fdc65d233ad2c943505b9049d7413960edfc5f1c7753JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9sYW5nZWVrLmNvL2VuL2dyYW1tYXIvY291cnNlLzczNy9jYW4&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=467f8ea2f3f106d79e1ee62f0a5320c949bfdf8f11666dbf7a28b6b24e4d00d9JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvQ2Fu&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=ac3e856c0e1f69b7263def92913a3a69dee2caea9d0648f3fbc36dc146884a8dJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1qOGJyamxIeWNXMA&ntb=1"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://www.bing.com/ck/a?!&&p=69abfefafde89d8ff223cc423db07ff397874f04bbcdffb44b4042e8ef379781JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuY2FudmEuY29tLz9tc29ja2lkPTE0MThmZWU0Mzg4ZTZlN2YzNjNlZTk0NjM5ZjU2ZjQw&ntb=1"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.bing.com/ck/a?!&&p=5ae4beb8f060027e15ee4d74da35fba808202af1ec94c3f25985a1346b9a2a85JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvZGljdGlvbmFyeS9lbmdsaXNoL2Nhbg&ntb=1"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.bing.com/ck/a?!&&p=09ecdbb60be27482884dd64a3f7d085a1ce24abaf25cd166d3e985e0970fcf7cJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cubWVycmlhbS13ZWJzdGVyLmNvbS9kaWN0aW9uYXJ5L2Nhbg&ntb=1"
+        },
+        {
+          "rank": 4,
+          "url": "https://www.bing.com/ck/a?!&&p=5268ca264bf861c51f623543a3988b089eaca9af2447909ad2049823cd47280eJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cudGhlZnJlZWRpY3Rpb25hcnkuY29tL2Nhbg&ntb=1"
+        },
+        {
+          "rank": 5,
+          "url": "https://www.bing.com/ck/a?!&&p=cbc0273fb9425444a21b191effb120b84d651bd44d80326a4d0ed4a607036977JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZGljdGlvbmFyeS5jb20vYnJvd3NlL2Nhbg&ntb=1"
+        },
+        {
+          "rank": 6,
+          "url": "https://www.bing.com/ck/a?!&&p=a0e9d4bf1cf80c1a4a329db31b9488a16dbcaf073debab0d5ef075cff7ce7b52JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZW5nbGlzaHdpdGhhc2hpc2guY29tL2FsbC11c2VzLW9mLWNhbi8&ntb=1"
+        },
+        {
+          "rank": 7,
+          "url": "https://www.bing.com/ck/a?!&&p=6adf02cce61a592333fc5537a8aa483d2fbded70b5542358cc7a7fbe8f2f9d66JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvdXMvZGljdGlvbmFyeS9lbmdsaXNoL2Nhbg&ntb=1"
+        },
+        {
+          "rank": 8,
+          "url": "https://www.bing.com/ck/a?!&&p=9d9bcb866390ce748019fdc65d233ad2c943505b9049d7413960edfc5f1c7753JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9sYW5nZWVrLmNvL2VuL2dyYW1tYXIvY291cnNlLzczNy9jYW4&ntb=1"
+        },
+        {
+          "rank": 9,
+          "url": "https://www.bing.com/ck/a?!&&p=467f8ea2f3f106d79e1ee62f0a5320c949bfdf8f11666dbf7a28b6b24e4d00d9JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvQ2Fu&ntb=1"
+        },
+        {
+          "rank": 10,
+          "url": "https://www.bing.com/ck/a?!&&p=ac3e856c0e1f69b7263def92913a3a69dee2caea9d0648f3fbc36dc146884a8dJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1qOGJyamxIeWNXMA&ntb=1"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
       "shar_rank": null
     },
     {
       "query_id": "commercial-ru-12",
       "query": "Как выбрать студию для продуктового ролика с несколькими форматами сдачи?",
       "system": "Bing",
+      "surface": "Bing Search in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "ru",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
+      "geography": "RU or US requested through setlang/cc parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:12:58.999Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.bing.com/search?setlang=ru-RU&cc=RU&count=10&q=%D0%9A%D0%B0%D0%BA%20%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D1%82%D1%8C%20%D1%81%D1%82%D1%83%D0%B4%D0%B8%D1%8E%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE%20%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%D0%B0%20%D1%81%20%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%B8%D0%BC%D0%B8%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B0%D0%BC%D0%B8%20%D1%81%D0%B4%D0%B0%D1%87%D0%B8%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "bad841ab765af6d7d73f82f225c23a578fa092259768c2f355598584397e8540",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.bing.com/ck/a?!&&p=fce40692aabcb2cff6f5108124b61ff2d080f64ff7109838ac1f128fd690199dJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9jcm9zc3JvYWRzYmVsbGV2dWUuY29tLw&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=3adcc24a484b1d049056b53ed8c603e99326cb4619c4655ae528461537ef74f0JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9jcm9zc3JvYWRzYmVsbGV2dWUuY29tL2RpbmUv&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=bd9a4d14b560e892daeeef2c564710845b5b17e5f6f2898b47c9c2017e5ef094JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9jcm9zc3JvYWRzYmVsbGV2dWUuY29tL3N0b3Jlcy90aGUtZnJlbmNoLWJha2VyeS8&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=89d1fbff7a18262deabf5b16b38ed3390f17b36f2ebda2138fdbf5c068adf43fJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9jcm9zc3JvYWRzYmVsbGV2dWUuY29tL2V2ZW50cy8&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=029178fd46491b8599ef5f962d06c66b03384fbf078e730c939a847ac72f1a6aJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9jcm9zc3JvYWRzYmVsbGV2dWUuY29tL2hvdXJzLw&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=4ba24bf9f7a6338f644336aa968e271141e843ae43037ca0c7e057193121024bJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9jcm9zc3JvYWRzYmVsbGV2dWUuY29tL3N0b3Jlcy8&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=b036102f749bff4f4f770d0ba9f806a61bf2b558f262392a13de6121d4de1a74JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9jcm9zc3JvYWRzYmVsbGV2dWUuY29tL2Zhcm1lcnNtYXJrZXQv&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=c6fecf48ab7ad31a4a6e0c741ca96d446bb98c1ac6ea0b8764dabf84e64c3132JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9jcm9zc3JvYWRzYmVsbGV2dWUuY29tL3N0b3Jlcy9jcm9zc3JvYWRzLWJhcmJlci1zaG9wLw&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=2bc18822d738bf4a4f23a5f80f1407e783c9ead5c7c72269ffa3099a89fd26dbJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9jcm9zc3JvYWRzYmVsbGV2dWUuY29tL3N0b3Jlcy9jcm9zc3JvYWRzLWxpYnJhcnktY29ubmVjdGlvbi8&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=f4f2a837bab8271a61fb7b3294e6ba9a1c8ac986f28d7f0b65e4458d193006d5JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9jcm9zc3JvYWRzYmVsbGV2dWUuY29tL3N0b3Jlcy9qaW55YS1yYW1lbi1iYXIv&ntb=1"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://www.bing.com/ck/a?!&&p=fce40692aabcb2cff6f5108124b61ff2d080f64ff7109838ac1f128fd690199dJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9jcm9zc3JvYWRzYmVsbGV2dWUuY29tLw&ntb=1"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.bing.com/ck/a?!&&p=3adcc24a484b1d049056b53ed8c603e99326cb4619c4655ae528461537ef74f0JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9jcm9zc3JvYWRzYmVsbGV2dWUuY29tL2RpbmUv&ntb=1"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.bing.com/ck/a?!&&p=bd9a4d14b560e892daeeef2c564710845b5b17e5f6f2898b47c9c2017e5ef094JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9jcm9zc3JvYWRzYmVsbGV2dWUuY29tL3N0b3Jlcy90aGUtZnJlbmNoLWJha2VyeS8&ntb=1"
+        },
+        {
+          "rank": 4,
+          "url": "https://www.bing.com/ck/a?!&&p=89d1fbff7a18262deabf5b16b38ed3390f17b36f2ebda2138fdbf5c068adf43fJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9jcm9zc3JvYWRzYmVsbGV2dWUuY29tL2V2ZW50cy8&ntb=1"
+        },
+        {
+          "rank": 5,
+          "url": "https://www.bing.com/ck/a?!&&p=029178fd46491b8599ef5f962d06c66b03384fbf078e730c939a847ac72f1a6aJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9jcm9zc3JvYWRzYmVsbGV2dWUuY29tL2hvdXJzLw&ntb=1"
+        },
+        {
+          "rank": 6,
+          "url": "https://www.bing.com/ck/a?!&&p=4ba24bf9f7a6338f644336aa968e271141e843ae43037ca0c7e057193121024bJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9jcm9zc3JvYWRzYmVsbGV2dWUuY29tL3N0b3Jlcy8&ntb=1"
+        },
+        {
+          "rank": 7,
+          "url": "https://www.bing.com/ck/a?!&&p=b036102f749bff4f4f770d0ba9f806a61bf2b558f262392a13de6121d4de1a74JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9jcm9zc3JvYWRzYmVsbGV2dWUuY29tL2Zhcm1lcnNtYXJrZXQv&ntb=1"
+        },
+        {
+          "rank": 8,
+          "url": "https://www.bing.com/ck/a?!&&p=c6fecf48ab7ad31a4a6e0c741ca96d446bb98c1ac6ea0b8764dabf84e64c3132JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9jcm9zc3JvYWRzYmVsbGV2dWUuY29tL3N0b3Jlcy9jcm9zc3JvYWRzLWJhcmJlci1zaG9wLw&ntb=1"
+        },
+        {
+          "rank": 9,
+          "url": "https://www.bing.com/ck/a?!&&p=2bc18822d738bf4a4f23a5f80f1407e783c9ead5c7c72269ffa3099a89fd26dbJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9jcm9zc3JvYWRzYmVsbGV2dWUuY29tL3N0b3Jlcy9jcm9zc3JvYWRzLWxpYnJhcnktY29ubmVjdGlvbi8&ntb=1"
+        },
+        {
+          "rank": 10,
+          "url": "https://www.bing.com/ck/a?!&&p=f4f2a837bab8271a61fb7b3294e6ba9a1c8ac986f28d7f0b65e4458d193006d5JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9jcm9zc3JvYWRzYmVsbGV2dWUuY29tL3N0b3Jlcy9qaW55YS1yYW1lbi1iYXIv&ntb=1"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
       "shar_rank": null
     },
     {
       "query_id": "commercial-en-12",
       "query": "How do I choose a studio for a product film with multiple delivery formats?",
       "system": "Bing",
+      "surface": "Bing Search in current Codex in-app browser",
+      "model_version": "NOT_DISCLOSED",
+      "search_mode": "standard web search",
       "locale": "en",
-      "status": "NOT_MEASURED",
-      "unavailable_reason": "run stopped after the tenth page returned no parseable results; remaining slots were not assigned zero values",
-      "raw_evidence": null,
-      "urls": [],
-      "shar_classification": "UNASSESSED",
+      "geography": "RU or US requested through setlang/cc parameters; physical egress location unknown",
+      "tested_at_utc": "2026-09-06T09:12:50.590Z",
+      "repetition": 1,
+      "cost": {
+        "amount": 0,
+        "currency": "USD",
+        "basis": "free consumer UI"
+      },
+      "request_url": "https://www.bing.com/search?setlang=en-US&cc=US&count=10&q=How%20do%20I%20choose%20a%20studio%20for%20a%20product%20film%20with%20multiple%20delivery%20formats%3F",
+      "status": "MEASURED",
+      "raw_evidence": {
+        "visible_text_sha256": "899b2bb71f4efc19978682ce2db18c975752d8f612cc1ba253bb145668eb065e",
+        "result_count": 10,
+        "retention": "private local checkpoint; filename and SHA-256 retained in this public record",
+        "publicly_embedded": false
+      },
+      "urls": [
+        "https://www.bing.com/ck/a?!&&p=9b11ef905871d6cf4fae1e81b4ff59ba64cb436e30041f550fd2eb86807a3595JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZG9jcy5nb29nbGUuY29tLw&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=36a86a5e83a7101704c7a076dcefdc0246248f2acef63d79e449c58a2c512562JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1nMHBvYzI4eDZtQQ&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=2a0e798c168110b380330f0cae80f3a8344b7b896a560e85a938be2851421886JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cubWVycmlhbS13ZWJzdGVyLmNvbS9kaWN0aW9uYXJ5L2Rv&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=cc751cacac977587778153952a36fdbe2ee9ef2cf8c0434ba124dbe4a4d03cb9JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvZGljdGlvbmFyeS9lbmdsaXNoL2Rv&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=64b1d4a8e33cafcbf41e225ab27c6fe3b4ef92d03468067e50e52f198084cafcJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cud2VibWQuY29tL2EtdG8tei1ndWlkZXMvZGlmZmVyZW5jZS1iZXR3ZWVuLW1kLWFuZC1kbw&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=2c586af3b19b65b49fe18f1c5dc31eb4382afe503eb91d9083dd0ec529facd92JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1MT3c1aDBfb1VFTQ&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=668067da09607d93d9b8c2daa1727ee78d3a75aa167ee8499e990dc1078db872JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5zaW1wbGVyaW9uLmRvaWFwJmhsPWVuLVVT&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=0e097a1dbbdf9aa82be4225a37cf57f8401804c3e3f81b1f528de850b1a0c8edJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuY29sbGluc2RpY3Rpb25hcnkuY29tL2RpY3Rpb25hcnkvZW5nbGlzaC9kbw&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=db03886231d13f1402480f509f5672d486dff772f1ab97d32c16ce09d68921d4JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZGljdGlvbmFyeS5jb20vYnJvd3NlL2Rv&ntb=1",
+        "https://www.bing.com/ck/a?!&&p=0decd94e55269ac6ce7a2ae4361d8ee7d2bb9aa96036178c702f490009d3396aJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cudm9jYWJ1bGFyeS5jb20vZGljdGlvbmFyeS9kbw&ntb=1"
+      ],
+      "organic_results": [
+        {
+          "rank": 1,
+          "url": "https://www.bing.com/ck/a?!&&p=9b11ef905871d6cf4fae1e81b4ff59ba64cb436e30041f550fd2eb86807a3595JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZG9jcy5nb29nbGUuY29tLw&ntb=1"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.bing.com/ck/a?!&&p=36a86a5e83a7101704c7a076dcefdc0246248f2acef63d79e449c58a2c512562JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1nMHBvYzI4eDZtQQ&ntb=1"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.bing.com/ck/a?!&&p=2a0e798c168110b380330f0cae80f3a8344b7b896a560e85a938be2851421886JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cubWVycmlhbS13ZWJzdGVyLmNvbS9kaWN0aW9uYXJ5L2Rv&ntb=1"
+        },
+        {
+          "rank": 4,
+          "url": "https://www.bing.com/ck/a?!&&p=cc751cacac977587778153952a36fdbe2ee9ef2cf8c0434ba124dbe4a4d03cb9JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvZGljdGlvbmFyeS9lbmdsaXNoL2Rv&ntb=1"
+        },
+        {
+          "rank": 5,
+          "url": "https://www.bing.com/ck/a?!&&p=64b1d4a8e33cafcbf41e225ab27c6fe3b4ef92d03468067e50e52f198084cafcJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cud2VibWQuY29tL2EtdG8tei1ndWlkZXMvZGlmZmVyZW5jZS1iZXR3ZWVuLW1kLWFuZC1kbw&ntb=1"
+        },
+        {
+          "rank": 6,
+          "url": "https://www.bing.com/ck/a?!&&p=2c586af3b19b65b49fe18f1c5dc31eb4382afe503eb91d9083dd0ec529facd92JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1MT3c1aDBfb1VFTQ&ntb=1"
+        },
+        {
+          "rank": 7,
+          "url": "https://www.bing.com/ck/a?!&&p=668067da09607d93d9b8c2daa1727ee78d3a75aa167ee8499e990dc1078db872JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5zaW1wbGVyaW9uLmRvaWFwJmhsPWVuLVVT&ntb=1"
+        },
+        {
+          "rank": 8,
+          "url": "https://www.bing.com/ck/a?!&&p=0e097a1dbbdf9aa82be4225a37cf57f8401804c3e3f81b1f528de850b1a0c8edJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuY29sbGluc2RpY3Rpb25hcnkuY29tL2RpY3Rpb25hcnkvZW5nbGlzaC9kbw&ntb=1"
+        },
+        {
+          "rank": 9,
+          "url": "https://www.bing.com/ck/a?!&&p=db03886231d13f1402480f509f5672d486dff772f1ab97d32c16ce09d68921d4JmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cuZGljdGlvbmFyeS5jb20vYnJvd3NlL2Rv&ntb=1"
+        },
+        {
+          "rank": 10,
+          "url": "https://www.bing.com/ck/a?!&&p=0decd94e55269ac6ce7a2ae4361d8ee7d2bb9aa96036178c702f490009d3396aJmltdHM9MTc4ODY1MjgwMA&ptn=3&ver=2&hsh=4&fclid=1418fee4-388e-6e7f-363e-e94639f56f40&u=a1aHR0cHM6Ly93d3cudm9jYWJ1bGFyeS5jb20vZGljdGlvbmFyeS9kbw&ntb=1"
+        }
+      ],
+      "shar_classification": "NO_SHAR_RESULT",
       "shar_rank": null
     },
     {

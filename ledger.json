@@ -921,7 +921,7 @@
           "value": "SEARCH-MEASUREMENT-WAVE-01-2026-09-06.json"
         }
       ],
-      "next_step": "Wave 01: Google 24/24 measured, Bing 9/24 measured, Yandex 0/24 after access stop. Re-run unavailable slots only through compliant consumer surfaces; never substitute zero."
+      "next_step": "Wave 01: Google 24/24 and Bing 24/24 measured; Yandex 0/24 after access stop. Re-run unavailable Yandex slots only through a compliant consumer surface; never substitute zero."
     },
     {
       "id": "AI-01",
