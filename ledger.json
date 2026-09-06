@@ -86,12 +86,12 @@
       "tools": 222,
       "bilingual_tool_pages": 444,
       "distribution_target": 1500,
-      "distribution_verified": 1500,
-      "github_repositories": 154,
-      "hugging_face_datasets": 22,
-      "registry_assets": 149,
-      "registry_release": "v1.34.0",
-      "hub_release": "v1.26.0",
+      "distribution_verified": 1503,
+      "github_repositories": 155,
+      "hugging_face_datasets": 23,
+      "registry_assets": 152,
+      "registry_release": "v1.35.0",
+      "hub_release": "v1.28.0",
       "cloudflare_url": "https://shar-production-open-tools.pages.dev/en/",
       "hugging_face_space": "https://sharproduction-production-open-tools.static.hf.space/en/index.html",
       "cost_usd": 0
@@ -184,7 +184,7 @@
           "value": "../PROJECT_STATE.md"
         }
       ],
-      "next_step": "Maintain the verified 154-repository inventory and add only independently useful modules."
+      "next_step": "Maintain the verified 155-repository inventory and add only independently useful modules."
     },
     {
       "id": "GH-02",
@@ -351,7 +351,7 @@
       "layer": "datasets",
       "title_ru": "Добавлять измеряемые наборы и исследовательские выпуски",
       "priority": "P2",
-      "status": "PLANNED",
+      "status": "PUBLISHED_VERIFIED",
       "depends_on": [
         "DATA-01"
       ],
@@ -359,8 +359,17 @@
         "Измерения не синтезированы как реальные",
         "Набор/пилот не блокирует PR, профили и инструменты"
       ],
-      "evidence": [],
-      "next_step": "Collect rights-cleared measured observations under a documented protocol, separately from synthetic examples."
+      "evidence": [
+        {
+          "kind": "public_url",
+          "value": "https://huggingface.co/datasets/SHARProduction/production-entity-knowledge-graph"
+        },
+        {
+          "kind": "public_url",
+          "value": "https://github.com/SHARProduction/production-entity-knowledge-graph/releases/tag/v1.0.0"
+        }
+      ],
+      "next_step": "Maintain dated, rights-cleared observations with explicit provenance; keep them separate from synthetic examples and market statistics."
     },
     {
       "id": "CLOUD-01",
@@ -463,7 +472,7 @@
           "value": "../PROJECT_STATE.md"
         }
       ],
-      "next_step": "The useful zero-spend cloud expansion reached 21 distribution waves and the static mirror. Add surfaces only for a distinct user task."
+      "next_step": "The zero-spend cloud layer includes the bilingual entity graph in Open Tools Hub v1.28.0. Add surfaces only for a distinct user task."
     },
     {
       "id": "T1-01",
@@ -733,7 +742,7 @@
       "layer": "entity",
       "title_ru": "Сверить идентичность SHAR и публичные связи",
       "priority": "P1",
-      "status": "MEASURED",
+      "status": "PUBLISHED_VERIFIED",
       "depends_on": [
         "BASE-02"
       ],
@@ -750,9 +759,17 @@
         {
           "kind": "internal_record",
           "value": "EXTERNAL-REGISTRY-RECHECK-2026-09-06.json"
+        },
+        {
+          "kind": "public_url",
+          "value": "https://shar-production-open-tools.pages.dev/entity-graph/en/"
+        },
+        {
+          "kind": "public_url",
+          "value": "https://shar-production-open-tools.pages.dev/entity-graph/ru/"
         }
       ],
-      "next_step": "Use the verified identity observations to build a public-safe entity graph with explicit provenance and no unsupported sameAs claims."
+      "next_step": "Maintain the public provenance graph and recheck dated external observations without asserting unsupported sameAs relationships."
     },
     {
       "id": "ENTITY-02",
@@ -776,7 +793,7 @@
       "layer": "backlinks_citations",
       "title_ru": "Связать активы по смыслу и происхождению",
       "priority": "P1",
-      "status": "LOCAL_READY",
+      "status": "PUBLISHED_VERIFIED",
       "depends_on": [
         "GH-01",
         "BASE-02"
@@ -790,9 +807,13 @@
         {
           "kind": "internal_record",
           "value": "intent-map.json"
+        },
+        {
+          "kind": "public_url",
+          "value": "https://github.com/SHARProduction/production-entity-knowledge-graph"
         }
       ],
-      "next_step": "Use specific case/landing links; preserve source dependence."
+      "next_step": "Maintain provenance-specific graph links; continue domain and source-origin deduplication before reporting independent citations."
     },
     {
       "id": "LINK-02",
