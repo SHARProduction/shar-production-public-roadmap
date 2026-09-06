@@ -665,9 +665,13 @@
         {
           "kind": "internal_record",
           "value": "EXTERNAL-RECOVERY-WAVE-05-2026-09-06.json"
+        },
+        {
+          "kind": "internal_record",
+          "value": "EXTERNAL-RECOVERY-WAVE-06-2026-09-06.json"
         }
       ],
-      "next_step": "13 of 47 exact URLs are recovered; one row is resolved as no public profile after a provider refusal; 33 remain unresolved. Continue targeted read-only recovery without editing existing profiles or treating search misses as absence. Ko-fi is live but provider-noindex."
+      "next_step": "12 of 40 owner-reported account URLs are recovered; one row is closed by provider refusal and 27 remain unresolved. Two supplemental exact URLs are tracked outside the denominator. Continue targeted read-only recovery; X is a nonbranded correction candidate and Ko-fi is provider-noindex."
     },
     {
       "id": "PROFILE-03",

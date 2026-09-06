@@ -18,17 +18,21 @@
     ]
   },
   "recovery_progress": {
-    "source_rows": 47,
-    "exact_urls_recovered_total": 13,
-    "exact_urls_still_required": 33,
+    "legacy_mixed_scope_rows": 47,
+    "owner_reported_registration_rows": 40,
+    "exact_owner_reported_urls_recovered_total": 12,
+    "supplemental_exact_urls_recovered": 2,
+    "resolved_without_public_url": 1,
+    "owner_reported_rows_still_unresolved": 27,
+    "scope_note": "The earlier 47-row denominator mixed 40 owner-reported registration rows with supplemental recoveries and opportunity rows. Current recovery progress uses only source rows whose status is OWNER-REPORTED REGISTERED/PRESENT.",
     "wave_records": [
       "EXTERNAL-VERIFICATION-2026-09-06.json",
       "EXTERNAL-RECOVERY-WAVE-02-2026-09-06.json",
       "EXTERNAL-RECOVERY-WAVE-03-2026-09-06.json",
       "EXTERNAL-RECOVERY-WAVE-04-2026-09-06.json",
-      "EXTERNAL-RECOVERY-WAVE-05-2026-09-06.json"
-    ],
-    "resolved_without_public_url": 1
+      "EXTERNAL-RECOVERY-WAVE-05-2026-09-06.json",
+      "EXTERNAL-RECOVERY-WAVE-06-2026-09-06.json"
+    ]
   },
   "exact_url_recoveries": [
     {
@@ -199,6 +203,52 @@
       "platform": "Disqus",
       "state": "REGISTERED_ACCOUNT_PUBLIC_PROFILE_UNVERIFIED",
       "evidence": "Owner-authorized provider mail confirms signup and incomplete publisher installation.",
+      "public_placement_counted": false
+    },
+    {
+      "source_id": "external-authority-v4-071",
+      "platform": "Credly",
+      "state": "REGISTERED_ACCOUNT_PUBLIC_PROFILE_UNVERIFIED",
+      "evidence": "Provider mail confirms account creation but no SHAR Production public profile or credential URL.",
+      "public_placement_counted": false
+    },
+    {
+      "source_id": "external-authority-v4-081",
+      "platform": "Heylink",
+      "state": "REGISTERED_INCOMPLETE_PAGE_PUBLIC_URL_UNVERIFIED",
+      "evidence": "Provider mail confirms registration and explicitly states page setup was unfinished.",
+      "public_placement_counted": false
+    },
+    {
+      "source_id": "external-authority-v4-082",
+      "platform": "Indiegogo",
+      "state": "REGISTERED_BACKER_ACCOUNT_PUBLIC_PROFILE_UNVERIFIED",
+      "evidence": "Generic provider welcome mail confirms a backer account and no SHAR Production profile or campaign URL.",
+      "public_placement_counted": false
+    },
+    {
+      "source_id": "external-authority-v4-093",
+      "platform": "Rakuten",
+      "state": "REGISTERED_COMMERCE_ACCOUNT_PUBLIC_PROFILE_UNVERIFIED",
+      "evidence": "Provider welcome mail confirms an account but no public company profile URL.",
+      "public_placement_counted": false
+    },
+    {
+      "source_id": "external-authority-v4-095",
+      "platform": "ReverbNation",
+      "state": "REGISTERED_LABEL_ACCOUNT_PUBLIC_PAGE_404",
+      "evidence": "Provider welcome mail addresses SHAR Production; provider-linked and direct public label routes rendered 404.",
+      "public_placement_counted": false
+    }
+  ],
+  "exact_account_url_recovered_not_counted": [
+    {
+      "source_id": "external-authority-v4-104",
+      "platform": "X",
+      "url": "https://x.com/ArseniMonterey",
+      "state": "EXACT_OWNER_ACCOUNT_URL_RECOVERED_NONBRANDED",
+      "evidence": "X provider mail names @ArseniMonterey; the rendered public profile shows Arseniy Monterey and no SHAR Production or sharprod.com.",
+      "required_action": "Owner correction candidate only if this personal account is intended to represent the company.",
       "public_placement_counted": false
     }
   ]

@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0.0",
+  "brand": {
+    "name": "SHAR Production",
+    "website": "https://sharprod.com/"
+  },
+  "checked_at": "2026-09-06T07:26:18Z",
+  "method": "Read-only review of owner-authorized provider mail, provider account links and direct rendered public pages. Existing profiles were not edited.",
+  "access": "READ_ONLY",
+  "scope_reconciliation": {
+    "legacy_mixed_scope_rows": 47,
+    "owner_reported_registration_rows": 40,
+    "explanation": "The earlier 47-row denominator mixed the 40 owner-reported registration rows with supplemental recoveries and opportunity rows. The current partition uses the source status OWNER-REPORTED REGISTERED/PRESENT as the recovery denominator.",
+    "exact_owner_reported_urls_recovered": 12,
+    "supplemental_exact_urls_recovered": 2,
+    "resolved_without_public_url": 1,
+    "owner_reported_rows_still_unresolved": 27
+  },
+  "exact_account_url_recovered_not_counted": [
+    {
+      "source_id": "external-authority-v4-104",
+      "platform": "X",
+      "url": "https://x.com/ArseniMonterey",
+      "state": "EXACT_OWNER_ACCOUNT_URL_RECOVERED_NONBRANDED",
+      "provider_evidence": "X security mail names the exact handle @ArseniMonterey.",
+      "public_check": "Rendered public profile returned successfully and showed Arseniy Monterey / @ArseniMonterey, but did not show SHAR Production or sharprod.com.",
+      "required_action": "Owner correction candidate only: add SHAR Production and https://sharprod.com/ if this personal account is intended to represent the company.",
+      "public_placement_counted": false
+    }
+  ],
+  "registration_evidence_not_counted": [
+    {
+      "source_id": "external-authority-v4-081",
+      "platform": "Heylink",
+      "state": "REGISTERED_INCOMPLETE_PAGE_PUBLIC_URL_UNVERIFIED",
+      "provider_evidence": "Provider mail dated 2026-07-07 states that registration occurred but setup of the HeyLink.me page was not finished.",
+      "public_placement_counted": false
+    },
+    {
+      "source_id": "external-authority-v4-071",
+      "platform": "Credly",
+      "state": "REGISTERED_ACCOUNT_PUBLIC_PROFILE_UNVERIFIED",
+      "provider_evidence": "Provider mail dated 2026-07-05 confirms account creation but contains no public profile URL, SHAR Production identity or public credential page.",
+      "public_placement_counted": false
+    },
+    {
+      "source_id": "external-authority-v4-082",
+      "platform": "Indiegogo",
+      "state": "REGISTERED_BACKER_ACCOUNT_PUBLIC_PROFILE_UNVERIFIED",
+      "provider_evidence": "Provider welcome mail dated 2026-07-06 is addressed generically to a backer and contains no SHAR Production public profile or campaign URL.",
+      "public_placement_counted": false
+    },
+    {
+      "source_id": "external-authority-v4-093",
+      "platform": "Rakuten",
+      "state": "REGISTERED_COMMERCE_ACCOUNT_PUBLIC_PROFILE_UNVERIFIED",
+      "provider_evidence": "Provider welcome mail dated 2026-07-05 confirms a Rakuten ID and account name but no public company profile or placement URL.",
+      "public_placement_counted": false
+    },
+    {
+      "source_id": "external-authority-v4-095",
+      "platform": "ReverbNation",
+      "state": "REGISTERED_LABEL_ACCOUNT_PUBLIC_PAGE_404",
+      "provider_evidence": "Provider welcome mail dated 2026-07-05 addresses SHAR Production and identifies a label account.",
+      "public_check": "The provider-linked control-room route and the direct public label route for the provider account ID both rendered the provider 404 page; the brand-handle candidate also rendered 404.",
+      "public_placement_counted": false
+    }
+  ],
+  "searches_without_provider_evidence": [
+    "AllAdvertising",
+    "Camp-Fire",
+    "Cataloxy",
+    "DesignRush",
+    "Gitter",
+    "NewBiz",
+    "Rating Runeta",
+    "Ruward",
+    "SPR",
+    "Spravker",
+    "Tagline",
+    "Yell"
+  ],
+  "privacy_note": "The public record stores only provider, date and minimal outcome summaries. It excludes email addresses, verification codes, account tokens, login links and private tracking parameters.",
+  "notes": [
+    "The recovered X account URL fails the SHAR Production brand and website gate and is not counted as a placement.",
+    "Account registration, an incomplete page and a provider 404 are not publication evidence.",
+    "A search miss remains non-conclusive and does not close a row."
+  ]
+}
